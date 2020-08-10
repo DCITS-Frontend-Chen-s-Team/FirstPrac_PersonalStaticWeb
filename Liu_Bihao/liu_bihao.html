@@ -6,9 +6,9 @@
 
     <link rel="stylesheet" type="text/css" href="static/style/index.css"/>
 </head>
-<body>
-<div class="topNavBar">
-    <img src="static/img/logo.png" class="topBar-logo" alt="logo">
+<body onload="slider()">
+<div class="top-nav-bar">
+    <img src="static/img/logo.png" class="logo" alt="logo">
     <div class="top-menu">
         <ul>
             <li><a href="#">免费课程</a></li>
@@ -19,6 +19,115 @@
             <li><a href="#">手记</a></li>
         </ul>
     </div>
+    <div class="top-search">
+        <input type="text" class="search-input" placeholder="请输入关键字..." autocomplete="off">
+        <input type="hidden" class="btn_search">
+        <img class="search-btn" src="static/img/search.png" alt="">
+    </div>
+    <div class="top-selection">
+        <div class="register-login">
+            注册 / 登录 .........
+        </div>
+    </div>
 </div>
+
+<div class="main-banner">
+    <div class="container">
+        <section class="banner">
+            <div class="classify">
+                <ul>
+                    <li><a href="#">前沿/区块链/人工智能</a></li>
+                    <li><a href="#">前端/小程序/JS</a></li>
+                    <li><a href="#">后端/Java/Python</a></li>
+                    <li><a href="#">移动/Android/iOS</a></li>
+                    <li><a href="#">云计算/大数据/容器</a></li>
+                    <li><a href="#">运维/测试/数据库</a></li>
+                    <li><a href="#">UI设计/3D动画/游戏</a></li>
+                </ul>
+            </div>
+            <div class="banner-img">
+                <!-- 轮播图的另一种实现方案 -->
+                <!--                <div id="banner"></div>-->
+                <img src="static/img/img_1.jpg" id="img1" alt="">
+            </div>
+        </section>
+        <section class="recommend">
+            <h3 class="title-area">
+                <span class="title">零基础就业</span>
+                <span class="des">从入门到具备1年开发经验</span>
+            </h3>
+            <div class="card-list-area">
+                <a href="#">
+                    <img src="static/img/lang-imgs.png" alt="">
+                    <h3>Java工程师2020</h3>
+                    <p>综合就业排名第一</p>
+                </a>
+                <a href="#">
+                    <img src="static/img/lang-imgs.png" alt="">
+                    <h3>前端工程师升级版</h3>
+                    <p>从未接触编程也可以学好</p>
+                </a>
+            </div>
+        </section>
+        <section class="recommend">
+            <h3 class="title-area">
+                <span class="title">职场提升</span>
+                <span class="des">1年以上开发经验系统成长</span>
+            </h3>
+            <div class="card-list-area">
+                <img src="static/img/recommend-img_1.png" alt="">
+                <img src="static/img/recommend-img_2.png" alt="">
+                <img src="static/img/recommend-img_3.png" alt="">
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<div class="main-course">
+    <div class="container">
+
+    </div>
+</div>
+
+<div class="main-learn-road">
+    <div class="container">
+        000
+    </div>
+</div>
+
+<div class="main-hot-course">
+    <div class="container">
+        000
+    </div>
+</div>
+
+<div class="main-mooc">
+    <div class="container">
+        000
+    </div>
+</div>
+
+<div class="footer">
+    000
+</div>
+
 </body>
+
+<script>
+    var index = 0;
+
+    function changeImg() {
+        // 获得要切换图片的那个元素
+        var img = document.getElementById("img1");
+        var carIndex = index % 6 + 1;//输出1.2.3.4.5.6图片
+        img.src = "static/img/img_" + carIndex + ".jpg";
+        index = index + 1;
+    }
+
+    function slider() {
+        setInterval("changeImg()", 2000);
+    }
+</script>
+
 </html>

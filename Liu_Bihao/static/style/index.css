@@ -1,5 +1,16 @@
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* 顶部栏 */
-.topNavBar {
+.top-nav-bar {
     width: 100%;
     height: 72px;
     top: 0;
@@ -11,22 +22,21 @@
     position: fixed;
 }
 
-.topBar-logo {
+.top-nav-bar .logo {
     height: 72px;
     float: left;
 }
 
 .top-menu {
-    height: 72px;
-    width: 80%;
+    width: 40%;
     float: left;
+    position: relative;
 }
 
 .top-menu ul {
-    list-style-type: none;
     margin: 0 3%;
     padding: 0;
-    overflow: hidden;
+    flex-wrap: nowrap;
     background-color: white;
 }
 
@@ -39,7 +49,7 @@
     text-align: center;
     padding: 0 20px;
     text-decoration: none;
-    color: black;
+    color: #4d555d;
     position: relative;
     font-size: 16px;
     line-height: 72px; /* 使文字垂直居中 */
@@ -51,3 +61,332 @@
 .top-menu li a:hover {
     color: #07111b;
 }
+
+/* 顶部栏搜索框 */
+.top-search {
+    width: 20%;
+    float: left;
+    position: relative;
+    height: 40px;
+    padding-right: 40px;
+    zoom: 1;
+    background: #E9E9E9;
+    border-radius: 8px;
+    margin: 16px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.top-search .search-input {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #A6A6A6;
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    float: left;
+    border: 0;
+    background-color: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.top-search .search-input:focus {
+    border: 0;
+    box-sizing: border-box;
+}
+
+.top-search .btn_search {
+    float: left;
+    cursor: pointer;
+    width: 30px;
+    height: 38px;
+    text-align: center;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.top-search .search-btn {
+    width: 24px;
+    height: 24px;
+    text-align: right;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    bottom: 8px;
+    padding: 0 8px;
+}
+
+.top-selection {
+    width: 25%;
+    height: 72px;
+    float: right;
+    position: relative;
+}
+
+.register-login {
+    font-size: 20px;
+    color: coral;
+    line-height: 72px;
+}
+
+/* 开始主页面 */
+.container {
+    width: 75%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* 轮播图 */
+.main-banner {
+    width: 100%;
+    height: 850px;
+    display: block;
+    margin-top: 72px;
+    border-bottom: brown solid;
+}
+
+.main-banner .container .banner {
+    height: 382px;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: rgba(7, 17, 27, 0.5);
+}
+
+.main-banner .container .banner .classify {
+    width: 22%;
+    height: 382px;
+    left: 0;
+    top: 0;
+    float: left;
+    position: relative;
+    z-index: 1;
+    background-color: #2b333b;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.main-banner .container .banner .classify ul {
+    margin-top: 15px;
+}
+
+.main-banner .container .banner .classify li {
+
+}
+
+.main-banner .container .banner .classify li a {
+    display: block;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    color: #aaadb1;
+    position: relative;
+    font-size: 16px;
+    line-height: 50px; /* 使文字垂直居中 */
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.main-banner .container .banner .banner-img {
+    width: 78%;
+    height: 382px;
+    top: 0;
+    right: 0;
+    position: relative;
+    float: left;
+}
+
+.main-banner .container .banner .banner-img #img1 {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+/* 轮播图的另一种实现方案 */
+
+/*.main-banner .container .banner .banner-img #banner {*/
+/*    height: 382px;*/
+/*    width: 845px;*/
+/*    background: url("../img/img_1.jpg");*/
+/*    background-size: 845px 382px;*/
+/*    border-top-right-radius: 10px;*/
+/*    border-bottom-right-radius: 10px;*/
+/*    animation: banner 10s infinite; !* 动画效果：10s 无限循环 *!*/
+/*}*/
+/*@keyframes banner {*/
+/*    16.67%{*/
+/*        background: url("../img/img_2.jpg");*/
+/*        background-size: 845px 382px;*/
+/*        border-top-right-radius: 10px;*/
+/*    border-bottom-right-radius: 10px;*/
+/*    }*/
+/*    33.33%{*/
+/*        background: url("../img/img_3.jpg");*/
+/*        background-size: 845px 382px;*/
+/*        border-top-right-radius: 10px;*/
+/*    border-bottom-right-radius: 10px;*/
+/*    }*/
+/*    50%{*/
+/*        background: url("../img/img_4.jpg");*/
+/*        background-size: 845px 382px;*/
+/*        border-top-right-radius: 10px;*/
+/*    border-bottom-right-radius: 10px;*/
+/*    }*/
+/*    66.67%{*/
+/*        background: url("../img/img_5.jpg");*/
+/*        background-size: 845px 382px;*/
+/*        border-top-right-radius: 10px;*/
+/*    border-bottom-right-radius: 10px;*/
+/*    }*/
+/*    83.33%{*/
+/*        background: url("../img/img_6.jpg");*/
+/*        background-size: 845px 382px;*/
+/*        border-top-right-radius: 10px;*/
+/*    border-bottom-right-radius: 10px;*/
+/*    }*/
+/*}*/
+
+/* 学习小卡片 */
+.main-banner .container .recommend {
+    height: 150px;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: auto;
+    /*padding: 20px;*/
+    text-align: center;
+}
+
+.title-area {
+    position: relative;
+    font-size: 24px;
+    color: #1C1F21;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.title-area .title {
+    float: left;
+    font-weight: bold;
+}
+
+.title-area .des {
+    float: left;
+    margin-left: 12px;
+    font-size: 14px;
+    color: #545C63;
+    line-height: 42px;
+}
+
+.main-banner .container .recommend .card-list-area {
+    margin: 0;
+    padding-top: 20px;
+    position: relative;
+    clear: both;
+}
+
+.main-banner .container .recommend .card-list-area a {
+    float: left;
+    display: block;
+    width: 270px;
+    margin: 0 10px;
+    padding-top: 15px;
+    height: 65px;
+    overflow: hidden;
+    transition: all .3s;
+    background: #F3F5F6;
+    border-radius: 8px;
+}
+
+.main-banner .container .recommend .card-list-area a img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: no-repeat;
+    background-size: 100%;
+    margin-left: 16px;
+    margin-right: 12px;
+}
+
+.main-banner .container .recommend .card-list-area a h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1C1F21;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+    word-break: break-all;
+}
+
+.main-banner .container .recommend .card-list-area a p {
+    font-size: 14px;
+    color: #1C1F21;
+    line-height: 16px;
+    margin: 5px 0;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+.main-banner .container .recommend .card-list-area img {
+    width: 270px;
+    height: 90px;
+    float: left;
+    position: relative;
+    margin-right: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 学习课程 */
+.main-course {
+    width: 100%;
+    height: 690px;
+    background-color: #f8fafc;
+    display: block;
+}
+
+.main-course .container .title {
+
+}
+
+.main-course .container .card-list-area {
+
+}
+
+.main-course .container .card-list-area ul {
+
+}
+
+.main-course .container .card-list-area li {
+
+}
+
+/* 学习路线 */
+.main-learn-road {
+
+}
+
+/* 热门课程 */
+.main-hot-course {
+
+}
+
+/* 慕课专栏 */
+.main-mooc {
+
+}
+
+.footer {
+
+}
+
