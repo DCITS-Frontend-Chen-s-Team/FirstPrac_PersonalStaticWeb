@@ -144,9 +144,10 @@ a {
 /* 轮播图 */
 .main-banner {
     width: 100%;
-    height: 950px;
+    height: 850px;
     display: block;
     margin-top: 72px;
+    border-bottom: brown solid;
 }
 
 .main-banner .container .banner {
@@ -257,16 +258,16 @@ a {
 
 /* 学习小卡片 */
 .main-banner .container .recommend {
-    height: 180px;
+    height: 150px;
     width: 100%;
     display: block;
     position: relative;
     margin: auto;
-    padding: 20px;
+    /*padding: 20px;*/
     text-align: center;
 }
 
-.main-banner .container .recommend .title-area {
+.title-area {
     position: relative;
     font-size: 24px;
     color: #1C1F21;
@@ -274,12 +275,12 @@ a {
     line-height: 42px;
 }
 
-.main-banner .container .recommend .title-area .title {
+.title-area .title {
     float: left;
     font-weight: bold;
 }
 
-.main-banner .container .recommend .title-area .des {
+.title-area .des {
     float: left;
     margin-left: 12px;
     font-size: 14px;
@@ -288,8 +289,10 @@ a {
 }
 
 .main-banner .container .recommend .card-list-area {
-    margin: 90px 0;
+    margin: 0;
+    padding-top: 20px;
     position: relative;
+    clear: both;
 }
 
 .main-banner .container .recommend .card-list-area a {
@@ -331,6 +334,17 @@ a {
     margin: 5px 0;
     font-weight: 400;
     word-break: break-all;
+}
+
+.main-banner .container .recommend .card-list-area img {
+    width: 270px;
+    height: 90px;
+    float: left;
+    position: relative;
+    margin-right: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* 学习课程 */
