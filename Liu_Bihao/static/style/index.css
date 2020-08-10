@@ -16,56 +16,38 @@
     float: left;
 }
 
-.top-menu ul {
+.top-menu {
+    height: 72px;
     width: 80%;
-    list-style-type: none;
-    white-space: nowrap;
-    overflow: hidden;
-    margin: 0 2%;
-    padding: 0;
     float: left;
+}
+
+.top-menu ul {
+    list-style-type: none;
+    margin: 0 3%;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
 }
 
 .top-menu li {
     float: left;
-    margin: 0;
-    padding: 0 30px;
-    position: relative;
-    overflow: hidden;
 }
 
 .top-menu li a {
-    /* 设置链接内容显示的格式*/
     display: block;
-    color: #4d555d;
     text-align: center;
-    padding: 0 3px;
-    overflow: hidden;
-    text-decoration: none; /* 去除下划线 */
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 16px;
+    line-height: 72px; /* 使文字垂直居中 */
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .top-menu li a:hover {
-    /* 鼠标选中时颜色加深 */
     color: #07111b;
 }
-
-.top-menu ul li ul {
-    /* 设置二级菜单 */
-    margin-left: -0.2px;
-    background: rgb(189, 181, 181);
-    position: relative;
-    display: none; /* 默认隐藏二级菜单的内容 */
-
-}
-
-.top-menu ul li ul li {
-    /* 二级菜单li内容的显示 */
-    float: none;
-    text-align: center;
-}
-
-.top-menu ul li:hover ul {
-    /* 鼠标选中二级菜单内容时 */
-    display: block;
-}
-
