@@ -95,6 +95,9 @@ html, body {
     width:100%;
     padding-bottom: 30px;
   }
+  .ibody .div2 .bb{
+    padding-bottom: 30px;
+  }
   .ibody .div2 .bb #bs1{
     float: left; 
     font-size: 20px;
@@ -105,31 +108,37 @@ html, body {
     margin-left: 15px;
   }
   .ibody .div2 .cc{
-    padding-top: 30px;
-  }
-  ibody .div2 .cc .c1{
     background-color:  rgb(223, 213, 213);
+    
   }
-  .ibody .div2 .cc #a2{
+  .ibody .div2 .cc .c1{
     float: left;
     position: relative;
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
     width: 25%;
-    background-color: rgb(223, 213, 213);
   }
-  .ibody .div2 .cc #a2 #img2{
+
+  .ibody .div2 .cc .c1 #img2{
     float: left;
-    width: 30%;
+    height:55.8px;
   }
-  .ibody .div2 .cc #a2 #p1{
+  .ibody .div2 .cc .c1 #a1{
+    text-decoration: none;
+  }
+  .ibody .div2 .cc .c1 #s1{
+    color: black;
+  }
+  
+  .ibody .div2 .cc .c1 #p1{
     font-size: 15px;
+    color: black;
   }
-  .
+  
   .ibody .div3 {
     float: left;
     width:100%;
+    padding-bottom: 30px;
+  }
+  .ibody .div3 .dd{
     padding-bottom: 30px;
   }
   .ibody .div3 .dd #bs3{
@@ -141,18 +150,17 @@ html, body {
     line-height: 32px;
     margin-left: 15px;
   }
-  .ibody .div3 .ee .d1{
-    background-color: rgb(22, 22, 216);
-    width: 25%;
+  .ibody .div3 .ee #img3{
+    width: 22%;
+    margin: 10px;
   }
-  .ibody .div3 .ee .d1 #a11{
-    color: white;
-    text-decoration: none;
-    text-align: center;
+  .ibody .div4 {
+    width:100%;
   }
-  .ibody .div3 .ee #a11 #p2{
-    font-size: 15px;
-    color: white;
-    text-align: center;
-    
+  .ibody .div4 .ff{
+    padding-bottom: 30px;
   }
+  .ibody .div4 .ff #bs5{
+    font-size: 20px;
+  }
+  
