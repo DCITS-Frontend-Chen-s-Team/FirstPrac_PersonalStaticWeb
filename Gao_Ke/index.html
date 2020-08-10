@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+<script>
+  var index=0;
+    function changeImg() {
+      // 获得要切换图片的那个元素
+      var img=document.getElementById("img1");
+      var carIndex=index%3+1;//输出1.2.3图片
+      img.src="./img/"+carIndex+".jpg";
+      index=index+1;   
+    }
+        
+    function lunbotu() {
+      setInterval("changeImg()",2000);
+    }
+</script>
+</head>
+
+ <!-- 刚进去网页就显示轮播图 -->
+<body onload="lunbotu()">
+ <!-- 导航栏部分，嵌套四个div -->
+  <div class="head">
+    <div class="head-img"> 
+      <img src="./img/logo.png" >
+    </div>
+    <div class="head-menu">
+      <ul>
+        <li>
+          <a href="#"  class="menu">免费课程</a>
+          <a href="#"  class="menu">实战课程</a>
+          <a href="#"  class="menu">金职位</a>
+          <a href="#"  class="menu">wiki</a>
+          <a href="#"  class="menu">专栏</a>
+          <a href="#"  class="menu">手记</a>
+        
+        </li>
+      </ul>
+    </div>
+    <div class="head-search">
+      <input type="text" placeholder="请输入关键字...">
+      <button>搜索</button>
+    </div>
+    <div class="head-menu1">
+      <a href="#" class="menu">下载App</a>
+      <a href="#" class="menu">购物车</a></a>
+      <a href="#" class="menu">登录</a>
+      /
+      <a href="#" class="menu">注册</a>
+    </div>
+  </div>
+  <div style="clear: both;"></div>
+  <!-- 主显示区 -->
+  <div class="ibody">
+    <!-- 一个大的div嵌套5个小的div -->
+    <div>
+       <!-- 轮播图 -->
+      <div class="div1">
+        <div class="aa">
+          <div class="item">
+            <a href="#" id="a1">
+              <span>前沿/区块链/人工智能</span>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" id="a1">
+              <span>前端/小程序/JS</span>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#"id="a1" >
+              <span>后端/JAVA/Python</span>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" id="a1">
+              <span>移动/Andriod/iOS</span>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" id="a1">
+              <span>云计算/大数据/容器</span>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" id="a1">
+              <span>运维/测试/数据库</span>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" id="a1">
+              <span>UI设计/3D动画/游戏</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <img src="./img/1.jpg" id="img1">
+        </div>
+      </div>
+      <div class="div2">
+        <div class="bb">
+          <span id="bs1"><b>零基础就业</b></span>
+          <span id="bs2">从入门到具备1年开发经验</span>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="cc">
+          <div class="c1">
+            <a href="#" id="a2">
+              <img src="./img/logo-java.png"  id="img2">
+              <span><b>Java工程师2020</b>
+                <p id="p1">综合就业排名第一</p></span>
+            </a>
+          </div>
+          <div class="c1">
+            <a href="#" id="a2">
+              <img src="./img/logo-web.png"  id="img2">
+              <span ><b>前端工程师2020</b>
+                <p id="p1">综合就业排名第一</p></span>
+            </a>
+          </div>
+          <div class="c1">
+            <a href="#" id="a2">
+              <img src="./img/logo-python.png"  id="img2">
+              <span ><b>Python工程师2020</b>
+                <p id="p1">综合就业排名第一</p></span>
+            </a>
+          </div>
+          <div class="c1">
+            <a href="#" id="a2">
+              <img src="./img/logo-Andriod.png" id="img2">
+              <span ><b>Android工程师2020</b>
+                <p id="p1">综合就业排名第一</p></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="div3">
+        <div class="dd">
+          <span id="bs3"><b>职场提升</b></span>
+          <span id="bs4">1年以上开发经验系统成长</span>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="ee">
+          <div class="d1">
+            <a href="#" id="a11">
+              <span id="s2"><b>Java架构师</b>
+                <p id="p2">跟随千万级项目从0到100一起成长</p></span>
+            </a>
+          </div>
+          <div class="d2">
+            <a href="#" id="a22">
+              <span id="s2"><b>从Java后端到全栈</b></b>
+                <p id="p2">浓缩7七月从工程师到CTO的10年成长历程</p></span>
+            </a>
+          </div>
+          <div class="d3">
+            <a href="#" id="a33">
+              <span id="s2"><b>大前端——前端高级进阶</b>
+                <p id="p2">覆盖前端全栈+全周期=多端应用的体系大课</p></span>
+            </a>
+          </div>
+          <div class="d4">
+            <a href="#" id="a44">
+              <span id="s2"><b>人人都能学会数据分析</b>
+                <p id="p2">零基础入门，产品、运营、程序员通用版</p></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+       
+    </div>
+  
+  </div>
+
+</body>
+</html>
