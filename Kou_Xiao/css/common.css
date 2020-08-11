@@ -11,20 +11,41 @@ body{font-family: Arial;}
 .container{width: 1154px;margin: 0 auto;position: relative;}
 .container-fluid{width: 100%;}
 
-#head{height: 72px; width: auto;background-color: white !important;}
+#head{height: 72px;width: 100%;background-color: white !important;border-bottom: 1px solid #717777; position: fixed;
+    z-index: 999;display: block;}
 #head .head_logo{width: 138px;margin-left: 4px;height: 72px;}
 #head .head_logo a{width: 126px;}
 #head .head_menu{font-size: 16px;line-height: 72px;}
 #head .head_menu li{float: left;padding: 0 10px;}
-#banner .head_login{padding:0 10px;}
+
+#head .head_search {width: 20%;float: left;position: relative;height: 40px;padding-right: 40px;zoom: 1;background: #E9E9E9;
+    border-radius: 8px;margin: 16px 0;margin-left: 10px;-webkit-box-sizing: border-box;box-sizing: border-box;}
+#head .head_search .search_input {padding: 8px 12px;font-size: 14px;color: #A6A6A6;line-height: 40px;height: 40px;width: 100%;
+    float: left;border: 0;background-color: transparent;-webkit-box-sizing: border-box;box-sizing: border-box;}
+#head .head_search .search_input:focus {border: 0;box-sizing: border-box;}
+#head .head_search .search_btn1 {float: left;cursor: pointer;width: 30px;height: 38px;text-align: center;}
+#head .head_search .search_btn2 {width: 24px;height: 24px;text-align: right;position: absolute;display: inline-block;right: 0;
+    bottom: 8px;padding: 0 8px;}
+#head .head_nav {width: 25%;height: 72px;float: right;position: relative;}
+#head .head_nav span {float: left;position: relative;line-height: 72px;color: #71777d;}
+#head .head_nav .shopcart {margin-left: 30px;display: inline-block;width: auto;box-sizing: border-box;border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px; height: 36px;line-height: 72px;color: #787d82;text-align: center;}
+#head .head_login {margin-left: 30px;color: #71777d;line-height: 72px;}
+
+
+
+
 
 #foot{background: #f8fafc;}
 #foot .container{height: 136px;line-height: 54px;font-size: 14px;color: 99a1a6;padding: 36px;}
 #foot div a{color: #99a1a6;margin: 0 10px}
+#foot .contact{}
+
+
+
 
 .area_title{margin-top: 45px;}
 .area_title span{height: 20px;line-height: 20px;font-size: 24px;color: black;font-weight: bold;
     font-weight: normal;position: relative;}
 .area_title .min{font-size: 14px;line-height: 20px;margin-top: 6px;margin-left: 12px;}
     
-/* .area_title span{color: rgb(53, 62, 70);} */
