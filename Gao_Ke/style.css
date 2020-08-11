@@ -3,6 +3,9 @@ html, body {
   width: 100%;
   min-width: 1200px;
   margin: 0;
+  
+  background-image: linear-gradient(rgb(105, 165, 105), white);
+  background-repeat: no-repeat;
   }
   
   .head{
@@ -58,7 +61,8 @@ html, body {
     border-radius: 8px;
     padding-top: 120px;
   }
-  .ibody .div1{
+    
+    .ibody .div1{
     position: relative;
     overflow: hidden;
     width: 100%;
