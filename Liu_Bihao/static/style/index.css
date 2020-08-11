@@ -17,6 +17,10 @@ a {
     float: left;
 }
 
+.hide {
+    display: none;
+}
+
 .bottom-border {
     border-bottom: rgba(0, 0, 0, 0.2) solid;
 }
@@ -227,6 +231,40 @@ a {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
+}
+
+/* 隐藏菜单 */
+div.subMenu {
+    background: bisque;
+    position: absolute;
+    left: 248px;
+    top: 0;
+    width: 880px;
+    height: 382px;
+    z-index: 581;
+    opacity: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: all .4s ease-in-out;
+}
+
+.subMenu-1:hover div.subMenu {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.subMenu-2:hover div.subMenu {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.subMenu-3:hover div.subMenu {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.main-banner .container .banner .classify a:hover .subMenu {
+    display: block;
 }
 
 .main-banner .container .banner .banner-img {
@@ -472,6 +510,21 @@ a {
     color: #F20D0D;
     padding: 0 4px;
     display: inline-block;
+}
+
+.course-card-list a .course-state {
+    background-color: #FFAA00;
+    background-image: linear-gradient(90deg, #ffaa00 17%, #f76b1c 100%);
+    position: absolute;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    top: 8px;
+    left: -8px;
+    z-index: 4;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 20px;
+    padding: 0 8px;
 }
 
 /* 学习路线 */
@@ -766,13 +819,35 @@ a {
     text-align: center;
 }
 
-.footer .relevant-link img {
+.footer-img img {
     display: inline-block;
     height: 32px;
     width: 32px;
     vertical-align: middle;
     background-repeat: no-repeat;
     margin: 0 9px;
+}
+
+img.code {
+    position: absolute;
+    z-index: 99;
+    top: -110px;
+    right: -35px;
+    width: 100px;
+    height: 100px;
+    transform: scale(0);
+    transform-origin: bottom;
+    opacity: 0;
+    border: 4px solid #0085ba;
+    border-radius: .25rem;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.footer-img:hover img.code {
+    transform: scale(1);
+    opacity: 1;
 }
 
 .footer .relevant-link p {
