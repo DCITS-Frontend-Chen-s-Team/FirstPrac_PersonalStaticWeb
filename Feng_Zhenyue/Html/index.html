@@ -5,6 +5,21 @@
 		<title></title>
 		<link href="../Css/index.css" rel="stylesheet"/>
 	</head>
+	<script type="text/javascript">
+	    var index=0;
+	    //改变图片
+	    function ChangeImg() {
+	        index++;
+	        var a=document.getElementsByClassName("img-slide");
+	        if(index>=a.length) index=0;
+	        for(var i=0;i<a.length;i++){
+	            a[i].style.display='none';
+	        }
+	        a[index].style.display='block';
+	    }
+	    //设置定时器，每隔两秒切换一张图片
+	    setInterval(ChangeImg,2500);
+	</script>
 	<body id="index">
 		<div id="header" class="">
 			<div id="nav" class="header_nav">
@@ -37,6 +52,9 @@
 				</div>
 				<div class="search-wrap" style="min-width:32px; height:72px;">
 				<div class="search-area">
+					<div class="sousuokuang" style="margin: 8px 0 0 10px;">
+					<input type="text" style="border: 0rem;background-color: #E9E9E9;">
+					</div>
 					<div class="sousuo">
 						<i class="icon-search"></i>
 					</div>
@@ -85,11 +103,11 @@
 							
 							<!-- ============================================== -->
 							<div id="ku">
-								<img src="../Images/Index/lunbotu1.jpg">
-								<!-- <img src="../Images/Index/lunbotu2.jpg">
-								<img src="../Images/Index/lunbotu3.jpg">
-								<img src="../Images/Index/lunbotu4.jpg">
-								<img src="../Images/Index/lunbotu5.jpg"> -->
+								<img class="img-slide img1" src="../Images/Index/lunbotu1.jpg">
+								<img class="img-slide img1"   src="../Images/Index/lunbotu2.jpg">
+								<img class="img-slide img1"   src="../Images/Index/lunbotu3.jpg">
+								<img class="img-slide img1"    src="../Images/Index/lunbotu4.jpg">
+								<img class="img-slide img1"   src="../Images/Index/lunbotu5.jpg">
 							</div>
 							<!-- ============================================== -->
 							
@@ -97,29 +115,610 @@
 						</div>
 					</div>
 					<div class="underlunbotu1">
+					<h3 class="type_title">
+						<span>零基础就业</span>
+						<sapn class="intro">从入门到一年经验</span>
 					
+					<div class="path_list">
+						<a class="fori1">
+							<i class="i1"></i>
+							<p class="tit">Java工程师2020</p>
+							<p class="desc">综合就业排名第一</p>
+						</a>
+						<a class="fori">
+							<i class="i2"></i>
+							<p class="tit">前端工程师升级</p>
+							<p class="desc">从未接触编程也可以学好</p>
+						</a>
+						<a class="fori">
+							<i class="i3"></i>
+							<p class="tit">Python工程师2020</p>
+							<p class="desc">应用领域最为广泛</p>
+						</a>
+						<a class="fori">
+							<i class="i4"></i>
+							<p class="tit">Android工程师</p>
+							<p class="desc">移动市场份额第一</p>
+						</a>
+					</div>
 					</div>
 					<div class="underlunbotu2">
+						<h3 class="type_title">
+							<span>职场提升</span>
+							<sapn class="intro">一年以上开发经验系统成长</span>
 						
+						<div class="recommend-box">
+							<a>
+								<div class="ult2" style="background-image: url(../Images/Index/under21.png);"></div>
+							</a>
+							<a>
+								<div class="ult2" style="background-image: url(../Images/Index/under22.png);"></div>
+							</a>
+							<a>
+								<div class="ult2" style="background-image: url(../Images/Index/under23.png);"></div>
+							</a>
+							<a>
+								<div class="ult2" style="background-image: url(../Images/Index/under24.png);"></div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div id="page2">
 				<div class="page2_neiqian">
+					<h3 class="type_title">
+						<span>新上好课</span>
+						</h3>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/haoke1.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							Java可视化UML工作流系统<br>(Activiti7+SpringBoot)
+						</div>
+						<div class="haokemo">
+							<span>初级  44</span>
+							<sapn class="pingjia">1人评价</span>
+						</div>
 					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/haoke2.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							编程必备基础 计算机组成原理+操作系统+计算机网络
+						</div>
+						<div class="haokemo">
+							<span>中级  8536</span>
+							<sapn class="pingjia">2281人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/haoke3.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							.Net Core开发电商后端API从0到精通吃透RESTful
+						</div>
+						<div class="haokemo">
+							<span>初级  149</span>
+							<sapn class="pingjia">12人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/haoke4.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							全面系统Python3.8入门+进阶（程序员必备第二语言）
+						</div>
+						<div class="haokemo">
+							<span>初级  11755</span>
+							<sapn class="pingjia">4567人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/haoke5.png);">
+						</div>
+						<div class="haokemiaoshu">
+							入门金融IT行业必学 从0到1开发撮合交易系统
+						</div>
+						<div class="haokemo">
+							<span>初级  44</span>
+							<sapn class="pingjia">1人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/haoke6.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							体系课-数据可视化入门到精通-打造前端差异化竞争力
+						</div>
+						<div class="haokemo">
+							<span>中级  514</span>
+							<sapn class="pingjia">65人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/haoke7.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							Vue开发去哪儿网App从零基础入门到实战项目开发
+						</div>
+						<div class="haokemo">
+							<span>中级  8274</span>
+							<sapn class="pingjia">4677人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/haoke8.png);">
+						</div>
+						<div class="haokemiaoshu">
+							前端性能优化--6大角度综合型优化方案
+						</div>
+						<div class="haokemo">
+							<span>中级  104</span>
+							<sapn class="pingjia">4人评价</span>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div id="page3">
-				3
+				<div class="p3neiqian">
+				<h3 class="type_title">
+					<span class="xuexi">学习路线</span>
+					<ul class="p3ul">
+						<li>热门</li>
+						<li>前端</li>
+						<li>后端</li>
+						<li>移动端</li>
+						<li>计算机基础</li>
+						<li>大数据</li>
+						<li>测试</li>
+						<li>人工智能</li>
+					</ul>
+					<a class="more">查看更多 > </a>
+					</h3>
+					<div class="p3rongqi">
+					<div class="p3xiao">
+						<a class="p3kongzhi">
+							<div class="p3banner" style="background-image: url(../Images/Index/p31.png);">
+							</div>
+							<h4>
+								微信小程序从0基础到精通
+							</h4>
+							<p>
+								一站式掌握小程序生态，打造站内零基础精通小程序的最佳路径
+							</p>
+							<div class="p3ifo">
+								<span>4步骤 5门课</span>
+								<span>23312人收藏</span>
+							</div>
+						</a>
+					</div>
+					<div class="p3xiao">
+						<a class="p3kongzhi">
+						<div class="p3banner" style="background-image: url(../Images/Index/p32.jpg);">
+						</div>
+						<h4>
+							Vue.js 从入门到精通
+						</h4>
+						<p>
+							路线转为想学Vue却无从下手的人群设计，以实际项目为例，逐层深入，学透Vue
+						</p>
+						<div class="p3ifo">
+							<span>3步骤 5门课</span>
+							<span>18873人收藏</span>
+						</div>
+						</a>
+					</div>
+					<div class="p3xiao">
+						<a class="p3kongzhi">
+						<div class="p3banner" style="background-image: url(../Images/Index/p33.jpg);">
+						</div>
+						<h4>
+							Go语言从入门到达人之路
+						</h4>
+						<p>
+							零基础入门Go语言，在掌握基础语法后向并发提升，并用Go去构建微服务，上手区块链项目
+						</p>
+						<div class="p3ifo">
+							<span>5步骤 8门课</span>
+							<span>5107人收藏</span>
+						</div>
+						</a>
+					</div>
+					<div class="p3xiao"><a class="p3kongzhi">
+					<div class="p3banner" style="background-image: url(../Images/Index/p34.jpg);">
+					</div>
+					<h4>
+						前端面试求职跳槽通关路线
+					</h4>
+					<p>
+						路线伴随Web前端工程师一路成长，彻底搞懂不同阶段的面试重点，高效拿下offer
+					</p>
+					<div class="p3ifo">
+						<span>3步骤 4门课</span>
+						<span>9470人收藏</span>
+					</div>
+					</a></div>
+					<div class="p3xiao"><a class="p3kongzhi">
+					<div class="p3banner" style="background-image: url(../Images/Index/p35.jpg);">
+					</div>
+					<h4>
+						Python功能测试到自动化测试路线
+					</h4>
+					<p>
+						自动化测试效率更高，路线旨在帮Python功能测试从业者成功转型
+					</p>
+					<div class="p3ifo">
+						<span>4步骤 5门课</span>
+						<span>11237人收藏</span>
+					</div>
+					</a></div>
+					<div class="p3xiao">
+					<a class="p3kongzhi">
+						<div class="p3banner" style="background-image: url(../Images/Index/p36.jpg);">
+						</div>
+						<h4>
+						MySQL数据库直通车：从入门到面试
+						</h4>
+						<p>
+						一举吃透最耗时的数据库，学会数据库的基本使用，业务库的设计与架构，面试收尾升华所学
+						</p>
+						<div class="p3ifo">
+						<span>4步骤 4门课</span>
+						<span>5371人收藏</span>
+						</div>
+						</a>
+					</div>
+					</div>
+					</div>
 			</div>
 			<div id="page4">
-				4
+				<div class="page2_neiqian">
+					<h3 class="type_title4">
+						<span>热门课程</span>
+						</h3>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/p41.png);">
+						</div>
+						<div class="haokemiaoshu">
+							快速搞定前端技术一面 匹配大厂面试要求<br>(Activiti7+SpringBoot)
+						</div>
+						<div class="haokemo">
+							<span>初级  1544</span>
+							<sapn class="pingjia">899人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/p42.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							前端框架及项目面试 聚焦VUE/React/Webpack
+						</div>
+						<div class="haokemo">
+							<span>中级  8536</span>
+							<sapn class="pingjia">2281人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/p43.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							微信小程序入门与实战 常用组件API开发技巧项目实战
+						</div>
+						<div class="haokemo">
+							<span>初级  20405</span>
+							<sapn class="pingjia">7644人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/p44.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							React开发简书项目 从零基础入门到实战
+						</div>
+						<div class="haokemo">
+							<span>中级  3877</span>
+							<sapn class="pingjia">2329人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/p45.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							JavaScript版数据结构与算法 轻松解决前端算法面试
+						</div>
+						<div class="haokemo">
+							<span>中级  424</span>
+							<sapn class="pingjia">16人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/p46.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							玩转算法面试--Leetcode真题分门别类讲解
+						</div>
+						<div class="haokemo">
+							<span>中级  5514</span>
+							<sapn class="pingjia">1645人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/p47.png);">
+						</div>
+						<div class="haokemiaoshu">
+							2020重学C++ 重构你的C++知识体系
+						</div>
+						<div class="haokemo">
+							<span>中级  1299</span>
+							<sapn class="pingjia">467人评价</span>
+						</div>
+					</div>
+					<div class="haokecard">
+						<div class="haoketit">
+						</div>
+						<div class="haokeimg" style="background-image: url(../Images/Index/p48.jpg);">
+						</div>
+						<div class="haokemiaoshu">
+							理论+实战 构建完整JVM知识体系
+						</div>
+						<div class="haokemo">
+							<span>中级  198</span>
+							<sapn class="pingjia">6人评价</span>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div id="page5">
-				5
+				<div class="p5neiqian">
+					<h3 class="type_title4">
+						<span class="p5span">慕课专栏</span>
+					</h3>
+					<div class="p5rongqi">
+						<div class="p5xiaohezi">
+							<div class="course-banner">
+								<a>
+									<img src="../Images/Index/book1.jpg">
+									<div class="try-read-me">试读</div>
+								</a>
+							</div>
+								<h4>
+									<a href="#" style="outline: none;text-decoration: none;">10+年DBA老司机带你轻松玩转 SQL</a>
+								</h4>
+								<div class="course-read-info">
+									<span>共32节 64人已购买</span>
+								</div>
+								<div class="course-read-teacher">
+									<a href="#" style="text-decoration: none;">
+									<span>简逸</span>
+									/ 资深数据库工程师
+									</a>
+								</div>
+								<div class="course-read-price">
+									<a class="course-card-price">
+										<span class="sale">￥ 36.00</span>
+										<span class="ori">原价￥ 36.00</span>
+										<div class="cutdown" style="clear: both;">
+											<span class="name">限时优惠</span>
+									</a>
+								</div>
+							</div>
+						</div>
+								<!-- ======================== -->
+								<div class="p5xiaohezi">
+									<div class="course-banner">
+										<a>
+											<img src="../Images/Index/book2.jpg">
+											<div class="try-read-me">试读</div>
+										</a>
+									</div>
+										<h4>
+											<a href="#" style="outline: none;text-decoration: none;">跟 BAT 技术专家学 Docker + K8S</a>
+										</h4>
+										<div class="course-read-info">
+											<span>共47节 82人已购买</span>
+										</div>
+										<div class="course-read-teacher">
+											<a href="#" style="text-decoration: none;">
+											<span>legendtkl</span>
+											/ BAT 资深技术专家
+											</a>
+										</div>
+										<div class="course-read-price">
+											<a class="course-card-price">
+												<span class="sale">￥ 49.00</span>
+												<span class="ori">原价￥ 68.00</span>
+												<div class="cutdown" style="clear: both;">
+													<span class="name">限时优惠</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- ============================================================================ -->
+								<div class="p5xiaohezi">
+									<div class="course-banner">
+										<a>
+											<img src="../Images/Index/book3.jpg">
+											<div class="try-read-me">试读</div>
+										</a>
+									</div>
+										<h4>
+											<a href="#" style="outline: none;text-decoration: none;">专业技术团队出品：React深度剖析+实战</a>
+										</h4>
+										<div class="course-read-info">
+											<span>共31节 70人已购买</span>
+										</div>
+										<div class="course-read-teacher">
+											<a href="#" style="text-decoration: none;">
+											<span>BetterFE</span>
+											/ 业务中台前端组
+											</a>
+										</div>
+										<div class="course-read-price">
+											<a class="course-card-price">
+												<span class="sale">￥ 42.00</span>
+												<span class="ori">原价￥ 58.00</span>
+												<div class="cutdown" style="clear: both;">
+													<span class="name">限时优惠</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- ============================================================================ -->
+								<div class="p5xiaohezi">
+									<div class="course-banner">
+										<a>
+											<img src="../Images/Index/book4.jpg">
+											<div class="try-read-me">试读</div>
+										</a>
+									</div>
+										<h4>
+											<a href="#" style="outline: none;text-decoration: none;">跟架构师学Jetpack</a>
+										</h4>
+										<div class="course-read-info">
+											<span>共15节 808人已购买</span>
+										</div>
+										<div class="course-read-teacher">
+											<a href="#" style="text-decoration: none;">
+											<span>LovelyChubby</span>
+											/ 移动端架构师
+											</a>
+										</div>
+										<div class="course-read-price">
+											<a class="course-card-price">
+												<span class="sale">￥ 29.00</span>
+												<!-- <span class="ori">原价￥ 36.00</span> -->
+												<div class="cutdown" style="clear: both;">
+													<span class="name">限时优惠</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- ============================================================================ -->
+								<div class="p5xiaohezi">
+									<div class="course-banner">
+										<a>
+											<img src="../Images/Index/book5.jpg">
+											<div class="try-read-me">试读</div>
+										</a>
+									</div>
+										<h4>
+											<a href="#" style="outline: none;text-decoration: none;">Python 源码深度剖析</a>
+										</h4>
+										<div class="course-read-info">
+											<span>共45节 889人已购买</span>
+										</div>
+										<div class="course-read-teacher">
+											<a href="#" style="text-decoration: none;">
+											<span>fasionchan</span>
+											/ 资深 Python 研发工程师
+											</a>
+										</div>
+										<div class="course-read-price">
+											<a class="course-card-price">
+												<span class="sale">￥ 68.00</span>
+												<!-- <span class="ori">原价￥ 36.00</span> -->
+												<div class="cutdown" style="clear: both;">
+													<span class="name">限时优惠</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- ============================================================================ -->
+								<div class="p5xiaohezi">
+									<div class="course-banner">
+										<a>
+											<img src="../Images/Index/book6.jpg">
+											<div class="try-read-me">试读</div>
+										</a>
+									</div>
+										<h4>
+											<a href="#" style="outline: none;text-decoration: none;">零基础学透网络编程</a>
+										</h4>
+										<div class="course-read-info">
+											<span>共32节 64人已购买</span>
+										</div>
+										<div class="course-read-teacher">
+											<a href="#" style="text-decoration: none;">
+											<span>简逸</span>
+											/ 资深数据库工程师
+											</a>
+										</div>
+										<div class="course-read-price">
+											<a class="course-card-price">
+												<span class="sale">￥ 58.00</span>
+												<!-- <span class="ori">原价￥ 36.00</span> -->
+												<div class="cutdown" style="clear: both;">
+													<span class="name">限时优惠</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- ============================================================================ -->
+				</div>
 			</div>
 		</div>
-		<div id="footer">
-			这里是footer区域
-		</div>
+				<div class="footer idx-minwidth">
+					<div class="container">
+						<div class="footer-wrap idx-width">
+							<div class="footer-sns clearfix">
+								<div class="a1">
+									<a class="footer-sns-weixin" target="_blank" title="微信"> <i class="footer-sns-weixin-expand"></i> </a>
+									<p>官方公众号</p>
+								</div>
+								<div class="a1">
+									<a class="footer-sns-weibo hide-text" target="_blank" title=""></a>
+									<p>官方微博</p>
+								</div>
+							</div>
+						</div>
+						<div class="footer-link">
+							<a href="#" target="_blank" title="企业服务">企业服务</a>
+							<a href="#" target="_blank" title="人才招聘">人才招聘</a>
+							<a href="#" target="_blank" title="联系我们">联系我们</a>
+							<a href="#" target="_blank" title="讲师招募">讲师招募</a>
+							<a href="#" target="_blank" title="帮助中心">帮助中心</a>
+							<a href="#" target="_blank" title="意见反馈">意见反馈</a>
+							<a href="#" target="_blank">慕课大学</a>
+							<a href="#" target="_blank">代码托管</a>
+							<a href="#" target="_blank" title="友情链接">友情链接</a>
+						</div>
+						<div class="footer-copyright">
+							<p><img draggable="false" class="moco-emoji" alt="©" src="#.png">&nbsp;2020&nbsp;imooc.com&nbsp;&nbsp;京ICP备 12003892号-11
+								<a href="#" target="_blank" style="color:#93999F;font-size:12px;margin:0 5px !important;"><i class="beian"></i>京公网安备11010802030151号</a>
+								<a href="#" target="_blank" style="color:#93999F;font-size:12px;">营业执照</a>
+							</p>
+						</div>
+					</div>
+				</div>
 	</body>
 </html>
