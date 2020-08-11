@@ -2,12 +2,16 @@ html, body {
   height: 100%;
   width: 100%;
   min-width: 1200px;
+  margin: 0;
   }
   
   .head{
     width: 100%;
     height: 80px;
-    
+    padding-bottom: 10px;
+    position: fixed;
+    background-color: white;
+    z-index: 999;
   }
   .head .head-img img{
     float: left;
@@ -15,7 +19,7 @@ html, body {
     height: 80px;
     
   }
-  .head .head-menu ul{
+  .head .head-menu{
     list-style-type: none;
   }
   .head .head-menu .menu{
@@ -52,11 +56,12 @@ html, body {
     width: 1152px;
     margin: auto;
     border-radius: 8px;
+    padding-top: 120px;
   }
   .ibody .div1{
     position: relative;
     overflow: hidden;
-    width: 1152px;
+    width: 100%;
     margin: auto;
     border-radius: 8px;
   }
@@ -94,13 +99,18 @@ html, body {
     float: left;
     width:100%;
     padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
   }
   .ibody .div2 .bb{
     padding-bottom: 30px;
+    padding-top: 20px;
   }
   .ibody .div2 .bb #bs1{
     float: left; 
-    font-size: 20px;
+    font-size: 25px;
   }
   .ibody .div2 .bb #bs2{
     color: slategray;
@@ -108,7 +118,7 @@ html, body {
     margin-left: 15px;
   }
   .ibody .div2 .cc{
-    background-color:  rgb(223, 213, 213);
+    padding-top: 20px;
     
   }
   .ibody .div2 .cc .c1{
@@ -137,13 +147,19 @@ html, body {
     float: left;
     width:100%;
     padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
   }
   .ibody .div3 .dd{
     padding-bottom: 30px;
+    padding-top: 20px;
+    
   }
   .ibody .div3 .dd #bs3{
     float: left; 
-    font-size: 20px;
+    font-size: 25px;
   }
   .ibody .div3 .dd #bs4{
     color: slategray;
@@ -155,12 +171,313 @@ html, body {
     margin: 10px;
   }
   .ibody .div4 {
+    float: left;
     width:100%;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
   }
   .ibody .div4 .ff{
     padding-bottom: 30px;
+    padding-top: 20px;
   }
   .ibody .div4 .ff #bs5{
-    font-size: 20px;
+    font-size: 25px;
+  }
+  .ibody .div4 .gg{
+    float: left;
+    width: 25%;
+  }
+  /* .ibody .div4 .gg .gg1{
+    width: 90%;
+  } */
+  .ibody .div4 .gg .ga1{
+    float: left;
+  }
+  .ibody .div4 .gg .ga1 #img4{
+    float: left;
+    width: 94%;
+    border-radius: 25px;
+  }
+  .ibody .div4 .gg .ga2{
+    float: left;
+    width: 85%;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  .ibody .div4 .gg .ga2 .mss1{
+   font-size: 12px;
+  }
+  .ibody .div4 .gg .ga2 .mss2{
+    font-size: 12px;
+    color: rgb(192, 174, 174);
+   }
+  .ibody .div4 .gg .ga2 .mss1 #mss{
+    color: red;
+  }
+  .ibody .div4 .gg .ga2  #mss2{
+    font-size: 12px;
+  }
+
+
+  .ibody .div5 {
+    float: left;
+    width:100%;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
+  }
+  .ibody .div5 .hh{
+    padding-bottom: 30px;
+  }
+  .ibody .div5 .hh #bs6{
+    float: left;
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .ibody .div5 .hh .div5-menu{
+    height: 36px;
+    line-height: 36px;
+  }
+  .ibody .div5 .hh .div5-menu ul{
+    list-style-type: none;
+  }
+  .ibody .div5 .hh .div5-menu .menu5{
+    width:8%;
+    text-align: center;
+    display: inline-block;
+    line-height: 26px;
+    color: black;
+    text-decoration: none;
+  }
+  .ibody .div5 .ll{
+    float: left;
+    width: 100%;
+  }
+  .ibody .div5 .ll .l1 {
+    float: left;
+    width: 50%;
+    
+  }
+  .ibody .div5 .ll .l1 #la{
+    text-decoration: none;
   }
   
+  .ibody .div5 .ll .l1 .l11{
+    float: left;
+    width: 25%;
+    /* text-decoration: none; */
+  }
+  .ibody .div5 .ll .l1 .l11 #img5{
+    border-radius: 8px;
+  
+  }
+  .ibody .div5 .ll .l1 .l12{
+    color: black;
+    width: 100%;
+    position: relative;
+  }
+  .ibody .div5 .ll .l1 .l12 .mess1{
+    color: black;
+    font-size: 20px;
+    margin:0 20px 30px 160px;
+  }
+  .ibody .div5 .ll .l1 .l12 .mess1 #mss11{
+    margin: 0;
+  }
+  .ibody .div5 .l1 .l12 .mess1 #mss12{
+    color: rgb(99, 94, 94);
+    font-size: 14px;
+  }
+
+  .ibody .div5 .ll .l1 .l12 .mess2{
+    margin:20px 20px 35px 160px;
+    color: rgb(177, 165, 165);
+    font-size: 11px;
+  }
+
+
+  .ibody .div6 {
+    float: left;
+    width:100%;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
+  }
+  .ibody .div6 .mm{
+    padding-bottom: 30px;
+  }
+  .ibody .div6 .mm #bs7{
+    float: left;
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .ibody .div6 .mm .div6-menu{
+    height: 36px;
+    line-height: 36px;
+  }
+  .ibody .div6 .mm .div6-menu ul{
+    list-style-type: none;
+  }
+  .ibody .div6 .mm .div6-menu .menu6{
+    width:8%;
+    text-align: center;
+    display: inline-block;
+    line-height: 26px;
+    color: black;
+    text-decoration: none;
+  }
+  .ibody .div6 .nn{
+    float: left;
+    width: 25%;
+  }
+  /* .ibody .div4 .gg .gg1{
+    width: 90%;
+  } */
+  .ibody .div6 .nn .na1{
+    float: left;
+  }
+  .ibody .div6 .nn .na1 #img6{
+    float: left;
+    width: 94%;
+    border-radius: 25px;
+  }
+  .ibody .div6 .nn .na2{
+    float: left;
+    width: 85%;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  .ibody .div6 .nn .na2 .mss3{
+   font-size: 12px;
+  }
+  .ibody .div6 .nn .na2 .mss4{
+    font-size: 12px;
+    color: rgb(102, 93, 93);
+   }
+ 
+
+
+  .ibody .div7 {
+    float: left;
+    width:100%;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+  }
+  .ibody .div7 .oo{
+    padding-bottom: 30px;
+  }
+  .ibody .div7 .oo #bs8{
+    float: left;
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .ibody .div7 .oo.div7-menu{
+    height: 36px;
+    line-height: 36px;
+  }
+  .ibody .div7 .oo .div7-menu ul{
+    list-style-type: none;
+  }
+  .ibody .div7 .oo .div7-menu .menu7{
+    float: right;
+    text-align: center;
+    line-height: 26px;
+    color: black;
+    text-decoration: none;
+  }
+  .ibody .div7 .pp{
+    float: left;
+    width: 100%;
+  }
+  .ibody .div7 .pp .pa1 {
+    float: left;
+    width: 30%;
+    margin:18px;
+  }
+  .ibody .div7 .pp .pa1 .pa12{
+    float: left;
+    width:30%;
+    height: 162.55px;
+  }
+  .ibody .div7 .pp .pa1 .pa12 a{
+   color: blue;
+   text-decoration: none;
+   font-size: 13px;
+  }
+  .ibody .div7 .pp .pa1 .pa12 .pa13{
+    float: left;
+    width: 100%;
+  }
+  .ibody .div7 .pp .pa1 .pa12  #pa .pa13 #img7{
+    width: 90%;
+  }
+  .ibody .div7 .pp .pa1 .pa12 #pa .pa14{
+    clear: both;
+  }
+
+
+  .ibody .div7 .pp .pa1 .pa22  #hh4{
+    margin: 0;
+    font-size: 16px;
+  }
+  .ibody .div7 .pp .pa1 .pa22 .pa23{
+    color: rgb(99, 94, 94);
+    font-size: 14px;
+  }
+  .ibody .div7 .pp .pa1 .pa22 .mss5{
+    font-size: 13px;
+    margin: 0 0 35px 0;
+  }
+  .ibody .div7 .pp .pa1 .pa22 .mss6 #mss61{
+    font-size: 20px;
+    color: blue;
+  }
+  .ibody .div7 .pp .pa1 .pa22 .mss6 #mss62{
+    font-size: 13px;
+    color: rgb(102, 93, 93);
+  }
+  .ibody .div7 .pp .pa1 .pa22 .mss6 #mss63{
+    font-size: 16px;
+    color: blue;
+  }
+  
+  .ibody .div8 {
+    float: left;
+    width:100%;
+    padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+  }
+  .ibody .div8 .qq1 ul{
+    list-style-type: none;
+  }
+  .ibody .div8 .qq1 #menu8{
+    width: 6%;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    line-height: 26px;
+    text-decoration: none;
+    color: rgb(99, 94, 94);
+  }
+  .ibody .div8 .qq1 #menu9{
+    font-size: 11px;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    line-height: 26px;
+    text-decoration: none;
+    color: rgb(99, 94, 94);
+  }
