@@ -239,12 +239,16 @@ div.subMenu {
     position: absolute;
     left: 248px;
     top: 0;
-    width: 880px;
+    width: 680px;
     height: 382px;
     z-index: 581;
     opacity: 0;
+    transform: scale(0);
+    transform-origin: left;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     transition: all .4s ease-in-out;
 }
 
