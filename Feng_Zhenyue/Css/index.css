@@ -1,0 +1,309 @@
+#header{
+	background-color: white;
+	width: 100%;
+	height: auto;
+	top: 0;
+	z-index:900;
+	position: sticky;
+	box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
+}
+
+.header_nav{
+	background-color: #fff;
+	width: 100%;
+	height: 72px;
+	padding: 0;
+	background-size: cover;
+}
+
+#index{
+	background-color: aqua;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	min-width: 1200px ;
+	box-sizing: border-box;
+}
+.logo{
+	height:72px;
+	width:140px;
+	background-image: url(../Images/Index/logo-recommended.png);
+	background-size: cover;
+	float: left;
+	margin:0 24px 0 20px;
+}
+.nav_item{
+	float: left;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+.nav_item li a{
+	padding: 0 20px;
+	display: block;
+	color: rgba(255,255,255,0.6);
+	text-align: center;
+	font-size:16px;
+	height:72px;
+	line-height: 72px;
+	transition: relative;
+	14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+	color: #1c1f21;
+	text-decoration:none;
+}
+.nav_item li a .icn-new{
+	position: absolute;
+	display: inline-block;
+	top: 14px;
+	width: 16px;
+	height: 16px;
+	background: url(../Images/Index/new.png) no-repeat 0 0;
+}
+.nav_item li{
+	float: left;
+}
+.header_unlogin li{
+	float: left;
+	list-style:none;
+}
+.header_unlogin li a{
+	padding: 0 20px;
+	text-align: center;
+	font-size:16px;
+	height:72px;
+	line-height: 36px;
+	transition: relative;
+	14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+	color: #1c1f21;
+	text-decoration:none;
+}
+.sousuo{
+    width: 20px;
+    height: 24px;
+    text-align: right;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    bottom: 24px;
+    padding: 0 8px;
+    border-radius: 18px;
+}
+.sousuo i {
+	margin: 15px 0 0 0;
+	background-image:url(../Images/suosou.png);
+	background-size: cover;
+    display: block;
+    height: 25px;
+    color: #545C63;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 32px;
+    width: 25px;
+}
+#login_area{
+	float: right;
+	position: relative;
+}
+.search-warp {
+	position: relative;
+	float: left;
+	margin-left: 24px;
+	background-color: #000000;
+}
+.search-area {
+	float: right;
+	position: relative;
+	height: 40px;
+	padding-right: 40px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	background: #E9E9E9;
+	border-radius: 8px;
+	margin: 16px 0;
+	width: 324px;
+	box-sizing: border-box;
+	font-size: 0;
+	transition: width 0.3s;
+}
+.gwctb{
+	width:22px;
+	height:22px;
+	position: relative;
+	top: 2px;
+	font-size: 16px;
+	margin-right: 8px;
+	background-image: url(../Images/Index/pngshop-cart-icon.png);
+	float: left;
+	}
+.gouwuche{
+	display: inline-block;
+	padding: 0 18px;
+	width: auto;
+	box-sizing: border-box;
+	border: 1px solid gainsboro;
+	border-radius: 18px;
+	height: 36px;
+	line-height: 34px;
+	color: #787d82;
+	text-align: center;
+}
+.set_button{
+
+}
+/* .logo a{
+	background-image: url(../Images/Index/logo-recommended.png) center center no-repeat;
+	display: block;
+	width:140px;
+	height:72px;
+} */
+/* ====================================================================================================== */
+#main{
+	z-index:99;
+	box-sizing: border-box;
+	border: red solid 0px;
+	width: 100%;
+	height: 3414px;
+	display: block;
+	padding: 0;
+	margin: 0;
+	background-size: cover;
+	min-height: calc(100% - 140px);
+	background-color: aliceblue;
+}
+/*=================================================*/
+#page1
+{
+	width: 100%;
+	height: 30%;
+	background-color: skyblue;
+	border: 5px soid black;
+	padding-top: 32px;
+	background-color:#fff !important;
+}
+#page1_neiqian{
+	margin:auto;
+	height: 386px;
+	background-color: whitesmoke;
+	box-shadow: 0 12px 24px 0 rgba(7, 17, 27, 0.2);
+
+}
+.lunbotu{
+	background-color: #00FFFF;
+	margin: auto;
+	margin-bottom: 44px;
+	width: 1152px;
+	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
+}
+.lunbotu_left{
+	display: inline;
+	position: relative;
+	float: left;
+	/* position: absolute; */
+	left: 0px;
+	top: 0px;
+	width: 216px;
+	height: 386px;
+	z-index: 2;
+	padding-top: 17px;
+	box-sizing: border-box;
+	background: #2b333b;
+	border-bottom-left-radius: 4px;
+	font-weight: 400;
+}
+.lunbotu_left .item{
+	height: 50px;
+	line-height: 50px;
+	font-size: 12px;
+	cursor: pointer;
+	padding-left: 12px;
+	position: relative;
+}
+.lunbotu_left .item > a{
+	display: block;
+	color: rgba(255, 255, 255, 0.6);
+	padding: 0 16px;
+	padding-top:30px;
+	padding-bottom:20px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	height: 50px;
+	transition: all .1s;
+	text-decoration: none;
+	outline: none;
+	font: 14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+}
+
+.lunbotu_left .item i{
+	position: absolute;
+	right: 8px;
+	top: 16px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 16px;
+}
+.lunbotu_right{
+
+	
+	position: relative;
+	float: left;
+	width: 936px;
+	overflow: hidden;
+}
+/* ================================这里是轮播图区域===================================================== */
+#ku{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:386px;
+}
+#ku img{
+	margin:0;
+	padding:0;
+	width:100%;
+	height: 100%;
+}
+
+
+
+/* ==================================================================================================== */
+.underlunbotu1{
+	width:75.8%;
+	height: 180px;
+	margin: auto;
+	margin-bottom:44px;
+	background-color: skyblue;
+}
+.underlunbotu2{
+	width:75.8%;
+	height: 190px;
+	margin: auto;
+	margin-bottom: 44px;
+	background-color: deepskyblue;
+	
+}
+/* ============================================= */
+#page2{
+	background-color: lightgreen;
+	height: 16.5%;
+}
+
+/* ============================================= */
+#page3{
+	background-color: lightcoral;
+	height:16.5%;
+}
+/* ============================================= */
+#page4{
+	background-color: lightgoldenrodyellow;
+	height: 16.5%;
+}
+/* ============================================= */
+#page5{
+	background-color: lightseagreen;
+	height: 16.5%;
+}
+/* ============================================= */
+#footer{
+	background-color: #000000;
+	height:136px;
+}
