@@ -24,14 +24,16 @@
         <input type="hidden" class="btn_search">
         <img class="search-btn" src="static/img/search.png" alt="">
     </div>
-    <div class="top-selection">
-        <div class="register-login">
-            注册 / 登录 .........
-        </div>
+    <div class="top-right-nav">
+        <span>下载APP</span>
+        <span class="shop-cart">购物车</span>
+        <span class="register-login">
+            注册 / 登录
+        </span>
     </div>
 </div>
 
-<div class="main-banner">
+<div class="main-banner bottom-border">
     <div class="container">
         <section class="banner">
             <div class="classify">
@@ -222,7 +224,7 @@
     </div>
 </div>
 
-<div class="main-learn-road">
+<div class="main-learn-road bottom-border">
     <div class="container">
         <h3 class="title-area">
             <span class="l title">学习路线</span>
@@ -429,7 +431,7 @@
     </div>
 </div>
 
-<div class="main-mooc">
+<div class="main-mooc bottom-border">
     <div class="container">
         <h3 class="title-area">
             <span class="title l">慕课专栏</span>
@@ -537,6 +539,14 @@
 
 <div class="footer">
     <div class="container" style="padding: 0">
+        <div class="relevant-link">
+            <img src="static/img/weibo.png" alt="">
+            <p>官方微博</p>
+        </div>
+        <div class="relevant-link" style="margin-right: 20px">
+            <img src="static/img/wechat.png" alt="">
+            <p>官方微信</p>
+        </div>
         <div class="footer-link">
             <div class="footer-link">
                 <a href="#">企业服务</a>
@@ -558,15 +568,29 @@
     </div>
 </div>
 
+<div class="right-nav">
+    <a href="#">
+        <span>意见反馈</span>
+    </a>
+    <a href="#">
+        <span>帮助中心</span>
+    </a>
+    <a href="#">
+        <span>APP下载</span>
+    </a>
+    <a href="#">
+        <span>官方微信</span>
+    </a>
+</div>
+
 </body>
 
 <script>
     var index = 0;
 
     function changeImg() {
-        // 获得要切换图片的那个元素
         var img = document.getElementById("img1");
-        var carIndex = index % 6 + 1;//输出1.2.3.4.5.6图片
+        var carIndex = index % 6 + 1; // 循环输出1.2.3.4.5.6图片
         img.src = "static/img/img_" + carIndex + ".jpg";
         index = index + 1;
     }

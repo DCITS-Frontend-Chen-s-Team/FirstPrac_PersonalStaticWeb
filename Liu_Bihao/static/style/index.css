@@ -17,6 +17,10 @@ a {
     float: left;
 }
 
+.bottom-border {
+    border-bottom: rgba(0, 0, 0, 0.2) solid;
+}
+
 /* 顶部栏 */
 .top-nav-bar {
     width: 100%;
@@ -126,16 +130,40 @@ a {
     padding: 0 8px;
 }
 
-.top-selection {
+.top-right-nav {
     width: 25%;
     height: 72px;
     float: right;
     position: relative;
 }
 
+.top-right-nav span {
+    float: left;
+    position: relative;
+    line-height: 72px;
+    color: #71777d;
+}
+
+.top-right-nav .shop-cart {
+    margin-left: 30px;
+    display: inline-block;
+    width: auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    height: 36px;
+    line-height: 72px;
+    color: #787d82;
+    text-align: center;
+}
+
+.top-right-nav span:hover, .register-login:hover, .top-right-nav .shop-cart:hover {
+    color: red;
+}
+
 .register-login {
-    font-size: 20px;
-    color: coral;
+    margin-left: 30px;
+    color: #71777d;
     line-height: 72px;
 }
 
@@ -155,7 +183,6 @@ a {
     display: block;
     margin-top: 72px;
     padding-bottom: 80px;
-    border-bottom: brown solid;
 }
 
 .main-banner .container .banner {
@@ -183,8 +210,9 @@ a {
     margin-top: 15px;
 }
 
-.main-banner .container .banner .classify li {
-
+.main-banner .container .banner .classify a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
 }
 
 .main-banner .container .banner .classify li a {
@@ -727,4 +755,59 @@ a {
     margin-top: 8px;
     color: #93999F;
     line-height: 24px;
+}
+
+.footer .relevant-link {
+    float: right;
+    position: relative;
+    width: auto;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer .relevant-link img {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    margin: 0 9px;
+}
+
+.footer .relevant-link p {
+    font-size: 12px;
+    color: #4D555D;
+    line-height: 24px;
+    margin-top: 4px;
+}
+
+.right-nav {
+    position: fixed;
+    padding: 0 16px;
+    top: 55%;
+    margin-top: -140px;
+    right: 0;
+    z-index: 899;
+    background-color: #fff;
+    box-shadow: 0 4px 12px 0 rgba(7, 17, 27, 0.1);
+}
+
+.right-nav a {
+    display: block;
+    width: 26px;
+    padding: 16px 0;
+    font-size: 22px;
+    line-height: 20px;
+    color: #b5b9bc;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.right-nav a span {
+    /*display: none;*/
+    font-size: 12px;
+    color: #07111b;
+    line-height: 14px;
 }
