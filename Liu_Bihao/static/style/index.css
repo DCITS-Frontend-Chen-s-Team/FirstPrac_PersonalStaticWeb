@@ -883,7 +883,11 @@ img.code {
     opacity: 0;
     border: 4px solid #0085ba;
     border-radius: .25rem;
-    -webkit-transition: all .4s ease-in-out;
+    -webkit-webkit-transition: ;
+    -moz-webkit-transition: ;
+    -ms-webkit-transition: ;
+    -o-webkit-transition: ;
+    webkit-transition: ;: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
