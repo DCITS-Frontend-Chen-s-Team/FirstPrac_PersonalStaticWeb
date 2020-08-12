@@ -4,6 +4,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    min-width: 1600px;
 }
 
 #header {
@@ -178,7 +179,7 @@
 
 #main {
     width: 100%;
-    height: 3000px;
+    height: 4000px;
     box-sizing: border-box;
     display: block;
 }
@@ -392,7 +393,112 @@
     color: #99a1a6;
 }
 
+.study-container {
+    background-color: white;
+    margin: 50px 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 800px;
+}
 
+.study-route {
+    margin: 10px 10%;
+    height: 800px;
+}
+
+.study-route .study-route-title {
+    margin-top: 20px;
+    height: 120px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.study-route-title span {
+    margin: 25px 0;
+    float: left;
+}
+
+.study-route-title ul {
+    list-style: none;
+    float: left;
+
+}
+
+.study-route-title li {
+    margin: 0 14px;
+    float: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 41px;
+    cursor: pointer;
+    color: #545C63;
+}
+
+.study-route-title li:hover{
+    color: red;
+}
+
+.study-route-title .curr {
+    color: red;
+    border-bottom: 2px solid #F20D0D;
+}
+
+.study-route-title a {
+    float: right;
+    font-size: 16px;
+    margin: 40px 0;
+    text-decoration: none;
+    color: #545C63;
+}
+
+.study-route-title a:hover {
+    color: black;
+}
+
+.study-route .study-route-component {
+    width: 50%;
+    height: 160px;
+    float: left;
+    margin: 10px 0;
+}
+
+.study-route .study-route-component div:hover > .component-text a {
+    color: red;
+}
+
+.study-route-component .component-img {
+    height: 100%;
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.study-route-component .component-img img {
+    border-radius: 10px;
+}
+
+.study-route-component .component-introduce {
+    height: 100%;
+    width: 65%;
+    float: left;
+}
+
+.component-introduce .component-text a {
+    font-weight: bold;
+}
+
+.component-introduce .component-text span {
+    float: left;
+}
+
+.component-introduce .component-ps {
+    margin-top: 90px;
+}
+
+.component-introduce .component-ps span {
+    margin-right: 20px;
+}
 
 #footer {
     width: 100%;
