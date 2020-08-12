@@ -52,6 +52,10 @@ html, body {
   text-decoration: none;
 }
 
+.head .head-menu1 .menu:hover {
+  color: red;
+}
+
 /* .head .head-search #imgss {
   width: 2%;
   line-height: 82px;
@@ -82,10 +86,12 @@ html, body {
   background-color: rgb(63, 58, 58);
   float: left;
   position: relative;
-  width: 25%;
+  width: 20%;
   height: 382px;
+  text-align: left;
   z-index: 2;
   box-sizing: border-box;
+  padding-left: 30px;
   border-bottom-left-radius: 4px;
   font-weight: 400;
 }
@@ -95,8 +101,13 @@ html, body {
   line-height: 50px;
   font-size: 12px;
   cursor: pointer;
-  padding-left: 12px;
+  margin-left: 12px;
+  margin-top: 10px;
   position: relative;
+}
+
+.ibody .div1 .aa .item:hover {
+  background-color: rgb(214, 202, 202);
 }
 
 .ibody .div1 .aa #a1 {
@@ -105,6 +116,36 @@ html, body {
   font-size: 15px;
 }
 
+.ibody .div1 .aa #a1:hover {
+  color: white;
+}
+/* 容器 <div> - 需要定位下拉内容 */
+.ibody .div1 .aa1 {
+  position: relative;
+  /* display: none; */
+  background-color: white;
+}
+.ibody .div1 .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  left: 200px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.ibody .div1 .dropdown-content .xs{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.ibody .div1 .dropdown-content .xs:hover{
+  background-color: white;
+}
+.ibody .div1 #a1 span:hover .dropdown-content{
+  display: block;
+}
 .ibody .div1.swiper-container {
   width: 100%;
   height: 100%;
@@ -266,6 +307,10 @@ html, body {
   color: black;
 }
 
+.ibody .div4 .gg .ga2:hover {
+  color: red;
+}
+
 .ibody .div4 .gg .ga2 .mss1 {
   font-size: 12px;
 }
@@ -361,6 +406,10 @@ html, body {
   margin: 0;
 }
 
+.ibody .div5 .ll .l1 .l12 .mess1 #mss11:hover {
+  color: red;
+}
+
 .ibody .div5 .l1 .l12 .mess1 #mss12 {
   color: rgb(99, 94, 94);
   font-size: 14px;
@@ -437,6 +486,10 @@ html, body {
   color: black;
 }
 
+.ibody .div6 .nn .na2:hover {
+  color: red;
+}
+
 .ibody .div6 .nn .na2 .mss3 {
   font-size: 12px;
 }
@@ -465,16 +518,16 @@ html, body {
   margin-right: 5px;
 }
 
-.ibody .div7 .oo.div7-menu {
+/* .ibody .div7 .oo.div7-menu {
   height: 36px;
   line-height: 36px;
-}
+} */
 
-.ibody .div7 .oo .div7-menu ul {
+/* .ibody .div7 .oo .div7-menu ul {
   list-style-type: none;
-}
+} */
 
-.ibody .div7 .oo .div7-menu .menu7 {
+.ibody .div7 .oo .menu7 {
   float: right;
   text-align: center;
   line-height: 26px;
@@ -483,71 +536,78 @@ html, body {
 }
 
 .ibody .div7 .pp {
-  float: left;
-  width: 100%;
+  clear: both;
 }
 
-.ibody .div7 .pp .pa1 {
+.ibody .div7 .pa1 {
   float: left;
   width: 30%;
-  margin: 18px;
+  margin: 15px;
 }
 
-.ibody .div7 .pp .pa1 .pa12 {
+.ibody .div7 .pa1 .pa12 {
   float: left;
   width: 30%;
   height: 162.55px;
 }
 
-.ibody .div7 .pp .pa1 .pa12 a {
+.ibody .div7 .pa1 .pa12 a {
   color: blue;
   text-decoration: none;
   font-size: 13px;
 }
 
-.ibody .div7 .pp .pa1 .pa12 .pa13 {
+.ibody .div7 .pa1 .pa12 .pa13 {
   float: left;
   width: 100%;
 }
 
-.ibody .div7 .pp .pa1 .pa12 #pa .pa13 #img7 {
+.ibody .div7 .pa1 .pa12 .pa13 #img7 {
   width: 90%;
 }
 
-.ibody .div7 .pp .pa1 .pa12 #pa .pa14 {
+.ibody .div7 .pa1 .pa12 #pa .pa14 {
   clear: both;
 }
 
-.ibody .div7 .pp .pa1 .pa22 #hh4 {
+.ibody .div7 .pa1 .pa22 #hh4 {
   margin: 0;
   font-size: 16px;
   height: 41.6px;
-
 }
 
-.ibody .div7 .pp .pa1 .pa22 .pa23 {
+.ibody .div7 .pa1 .pa22 #hh4:hover {
+  color: rgb(33, 33, 214);
+}
+
+.ibody .div7 .pa1 .pa22 .pa23 {
   color: rgb(99, 94, 94);
   font-size: 14px;
 }
 
-.ibody .div7 .pp .pa1 .pa22 .mss5 {
+.ibody .div7 .pa1 .pa22 .mss5 {
   font-size: 13px;
   margin: 0 0 35px 0;
 }
 
-.ibody .div7 .pp .pa1 .pa22 .mss6 #mss61 {
+.ibody .div7 .pa1 .pa22 .mss5:hover {
+  color: red;
+}
+
+.ibody .div7 .pa1 .pa22 .mss6 #mss61 {
   font-size: 20px;
   color: blue;
 }
 
-.ibody .div7 .pp .pa1 .pa22 .mss6 #mss62 {
+.ibody .div7 .pa1 .pa22 .mss6 #mss62 {
   font-size: 13px;
   color: rgb(102, 93, 93);
 }
 
-.ibody .div7 .pp .pa1 .pa22 .mss6 #mss63 {
+.ibody .div7 .pa1 .pa22 .mss6 #mss63 {
   font-size: 11px;
-  color: blue;
+  color: white;
+  background-image: linear-gradient(rgb(33, 74, 211), rgb(31, 147, 214));
 }
 
 .ibody .div8 {
@@ -564,7 +624,7 @@ html, body {
 }
 
 .ibody .div8 .qq1 #menu8 {
-  width: 6%;
+  margin: 0 5px 0 5px;
   font-size: 14px;
   text-align: center;
   display: inline-block;
@@ -575,7 +635,6 @@ html, body {
 
 .ibody .div8 .qq1 #menu9 {
   font-size: 11px;
-  width: 20%;
   text-align: center;
   display: inline-block;
   line-height: 26px;
