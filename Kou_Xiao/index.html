@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>慕课网-程序员的梦工厂</title>
+    <!-- 引入css文件 -->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- 引入swiper css文件 -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- 引入swiper js文件 -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
     <script>
-        var index=0;
-          function changeImg() {
-            // 获得要切换图片的那个元素
-            var img=document.getElementById("img1");
-            var carIndex=index%6+1;
-            img.src="./images/nav"+carIndex+".jpg";
-            index=index+1;   
-          }
+    //     var index=0;
+    //       function changeImg() {
+    //         // 获得要切换图片的那个元素
+    //         var img=document.getElementById("img1");
+    //         var carIndex=index%6+1;
+    //         img.src="./images/nav"+carIndex+".jpg";
+    //         index=index+1;   
+    //       }
               
-          function lunbotu() {
-            setInterval("changeImg()",1000);
-          }
-      </script>
+    //       function lunbotu() {
+    //         setInterval("changeImg()",1000);
+    //       }
+    //   </script>
 </head>
 <body onload="lunbotu()">
 <!-- 导航栏部分 -->
@@ -56,13 +63,32 @@
         <img class="search_btn2" src="./images/search.svg" alt="">
     </div>
     <div class="head_nav">
-        <span>下载APP</span>
-        <span class="shopcart">
+        <ul>
+            <li>
+                <a href="#">下载APP</a>
+                <!-- <div>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+                    11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+                    11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+                    11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+                    11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+                    11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+                </div> -->
+            </li>
+            <li>
+                <a href="#">购物车</a>
+            </li>
+        </ul>
+        <!-- <a href="#" class="download">下载APP</a href="#">
+        </div>
+        <a href="#" class="shopcart">
             购物车
-        </span>
-        <span class="head_login">
-            注册 / 登录
-        </span>
+        </a href="#"> -->
+        <a href="#" class="head_login">
+            注册 
+        </a>
+        /
+        <a href="#">登录</a>
+
     
     </div>
 </div>
@@ -71,38 +97,69 @@
 <div id="wrap" class="container">
     <div class="wrap_left">
         <div class="banner_nav">
-            <div id="a" class="nav_show">
-                <span>前沿 / 区块链 / 人工智能</span>
+            <div class="nav_show">
+                <a href="#">前沿 / 区块链 / 人工智能</a>
             </div>
-            <div id="b" class="nav_show">
-                <span>前端 / 小程序/ JS</span>
+            <div class="nav_none">111111111111111111111111</div>
+            <div class="nav_show">
+                <a href="#">前端 / 小程序/ JS</a>
             </div>
-            <div id="c" class="nav_show">
-                <span>后端 / JAVA / Python</span>
+            <div class="nav_show">
+                <a href="#">后端 / JAVA / Python</a>
             </div>
-            <div id="d" class="nav_show">
-                <span>移动 / Android / iOS</span>
+            <div class="nav_show">
+                <a href="#">移动 / Android / iOS</a>
             </div>
-            <div id="e" class="nav_show">
-                <span>云计算 / 大数据 / 容器</span>
+            <div class="nav_show">
+                <a href="#">云计算 / 大数据 / 容器</a>
             </div>
-            <div id="f" class="nav_show">
-                <span>运维 / 测试 / 数据库</span>
+            <div class="nav_show">
+                <a href="#">运维 / 测试 / 数据库</a>
             </div>
-            <div id="g" class="nav_show">
-                <span>UI设计 / 3D / 游戏</span>
+            <div class="nav_show">
+                <a href="#">UI设计 / 3D / 游戏</a>
             </div>
         </div>
     </div>
     <div class="wrap_right">
-        <div>
-            <img src="./images/1.jpg" id="img1" width="936px" height="365px">
-        </div>
-         <!-- <div class="right_box"> -->
-            <!-- <div class="box_img">
-                <img src="./images/nav1.jpg" alt="" width="936px" height="365px">
+        <!-- swiper文件结构 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/nav1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/nav2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/nav3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/nav4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/nav5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/nav6.jpg" alt="">
+                </div> 
             </div>
-            <div class="box_img">
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+
+
+        <!-- <div class="right_img">
+            <img src="./images/1.jpg" id="img1" width="936px" height="386px">
+        </div> -->
+         <!-- <div class="right_box"> -->
+            <!-- <div class="right_img">
+                <img src="./images/nav2.jpg" alt="" width="936px" height="385px">
+            </div> -->
+            <!-- <div class="box_img">
                 <img src="./images/nav2.jpg" alt="" width="936px" height="365px">
             </div>
             <div class="box_img">
@@ -116,9 +173,9 @@
             </div>
             <div class="box_img">
                 <img src="./images/nav6.jpg" alt="" width="936px" height="365px">
-            </div>
-            <button type="button" class="btn goUp"> < </button>
-            <button type="button" class="btn goNext"> > </button> --> 
+            </div> -->
+            <!-- <button type="button" class="btn goUp"> < </button>
+            <button type="button" class="btn goNext"> > </button>  -->
         <!-- </div> -->
         
     </div>
