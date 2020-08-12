@@ -1,0 +1,82 @@
+[
+  {
+    "imgUrl": "static/img/hot_course_1.jpg",
+    "title": "快速搞定前端技术一面 匹配大厂面试要求",
+    "info": {
+      "level": "初级",
+      "people": "1550",
+      "comments": "897人评价"
+    },
+    "price": "￥299.00"
+  },
+  {
+    "imgUrl": "static/img/hot_course_2.jpg",
+    "title": "理论+实战 构建完整JVM知识体系",
+    "info": {
+      "level": "中级",
+      "people": "201",
+      "comments": "7人评价"
+    },
+    "price": "￥348.00"
+  },
+  {
+    "imgUrl": "static/img/hot_course_3.jpg",
+    "title": "前端框架及项目面试 聚焦Vue/React/Webpack",
+    "info": {
+      "level": "中级",
+      "people": "1363",
+      "comments": "640人评价"
+    },
+    "price": "￥399.00"
+  },
+  {
+    "imgUrl": "static/img/hot_course_4.jpg",
+    "title": "React开发简书项目 从零基础入门到实战",
+    "info": {
+      "level": "中级",
+      "people": "3888",
+      "comments": "2392人评价"
+    },
+    "price": "￥348.00"
+  },
+  {
+    "imgUrl": "static/img/hot_course_5.jpg",
+    "title": "Vue Element+Node.js开发企业通用管理后台系统",
+    "info": {
+      "level": "中级",
+      "people": "201",
+      "comments": "7人评价"
+    },
+    "price": "￥348.00"
+  },
+  {
+    "imgUrl": "static/img/hot_course_2.jpg",
+    "title": "2020 重学C++ 重构你的C++知识体系",
+    "info": {
+      "level": "中级",
+      "people": "201",
+      "comments": "7人评价"
+    },
+    "price": "￥34.00"
+  },
+  {
+    "imgUrl": "static/img/hot_course_3.jpg",
+    "title": "玩转算法面试-- Leetcode真题分门别类讲解",
+    "info": {
+      "level": "中级",
+      "people": "201",
+      "comments": "1231人评价"
+    },
+    "price": "￥3418.00"
+  },
+  {
+    "imgUrl": "static/img/hot_course_4.jpg",
+    "title": "微信小程序入门与实战 常用组件API开发技巧项目实战",
+    "info": {
+      "level": "中级",
+      "people": "201",
+      "comments": "3423人评价"
+    },
+    "price": "￥32138.00"
+  }
+]

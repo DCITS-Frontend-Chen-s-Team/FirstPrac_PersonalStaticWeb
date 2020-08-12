@@ -1,0 +1,80 @@
+[
+  {
+    "imgUrl": "static/img/mooc_1.jpg",
+    "try_read": true,
+    "title": "前端高手必学课",
+    "info": "共30节 · 13人已购买",
+    "teacher": "上古鹏",
+    "position": "资深前端研发工程师",
+    "price": {
+      "sale": "¥ 42.00",
+      "ori": "原价 ¥ 58.00",
+      "countdown": true
+    }
+  },
+  {
+    "imgUrl": "static/img/mooc_2.jpg",
+    "try_read": true,
+    "title": "10+年DBA老司机带你轻松玩转 SQL",
+    "info": "共32节 · 77人已购买",
+    "teacher": "简逸",
+    "position": "资深数据库工程师",
+    "price": {
+      "sale": "¥ 36.00",
+      "ori": "原价 ¥ 48.00",
+      "countdown": true
+    }
+  },
+  {
+    "imgUrl": "static/img/mooc_3.jpg",
+    "try_read": true,
+    "title": "跟 BAT 技术专家学 Docker + K8S",
+    "info": "共47节 · 89人已购买",
+    "teacher": "legendtkl",
+    "position": "BAT 资深技术专家",
+    "price": {
+      "sale": "¥ 49.00",
+      "ori": "原价 ¥ 68.00",
+      "countdown": true
+    }
+  },
+  {
+    "imgUrl": "static/img/mooc_4.jpg",
+    "try_read": true,
+    "title": "专业技术团队出品：React深度剖析+实战",
+    "info": "共31节 · 71人已购买",
+    "teacher": "BetterFE",
+    "position": "业务中台前端组",
+    "price": {
+      "sale": "¥ 42.00",
+      "ori": "原价 ¥ 58.00",
+      "countdown": true
+    }
+  },
+  {
+    "imgUrl": "static/img/mooc_1.jpg",
+    "try_read": true,
+    "title": "Python 源码深度剖析",
+    "info": "共45节 · 893人已购买",
+    "teacher": "fasionchan",
+    "position": "资深 Python 研发工程师",
+    "price": {
+      "sale": "¥ 68.00",
+      "ori": "",
+      "countdown": false
+    }
+  },
+  {
+    "imgUrl": "static/img/mooc_2.jpg",
+    "try_read": true,
+    "title": "零基础学透网络编程",
+    "info": "共32节 · 124人已购买",
+    "teacher": "陈子兴",
+    "position": "资深软件架构师",
+    "price": {
+      "sale": "¥ 58.00",
+      "ori": "",
+      "countdown": false
+    }
+  }
+]
