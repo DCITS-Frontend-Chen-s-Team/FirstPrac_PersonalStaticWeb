@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <title>慕课网</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
-<body id="homepage">
+<!-- Swiper JS -->
+<script src="../package/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.menu-picture', {
+        cssMode: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination'
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+</script>
+<body id="homepage" onload="slider()">
     <div id="header">
         <div class="nav" id="nav">
             <div id="logo" class="logo">
@@ -93,7 +113,19 @@
                 </div>
 
                 <div class="menu-picture">
-                    <img src="img/menu-picture.jpg">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
 
@@ -251,12 +283,12 @@
                     <a href="#"><img src="img/newcourse7.jpg"></a>
                     <a href="#" style="font-weight: bold">Vue2.5-2.6-3.0 开发去哪儿网App 从零基础入门到实战项目开发</a>
                     <div class="course-message">
-                        <span style="float: left;">初级</span>
-                        <span style="float: left;">95人购买</span>
-                        <span style="float: right;">6人评价</span>
+                        <span style="float: left;">中级</span>
+                        <span style="float: left;">8357人购买</span>
+                        <span style="float: right;">4968人评价</span>
                     </div>
                     <div class="price" style="float: left">
-                        <span style="color: red; font-weight: bold;">¥298.00</span>
+                        <span style="color: red; font-weight: bold;">¥266.00</span>
                         <span style="color: red; background-color: #d0d3d5; font-size: 14px; padding: 0 1px;">限时特惠</span>
                     </div>
                 </div>
@@ -265,12 +297,12 @@
                     <a href="#"><img src="img/newcourse8.png"></a>
                     <a href="#" style="font-weight: bold">前端性能优化--6大角度综合型优化方案</a>
                     <div class="course-message">
-                        <span style="float: left;">初级</span>
-                        <span style="float: left;">95人购买</span>
-                        <span style="float: right;">6人评价</span>
+                        <span style="float: left;">中级</span>
+                        <span style="float: left;">111人购买</span>
+                        <span style="float: right;">4人评价</span>
                     </div>
                     <div class="price" style="float: left">
-                        <span style="color: red; font-weight: bold;">¥298.00</span>
+                        <span style="color: red; font-weight: bold;">¥268.00</span>
                         <span style="color: red; background-color: #d0d3d5; font-size: 14px; padding: 0 1px;">限时特惠</span>
                     </div>
                 </div>
@@ -278,7 +310,137 @@
             </div>
         </div>
 
+        <div class="study-container">
+            <div class="study-route">
+                <div class="study-route-title">
+                    <h1>
+                        <span>学习路线</span>
+                        <ul>
+                            <li class="curr">热门</li>
+                            <li>前端</li>
+                            <li>后端</li>
+                            <li>移动端</li>
+                            <li>计算机基础</li>
+                            <li>大数据</li>
+                            <li>测试</li>
+                            <li>人工智能</li>
+                        </ul>
+                        <a href="#">查看更多 ></a>
+                    </h1>
+                </div>
 
+                <div class="study-route-component">
+                    <div class="component-img">
+                        <img src="img/studycourse1.png">
+                    </div>
+
+                    <div class="component-introduce">
+                        <div class="component-text">
+                            <a>微信小程序从0基础到精通</a>
+                            <span>一站式掌握小程序生态，打造站内零基础精通小程序的最佳路径</span>
+                        </div>
+
+                        <div class="component-ps">
+                            <span>4步骤 · 5门课</span>
+                            <span class="component-ps-favor">22318人收藏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="study-route-component">
+                    <div class="component-img">
+                        <img src="img/studycourse2.jpg">
+                    </div>
+
+                    <div class="component-introduce">
+                        <div class="component-text">
+                            <a>Vue.js 从入门到精通</a>
+                            <span>路线专为想学Vue却无从下手的人群设计，以实际项目为例，逐层深入，学透Vue。</span>
+                        </div>
+
+                        <div class="component-ps">
+                            <span>4步骤 · 5门课</span>
+                            <span class="component-ps-favor">22318人收藏</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="study-route-component">
+                    <div class="component-img">
+                        <img src="img/studycourse3.jpg">
+                    </div>
+
+                    <div class="component-introduce">
+                        <div class="component-text">
+                            <a>Python功能测试到自动化测试路线</a>
+                            <span>自动化测试效率更高，路线旨在帮Python功能测试从业者成功转型。</span>
+                        </div>
+
+                        <div class="component-ps">
+                            <span>4步骤 · 5门课</span>
+                            <span class="component-ps-favor">22318人收藏</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="study-route-component">
+                    <div class="component-img">
+                        <img src="img/studycourse4.jpg">
+                    </div>
+
+                    <div class="component-introduce">
+                        <div class="component-text">
+                            <a>前端面试求职跳槽通关路线</a>
+                            <span>路线伴随Web前端工程师一路成长，彻底搞懂不同阶段的面试重点，高效拿下offer。</span>
+                        </div>
+
+                        <div class="component-ps">
+                            <span>4步骤 · 5门课</span>
+                            <span class="component-ps-favor">22318人收藏</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="study-route-component">
+                    <div class="component-img">
+                        <img src="img/studycourse1.png">
+                    </div>
+
+                    <div class="component-introduce">
+                        <div class="component-text">
+                            <a>微信小程序从0基础到精通</a>
+                            <span>一站式掌握小程序生态，打造站内零基础精通小程序的最佳路径</span>
+                        </div>
+
+                        <div class="component-ps">
+                            <span>4步骤 · 5门课</span>
+                            <span class="component-ps-favor">22318人收藏</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="study-route-component">
+                    <div class="component-img">
+                        <img src="img/studycourse1.png">
+                    </div>
+
+                    <div class="component-introduce">
+                        <div class="component-text">
+                            <a>微信小程序从0基础到精通</a>
+                            <span>一站式掌握小程序生态，打造站内零基础精通小程序的最佳路径</span>
+                        </div>
+
+                        <div class="component-ps">
+                            <span>4步骤 · 5门课</span>
+                            <span class="component-ps-favor">22318人收藏</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-container">
+
+        </div>
 
     </div>
 
@@ -310,4 +472,19 @@
         </div>
     </div>
 </body>
+<script>
+    let index = 1;
+
+    function changeImg() {
+        let img = document.getElementById("lunbo");
+        let carIndex = index % 6 + 1; // 循环输出1.2.3.4.5.6图片
+        img.src = "img/menu-picture_" + carIndex + ".jpg";
+        index = index + 1;
+    }
+
+    function slider() {
+        setInterval("changeImg()", 1000);
+    }
+
+</script>
 </html>

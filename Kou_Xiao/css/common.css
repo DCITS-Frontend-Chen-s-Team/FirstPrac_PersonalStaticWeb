@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0;}
-ul,ol{list-style: none;}
+ul,ol,li{list-style: none;}
 h1,h2,h3{font-size: 16px;}
 img{display: block;}
 a{text-decoration: none;color:#6A6A6A;}
@@ -13,10 +13,12 @@ body{font-family: Arial;}
 
 #head{height: 72px;width: 100%;background-color: white !important;border-bottom: 1px solid #717777; position: fixed;
     z-index: 999;display: block;}
-#head .head_logo{width: 138px;margin-left: 4px;height: 72px;}
+#head .head_logo{width: 138px;height: 72px;margin-left: 5px;}
 #head .head_logo a{width: 126px;}
 #head .head_menu{font-size: 16px;line-height: 72px;}
 #head .head_menu li{float: left;padding: 0 10px;}
+#head .head_menu li a:hover{color: black;}
+#head .head_nav a:hover{color: red;}
 
 #head .head_search {width: 20%;float: left;position: relative;height: 40px;padding-right: 40px;zoom: 1;background: #E9E9E9;
     border-radius: 8px;margin: 16px 0;margin-left: 10px;-webkit-box-sizing: border-box;box-sizing: border-box;}
@@ -39,7 +41,6 @@ body{font-family: Arial;}
 #foot{background: #f8fafc;}
 #foot .container{height: 136px;line-height: 54px;font-size: 14px;color: 99a1a6;padding: 36px;}
 #foot div a{color: #99a1a6;margin: 0 10px}
-#foot .contact{}
 
 
 
