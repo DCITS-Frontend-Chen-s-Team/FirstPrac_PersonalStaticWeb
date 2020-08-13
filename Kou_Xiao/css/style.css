@@ -1,14 +1,25 @@
 
-    #wrap{overflow: hidden;position: relative;width: 1154px;height: 382px; padding-top: 120px ;}
-    #wrap .wrap_left{width: 216px;height: 365px;float: left;background-color:  #2b333b; border-radius: 8px 0 0 8px;}
-    #wrap .wrap_left .nav_show{width: 216px;height: 50px;padding: 0 16px;line-height: 50px;color: #5e5e5e;}
-    #wrap .wrap_right{width: 930px;height: 365px;float: left;background-color: blueviolet;position: relative;}
-    #wrap .box_img{opacity: 0;}
-    #wrap .box_img:nth-child(1){opacity: 1;}
-    #wrap .btn{width: 50px;height: 50px;position: absolute;top: 150px;border-radius: 26px;border: none;
-    background: rgba(255,255,255,0.1);z-index: 888;}
-    #wrap .goUp{left: 10px;}
-    #wrap .goNext{right: 10px;}
+    #wrap{overflow: hidden;position: relative;width: 1150px;height: 385px; padding-top: 110px ;}
+    #wrap .wrap_left{width: 216px;height: 385px;float: left;background-color: #2b333b; border-radius: 8px 0 0 8px;}
+    #wrap .wrap_left .nav_show{width: 180px;height: 50px;padding: 0 16px;line-height: 50px;}
+    #wrap .wrap_left .nav_show a{color: rgba(255, 255, 255, 0.6);font-size: 14px;}
+    #wrap .wrap_right{width: 930px;height: 385px;float: left;background-color: blueviolet;position: relative;}
+    #wrap .banner_nav{margin: 15px 0;}
+    #wrap .banner_nav div{border-radius: 8px;margin-left: 10px;}
+    #wrap .banner_nav div:hover{background-color: rgba(255, 255, 255, 0.3);color: #fff;} 
+    #wrap .nav_none{display: none;}
+    
+    
+    
+    #wrap .swiper-wrapper img{width: 930px;height: 385px;}
+    #wrap .swiper-container {width: 100%;height: 100%;}
+    #wrap .swiper-slide {text-align: center;font-size: 18px;background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;
+        -webkit-justify-content: center;justify-content: center; -webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;
+        align-items: center;}
+   
+
     
 
     #service{overflow: hidden;min-height: 136px;}
