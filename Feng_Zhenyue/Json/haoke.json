@@ -1,52 +1,60 @@
 [
-	"title":"新上好课",
-	"haokecard":{
+
+	{
 		"miaoshu":"Java可视化UML工作流系统<br>(Activiti7+SpringBoot)",
-		"level":"初级",
+		"level":"初级  302人已购",
 		"comments":"1人评价",
-		"price":"￥268"
+		"price":"￥268",
+		"img":"../Images/Index/haoke1.jpg"
 	},
-	"haokecard":{
+	{
 		"miaoshu":"编程必备基础 计算机组成原理+操作系统+计算机网络",
-		"level":"中级",
+		"level":"中级  3224已购",
 		"comments":"2281人评价",
-		"price":"￥266"
+		"price":"￥266",
+		"img":"../Images/Index/haoke2.jpg"
 	},
-	"haokecard":{
+	{
 		"miaoshu":"Java可视化UML工作流系统<br>(Activiti7+SpringBoot)",
-		"level":"初级",
-		"comments":"一人评价",
-		"price":"￥328"
+		"level":"高级  1125已购",
+		"comments":"937人评价",
+		"price":"￥328",
+		"img":"../Images/Index/haoke3.jpg"
 	},
-	"haokecard":{
+	{
 		"miaoshu":"Java可视化UML工作流系统<br>(Activiti7+SpringBoot)",
-		"level":"初级",
-		"comments":"一人评价",
-		"price":"￥388"
+		"level":"初级  567已购",
+		"comments":"234人评价",
+		"price":"￥388",
+		"img":"../Images/Index/haoke4.jpg"
 	},
-	"haokecard":{
+	{
 		"miaoshu":"Java可视化UML工作流系统<br>(Activiti7+SpringBoot)",
-		"level":"初级",
-		"comments":"一人评价",
-		"price":"￥366"
+		"level":"中级  4040已购",
+		"comments":"2020人评价",
+		"price":"￥366",
+		"img":"../Images/Index/haoke5.jpg"
 	},
-	"haokecard":{
+	{
 		"miaoshu":"Java可视化UML工作流系统<br>(Activiti7+SpringBoot)",
-		"level":"初级",
-		"comments":"一人评价",
-		"price":"￥298"
+		"level":"初级  1125已购",
+		"comments":"567人评价",
+		"price":"￥298",
+		"img":"../Images/Index/haoke6.jpg"
 	},
-	"haokecard":{
+	{
 		"miaoshu":"Java可视化UML工作流系统<br>(Activiti7+SpringBoot)",
-		"level":"初级",
-		"comments":"一人评价",
-		"price":"￥999"
+		"level":"中级  3345已购",
+		"comments":"220人评价",
+		"price":"￥999",
+		"img":"../Images/Index/haoke7.jpg"
 	},
-	"haokecard":{
+	{
 		"miaoshu":"Java可视化UML工作流系统<br>(Activiti7+SpringBoot)",
-		"level":"初级",
-		"comments":"一人评价",
-		"price":"￥328"
+		"level":"初级 2234已购",
+		"comments":"567人评价",
+		"price":"￥328",
+		"img":"../Images/Index/haoke8.jpg"
 	}
 
 ]
