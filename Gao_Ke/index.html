@@ -7,7 +7,13 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <script src="Jquery/jquery-1.8.3.js"></script>
+
+
+
 </head>
+
 
 <body>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"> </script>
@@ -34,7 +40,7 @@
     </div>
     <div class="head-menu1">
       <a href="#" class="menu">下载App</a>
-      <a href="#" class="menu">购物车</a></a>
+      <a href="#" class="menu">购物车</a>
       <a href="#" class="menu">登录</a>
       /
       <a href="#" class="menu">注册</a>
@@ -43,47 +49,49 @@
 
   <!-- 主显示区 -->
   <div class="ibody">
-    <!-- 1.一个大的div嵌套5个小的div -->
+    <!-- 第一模块   放置轮播图及左边的选项 -->
     <div class="div1">
       <!-- 1.1左边列表 -->
       <div class="aa">
         <div class="item">
           <a href="#" id="a1">
             <span>前沿/区块链/人工智能</span>
-          </a>
-          <div class="dropdown-content">
-            <div>
-              <span><b>前沿技术</b></span>
-            </div>
-            <div class="xs">
-              <ul>
-                <li>
-                  <a href="#">微服务</a>
-                  <a href="#">区块链</a>
-                  <a href="#">以太坊</a>
-                  <a href="#">机器学习</a>
-                  <a href="#">深度学习</a>
-                  <a href="#">计算机视觉</a>
-                  <a href="#">自然语言处理</a>
-                  <a href="#">数据分析&挖掘</a>
-                </li>
-              </ul>
-            </div>
-            <div>
+            <div class="dropdown-content">
+              <div class="dc1">
+                <span><b>前沿技术</b></span>
+              </div>
+              <div class="xs">
+                <ul>
+                  <li>
+                    <a href="#" id="xs1">微服务</a>
+                    <a href="#" id="xs1">区块链</a>
+                    <a href="#" id="xs1">以太坊</a>
+                    <a href="#" id="xs1">机器学习</a>
+                    <a href="#" id="xs1">深度学习</a>
+                    <a href="#" id="xs1">计算机视觉</a>
+                    <a href="#" id="xs1">自然语言处理</a>
+                    <a href="#" id="xs1">数据分析&挖掘</a>
+                  </li>
+                </ul>
+              </div>
               <div>
                 <div>
-  
-                </div>
-                <div>
-                  <p>SpringCloud Finchley三版本(M2+rellease+sr2)微服务实战</p>
                   <div>
-                    <span>￥366.00 · 高级 · 5188</span>
+
+                  </div>
+                  <div>
+                    <p>SpringCloud Finchley三版本(M2+rellease+sr2)微服务实战</p>
+                    <div>
+                      <span>￥366.00 · 高级 · 5188</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
+
+
         <div class="item">
           <a href="#" id="a1">
             <span>前端/小程序/JS</span>
@@ -117,40 +125,7 @@
       </div>
 
       <!--隐藏的下拉列表  -->
-      <div class="aa1">
-        <div class="dropdown-content">
-          <div>
-            <span><b>前沿技术</b></span>
-          </div>
-          <div class="xs">
-            <ul>
-              <li>
-                <a href="#">微服务</a>
-                <a href="#">区块链</a>
-                <a href="#">以太坊</a>
-                <a href="#">机器学习</a>
-                <a href="#">深度学习</a>
-                <a href="#">计算机视觉</a>
-                <a href="#">自然语言处理</a>
-                <a href="#">数据分析&挖掘</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <div>
-              <div>
 
-              </div>
-              <div>
-                <p>SpringCloud Finchley三版本(M2+rellease+sr2)微服务实战</p>
-                <div>
-                  <span>￥366.00 · 高级 · 5188</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- 1.2右边轮播图的实现 -->
       <div class="swiper-container">
@@ -182,29 +157,37 @@
         <div class="swiper-button-next"></div>
 
         <!-- 如果需要滚动条 -->
-        <!-- <div class="swiper-scrollbar"></div> -->
+        <div class="swiper-scrollbar"></div>
       </div>
       <script>
         var swiper = new Swiper('.swiper-container', {
           spaceBetween: 30,
           centeredSlides: true,
+
+          // 自动播放
           autoplay: {
             delay: 2500,
             disableOnInteraction: false,
           },
+          // 如果需要分页器 
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
           },
+          // 如果需要前进后退按钮
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+          },
+          // 如果需要滚动条
+          scrollbar: {
+            el: '.swiper-scrollbar',
           },
         });
       </script>
     </div>
 
-
+    <!-- 第二个模块 -->
     <div class="div2">
       <div class="bb">
         <span id="bs1"><b>零基础就业</b></span>
@@ -247,6 +230,7 @@
       </div>
 
     </div>
+    <!-- 第三模块  放置了四张图片 -->
     <div class="div3">
       <div class="dd">
         <span id="bs3"><b>职场提升</b></span>
@@ -261,6 +245,7 @@
       </div>
     </div>
 
+    <!-- 第四个大模块 -->
     <div class="div4">
       <div class="ff">
         <span id="bs5"><b>新上好课</b></span>
@@ -473,7 +458,7 @@
       <div style="clear: both;"></div>
 
       <div class="ll">
-        <div class="l1">
+        <!-- <div class="l1">
           <a href="#" id="la">
             <div class="l11">
               <img src="./img/5wechat.png" alt="" id="img5">
@@ -490,6 +475,8 @@
             </div>
           </a>
         </div>
+
+       
 
         <div class="l1">
           <a href="#" id="la">
@@ -580,7 +567,7 @@
             </div>
           </a>
         </div>
-      </div>
+      </div> -->
     </div>
 
 
@@ -966,5 +953,39 @@
 
 
 </body>
+
+<script>
+  //页面加载   获取全部信息
+  $(function () {
+    $.ajax({
+      type: "get",//请求方式
+      url: "json/item.json",//地址，就是json文件的请求路径
+      dataType: "json",//数据类型可以为 json 
+      success: function (data) {//返回的参数就是 action里面所有的有get和set方法的参数
+        console.log("dshhfd");
+        var str = "";
+        //data是一个集合,所以需要先遍历
+        $.each(data, function (index, dataItem) {
+          str += `<div class="l1"> <a href="#" id="la">
+          <div class="l11">
+            <img src="${dataItem.imgurl}" alt="" id="img5">
+          </div>
+          <div class="l12">
+            <div class="mess1">
+              <h4 id="mss11">${dataItem.title}</h4>
+              <p id="mss12">${dataItem.show}</p>
+            </div>
+            <div class="mess2">
+              <span>${dataItem.level}</span>
+              <span>${dataItem.comments}</span>
+            </div>
+          </div>
+        </a></div>`
+        });
+        $(".div5 .ll").append(str);
+      }
+    })
+  })
+</script>
 
 </html>
