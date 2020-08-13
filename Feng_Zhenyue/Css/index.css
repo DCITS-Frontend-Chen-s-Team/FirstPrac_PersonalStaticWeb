@@ -601,6 +601,10 @@ color: #787D82;
 .onred:hover{
 	color: red;
 }
+.haokemo_price{
+	color: red;
+	font-weight: 800;
+}
 /* ============================================= */
 #page3{
 	width: 100%;

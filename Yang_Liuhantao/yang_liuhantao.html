@@ -8,23 +8,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <!-- Swiper JS -->
-<script src="../package/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"> </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
 
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper('.menu-picture', {
-        cssMode: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination'
-        },
-        mousewheel: true,
-        keyboard: true,
-    });
-</script>
 <body id="homepage" onload="slider()">
     <div id="header">
         <div class="nav" id="nav">
@@ -113,19 +99,21 @@
                 </div>
 
                 <div class="menu-picture">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/menu-picture_1.jpg"></div>
+                            <div class="swiper-slide"><img src="img/menu-picture_2.jpg"></div>
+                            <div class="swiper-slide"><img src="img/menu-picture_3.jpg"></div>
+                            <div class="swiper-slide"><img src="img/menu-picture_4.jpg"></div>
+                            <div class="swiper-slide"><img src="img/menu-picture_5.jpg"></div>
+                            <div class="swiper-slide"><img src="img/menu-picture_6.jpg"></div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
 
@@ -472,19 +460,24 @@
         </div>
     </div>
 </body>
+<!-- Initialize Swiper -->
 <script>
-    let index = 1;
-
-    function changeImg() {
-        let img = document.getElementById("lunbo");
-        let carIndex = index % 6 + 1; // 循环输出1.2.3.4.5.6图片
-        img.src = "img/menu-picture_" + carIndex + ".jpg";
-        index = index + 1;
-    }
-
-    function slider() {
-        setInterval("changeImg()", 1000);
-    }
-
+    var swiper = new Swiper('.swiper-container', {
+        cssMode: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        mousewheel: true,
+        keyboard: true,
+        autoplay: {
+            delay: 2000,
+        },
+        loop: true,
+    });
 </script>
 </html>
