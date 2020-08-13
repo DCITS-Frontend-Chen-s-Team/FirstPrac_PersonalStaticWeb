@@ -204,23 +204,15 @@
     width: 20%;
 }
 
-.menu-classify div:hover {
-    background-color: #99a1a6;
-}
-
 .menu-classify .item {
     height: 60px;
     padding: 10px;
 }
 
-.menu-classify .item a:hover{
-    color: #d3ece1;
-}
-
 .menu-classify .item a {
     display: block;
     text-align: center;
-    padding: 0 10px;
+    padding-left: 10px;
     text-decoration: none;
     color: #919da7;
     position: relative;
@@ -229,6 +221,74 @@
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
+}
+
+.sub-menu {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    width: 1000px;
+    height: 462px;
+    display: none;
+    transform: translateX(40px);
+    margin-top: -10px;
+    box-sizing: border-box;
+}
+
+.menu-classify .item a:hover {
+    background-color: #99a1a6;
+}
+
+.menu-classify .item a:hover .group {
+    color: white;
+}
+
+.menu-classify .item:hover .sub-menu{
+    display: unset;
+}
+
+.sub-menu-message {
+    height: 50%;
+    width: 100%;
+}
+
+.sub-menu-message li:hover {
+    color: #665757;
+}
+
+.sub-menu-img {
+    height: 50%;
+    width: 100%;
+    background-color: #eaeaea;
+}
+
+.sub-menu-img-component {
+    width: 50%;
+    height: 50%;
+}
+
+.sub-menu-img img {
+    margin: 50px;
+    height: 120px;
+    width: 120px;
+    float: left;
+}
+
+.sub-menu-img p {
+    float: left;
+}
+
+.sub-menu-message h3 {
+    color: black;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.sub-menu li {
+    float: left;
+    color: #171616;
+    list-style: none;
+    margin: 0 10px;
 }
 
 .menu-picture {
@@ -528,15 +588,15 @@
 
 #footer {
     width: 100%;
-    height: 160px;
+    height: 200px;
     background-color: #eeeaea;
 }
 
 .footer-outside-link {
     float: left;
-    width: 75%;
+    width: 65%;
     height: 50%;
-    padding: 30px 100px;
+    margin: 30px 100px;
 }
 
 .footer-outside-link a {
@@ -551,7 +611,7 @@
 
 .footer-register {
     float: left;
-    width: 75%;
+    width: 65%;
     height: 50%;
     padding: 0px 100px;
 }
@@ -564,7 +624,7 @@
 
 .footer-chat {
     float: right;
-    width: 25%;
+    width: 30%;
     height: 100%;
 }
 
@@ -572,6 +632,7 @@
     margin: 0px 20px;
     text-decoration: none;
     color: #959494;
+    text-align: end;
 }
 
 .footer-chat a:hover{
@@ -583,7 +644,19 @@
     padding: 0px 0px;
 }
 
+.footer-chat .wechat img {
+    width: 64px;
+    height: 64px;
+    padding-left: 30px;
+}
+
 .footer-chat .weibo {
     float: left;
     padding: 0px 0px;
+}
+
+.footer-chat .weibo img {
+    width: 64px;
+    height: 64px;
+    padding-left: 25px;
 }

@@ -1,15 +1,35 @@
 
-    #wrap{overflow: hidden;position: relative;width: 1150px;height: 385px; padding-top: 110px ;}
+    #wrap{background-image: linear-gradient(to bottom,rgb(248, 198, 105),#0ff);width: 100%;}
+    #wrap .wrap_all{height: 435px; padding-top: 110px ;overflow: hidden;position: relative;margin-left: 54px;}
     #wrap .wrap_left{width: 216px;height: 385px;float: left;background-color: #2b333b; border-radius: 8px 0 0 8px;}
-    #wrap .wrap_left .nav_show{width: 180px;height: 50px;padding: 0 16px;line-height: 50px;}
+    #wrap .wrap_left .nav_show{width: 180px;height: 50px;padding: 0 16px;line-height: 50px;margin-left: 10px;}
     #wrap .wrap_left .nav_show a{color: rgba(255, 255, 255, 0.6);font-size: 14px;}
-    #wrap .wrap_right{width: 930px;height: 385px;float: left;background-color: blueviolet;position: relative;}
+    #wrap .wrap_right{width: 930px;height: 385px;float: left;background-color: rgb(133, 108, 156);position: relative;}
     #wrap .banner_nav{margin: 15px 0;}
-    #wrap .banner_nav div{border-radius: 8px;margin-left: 10px;}
-    #wrap .banner_nav div:hover{background-color: rgba(255, 255, 255, 0.3);color: #fff;} 
-    #wrap .nav_none{display: none;}
-    
-    
+    #wrap .banner_nav a{border-radius: 8px;margin-left: 10px;position: relative;display: block;font-size: 14px;}
+    #wrap .banner_nav a:hover{background-color: rgba(255, 255, 255, 0.3);color: #5f5f5f;} 
+    #wrap .nav_none1,.nav_none2,.nav_none3,.nav_none4,.nav_none5,.nav_none6,.nav_none7
+    {width: 760px;height: 385px;position: absolute;border-radius: none;left: 216px;top: 110px;z-index: 10;background-color: white;display: none;overflow: hidden;}
+    #wrap .wrap_left .banner_nav ul .nav_item:hover .nav_none1{display: block;}
+    #wrap .wrap_left .banner_nav ul .nav_item:hover .nav_none2{display: block;}
+    #wrap .wrap_left .banner_nav ul .nav_item:hover .nav_none3{display: block;}
+    #wrap .wrap_left .banner_nav ul .nav_item:hover .nav_none4{display: block;}
+    #wrap .wrap_left .banner_nav ul .nav_item:hover .nav_none5{display: block;}
+    #wrap .wrap_left .banner_nav ul .nav_item:hover .nav_none6{display: block;}
+    #wrap .wrap_left .banner_nav ul .nav_item:hover .nav_none7{display: block;}
+    #wrap .none_top{height: 50%;}
+    #wrap .none_top_title{font-size: 14px; color: #1C1F21;line-height: 22px;font-weight: bolder;padding:25px;position: relative;}
+    #wrap .none_top_content{margin-left: -20px;margin-top: 10px;}
+    #wrap .none_top_content div{float: left;}
+    #wrap .none_top_content a{margin-left: 20px; font-size: 14px;color: black;line-height: 22px;margin-bottom: 16px;font-weight: normal;}
+    #wrap .none_bottom{height: 50%;background-color: #f3f5f6;position: relative;}
+    #wrap .none_bottom_div{padding:30px 35px;float: left;height: 30px;width: 260px;}
+    #wrap .none_bottom_div img{border-radius: 4px;width:70px; height:52px;float: left;}
+    #wrap .bottom_div1{float: left;position: absolute;}
+    #wrap .bottom_div2{float: left; width: 226px;font-size: 14px;color: #07111B;overflow: hidden;margin-left: 90px;}
+    #wrap .bottom_div2 p{line-height: 22px;}
+
+
     
     #wrap .swiper-wrapper img{width: 930px;height: 385px;}
     #wrap .swiper-container {width: 100%;height: 100%;}
@@ -23,6 +43,8 @@
     
 
     #service{overflow: hidden;min-height: 136px;}
+    #service .area_title{margin-top: 4px;}
+    #service .area_title1{margin-top: 45px;}
     #service .service_list{text-align: center;margin-top: 45px;}
     #service .service_list li{float: left;width: 270px;}
     #service .service_list1{float: left;font-size: 0;display: block; width: 270px;padding-top: 15px;height: 65px;
@@ -50,11 +72,13 @@
     #case .case_index{float: left; margin-bottom: 45px;width: 270px;height: 268px;position: relative;}
     #case .index_card_top{width: 270px;height: 148px;border-radius: 8px;position: relative;overflow: hidden;}
     #case .index_card_content{padding: 8px;}
-    #case .card_info{font-size: 12px;line-height: 18px;margin-top: 4px;font-weight: 400;}
+    #case .card_info{font-size: 12px;line-height: 18px;margin-top: 4px;font-weight: 400;color: #9199A1;}
     #case .card_name{height: 46px;line-height: 24px;font-size: 16px;overflow: hidden;}
-    #case .card_price{font-size: 12px;}
+    #case .card_name:hover{color: red;}
+    #case .card_price{font-size: 12px;color: #545C63;margin-top: 2px;}
     #case .case_commen{margin-left: 24px;}
     #case .title_class{font-size: 14px;margin: 0 14px;line-height: 30px;}
+    #case .title_class a:hover{color: red;}
     #case .card_buttom .down{box-sizing: border-box;background: rgba(242, 13, 13, 0.08);border-radius: 2px;font-weight: 200;
         color: #F20D0D; padding: 0 4px;display: inline-block;}
 
@@ -76,10 +100,12 @@
     #learn .learn_img6{background-size: 100%;background: url(../images/learn6.jpg);}
     #learn .content1 h4{margin: 8px 0;margin-left: 160px;font-size: 16px;color: #1C1F21;line-height: 20px;
     min-height: 20px;overflow: hidden;}
+    #learn .content1 h4:hover{color: red;}
     #learn .content1 p{margin-left: 160px;font-size: 14px;color: #545C63;letter-spacing: 0;line-height: 20px;
     height: 60px;overflow: hidden;}
     #learn .info span{font-size: 12px;color: #9199A1;line-height: 18px;margin-left: 40px;}
     #learn .learn_item{font-size: 14px;margin: 0 14px;line-height: 30px;}
+    #learn .learn_item a:hover{color: red;}
 
 
 
@@ -89,7 +115,9 @@
     #imook .imook_content{margin-top: 20px;}
     #imook .imook_content1 {width: 332px;height: 174px;float: left;padding: 18px;margin-left: 2px;margin-bottom: 24px;}
     #imook .imook_content1 img{float: left;}
-    #imook .imook_content1 h4{margin-bottom: 10px;margin-left: 112px;}
+    #imook .imook_content1 h4 {margin-bottom: 10px;color: black;line-height: 22px;margin-left: 112px;min-height: 44px;}
+    #imook .imook_content1 h4 a{color: black;font-size: 14px;}
+    #imook .imook_content1 h4 a:hover{color: #3377FF;}
     #imook .content1_info{width: 220px;height: 35px;border-bottom: 1px solid rgba(28, 31, 33, 0.1);margin-left: 112px;}
     #imook .content1_info span{padding: 10px 0;font-size: 12px;color: #9199A1;text-align: left;line-height: 10px;}
     #imook .content1_teacher{margin: 10px 0;margin-left: 112px;font-size: 12px;color: #1C1F21;text-align: left;line-height: 16px;
