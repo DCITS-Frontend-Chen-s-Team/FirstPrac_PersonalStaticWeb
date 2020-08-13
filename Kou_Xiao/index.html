@@ -27,7 +27,17 @@
     //       function lunbotu() {
     //         setInterval("changeImg()",1000);
     //       }
-    //   </script>
+    // var nav = document.querySelector('.nav');
+    // var lis = nav.children;
+    // for(var i=0;i<lis.length;i++){
+    //     lis[i].onmouseover = function(){
+    //         this.children[1].style.display = 'block';
+    //     }
+    //     lis[i].onmouseout = function(){
+    //         this.children[1].style.display = 'none';
+    //     }
+    // }
+   </script>
 </head>
 <body onload="lunbotu()">
 <!-- 导航栏部分 -->
@@ -63,26 +73,9 @@
         <img class="search_btn2" src="./images/search.svg" alt="">
     </div>
     <div class="head_nav">
-        <ul>
-            <li>
                 <a href="#">下载APP</a>
-                <!-- <div>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                    11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                    11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                    11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                    11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                    11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                </div> -->
-            </li>
-            <li>
-                <a href="#">购物车</a>
-            </li>
-        </ul>
-        <!-- <a href="#" class="download">下载APP</a href="#">
-        </div>
-        <a href="#" class="shopcart">
-            购物车
-        </a href="#"> -->
+                <a href="#" class="shopcart">购物车</a>
+            
         <a href="#" class="head_login">
             注册 
         </a>
@@ -95,89 +88,438 @@
 
 <!-- 带有轮播图部分 -->
 <div id="wrap" class="container">
-    <div class="wrap_left">
-        <div class="banner_nav">
-            <div class="nav_show">
-                <a href="#">前沿 / 区块链 / 人工智能</a>
-            </div>
-            <div class="nav_none">111111111111111111111111</div>
-            <div class="nav_show">
-                <a href="#">前端 / 小程序/ JS</a>
-            </div>
-            <div class="nav_show">
-                <a href="#">后端 / JAVA / Python</a>
-            </div>
-            <div class="nav_show">
-                <a href="#">移动 / Android / iOS</a>
-            </div>
-            <div class="nav_show">
-                <a href="#">云计算 / 大数据 / 容器</a>
-            </div>
-            <div class="nav_show">
-                <a href="#">运维 / 测试 / 数据库</a>
-            </div>
-            <div class="nav_show">
-                <a href="#">UI设计 / 3D / 游戏</a>
+    <div class="wrap_all">
+        <div class="wrap_left">
+            <div class="banner_nav">
+                <ul class="nav">
+                    <li class="nav_item">
+                        <a href="#" class="nav_show">前沿 / 区块链 / 人工智能</a>
+                        <div class="nav_none1">
+                            <div class="none_top">
+                                <div class="none_top_title">
+                                    前沿技术
+                                    <div class="none_top_content">
+                                        <div><a href="#">微服务</a></div>
+                                        <div><a href="#">区块链</a></div>
+                                        <div><a href="#">以太坊</a></div>
+                                        <div><a href="#">机器学习</a></div>
+                                        <div><a href="#">深度学习</a></div>
+                                        <div><a href="#">计算机视觉</a></div>
+                                        <div><a href="#">自然语言处理</a></div>
+                                        <div><a href="#">数据分析&挖掘</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="none_bottom">
+                                <div class="none_bottom_div">
+                                    <div class="bottom_div1">
+                                        <img src="./images/none1-1.jpg" alt="" >
+                                    </div>
+                                    <div class="bottom_div2">
+                                        <p>Spring Cloud</p>
+                                        <p>￥298.00</p>
+                                    </div>
+                                </div>
+                                <div class="none_bottom_div">
+                                    <div class="bottom_div1">
+                                        <img src="./images/none1-1.jpg" alt="" >
+                                    </div>
+                                    <div class="bottom_div2">
+                                        <p>Spring Cloud</p>
+                                        <p>￥298.00</p>
+                                    </div>
+                                </div>
+                                <div class="none_bottom_div">
+                                    <div class="bottom_div1">
+                                        <img src="./images/none1-1.jpg" alt="" >
+                                    </div>
+                                    <div class="bottom_div2">
+                                        <p>Spring Cloud</p>
+                                        <p>￥298.00</p>
+                                    </div>
+                                </div>
+                                <div class="none_bottom_div">
+                                    <div class="bottom_div1">
+                                        <img src="./images/none1-1.jpg" alt="" >
+                                    </div>
+                                    <div class="bottom_div2">
+                                        <p>Spring Cloud</p>
+                                        <p>￥298.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_show">前端 / 小程序 / JS</a>
+                        <div class="nav_none2">
+                            <div class="none_top">
+                                <div class="none_top_title">
+                                    前端开发
+                                    <div class="none_top_content">
+                                        <div><a href="#">Typescript</a></div>
+                                        <div><a href="#">HTNL/CSS</a></div>
+                                        <div><a href="#">JavaScript</a></div>
+                                        <div><a href="#">Vue.js</a></div>
+                                        <div><a href="#">React.js</a></div>
+                                        <div><a href="#">Angular</a></div>
+                                        <div><a href="#">Node.js</a></div>
+                                        <div><a href="#">jQuery</a></div>
+                                        <div><a href="#">Bootstrap</a></div>
+                                        <div><a href="#">Sass/Less</a></div>
+                                        <div><a href="#">WebApp</a></div>
+                                        <div><a href="#">小程序</a></div>
+                                        <div><a href="#">前端工具</a></div>
+                                        <div><a href="#">CSS</a></div>
+                                        <div><a href="#">Html5</a></div>
+                                        <div><a href="#">CSS3</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="none_bottom">
+                                <div class="none_bottom">
+                                    <div class="none_bottom_div">
+                                        <div class="bottom_div1">
+                                            <img src="./images/none2-1.jpg" alt="" >
+                                        </div>
+                                        <div class="bottom_div2">
+                                            <p>Spring Cloud</p>
+                                            <p>￥298.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="none_bottom_div">
+                                        <div class="bottom_div1">
+                                            <img src="./images/none2-1.jpg" alt="" >
+                                        </div>
+                                        <div class="bottom_div2">
+                                            <p>Spring Cloud</p>
+                                            <p>￥298.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="none_bottom_div">
+                                        <div class="bottom_div1">
+                                            <img src="./images/none2-1.jpg" alt="" >
+                                        </div>
+                                        <div class="bottom_div2">
+                                            <p>Spring Cloud</p>
+                                            <p>￥298.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="none_bottom_div">
+                                        <div class="bottom_div1">
+                                            <img src="./images/none2-1.jpg" alt="" >
+                                        </div>
+                                        <div class="bottom_div2">
+                                            <p>Spring Cloud</p>
+                                            <p>￥298.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_show">后端 / JAVA / Python</a>
+                        <div class="nav_none3">
+                            <div class="none_top">
+                                <div class="none_top_title">
+                                    后端开发
+                                    <div class="none_top_content">
+                                        <div><a href="#">Java</a></div>
+                                        <div><a href="#">SpringBoot</a></div>
+                                        <div><a href="#">Spring Cloud</a></div>
+                                        <div><a href="#">SSM</a></div>
+                                        <div><a href="#">PHP</a></div>
+                                        <div><a href="#">爬虫</a></div>
+                                        <div><a href="#">Django</a></div>
+                                        <div><a href="#">Tornado</a></div>
+                                        <div><a href="#">Go</a></div>
+                                        <div><a href="#">C</a></div>
+                                        <div><a href="#">C++</a></div>
+                                        <div><a href="#">C#</a></div>
+                                        <div><a href="#">Ruby</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="none_bottom">
+                                <div class="none_bottom">
+                                    <div class="none_bottom">
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none3-1.jpg" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none3-1.jpg" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none3-1.jpg" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none3-1.jpg" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_show">移动 / Android / iOS</a>
+                        <div class="nav_none4">
+                            <div class="none_top">
+                                <div class="none_top_title">
+                                    移动开发
+                                    <div class="none_top_content">
+                                        <div><a href="#">Android</a></div>
+                                        <div><a href="#">iOS</a></div>
+                                        <div><a href="#">React native</a></div>
+                                        <div><a href="#">WEEX</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="none_bottom">
+                                <div class="none_bottom">
+                                    <div class="none_bottom">
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none4-1.png" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none4-1.png" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none4-1.png" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none4-1.png" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_show">云计算 / 大数据 / 容器</a>
+                        <div class="nav_none5">
+                            <div class="none_top">
+                                <div class="none_top_title">
+                                    计算机基础
+                                    <div class="none_top_content">
+                                        <div><a href="#">计算机网络</a></div>
+                                        <div><a href="#">算法与数据结构</a></div>
+                                        <div><a href="#">数学</a></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="none_top_title">
+                                    云计算&大数据
+                                    <div class="none_top_content">
+                                        <div><a href="#">大数据</a></div>
+                                        <div><a href="#">Hadoop</a></div>
+                                        <div><a href="#">Spark</a></div>
+                                        <div><a href="#">Hbase</a></div>
+                                        <div><a href="#">Storm</a></div>
+                                        <div><a href="#">云计算</a></div>
+                                        <div><a href="#">AWS</a></div>
+                                        <div><a href="#">Docker</a></div>
+                                        <div><a href="#">Kubernetes</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="none_bottom">
+                                <div class="none_bottom">
+                                    <div class="none_bottom">
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none5-1.jpg" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none5-1.jpg" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none5-1.jpg" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="none_bottom_div">
+                                            <div class="bottom_div1">
+                                                <img src="./images/none5-1.jpg" alt="" >
+                                            </div>
+                                            <div class="bottom_div2">
+                                                <p>Spring Cloud</p>
+                                                <p>￥298.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav_item nav_item1">
+                        <a href="#" class="nav_show">运维 / 测试 / 数据库</a>
+                        <div class="nav_none6">
+                            <div class="none_top">
+                                <div class="none_top_title">
+                                    运维&测试
+                                    <div class="none_top_content">
+                                        <div><a href="#">运维</a></div>
+                                        <div><a href="#">自动化运维</a></div>
+                                        <div><a href="#">运维工具</a></div>
+                                        <div><a href="#">中间件</a></div>
+                                        <div><a href="#">Linux</a></div>
+                                        <div><a href="#">测试</a></div>
+                                        <div><a href="#">功能测试</a></div>
+                                        <div><a href="#">性能测试</a></div>
+                                        <div><a href="#">自动化测试</a></div>
+                                        <div><a href="#">接口测试</a></div>
+                                        <div><a href="#">安全测试</a></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="none_top_title">
+                                    数据库
+                                    <div class="none_top_content">
+                                        <div><a href="#">MySQL</a></div>
+                                        <div><a href="#">Redis</a></div>
+                                        <div><a href="#">MongoDB</a></div>
+                                        <div><a href="#">Orale</a></div>
+                                        <div><a href="#">SQL Server</a></div>
+                                        <div><a href="#">NoSql</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="none_bottom">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_show">UI设计 / 3D动画 / 游戏</a>
+                        <div class="nav_none7">
+                            <div class="none_top">
+                                <div class="none_top_title">
+                                    UI设计&多媒体
+                                    <div class="none_top_content">
+                                        <div><a href="#">模型制作</a></div>
+                                        <div><a href="#">动效动画</a></div>
+                                        <div><a href="#">设计基础</a></div>
+                                        <div><a href="#">设计工具</a></div>
+                                        <div><a href="#">APPUI设计</a></div>
+                                        <div><a href="#">产品交互</a></div>
+                                        <div><a href="#">Photoshop</a></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="none_top_title">
+                                    游戏
+                                    <div class="none_top_content">
+                                        <div><a href="#">Unity 3D</a></div>
+                                        <div><a href="#">Cocos2d-x</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="none_bottom">
+                            
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="wrap_right">
-        <!-- swiper文件结构 -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./images/nav1.jpg" alt="">
+        <div class="wrap_right">
+            <!-- swiper文件结构 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/nav1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/nav2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/nav3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/nav4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/nav5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/nav6.jpg" alt="">
+                    </div> 
                 </div>
-                <div class="swiper-slide">
-                    <img src="./images/nav2.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/nav3.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/nav4.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/nav5.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/nav6.jpg" alt="">
-                </div> 
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next swiper-button-white"></div>
-            <div class="swiper-button-prev swiper-button-white"></div>
-          </div>
 
 
-        <!-- <div class="right_img">
-            <img src="./images/1.jpg" id="img1" width="936px" height="386px">
-        </div> -->
-         <!-- <div class="right_box"> -->
-            <!-- <div class="right_img">
-                <img src="./images/nav2.jpg" alt="" width="936px" height="385px">
-            </div> -->
-            <!-- <div class="box_img">
-                <img src="./images/nav2.jpg" alt="" width="936px" height="365px">
-            </div>
-            <div class="box_img">
-                <img src="./images/nav3.jpg" alt="" width="936px" height="365px">
-            </div>
-            <div class="box_img">
-                <img src="./images/nav4.jpg" alt="" width="936px" height="365px">
-            </div>
-            <div class="box_img">
-                <img src="./images/nav5.jpg" alt="" width="936px" height="365px">
-            </div>
-            <div class="box_img">
-                <img src="./images/nav6.jpg" alt="" width="936px" height="365px">
-            </div> -->
-            <!-- <button type="button" class="btn goUp"> < </button>
-            <button type="button" class="btn goNext"> > </button>  -->
-        <!-- </div> -->
-        
+            
+            
+        </div>
     </div>
 </div>
 
@@ -221,7 +563,7 @@
 
 <!-- 职场提升部分 -->
 <div id="service" class="container">
-    <div class="area_title">
+    <div class="area_title area_title1">
         <span>职场提升</span>
         <span class="min">1年以上开发经验系统成长</span>
     </div>
@@ -408,7 +750,7 @@
             <div class="learn_line">
                 <span >学习路线</span>
                 <span class="learn_item"></span>
-                <span class="learn_item"><a href="#">热门</a></span>
+                <span class="learn_item"><a href="#" style="color: red;border-bottom: 2px solid red ;padding-bottom: 6px;">热门</a></span>
                 <span class="learn_item"><a href="#">前端</a></span>
                 <span class="learn_item"><a href="#">后端</a></span>
                 <span class="learn_item"><a href="#">移动端</a></span>
@@ -498,8 +840,8 @@
     <div class="container">
         <div class="area_title">
             <span>热门课程</span>
-            <span class="title_class"></span class="title_class">
-            <span class="title_class"><a href="#">实战课程</a></span>
+            <span class="title_class"></span>
+            <span class="title_class"><a href="#" style="color: red;border-bottom: 2px solid red ;padding-bottom: 6px;">实战课程</a></span>
             <span class="title_class"><a href="#">免费课程</a></span>
         </div>
         <div class="case_index">
@@ -672,7 +1014,7 @@
                 <div class="content1_banner">
                     <img src="./images/imook1.jpg" alt="" width="104px" height="118px">
                 </div>
-                <h4>10+年DBA老司机带你轻松玩转 SQL</h4>
+                <h4><a href="#">10+年DBA老司机带你轻松玩转 SQL</a></h4>
                 <div class="content1_info">
                     <span>共32节 · 69人已购买</span>
                 </div>
@@ -687,7 +1029,8 @@
                     <img src="./images/imook2.jpg" alt="" width="104px" height="118px">
                     
                 </div>
-                <h4>跟 BAT 技术专家学 Docker +  K8S</h4>
+                <h4><a href="#">跟 BAT 技术专家学 Docker +  K8S</a></h4>
+                <!-- <h4>跟 BAT 技术专家学 Docker +  K8S</h4> -->
                 <div class="content1_info">
                     <span>共47节 · 82人已购买</span>
                 </div>
@@ -702,7 +1045,8 @@
                     <img src="./images/imook3.jpg" alt="" width="104px" height="118px">
                     
                 </div>
-                <h4>专业技术团队出品：React深度刨析+实战</h4>
+                <h4><a href="#">专业技术团队出品：React深度刨析+实战</a></h4>
+                <!-- <h4>专业技术团队出品：React深度刨析+实战</h4> -->
                 <div class="content1_info">
                     <span>共31节 · 70人已购买</span>
                 </div>
@@ -717,7 +1061,8 @@
                     <img src="./images/imook4.jpg" alt="" width="104px" height="118px">
                     
                 </div>
-                <h4>跟架构师学Jetpack</h4>
+                <h4><a href="#">跟架构师学Jetpack</a></h4>
+                <!-- <h4>跟架构师学Jetpack</h4> -->
                 <div class="content1_info">
                     <span>共15节 · 808人已购买</span>
                 </div>
@@ -732,7 +1077,8 @@
                     <img src="./images/imook5.jpg" alt="" width="104px" height="118px">
                     
                 </div>
-                <h4>Python源码深度剖析</h4>
+                <h4><a href="#">Python源码深度剖析</a></h4>
+                <!-- <h4>Python源码深度剖析</h4> -->
                 <div class="content1_info">
                     <span>共45节 · 889人已购买</span>
                 </div>
@@ -747,7 +1093,8 @@
                     <img src="./images/imook6.jpg" alt="" width="104px" height="118px">
                     
                 </div>
-                <h4>零基础学透网络编程</h4>
+                <h4><a href="#">零基础学透网络编程</a></h4>
+                <!-- <h4>零基础学透网络编程</h4> -->
                 <div class="content1_info">
                     <span>共32节 · 124人已购买</span>
                 </div>
@@ -787,9 +1134,5 @@
         </div>
     </div>
 </div>
-
-<script>
-  
-</script>
 </body>
 </html>
