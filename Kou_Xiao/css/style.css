@@ -66,21 +66,38 @@
 
 
 
-    #case{background: #f8f8f8;}
-    #case .container{min-height: 460px;overflow: hidden;}
-    #case .area_title{margin-top: 45px;margin-bottom: 45px;}
-    #case .case_index{float: left; margin-bottom: 45px;width: 270px;height: 268px;position: relative;}
-    #case .index_card_top{width: 270px;height: 148px;border-radius: 8px;position: relative;overflow: hidden;}
-    #case .index_card_content{padding: 8px;}
-    #case .card_info{font-size: 12px;line-height: 18px;margin-top: 4px;font-weight: 400;color: #9199A1;}
-    #case .card_name{height: 46px;line-height: 24px;font-size: 16px;overflow: hidden;}
-    #case .card_name:hover{color: red;}
-    #case .card_price{font-size: 12px;color: #545C63;margin-top: 2px;}
-    #case .case_commen{margin-left: 24px;}
-    #case .title_class{font-size: 14px;margin: 0 14px;line-height: 30px;}
-    #case .title_class a:hover{color: red;}
-    #case .card_buttom .down{box-sizing: border-box;background: rgba(242, 13, 13, 0.08);border-radius: 2px;font-weight: 200;
+    #case1{background: #f8f8f8;}
+    #case1 .container{min-height: 460px;overflow: hidden;}
+    #case1 .area_title{margin-top: 45px;margin-bottom: 45px;}
+    #case1 .case_index{float: left; margin-bottom: 45px;width: 270px;height: 268px;position: relative;}
+    #case1 .index_card_top{width: 270px;height: 148px;border-radius: 8px;position: relative;overflow: hidden;}
+    #case1 .index_card_content{padding: 8px;}
+    #case1 .card_info{font-size: 12px;line-height: 18px;margin-top: 4px;font-weight: 400;color: #9199A1;}
+    #case1 .card_name{height: 46px;line-height: 24px;font-size: 16px;overflow: hidden;}
+    #case1 .card_name:hover{color: red;}
+    #case1 .card_price{font-size: 12px;color: #545C63;margin-top: 2px;}
+    #case1 .case_commen{margin-left: 24px;}
+    #case1 .title_class{font-size: 14px;margin: 0 14px;line-height: 30px;}
+    #case1 .title_class a:hover{color: red;}
+    #case1 .card_buttom .down{box-sizing: border-box;background: rgba(242, 13, 13, 0.08);border-radius: 2px;font-weight: 200;
         color: #F20D0D; padding: 0 4px;display: inline-block;}
+
+    #case2{background: #f8f8f8;}
+    #case2 .container{min-height: 460px;overflow: hidden;}
+    #case2 .area_title{margin-top: 45px;margin-bottom: 45px;}
+    #case2 .case_index{float: left; margin-bottom: 45px;width: 270px;height: 268px;position: relative;}
+    #case2 .index_card_top{width: 270px;height: 148px;border-radius: 8px;position: relative;overflow: hidden;}
+    #case2 .index_card_content{padding: 8px;}
+    #case2 .card_info{font-size: 12px;line-height: 18px;margin-top: 4px;font-weight: 400;color: #9199A1;}
+    #case2 .card_name{height: 46px;line-height: 24px;font-size: 16px;overflow: hidden;}
+    #case2 .card_name:hover{color: red;}
+    #case2 .card_price{font-size: 12px;color: #545C63;margin-top: 2px;}
+    #case2 .case_commen{margin-left: 24px;}
+    #case2 .title_class{font-size: 14px;margin: 0 14px;line-height: 30px;}
+    #case2 .title_class a:hover{color: red;}
+    #case2 .card_buttom .down{box-sizing: border-box;background: rgba(242, 13, 13, 0.08);border-radius: 2px;font-weight: 200;
+        color: #F20D0D; padding: 0 4px;display: inline-block;}
+
 
 
 

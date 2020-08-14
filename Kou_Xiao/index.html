@@ -13,8 +13,10 @@
     <!-- 引入swiper js文件 -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
-
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/ajax.js"></script>
     <script>
+        
     //     var index=0;
     //       function changeImg() {
     //         // 获得要切换图片的那个元素
@@ -30,8 +32,8 @@
     // var nav = document.querySelector('.nav');
     // var lis = nav.children;
     // for(var i=0;i<lis.length;i++){
-    //     lis[i].onmouseover = function(){
-    //         this.children[1].style.display = 'block';
+    //     lis[i].oouseover = function(){
+    //         this.chilnmdren[1].style.display = 'block';
     //     }
     //     lis[i].onmouseout = function(){
     //         this.children[1].style.display = 'none';
@@ -48,7 +50,7 @@
         </a>
     </div>
     <ul class="head_menu ">
-        <li>
+        <!-- <li>
             <a href="#">免费课程</a>
         </li>
         <li>
@@ -65,7 +67,7 @@
         </li>
         <li>
             <a href="#">手记</a>
-        </li>
+        </li> -->
     </ul>
     <div class="head_search">
         <input type="text" class="search_input" placeholder="请输入关键字..." autocomplete="off">
@@ -574,18 +576,16 @@
 </div>
 
 <!-- 新上好课部分 -->
-<div id="case" class="container-fluid">
+<div id="case1" class="container-fluid">
     <div class="container">
         <div class="area_title">
-            <span>新上好课</span>
-            
+            <span>新上好课</span> 
         </div>
-        <div class="case_index">
+        <!-- <div class="case_index">
             <div class="index_card_top">
                 <img src="./images/class1.jpg" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                    
                 </div>
             </div>
             <div class="index_card_content">
@@ -595,10 +595,10 @@
                         <span>初级</span>
                         <span class="r">6人评价</span>
                     </div>
-                    <div class="card_price" style="color: red;">￥298.00
+                    <div class="card_price" >
+                        ￥298.00
                         <span class="down">限时优惠</span>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -606,8 +606,7 @@
             <div class="index_card_top">
                 <img src="./images/class2.jpg" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                    
                 </div>
             </div>
             <div class="index_card_content">
@@ -626,8 +625,7 @@
             <div class="index_card_top">
                 <img src="./images/class3.jpg" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                    
                 </div>
             </div>
             <div class="index_card_content">
@@ -645,8 +643,7 @@
             <div class="index_card_top">
                 <img src="./images/class4.jpg" alt="" width="270px" height="148px"> 
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                    
                 </div>
             </div>
             <div class="index_card_content">
@@ -664,8 +661,7 @@
             <div class="index_card_top">
                 <img src="./images/class5.png" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                    
                 </div>
             </div>
             <div class="index_card_content">
@@ -685,8 +681,7 @@
             <div class="index_card_top">
                 <img src="./images/class6.jpg" alt="" width="270px" height="148px" >
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                    
                 </div>
             </div>
             <div class="index_card_content">
@@ -704,8 +699,7 @@
             <div class="index_card_top">
                 <img src="./images/class7.jpg" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                    
                 </div>
             </div>
             <div class="index_card_content">
@@ -723,8 +717,7 @@
             <div class="index_card_top">
                 <img src="./images/class8.png" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                    
                 </div>
             </div>
             <div class="index_card_content">
@@ -739,7 +732,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>  
 </div>
 
@@ -836,7 +829,7 @@
 </div>
 
 <!-- 热门课程部分 -->
-<div id="case" class="container-fluid">
+<div id="case2" class="container-fluid">
     <div class="container">
         <div class="area_title">
             <span>热门课程</span>
@@ -848,8 +841,6 @@
             <div class="index_card_top">
                 <img src="./images/hot1.png" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
                 </div>
             </div>
             <div class="index_card_content">
@@ -863,12 +854,12 @@
                 </div>
             </div>
         </div>
+
         <div class="case_index case_commen">
             <div class="index_card_top">
                 <img src="./images/hot5.jpg" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                   
                 </div>
             </div>
             <div class="index_card_content">
@@ -887,8 +878,7 @@
             <div class="index_card_top">
                 <img src="./images/hot4.jpg" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                   
                 </div>
             </div>
             <div class="index_card_content">
@@ -906,8 +896,7 @@
             <div class="index_card_top">
                 <img src="./images/hot3.jpg" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                    
                 </div>
             </div>
             <div class="index_card_content">
@@ -925,8 +914,7 @@
             <div class="index_card_top">
                 <img src="./images/hot6.jpg" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                   
                 </div>
             </div>
             <div class="index_card_content">
@@ -944,8 +932,7 @@
             <div class="index_card_top">
                 <img src="./images/hot9.jpg" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                    
                 </div>
             </div>
             <div class="index_card_content">
@@ -963,8 +950,7 @@
             <div class="index_card_top">
                 <img src="./images/hot7.png" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                   
                 </div>
             </div>
             <div class="index_card_content">
@@ -982,8 +968,7 @@
             <div class="index_card_top">
                 <img src="./images/hot8.jpg" alt="" width="270px" height="148px">
                 <div class="card_label">
-                    <label>Java</label>
-                    <label>SpringBoot</label>
+                    
                 </div>
             </div>
             <div class="index_card_content">

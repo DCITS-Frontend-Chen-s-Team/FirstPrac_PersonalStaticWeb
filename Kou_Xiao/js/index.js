@@ -1,10 +1,15 @@
 window.addEventListener('load',function() {
   var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 30,
-    centeredSlides: true,
+    direction: 'horizontal',
+    loop:true,
+    // spaceBetween: 30,
+    // centeredSlides: true,
     autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+      delay: 1500,
+      stopOnLastSlide: false,
+      disableOnInteraction: true,
+      // delay: 2500,
+      // disableOnInteraction: false,
     },
     pagination: {
       el: '.swiper-pagination',
