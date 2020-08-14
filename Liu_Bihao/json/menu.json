@@ -1,0 +1,386 @@
+[
+  {
+    "content": "前沿/区块链/人工智能",
+    "subMenu": {
+      "title": "前沿技术",
+      "label": [
+        "微服务",
+        "区块链",
+        "以太坊",
+        "机器学习",
+        "深度学习",
+        "计算机视觉",
+        "自然语言处理",
+        "数据分析&amp;挖掘"
+      ],
+      "course_card": [
+        {
+          "imgUrl": "static/img/course_1.jpg",
+          "title": "Spring Cloud 全方位课程",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5186
+          }
+        },
+        {
+          "imgUrl": "static/img/course_2.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_3.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_4.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        }
+      ]
+    }
+  },
+  {
+    "content": "前端/小程序/JS",
+    "subMenu": {
+      "title": "后端开发",
+      "label": [
+        "Java",
+        "SpringBoot",
+        "Spring Cloud",
+        "SSM",
+        "PHP",
+        "Python",
+        "爬虫",
+        "Django",
+        "Tornado",
+        "Go",
+        "C",
+        "C++",
+        "C#",
+        "Ruby"
+      ],
+      "course_card": [
+        {
+          "imgUrl": "static/img/course_1.jpg",
+          "title": "Spring Cloud 全方位课程",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5186
+          }
+        },
+        {
+          "imgUrl": "static/img/course_2.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_3.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_4.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        }
+      ]
+    }
+  },
+  {
+    "content": "后端/Java/Python",
+    "subMenu": {
+      "title": "后端开发",
+      "label": [
+        "微服务",
+        "区块链",
+        "以太坊",
+        "机器学习",
+        "深度学习",
+        "计算机视觉",
+        "自然语言处理",
+        "数据分析&amp;挖掘"
+      ],
+      "course_card": [
+        {
+          "imgUrl": "static/img/course_1.jpg",
+          "title": "Spring Cloud 全方位课程",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5186
+          }
+        },
+        {
+          "imgUrl": "static/img/course_2.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_3.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_4.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        }
+      ]
+    }
+  },
+  {
+    "content": "移动/Android/iOS",
+    "subMenu": {
+      "title": "前沿技术",
+      "label": [
+        "微服务",
+        "区块链",
+        "以太坊",
+        "机器学习",
+        "深度学习",
+        "计算机视觉",
+        "自然语言处理",
+        "数据分析&amp;挖掘"
+      ],
+      "course_card": [
+        {
+          "imgUrl": "static/img/course_1.jpg",
+          "title": "Spring Cloud 全方位课程",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5186
+          }
+        },
+        {
+          "imgUrl": "static/img/course_2.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_3.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_4.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        }
+      ]
+    }
+  },
+  {
+    "content": "云计算/大数据/容器",
+    "subMenu": {
+      "title": "前沿技术",
+      "label": [
+        "微服务",
+        "区块链",
+        "以太坊",
+        "机器学习",
+        "深度学习",
+        "计算机视觉",
+        "自然语言处理",
+        "数据分析&amp;挖掘"
+      ],
+      "course_card": [
+        {
+          "imgUrl": "static/img/course_1.jpg",
+          "title": "Spring Cloud 全方位课程",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5186
+          }
+        },
+        {
+          "imgUrl": "static/img/course_2.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_3.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_4.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        }
+      ]
+    }
+  },
+  {
+    "content": "运维/测试/数据库",
+    "subMenu": {
+      "title": "前沿技术",
+      "label": [
+        "微服务",
+        "区块链",
+        "以太坊",
+        "机器学习",
+        "深度学习",
+        "计算机视觉",
+        "自然语言处理",
+        "数据分析&amp;挖掘"
+      ],
+      "course_card": [
+        {
+          "imgUrl": "static/img/course_1.jpg",
+          "title": "Spring Cloud 全方位课程",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5186
+          }
+        },
+        {
+          "imgUrl": "static/img/course_2.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_3.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_4.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        }
+      ]
+    }
+  },
+  {
+    "content": "UI设计/3D动画/游戏",
+    "subMenu": {
+      "title": "前沿技术",
+      "label": [
+        "微服务",
+        "区块链",
+        "以太坊",
+        "机器学习",
+        "深度学习",
+        "计算机视觉",
+        "自然语言处理",
+        "数据分析&amp;挖掘"
+      ],
+      "course_card": [
+        {
+          "imgUrl": "static/img/course_1.jpg",
+          "title": "Spring Cloud 全方位课程",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5186
+          }
+        },
+        {
+          "imgUrl": "static/img/course_2.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_3.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        },
+        {
+          "imgUrl": "static/img/course_4.jpg",
+          "title": "推荐算法理论与实践",
+          "info": {
+            "price": "￥366.00",
+            "level": "高级",
+            "people": 5000
+          }
+        }
+      ]
+    }
+  }
+]
