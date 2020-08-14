@@ -351,50 +351,6 @@ div.subMenu {
     transition: background-color 0.3s;
 }
 
-/* 轮播图的另一种实现方案 */
-
-/*.main-banner .container .banner .banner-img #banner {*/
-/*    height: 382px;*/
-/*    width: 845px;*/
-/*    background: url("../img/img_1.jpg");*/
-/*    background-size: 845px 382px;*/
-/*    border-top-right-radius: 10px;*/
-/*    border-bottom-right-radius: 10px;*/
-/*    animation: banner 10s infinite; !* 动画效果：10s 无限循环 *!*/
-/*}*/
-/*@keyframes banner {*/
-/*    16.67%{*/
-/*        background: url("../img/img_2.jpg");*/
-/*        background-size: 845px 382px;*/
-/*        border-top-right-radius: 10px;*/
-/*    border-bottom-right-radius: 10px;*/
-/*    }*/
-/*    33.33%{*/
-/*        background: url("../img/img_3.jpg");*/
-/*        background-size: 845px 382px;*/
-/*        border-top-right-radius: 10px;*/
-/*    border-bottom-right-radius: 10px;*/
-/*    }*/
-/*    50%{*/
-/*        background: url("../img/img_4.jpg");*/
-/*        background-size: 845px 382px;*/
-/*        border-top-right-radius: 10px;*/
-/*    border-bottom-right-radius: 10px;*/
-/*    }*/
-/*    66.67%{*/
-/*        background: url("../img/img_5.jpg");*/
-/*        background-size: 845px 382px;*/
-/*        border-top-right-radius: 10px;*/
-/*    border-bottom-right-radius: 10px;*/
-/*    }*/
-/*    83.33%{*/
-/*        background: url("../img/img_6.jpg");*/
-/*        background-size: 845px 382px;*/
-/*        border-top-right-radius: 10px;*/
-/*    border-bottom-right-radius: 10px;*/
-/*    }*/
-/*}*/
-
 .title-area {
     width: 100%;
     float: left;
@@ -403,7 +359,7 @@ div.subMenu {
     color: #1C1F21;
     letter-spacing: 0;
     line-height: 42px;
-    margin: 15px 0 15px 10px;
+    margin-top: 15px;
     clear: both;
 }
 
@@ -421,6 +377,14 @@ div.subMenu {
     line-height: 42px;
 }
 
+.title-area .more-des {
+    float: right;
+    margin-left: 12px;
+    font-size: 14px;
+    color: #545C63;
+    line-height: 42px;
+}
+
 .title-area .des span {
     float: left;
     margin: 0 5px;
@@ -428,7 +392,7 @@ div.subMenu {
 
 /* 学习小卡片 */
 .main-banner .container .recommend {
-    height: 150px;
+    height: 170px;
     width: 100%;
     display: block;
     position: relative;
@@ -439,7 +403,6 @@ div.subMenu {
 
 .main-banner .container .recommend .card-list-area {
     margin: 0;
-    padding-top: 20px;
     position: relative;
     clear: both;
 }
@@ -601,7 +564,7 @@ div.subMenu {
 /* 学习路线 */
 .main-learn-road {
     width: 100%;
-    height: 646px;
+    height: 680px;
     display: block;
     position: relative;
 }
