@@ -179,7 +179,7 @@
 
 #main {
     width: 100%;
-    height: 4000px;
+    height: 4200px;
     box-sizing: border-box;
     display: block;
 }
@@ -695,6 +695,98 @@
 .component-introduce .component-ps span {
     margin-right: 20px;
 }
+
+.course-container {
+    background-color: #eeeaea;
+    width: 100%;
+    box-sizing: border-box;
+    height: 800px;
+}
+
+.hot-course {
+    margin: 10px 10%;
+    height: 800px;
+}
+
+.hot-course .hot-course-title {
+    margin-top: 20px;
+    height: 120px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hot-course-title span {
+    margin: 25px 0;
+    float: left;
+}
+
+.hot-course-title ul {
+    list-style: none;
+    float: left;
+
+}
+
+.hot-course-title li {
+    margin: 0 14px;
+    float: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 41px;
+    cursor: pointer;
+    color: #545C63;
+}
+
+.hot-course-title li:hover{
+    color: red;
+}
+
+.hot-course-title .curr {
+    color: red;
+    border-bottom: 2px solid #F20D0D;
+}
+
+.hot-course .hot-course-component {
+    width: 20%;
+    float: left;
+    display: inline-block;
+    margin: 20px 30px;
+}
+
+.hot-course .hot-course-component img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.hot-course .hot-course-component a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.hot-course .hot-course-component a:hover {
+    color: red;
+}
+
+.hot-course .hot-course-component .course-message span {
+    padding: 0 6px;
+    color: #99a1a6;
+}
+
+.column-container {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    height: 800px;
+}
+
+.mooc-column {
+    margin: 10px 10%;
+    height: 800px;
+}
+
+
 
 #footer {
     width: 100%;
