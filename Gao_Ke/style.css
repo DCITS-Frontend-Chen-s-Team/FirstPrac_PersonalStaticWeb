@@ -22,34 +22,57 @@ html, body {
   float: left;
   width: 8%;
   height: 80px;
+  margin-right: 50px;
 }
 
+/* .head .head-menu {
+  list-style-type: none;
+} */
+
 .head .head-menu {
+  padding-left: 200px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.head .head-menu .menu {
+  float: left;
+  width: 5%;
+  /* display: inline-block; */
+  text-align: center;
+  line-height: 80px;
+  color: black;
+  
+  text-decoration: none;
+}
+
+.head .head-search {
+  width: 20%;
+  float: left;
+  line-height: 80px;
+  margin-left: 100px;
+}
+
+/* .head .head-menu1 {
+  list-style-type: none;
+} */
+.head .head-menu1{
+  margin: 0 30px 0 0;
+  float: right;
+  padding: 0;
   list-style-type: none;
 }
 
-.head .head-menu .menu {
+.head .head-menu1 .menu {
   float: left;
-  width: 6%;
+  margin-left: 30px;
   /* display: inline-block; */
   text-align: center;
   line-height: 80px;
   color: black;
   text-decoration: none;
-}
 
-.head .head-search {
-  width: 30%;
-  float: left;
-  line-height: 82px;
-}
-
-.head .head-menu1 .menu {
-  width: 5%;
-  text-align: center;
-  line-height: 80px;
-  color: black;
-  text-decoration: none;
 }
 
 .head .head-menu1 .menu:hover {

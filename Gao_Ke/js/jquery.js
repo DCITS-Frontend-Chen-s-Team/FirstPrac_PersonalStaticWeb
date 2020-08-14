@@ -1,3 +1,4 @@
+// 导航栏head头部部分
 $(function () {
   $.ajax({
     type: "get",//请求方式
@@ -7,16 +8,11 @@ $(function () {
       var str = "";
       //data是一个集合,所以需要先遍历
       $.each(data, function (index, dataItem) {
-        str += `<li>
-        <a href="#" class="menu">${dataItem.li1}</a>
-        <a href="#" class="menu">${dataItem.li2}</a>
-        <a href="#" class="menu">${dataItem.li3}</a>
-        <a href="#" class="menu">${dataItem.li4}</a>
-        <a href="#" class="menu">${dataItem.li5}</a>
-        <a href="#" class="menu">${dataItem.li6}</a>
-      </li>`
-      });
-      $(".head .head-menu").append(str);
+        str += `
+        <a href="#" class="menu">${dataItem.li}</a>
+      `
+      }); 
+      $(".head .head-menu li").append(str);
     }
   })
 })
@@ -29,13 +25,29 @@ $(function () {
       var str = "";
       //data是一个集合,所以需要先遍历
       $.each(data, function (index, dataItem) {
-        str += `<a href="#" class="menu">${dataItem.li11}</a>
-        <a href="#" class="menu">${dataItem.li12}</a>
-        <a href="#" class="menu">${dataItem.li13}</a>
-        /
-        <a href="#" class="menu">${dataItem.li14}</a>`
+        str += `<a href="#" class="menu">${dataItem.a1}</a>`
       });
-      $(".head .head-menu1").append(str);
+      $(".head .head-menu1 li").append(str);
+    }
+  })
+})
+
+
+// 第五部分的head头部
+$(function () {
+  $.ajax({
+    type: "get",//请求方式
+    url: "json/div5.head.json",//地址，就是json文件的请求路径
+    dataType: "json",//数据类型可以为 json 
+    success: function (data) {//返回的参数就是 action里面所有的有get和set方法的参数
+      var str = "";
+      //data是一个集合,所以需要先遍历
+      $.each(data, function (index, dataItem) {
+        str += `
+        <a href="#" class="menu5">${dataItem.li5}</a>
+      `
+      }); 
+      $(".div5 .hh .div5-menu li").append(str);
     }
   })
 })
