@@ -19,7 +19,6 @@ div{
 }
 
 #index{
-	/* background-color: aqua; */
 	margin: 0 auto;
 	width: 100%;
 	min-width:1510px;
@@ -39,7 +38,6 @@ div{
 .nav_item{
 	float: left;
 	list-style: none;
-	/* margin:0; */
 	padding:0;
 }
 .nav_item li a{
@@ -81,7 +79,7 @@ div{
 	height:72px;
 	line-height: 36px;
 	transition: relative;
-	14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+	font: 14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
 	color: #1c1f21;
 	text-decoration:none;
 }
@@ -566,7 +564,6 @@ background-color:white;
 .haokecard{
     box-sizing: border-box;
 	margin-top:40px;
-/* 	margin-right: 40px; */
     padding-left: 20px;
 	width:25%;
 	max-width: 270px;
@@ -589,11 +586,11 @@ h3{
 	padding: 0;
 }
 .haokemo{
-width:100%;
-height:10%;
-margin-top: 30px;
-font-size: 12px;
-color: #787D82;
+	width:100%;
+	height:10%;
+	margin-top: 30px;
+	font-size: 12px;
+	color: #787D82;
 }
 .pingjia{
 	float: right;
@@ -631,8 +628,6 @@ color: #787D82;
 	width:48%;
 	margin-top:10px;
 	height: 25%;
-/* 	border: #000000 1px solid;
-	background-color: #87CEEB; */
 	float: left;
 	box-sizing: border-box;
 	margin-right: 20px;
@@ -680,7 +675,7 @@ color: #787D82;
 }
 .p3kongzhi h4{
 	margin: 8px 0;
-	    margin-left: 0px;
+	margin-left: 0px;
 	margin-left: 164px;
 	font-size: 16px;
 	color: #1C1F21;
@@ -763,8 +758,6 @@ color: #787D82;
 	height:30%;
 	float: left;
 	padding: 18px;
-	/* margin-left: 24px; */
-/* 	margin-bottom: 12px; */
 	transition: all .3s;
 }
 .course_banner {
@@ -860,8 +853,6 @@ color: #787D82;
 .footer{
 	padding-top: 40x;
 	height:136px;
-	/* background-color: #F5F5F5; */
-	/* top: 100px; */
 	position: relative;
 }
 .container{
@@ -972,7 +963,7 @@ color: #787D82;
 }
 .footer .beian {
     background: url(../Images/Index/beianicon.png) no-repeat 0 0;
-        background-size: auto;
+    background-size: auto;
     width: 16px;
     height: 16px;
     vertical-align: middle;
