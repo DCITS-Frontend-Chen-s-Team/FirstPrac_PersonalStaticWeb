@@ -124,7 +124,7 @@ $(function () {
                                 </div>`;
                 }
 
-                str += `<li class="subMenu-2">
+                str += `<li class="sub-Menu">
                         <a href="#">${dataItem.content}</a>
                         <div class="subMenu">
                             <h3 class="title-area">
