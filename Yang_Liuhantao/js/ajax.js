@@ -73,4 +73,38 @@ $(function () {
             $(".new-course").append(str);
         }
     });
+
+    $.ajax({
+        url: "json/studyroute.json", // json 文件地址
+        type: "get", // 数据传输方式
+        dataType: "json", // 获取文件类型，非必要
+        // 若 json 文件获取失败激活此函数
+        error: function () {
+            console.log("error!"); // 检验函数激活，排除 bug
+        },
+        success: function (data) {
+            var str = ""; // 提前声明字符串变量
+            /* 循环遍历data，得到参数dataItem（遍历单元、参数名称自定义）*/
+            $.each(data, function (index, dataItem) {
+                str += `<div class="study-route-component">
+                    <div class="component-img">
+                        <img src="${dataItem.imgUrl}">
+                    </div>
+
+                    <div class="component-introduce">
+                        <div class="component-text">
+                            <a>${dataItem.title}</a>
+                            <span>${dataItem.introduce}</span>
+                        </div>
+
+                        <div class="component-ps">
+                            <span>${dataItem.ps.num}</span>
+                            <span class="component-ps-favor">${dataItem.ps.favor}</span>
+                        </div>
+                    </div>
+                </div>` ;
+            });
+            $(".study-container .study-route").append(str);
+        }
+    });
 })
