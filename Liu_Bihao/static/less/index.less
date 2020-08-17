@@ -1,6 +1,7 @@
 /* 全局样式定义 */
 body {
   margin: 0;
+  font-size: 62.5%; /* 使用 em 定义字体大小，浏览器默认 1em = 16px */
 }
 
 ul {
@@ -90,7 +91,7 @@ a {
         text-decoration: none;
         color: #4d555d;
         position: relative;
-        font-size: 16px;
+        font-size: 1.6em;
         line-height: 72px; /* 使文字垂直居中 */
         -webkit-transition: background-color 0.3s;
         -moz-transition: background-color 0.3s;
@@ -119,7 +120,7 @@ a {
 
     .search-input {
       padding: 8px 12px;
-      font-size: 14px;
+      font-size: 1.4em;
       color: #A6A6A6;
       line-height: 40px;
       height: 40px;
@@ -168,8 +169,8 @@ a {
     justify-content: space-between;
 
     span {
+      font-size: 1.5em;
       float: left;
-      position: relative;
       line-height: 72px;
       color: #71777d;
     }
@@ -213,14 +214,13 @@ a {
         top: 0;
         float: left;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         z-index: 1;
         background-color: #2b333b;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
-
-        ul {
-          margin-top: 15px;
-        }
 
         a:hover {
           background-color: rgba(255, 255, 255, 0.4);
@@ -238,7 +238,7 @@ a {
           text-decoration: none;
           color: #aaadb1;
           position: relative;
-          font-size: 16px;
+          font-size: 1.6em;
           line-height: 50px; /* 使文字垂直居中 */
           -webkit-transition: background-color 0.3s;
           -moz-transition: background-color 0.3s;
@@ -269,20 +269,19 @@ a {
     /* 学习小卡片 */
 
     .recommend {
-      height: 170px;
+      height: 150px;
       width: 100%;
       display: block;
       position: relative;
       margin: auto;
-      /*padding: 20px;*/
+      /* padding: 20px; */
       text-align: center;
 
       .card-list-area {
-        margin: 0;
-        position: relative;
-        clear: both;
+        display: flex;
+        justify-content: space-around;
 
-        a {
+      a {
           float: left;
           display: block;
           width: 270px;
@@ -305,7 +304,7 @@ a {
           }
 
           h3 {
-            font-size: 18px;
+            font-size: 1.8em;
             font-weight: bold;
             color: #1C1F21;
             letter-spacing: 1px;
@@ -314,7 +313,7 @@ a {
           }
 
           p {
-            font-size: 14px;
+            font-size: 1.4em;
             color: #1C1F21;
             line-height: 16px;
             margin: 5px 0;
@@ -385,7 +384,7 @@ div.subMenu {
       position: relative;
       margin-left: 20px;
       margin-bottom: 18px;
-      font-size: 15px;
+      font-size: 1.5em;
       color: black;
       word-break: break-all;
       clear: right;
@@ -395,46 +394,39 @@ div.subMenu {
       float: left;
       position: relative;
       margin-left: 20px;
-      font-size: 10px;
+      font-size: 1em;
       color: #A6A6A6;
     }
   }
 }
 
+//TODO 轮播图 bug
+//TODO 课程卡片 flex
+
 /* common title area */
 .title-area {
   width: 100%;
-  float: left;
-  position: relative;
-  font-size: 24px;
+  font-size: 2.4em;
   color: #1C1F21;
-  letter-spacing: 0;
+  text-align: left;
   line-height: 42px;
-  margin-top: 15px;
-  clear: both;
+  margin: 10px 0;
 
   .title {
-    float: left;
     font-weight: bold;
   }
 
   .des {
-    float: left;
     margin-left: 12px;
-    font-size: 14px;
+    font-size: 0.6em;
     color: #545C63;
     line-height: 42px;
-
-    span {
-      float: left;
-      margin: 0 5px;
-    }
   }
 
   .more-des {
     float: right;
     margin-left: 12px;
-    font-size: 14px;
+    font-size: 0.6em;
     color: #545C63;
     line-height: 42px;
   }
@@ -481,7 +473,7 @@ div.subMenu {
     }
 
     .course-name {
-      font-size: 16px;
+      font-size: 1.6em;
       color: #07111B;
       line-height: 24px;
       word-wrap: break-word;
@@ -497,7 +489,7 @@ div.subMenu {
     }
 
     .card-info {
-      font-size: 12px;
+      font-size: 1.2em;
       color: #9199A1;
       line-height: 18px;
       margin-top: 4px;
@@ -536,7 +528,7 @@ div.subMenu {
       top: 8px;
       left: -8px;
       z-index: 4;
-      font-size: 12px;
+      font-size: 1.2em;
       color: #FFFFFF;
       line-height: 20px;
       padding: 0 8px;
@@ -554,7 +546,7 @@ div.subMenu {
   li {
     margin: 0 14px;
     float: left;
-    font-size: 14px;
+    font-size: 0.6em;
     letter-spacing: 0;
     line-height: 41px;
     cursor: pointer;
@@ -602,7 +594,7 @@ div.subMenu {
 
       .title-name {
         margin: 8px 0 8px 164px;
-        font-size: 16px;
+        font-size: 1.6em;
         color: #1C1F21;
         line-height: 20px;
         min-height: 20px;
@@ -616,7 +608,7 @@ div.subMenu {
 
       .des {
         margin-left: 164px;
-        font-size: 14px;
+        font-size: 1.4em;
         color: #545C63;
         letter-spacing: 0;
         line-height: 20px;
@@ -630,7 +622,7 @@ div.subMenu {
 
       .info {
         margin-left: 164px;
-        font-size: 12px;
+        font-size: 1.2em;
         color: #9199A1;
         height: 18px;
         line-height: 18px;
@@ -687,7 +679,7 @@ div.subMenu {
       .try-read {
         width: 35px;
         height: 20px;
-        font-size: 15px;
+        font-size: 1.5em;
         font-weight: bold;
         color: #3377FF;
         margin: 5px;
@@ -697,7 +689,7 @@ div.subMenu {
 
     h4 {
       margin: 0 0 0 112px;
-      font-size: 14px;
+      font-size: 1.4em;
       color: black;
       line-height: 22px;
       height: 44px;
@@ -712,7 +704,7 @@ div.subMenu {
     .info {
       margin-left: 112px;
       padding: 10px 0;
-      font-size: 12px;
+      font-size: 1.2em;
       color: #9199A1;
       text-align: left;
       line-height: 14px;
@@ -721,7 +713,7 @@ div.subMenu {
 
     .teacher {
       margin: 10px 0 10px 112px;
-      font-size: 12px;
+      font-size: 1.2em;
       color: #1C1F21;
       text-align: left;
       line-height: 16px;
@@ -737,7 +729,7 @@ div.subMenu {
       position: relative;
 
       .sale {
-        font-size: 16px;
+        font-size: 1.6em;
         color: #3377FF;
         text-align: left;
         line-height: 32px;
@@ -746,7 +738,7 @@ div.subMenu {
 
       .ori {
         margin-left: 8px;
-        font-size: 12px;
+        font-size: 1.2em;
         color: #9199A1;
         text-align: left;
         line-height: 30px;
@@ -765,7 +757,7 @@ div.subMenu {
           height: 16px;
           background-image: linear-gradient(90deg, #3377ff 0, #74ccff 99%);
           padding: 2px 6px;
-          font-size: 12px;
+          font-size: 1.2em;
         }
       }
     }
@@ -801,7 +793,7 @@ div.subMenu {
   }
 
   .footer-copyright {
-    font-size: 12px;
+    font-size: 1.2em;
     padding: 0 0 0 10px;
     text-align: left;
     margin-top: 8px;
@@ -818,7 +810,7 @@ div.subMenu {
     text-align: center;
 
     p {
-      font-size: 12px;
+      font-size: 1.2em;
       color: #4D555D;
       line-height: 24px;
       margin-top: 4px;
@@ -873,7 +865,7 @@ img.code {
     display: block;
     width: 26px;
     padding: 16px 0;
-    font-size: 22px;
+    font-size: 2.2em;
     line-height: 20px;
     color: #b5b9bc;
     box-sizing: border-box;
@@ -882,7 +874,7 @@ img.code {
 
     span {
       /*display: none;*/
-      font-size: 12px;
+      font-size: .55em;
       color: #07111b;
       line-height: 14px;
     }
