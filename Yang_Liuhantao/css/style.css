@@ -680,19 +680,19 @@
     float: left;
 }
 
-.component-introduce .component-text a {
+.study-route-component .component-introduce .component-text a {
     font-weight: bold;
 }
 
-.component-introduce .component-text span {
+.study-route-component .component-introduce .component-text span {
     float: left;
 }
 
-.component-introduce .component-ps {
+.study-route-component .component-introduce .component-ps {
     margin-top: 90px;
 }
 
-.component-introduce .component-ps span {
+.study-route-component .component-introduce .component-ps span {
     margin-right: 20px;
 }
 
@@ -786,7 +786,115 @@
     height: 800px;
 }
 
+.column-container .mooc-column-title {
+    margin-top: 20px;
+    height: 120px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
 
+.mooc-column-title span {
+    margin: 25px 0;
+    float: left;
+}
+
+.mooc-column-title a {
+    float: right;
+    font-size: 16px;
+    margin: 40px 0;
+    text-decoration: none;
+    color: #545C63;
+}
+
+.mooc-column-title a:hover {
+    color: black;
+}
+
+.mooc-column .mooc-column-component {
+    width: 30%;
+    height: 160px;
+    float: left;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.mooc-column .mooc-column-component:hover {
+    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
+    border-radius: 10px;
+}
+
+.mooc-column-component .component-img {
+    height: 100%;
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.mooc-column-component .component-img img {
+    width: 120px;
+    height: 140px;
+    padding: 0 10px;
+}
+
+.mooc-column-component .component-img span {
+    float: left;
+    font-size: 14px;
+    color: blue;
+    font-weight: bold;
+    background-color: #efefef;
+}
+
+.mooc-column-component .component-introduce {
+    height: 100%;
+    width: 65%;
+    float: left;
+}
+
+.mooc-column-component .component-introduce h4 {
+    font-size: 16px;
+    top: -10px;
+    margin: 0;
+}
+
+.mooc-column-component .component-introduce h4:hover{
+    color: blue;
+}
+
+.mooc-column-component .component-introduce .component-introduce-purchase {
+    color: rgb(99, 94, 94);
+    font-size: 14px;
+}
+
+.mooc-column-component .component-introduce .component-introduce-author {
+    font-size: 14px;
+}
+
+.mooc-column-component .component-introduce .component-introduce-author:hover {
+    color: red;
+}
+
+.mooc-column-component .component-introduce .component-introduce-price {
+    margin-top: 35px;
+}
+
+.mooc-column-component .component-introduce .component-introduce-price .price-new {
+    color: blue;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.mooc-column-component .component-introduce .component-introduce-price .price-old {
+    color: rgb(102, 93, 93);
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.mooc-column-component .component-introduce .component-introduce-price .price-tip {
+    font-size: 16px;
+    color: white;
+    background-image: linear-gradient(rgb(33, 74, 211), rgb(31, 147, 214));
+}
 
 #footer {
     width: 100%;
