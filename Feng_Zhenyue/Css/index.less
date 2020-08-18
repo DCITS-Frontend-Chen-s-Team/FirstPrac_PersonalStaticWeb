@@ -7,6 +7,10 @@
 @page1boxshadow: 0 12px 24px 0 rgba(7, 17, 27, 0.1);
 @boxshadow: 0 3px 6px 0 rgba(7, 17, 27, 0.1);
 /* 下面是属性区 */
+p:nth-child(2){
+	color: white;
+	text-shadow: 1px 3px 3px #0055ff;
+}
 #header{
 	background-color: white;
 	width: 100%;
@@ -25,6 +29,9 @@ div{
 	height: 72px;
 	padding: 0;
 	background-size: cover;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
 }
 
 #index{
@@ -46,24 +53,25 @@ div{
 	width:140px;
 	background-image: url(../Images/Index/logo-recommended.png);
 	background-size: cover;
-	float: left;
 	margin:0 24px 0 20px;
 }
 .nav_item{
-	float: left;
 	list-style: none;
 	/* margin:0; */
 	padding:0;
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+	width: 33%;
 }
 .nav_item li a{
-	padding: 0 20px;
 	display: block;
 	color: rgba(255,255,255,0.6);
 	text-align: center;
 	font-size:1rem;
 	height:72px;
 	transition: relative;
-	font: 14px/3 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+	font: 0.9375rem/5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
 	color: #1c1f21;
 	text-decoration:none;
 }
@@ -80,22 +88,7 @@ div{
 	background: url(../Images/Index/new.png) no-repeat 0 0;
 }
 .nav_item li{
-	float: left;
-}
-.header_unlogin li{
-	float: left;
-	list-style:none;
-}
-.header_unlogin li a{
-	padding: 0 20px;
-	text-align: center;
-	font-size:1rem;
-	height:72px;
-	line-height: 36px;
-	transition: relative;
-	font:14px/3 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
-	color: #1c1f21;
-	text-decoration:none;
+	width: 17%;
 }
 .sousuokuang{
 	float: left;
@@ -124,9 +117,63 @@ div{
     width: 25px;
 }
 #login_area{
-	float: right;
-	position: relative;
+	width: 21%;
+	height: 100%;
+	order: 1;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-left: 10%;
 }
+#login_area a{
+	font-size: 0.9375rem;
+	line-height: 5;
+}
+.login_area_left{
+	height: 100%;
+	width: 60%;	
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+.downApp{
+	width: 40%;
+	height: 100%;
+}
+.shoppingcart{
+	width: 60%;
+	height: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+	border: 1px solid gainsboro;
+	border-radius: 18px;
+	height: 36px;
+	margin: auto 0;
+}
+.shoppingcart_a{
+	width: 65%;
+	height: 100%;
+	line-height: 0;
+	margin: auto 0;
+	padding: 16px 0;
+	font-size: 1rem;
+}
+.shoppingcart_icon{
+	width:22px;
+	height:22px;
+	font-size: 1rem;
+	margin-right: 8px;
+	margin: auto 4px;
+	background-image: url(../Images/Index/pngshop-cart-icon.png);
+}
+.login_area_right{
+	height: 100%;
+	width: 40%;
+	display: flex;
+	justify-content:space-around;
+}
+
 .search-warp {
 	position: relative;
 	float: left;
@@ -147,44 +194,7 @@ div{
 	font-size: 0;
 	transition: width 0.3s;
 }
-.gwctb{
-	width:22px;
-	height:22px;
-	position: relative;
-	top: 2px;
-	font-size: 1rem;
-	margin-right: 8px;
-	background-image: url(../Images/Index/pngshop-cart-icon.png);
-	float: left;
-	}
-.gouwuche{
-	display: inline-block;
-	padding: 0 18px;
-	width: auto;
-	box-sizing: border-box;
-	border: 1px solid gainsboro;
-	border-radius: 18px;
-	height: 36px;
-	line-height: 34px;
-	color: #787d82;
-	text-align: center;
-}
-.gouwuchexiala{
-	z-index: 588;
-	width: 240px;
-	height: 284px;
-	display: none;
-	top: 72px;
-	background-image: url(../Images/Index/wodegouwuche.png);
-	background-size: cover;
-	background-color: #000000;
-}
-.header_nav #login_area .header_unlogin .gouwuche:hover .gouwuchexiala{
-	display: block;
-}
-.set_button{
 
-}
 /* .logo a{
 	background-image: url(../Images/Index/logo-recommended.png) center center no-repeat;
 	display: block;
@@ -787,10 +797,9 @@ color: #787D82;
 }
 .p5neiqian{
 	width: 76%;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
+	margin: auto;
 	box-shadow: 0 2px 4px 0 rgba(7, 17, 27, 0.06);
+	padding-top: 40px;
 }
 .p5rongqi{
 	width:100%;
