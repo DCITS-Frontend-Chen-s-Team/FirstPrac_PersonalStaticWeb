@@ -58,7 +58,7 @@ $(function () {
             $.each(data, function (index, dataItem) {
                 str += `<div class="new-course-component">
                     <a href="#"><img src="${dataItem.imgUrl}"/></a>
-                    <a href="#" style="font-weight: bold; font-size: 16px">${dataItem.title}</a>
+                    <a href="#" style="font-weight: bold; font-size: 1.3rem">${dataItem.title}</a>
                     <div class="course-message">
                         <span style="float: left;">${dataItem.message.level}</span>
                         <span style="float: left;">${dataItem.message.purchase}</span>
@@ -66,11 +66,11 @@ $(function () {
                     </div>
                     <div class="price" style="float: left; width: 100%;">
                         ${dataItem.isDiscount ? '<span style="color: red; font-weight: bold;">' + `${dataItem.price}` +'</span>\n ' +
-                    '<span style="color: red; background-color: #d0d3d5; font-size: 14px; padding: 0 1px;">限时特惠</span>' : '<span style="color: #545C63;">' + `${dataItem.price}` + '</span>'}
+                    '<span style="color: red; background-color: #d0d3d5; font-size: 1.2rem; padding: 0 1px;">限时特惠</span>' : '<span style="color: #545C63;">' + `${dataItem.price}` + '</span>'}
                     </div>
                 </div>` ;
             });
-            $(".new-course").append(str);
+            $(".new-course .new-course-base").append(str);
         }
     });
 
