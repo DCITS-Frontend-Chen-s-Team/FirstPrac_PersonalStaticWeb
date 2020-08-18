@@ -79,7 +79,7 @@ html {
     color: black;
 }
 
-#login-area {
+.login-area {
     float: right;
     position: relative;
 }
