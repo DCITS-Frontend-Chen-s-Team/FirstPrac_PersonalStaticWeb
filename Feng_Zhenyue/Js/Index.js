@@ -151,7 +151,7 @@
 				   </div>`;
 					});
 					//类选择器
-					$("#page2fix").append(str);
+					$("#page2cardbox").append(str);
 				}
 			})
 		})
@@ -231,7 +231,7 @@
 					</div>`;
 					});
 					//类选择器
-					$("#page4fix").append(str);
+					$("#page4cardbox").append(str);
 				}
 			})
 		})
@@ -287,7 +287,7 @@
 						</div>`;
 					});
 					//类选择器
-					$("#page5fix").append(str);
+					$("#page5cardbox").append(str);
 				}
 			})
 		});

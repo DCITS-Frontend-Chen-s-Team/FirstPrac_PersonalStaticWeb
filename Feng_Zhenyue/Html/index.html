@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>慕课网仿制_冯振岳</title>
-		<link href="../Css/index.css" rel="stylesheet" />
+		<!-- <link href="../Css/index.css" rel="stylesheet" /> -->
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+		<link rel="stylesheet/less" href="../Css/index.less">
+		<script src="../Js/less.min.js"></script>
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
 		<script src="../Jquery/jquery-3.4.1.min.js"></script>
 	</head>
@@ -146,6 +148,9 @@
 					<h3 class="type_title">
 						<span>新上好课</span>
 					</h3>
+					<div class="page2cardbox" id="page2cardbox">
+						<!-- 这里是page2card填充的地方 -->
+					</div>
 				</div>
 			</div>
 			<!-- 这里是page3============================================================ -->
@@ -178,17 +183,20 @@
 					<h3 class="type_title4">
 						<span>热门课程</span>
 					</h3>
+					<div class="page4cardbox" id="page4cardbox">
 					<!-- 这里是json插入的区域 -->
 				</div>
 			</div>
-				<!-- 从这里开始是page5============================================================ -->
+		</div>
+		<!-- 从这里开始是page5============================================================ -->
 				<div id="page5">
 					<div class="p5neiqian" id="page5fix">
 						<h3 class="type_title4">
 							<span class="p5span">慕课专栏</span>
 						</h3>
-						<!-- 这里是page5嵌入区域 -->
-		</div>
+						<div id="page5cardbox" class="page5cardbox">
+							<!-- 这里是page5嵌入区域 -->
+						</div>
 		</div>
 		</div>
 		<div class="footer idx-minwidth">

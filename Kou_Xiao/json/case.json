@@ -1,0 +1,67 @@
+[
+  {
+    "have_special_class": false,
+    "img":"class1.jpg",
+    "card_name":"Java可视化UNL工作流系统(Activiti7+SpringBoot)",
+    "card_info1":"初级",
+    "card_info2":"6人评价",
+    "card_price1":"￥298.00",
+    "down":true
+  },
+  {
+    "have_special_class": true,
+    "img":"class2.jpg",
+    "card_name":"编程必备基础 计算机组成原理+操作系统+计算机网络",
+    "card_info1":"中级",
+    "card_info2":"2294人评价",
+    "card_price1":"￥236.00"
+  },
+  {
+    "have_special_class": true,
+    "img":"class3.jpg",
+    "card_name":".Net Core 开发电商后端API 从0到精通吃透RESTful(Activiti7+SpringBoot)",
+    "card_info1":"初级",
+    "card_info2":"12人评价",
+    "card_price1":"￥388.00"
+  },
+  {
+    "have_special_class": true,
+    "img":"class4.jpg",
+    "card_name":"全面系统Python3.8入门+进阶(程序员必备第二语言)",
+    "card_info1":"初级",
+    "card_info2":"5479人评价",
+    "card_price1":"￥366.00"
+  },
+  {
+    "have_special_class": false,
+    "img":"class5.png",
+    "card_name":"入门金融IT行业必学 从0到1 开发撮合交易系统",
+    "card_info1":"初级",
+    "card_info2":"1人评价",
+    "card_price1":"￥328.00"
+  },
+  {
+    "have_special_class": true,
+    "img":"class6.jpg",
+    "card_name":"体系课-数据可视化入门到精通--打造前端差异化竞争力",
+    "card_info1":"中级",
+    "card_info2":"64人评价",
+    "card_price1":"￥999.00"
+  },
+  {
+    "have_special_class": true,
+    "img":"class7.jpg",
+    "card_name":"Vue2.5-2.6-3.0 开发去哪网App从零基础入门到实战项目开发",
+    "card_info1":"中级",
+    "card_info2":"4968人评价",
+    "card_price1":"￥266.00"
+  },
+  {
+    "have_special_class": true,
+    "img":"class8.png",
+    "card_name":"前端性能优化--6大角度综合型优化方案",
+    "card_info1":"中级",
+    "card_info2":"3人评价",
+    "card_price1":"￥268.00"
+  }
+]
