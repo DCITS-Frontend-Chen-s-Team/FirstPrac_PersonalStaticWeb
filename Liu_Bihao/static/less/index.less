@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  margin: 20px;
+}
+
 .l {
   float: left;
 }
@@ -105,6 +109,7 @@ a {
   }
 
   /* 顶部栏搜索框 */
+
   .top-search {
     width: 20%;
     float: left;
@@ -184,12 +189,48 @@ a {
 /* container */
 .container {
   width: 75%;
-  height: 100%;
   min-width: 1127px;
-  display: block;
   text-align: center;
   margin: auto;
-  padding: 30px 0;
+  padding: 30px 0 50px;
+}
+
+/* common title area */
+.title-area {
+  width: 95%;
+  font-size: 2.4em;
+  color: #1C1F21;
+  text-align: left;
+  line-height: 42px;
+
+  .title {
+    font-weight: bold;
+  }
+
+  .des {
+    font-size: 0.6em;
+    color: #545C63;
+    line-height: 42px;
+  }
+
+  .swipe-des {
+    height: 100px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    span {
+      margin-right: 10px;
+    }
+  }
+
+  .more-des {
+    float: right;
+    margin-left: 12px;
+    font-size: 0.6em;
+    color: #545C63;
+    line-height: 42px;
+  }
 }
 
 .main-banner {
@@ -269,27 +310,14 @@ a {
     /* 学习小卡片 */
 
     .recommend {
-      height: 150px;
-      width: 100%;
-      display: block;
-      position: relative;
-      margin: auto;
-      /* padding: 20px; */
-      text-align: center;
-
       .card-list-area {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
-      a {
-          float: left;
-          display: block;
+        a {
           width: 270px;
-          margin: 0 5px;
-          padding-top: 15px;
-          height: 65px;
-          overflow: hidden;
-          transition: all .3s;
+          padding: 15px 0;
+          transition: all 0.3s;
           background: #F3F5F6;
           border-radius: 8px;
 
@@ -299,8 +327,7 @@ a {
             height: 50px;
             background: no-repeat;
             background-size: 100%;
-            margin-left: 16px;
-            margin-right: 12px;
+            margin: 0 12px;
           }
 
           h3 {
@@ -325,9 +352,6 @@ a {
         img {
           width: 270px;
           height: 90px;
-          float: left;
-          position: relative;
-          margin-right: 10px;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -364,7 +388,6 @@ div.subMenu {
 
 .subMenu .course-card {
   text-align: left;
-  margin-top: 200px;
 
   .item {
     float: left;
@@ -400,62 +423,22 @@ div.subMenu {
   }
 }
 
-//TODO 轮播图 bug
-//TODO 课程卡片 flex
-
-/* common title area */
-.title-area {
-  width: 100%;
-  font-size: 2.4em;
-  color: #1C1F21;
-  text-align: left;
-  line-height: 42px;
-  margin: 10px 0;
-
-  .title {
-    font-weight: bold;
-  }
-
-  .des {
-    margin-left: 12px;
-    font-size: 0.6em;
-    color: #545C63;
-    line-height: 42px;
-  }
-
-  .more-des {
-    float: right;
-    margin-left: 12px;
-    font-size: 0.6em;
-    color: #545C63;
-    line-height: 42px;
-  }
-}
-
-
 /* 学习课程 */
 .main-course {
-  width: 100%;
-  height: 690px;
   background-color: #f8fafc;
-  display: block;
 }
 
 /* common course card */
 .course-card-list {
-  margin: 0;
-  padding-top: 20px;
-  position: relative;
-  clear: both;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   a {
-    float: left;
-    margin: 0 5px 12px 5px;
-    border-radius: 4px;
     width: 270px;
-    height: 268px;
-    position: relative;
-    transition: .3s all linear;
+    padding: 10px 2px;
+    border-radius: 4px;
+    transition: 0.3s all linear;
 
     .img-nav {
       width: 270px;
@@ -539,16 +522,14 @@ div.subMenu {
 /* 学习路线 */
 .main-learn-road, .main-hot-course {
   ul {
-    float: left;
     margin-left: 36px;
+    display: inline-flex;
   }
 
   li {
     margin: 0 14px;
-    float: left;
     font-size: 0.6em;
-    letter-spacing: 0;
-    line-height: 41px;
+    line-height: 30px;
     cursor: pointer;
     color: #545C63;
   }
@@ -560,8 +541,6 @@ div.subMenu {
 }
 
 .main-learn-road {
-  width: 100%;
-  height: 680px;
   display: block;
   position: relative;
 
@@ -573,14 +552,15 @@ div.subMenu {
   }
 
   .card-list {
-    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     a {
-      float: left;
-      margin: 10px;
       width: 540px;
       height: 148px;
       text-align: left;
+      padding: 10px;
 
       img {
         float: left;
@@ -633,10 +613,6 @@ div.subMenu {
 
 /* 热门课程 */
 .main-hot-course {
-  width: 100%;
-  height: 690px;
-  display: block;
-  position: relative;
   background-color: #f8fafc;
 
   .title-area img {
@@ -650,18 +626,13 @@ div.subMenu {
 
 /* 慕课专栏 */
 .main-mooc {
-  width: 100%;
-  height: 560px;
-  display: block;
-  position: relative;
-
   .card-list {
-    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     a {
-      float: left;
       padding: 10px;
-      margin: 5px;
       width: 332px;
       height: 174px;
       text-align: left;
@@ -776,15 +747,19 @@ div.subMenu {
   padding: 36px 0;
   background-color: #f8fafc;
 
-  .footer-link {
-    text-align: left;
-    border: none;
+  .footer-container {
     padding: 0;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-link {
+    display: flex;
+    justify-content: space-between;
 
     a {
-      margin: 0 10px;
       color: #99a1a6;
+      font-size: 1.5em;
 
       &:hover {
         color: #07111B;
@@ -793,18 +768,13 @@ div.subMenu {
   }
 
   .footer-copyright {
-    font-size: 1.2em;
-    padding: 0 0 0 10px;
+    font-size: 1.3em;
     text-align: left;
-    margin-top: 8px;
     color: #93999F;
-    line-height: 24px;
   }
 
   .relevant-link {
     float: right;
-    position: relative;
-    width: auto;
     right: 0;
     bottom: 0;
     text-align: center;

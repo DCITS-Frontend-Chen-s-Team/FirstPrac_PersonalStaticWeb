@@ -5,12 +5,21 @@
     <title>IE</title>
 
     <script src="static/js/lib/template-web.js"></script>
+    <script src="static/js/lib/require.js"></script>
 </head>
 
 <body>
-<div id="content"></div>
+<div id="content_1"></div>
+<div id="content_2"></div>
+<div id="content_3"></div>
+<div id="content_4"></div>
 
-<div id="content-2"></div>
+<h1>不转义HTML</h1>
+<div id="c6"></div>
+<script id="t6" type="text/html">
+    <p>不转义：{{#value}}</p>
+    <p>默认转义： {{value}}</p>
+</script>
 
 <script id="test" type="text/html">
     {{if isAdmin}}
@@ -26,45 +35,77 @@
     {{ $data }}
 </script>
 
-<script src="static/js/lib/require.js"></script>
+<script id="test_4" type="text/html">
+    <h1>{{title}}</h1>
+    {{include 'test_4_sub'}}
+</script>
 
-<script id="test-2" type="text/html">
-    {{if isAdmin}}
+<script id="test_4_sub" type="text/html">
+    <ul>
+        {{each list value i}}
+        <li>索引 {{i + 1}} ：{{value}}</li>
+        {{/each}}
+    </ul>
+</script>
 
+<script>
+    'use strict';
+
+    // require 调用 template 模块 必须放在非 require 引用的前面
+    require.config({
+        paths: {
+            'art-template': './static/js/lib/template-web'
+        }
+    });
+    require(['art-template'], function(template) {
+        var data_2 = {
+            title: '基本例子-2',
+            isAdmin: true,
+            list: ['文艺-2', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
+        };
+        document.getElementById('content_2').innerHTML = template('test', data_2);
+    });
+
+
+    // data_1 必须是全局变量才能生效
+    let data_1 = {
+        title: '基本例子-1',
+        isAdmin: true,
+        list: ['文艺-1', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
+    };
+    document.getElementById('content_1').innerHTML = template('test', data_1);
+
+    // compile 函数
+    var source = `
+{{if isAdmin}}
     <h1>{{title}}</h1>
     <ul>
         {{each list value i}}
         <li>索引 {{i + 1}} ：{{value}}</li>
         {{/each}}
     </ul>
+{{/if}}
+{{ $data }}`;
 
-    {{/if}}
-    {{$data}}
-</script>
-
-<script>
-    var data = {
-        title: '基本例子',
+    let render = template.compile(source);
+    document.getElementById('content_3').innerHTML = render({
+        title: '基本例子-3',
         isAdmin: true,
+        list: ['文艺-3', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
+    });
+
+    // 嵌入子模版
+    var data_4 = {
+        title: '嵌入子模板',
         list: ['文艺', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
     };
-    var html = template('test', data);
-    document.getElementById('content').innerHTML = html;
+    document.getElementById('content_4').innerHTML = template('test_4', data_4);
 
-    require.config({
-        paths: {
-            'art-template': './static/js/lib/template-web'
-        }
-    });
-
-    require(['art-template'], function(template) {
-        var data = {
-            title: '基本例子',
-            isAdmin: true,
-            list: ['文艺', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
-        };
-        document.getElementById('content-2').innerHTML = template('test-2', data);
-    });
+    // 不转义 html
+    var d6 = {
+        value: '<span style="color: #6382ff">hello world!</span>'
+    };
+    document.getElementById('c6').innerHTML = template('t6', d6);
 </script>
 
 </body>
