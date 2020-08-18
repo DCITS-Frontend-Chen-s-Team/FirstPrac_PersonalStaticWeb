@@ -1,0 +1,56 @@
+[
+  {
+    "imgUrl": "img/studycourse1.png",
+    "title": "微信小程序从0基础到精通",
+    "introduce": "一站式掌握小程序生态，打造站内零基础精通小程序的最佳路径",
+    "ps": {
+      "num": "4步骤 · 5门课",
+      "favor": "22318人收藏"
+    }
+  },
+  {
+    "imgUrl": "img/studycourse2.jpg",
+    "title": "Vue.js 从入门到精通",
+    "introduce": "路线专为想学Vue却无从下手的人群设计，以实际项目为例，逐层深入，学透Vue。",
+    "ps": {
+      "num": "3步骤 · 5门课",
+      "favor": "18888人收藏"
+    }
+  },
+  {
+    "imgUrl": "img/studycourse5.jpg",
+    "title": "Go语言从入门到达人之路",
+    "introduce": "零基础入门Go语言，在掌握基础语法后向并发提升，并用Go去构建微服务、上手区块链项目。",
+    "ps": {
+      "num": "5步骤 · 8门课",
+      "favor": "5117人收藏"
+    }
+  },
+  {
+    "imgUrl": "img/studycourse4.jpg",
+    "title": "前端面试求职跳槽通关路线",
+    "introduce": "路线伴随Web前端工程师一路成长，彻底搞懂不同阶段的面试重点，高效拿下offer。",
+    "ps": {
+      "num": "3步骤 · 4门课",
+      "favor": "9484人收藏"
+    }
+  },
+  {
+    "imgUrl": "img/studycourse3.jpg",
+    "title": "Python功能测试到自动化测试路线",
+    "introduce": "自动化测试效率更高，路线旨在帮Python功能测试从业者成功转型。",
+    "ps": {
+      "num": "4步骤 · 5门课",
+      "favor": "11243人收藏"
+    }
+  },
+  {
+    "imgUrl": "img/studycourse6.jpg",
+    "title": "MySQL数据库直通车：从入门到面试",
+    "introduce": "一举吃透最耗时的数据库，学会数据库的基本使用、业务库的设计与架构，面试收尾升华所学。",
+    "ps": {
+      "num": "4步骤 · 4门课",
+      "favor": "5381人收藏"
+    }
+  }
+]

@@ -207,7 +207,6 @@ a {
     width: 100%;
     display: block;
     margin-top: 72px;
-    padding-bottom: 80px;
 }
 
 .main-banner .container .banner {
@@ -369,7 +368,6 @@ div.subMenu {
 }
 
 .title-area .des {
-    clear: both;
     float: left;
     margin-left: 12px;
     font-size: 14px;
