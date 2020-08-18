@@ -939,6 +939,18 @@ html {
     color: #959494;
 }
 
+.footer-outside-link a:first-of-type {
+    color: red;
+}
+
+.footer-outside-link a:nth-child(2) {
+    color: blue;
+}
+
+.footer-outside-link a:nth-last-child(2) {
+    color: yellow;
+}
+
 .footer-outside-link a:hover{
     color: black;
 }
