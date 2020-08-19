@@ -1,25 +1,4 @@
 
-			//鼠标移入移除动画
-			var p3ul=document.getElementsByClassName('p3ulli');
-			  // 鼠标移入事件
-			
-			  p3ul.onmouseover=function(){
-			alert("success");
-			    this.style.color='red';
-			
-			    this.style.fontWeight='550';
-			
-			  };
-			
-			  // 鼠标移出事件
-			
-			  p3ul.onmouseout=function(){
-			
-			    this.style.color='#545C63';
-			
-			    this.style.fontWeight='400';
-			
-			  };
 			//轮播图left注入
 		$(function() {
 			$.ajax({
@@ -36,8 +15,28 @@
 				success: function(data) {
 					// alert("leftsucess3");
 					var str = "";
+					var a = '1'; 
+					var str1 = "";
 					$.each(data, function(index, dataItem) {
+						// console.log(dataItem.tanchu2);
+						// alert(dataItem.tanchu2[0].tanchu21_img);
 						str +=
+						for( ;a<4;a++){
+						str1 +=
+						//内层循环
+						`<div class="tanchu21">
+													<div style="background-image: url('${dataItem.tanchu2[a].tanchu21_img}');">
+													</div>
+													<div class="tanchu21miaoshu">
+														<div class="tanchu21miaoshuName">
+															${dataItem.tanchu21miaoshu_name}
+														</div>
+														<div class="tanchu21miaoshupri">
+															${dataItem.tanchu2.tanchu21miaoshu_pri}
+														</div>
+													</div>
+												</div>`
+												}
 							// 这里写导入部分的代码
 							`<div class="item">
 								<a href="#">
@@ -53,8 +52,7 @@
 											</div>
 											<div class="tanchu2">
 												<div class="tanchu21">
-													<div style="background-image:url({dataItem.tanchu2.tanchu21_img};">
-
+													<div style="background-image: url('${dataItem.tanchu2[a].tanchu21_img}');">
 													</div>
 													<div class="tanchu21miaoshu">
 														<div class="tanchu21miaoshuName">
@@ -66,9 +64,10 @@
 													</div>
 												</div>
 												<div class="tanchu21">
-													<div style="background-image:url({dataItem.tanchu2.tanchu21_img};">
-
-													</div>
+													for( ;a<4;a++){
+														<div style="background-image: url('${dataItem.tanchu2[a].tanchu21_img}');">
+														</div>
+														}
 													<div class="tanchu21miaoshu">
 														<div class="tanchu21miaoshuName">
 															${dataItem.tanchu2.tanchu21miaoshu_name}
@@ -79,9 +78,10 @@
 													</div>
 												</div>
 												<div class="tanchu21">
-													<div style="background-image:url({dataItem.tanchu2.tanchu21_img};">
-
-													</div>
+													for( ;a<4;a++){
+														<div style="background-image: url('${dataItem.tanchu2[a].tanchu21_img}');">
+														</div>
+														}
 													<div class="tanchu21miaoshu">
 														<div class="tanchu21miaoshuName">
 															${dataItem.tanchu2.tanchu21miaoshu_name}
@@ -92,9 +92,10 @@
 													</div>
 												</div>
 												<div class="tanchu21">
-													<div style="background-image:url({dataItem.tanchu2.tanchu21_img};">
-
-													</div>
+													for( ;a<4;a++){
+														<div style="background-image: url('${dataItem.tanchu2[a].tanchu21_img}');">
+														</div>
+														}
 													<div class="tanchu21miaoshu">
 														<div class="tanchu21miaoshuName">
 															${dataItem.tanchu2.tanchu21miaoshu_name}
@@ -252,7 +253,6 @@
 					// alert("sucess3");
 					var str = "";
 					$.each(data, function(index, dataItem) {
-						console.log(dataItem.course_read_info);
 						str +=
 							// 这里写导入部分的代码
 							`<div class="p5xiaohezi">

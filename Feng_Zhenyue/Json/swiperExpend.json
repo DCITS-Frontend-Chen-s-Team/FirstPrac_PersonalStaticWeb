@@ -3,7 +3,8 @@
 	"top":"top:-35%;",
 	"h4": "前沿技术",
 	"tanchu12": "微服务 区块链 以太坊 机器学习 深度学习 计算机视觉 自然语言处理 数据分析&挖掘",
-	"tanchu2": [{
+	"tanchu2": [
+		{
 			"tanchu21_img": "../Images/Index/p31.jpg",
 			"tanchu21miaoshu_nmae": "SpringCloud Finchley三版本(M2",
 			"tanchu21miaoshu_pri": "示例文字2"
