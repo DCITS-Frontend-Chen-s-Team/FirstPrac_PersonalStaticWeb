@@ -1,44 +1,43 @@
-
-			//轮播图left注入
-		$(function() {
-			$.ajax({
-				url: "../Json/swiperExpend.json",
-				type: "get",
-				dataType: "json",
-				// dataType:'JSONP',
-				// error: function() {
-				// 	alert("ppp");
-				// },
-				error: function() {
-					alert("error");
-				},
-				success: function(data) {
-					// alert("leftsucess3");
-					var str = "";
-					var a = '1'; 
-					var str1 = "";
-					$.each(data, function(index, dataItem) {
-						// console.log(dataItem.tanchu2);
-						// alert(dataItem.tanchu2[0].tanchu21_img);
-						str +=
-						for( ;a<4;a++){
-						str1 +=
+//轮播图left注入
+$(function() {
+	$.ajax({
+		url: "../Json/swiperExpend.json",
+		type: "get",
+		dataType: "json",
+		// dataType:'JSONP',
+		// error: function() {
+		// 	alert("ppp");
+		// },
+		error: function() {
+			alert("error");
+		},
+		success: function(data) {
+			// alert("leftsucess3");
+			var str = "";
+			var str1 = "";
+			let a = 0;
+			$.each(data, function(index, dataItem) {
+				// console.log(dataItem.tanchu2);
+				// alert(dataItem.tanchu2[0].tanchu21_img);
+				for (; a < 4; a++) {
+					str1 +=
 						//内层循环
 						`<div class="tanchu21">
-													<div style="background-image: url('${dataItem.tanchu2[a].tanchu21_img}');">
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															${dataItem.tanchu21miaoshu_name}
-														</div>
-														<div class="tanchu21miaoshupri">
-															${dataItem.tanchu2.tanchu21miaoshu_pri}
-														</div>
-													</div>
-												</div>`
-												}
-							// 这里写导入部分的代码
-							`<div class="item">
+							<div class="tanchu21img" style="background-image: url('${dataItem.tanchu2[a].tanchu21_img}');">
+								</div>
+							<div class="tanchu21miaoshu">
+								<div class="tanchu21miaoshuName">
+									${dataItem.tanchu2.tanchu21miaoshu_name}
+								</div>
+								<div class="tanchu21miaoshupri">
+								${dataItem.tanchu2.tanchu21miaoshu_pri}
+								</div>
+							</div>
+						</div>`
+				}
+				str +=
+					// 这里写导入部分的代码
+					`<div class="item">
 								<a href="#">
 									<sapn class="spanop">${dataItem.span} </span>
 										<div class="tanchu" style="${dataItem.top}">
@@ -50,92 +49,37 @@
 													${dataItem.tanchu12}
 												</div>
 											</div>
-											<div class="tanchu2">
-												<div class="tanchu21">
-													<div style="background-image: url('${dataItem.tanchu2[a].tanchu21_img}');">
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															${dataItem.tanchu21miaoshu_name}
-														</div>
-														<div class="tanchu21miaoshupri">
-															${dataItem.tanchu2.tanchu21miaoshu_pri}
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													for( ;a<4;a++){
-														<div style="background-image: url('${dataItem.tanchu2[a].tanchu21_img}');">
-														</div>
-														}
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															${dataItem.tanchu2.tanchu21miaoshu_name}
-														</div>
-														<div class="tanchu21miaoshupri">
-															${dataItem.tanchu2.tanchu21miaoshu_pri}
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													for( ;a<4;a++){
-														<div style="background-image: url('${dataItem.tanchu2[a].tanchu21_img}');">
-														</div>
-														}
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															${dataItem.tanchu2.tanchu21miaoshu_name}
-														</div>
-														<div class="tanchu21miaoshupri">
-															${dataItem.tanchu2.tanchu21miaoshu_pri}
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													for( ;a<4;a++){
-														<div style="background-image: url('${dataItem.tanchu2[a].tanchu21_img}');">
-														</div>
-														}
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															${dataItem.tanchu2.tanchu21miaoshu_name}
-														</div>
-														<div class="tanchu21miaoshupri">
-															${dataItem.tanchu2.tanchu21miaoshu_pri}
-														</div>
-													</div>
-												</div>
+											<div class="tanchu2">` + str1 + `
 											</div>
-										</div>
+											</div>
 								</a>
-
 							</div>`;
-					});
-					//类选择器
-					$("#lunboleftfix").append(str);
-				}
-			})
-		})
-		// page2zhuru
-		$(function() {
-			$.ajax({
-				url: "../Json/haoke.json",
-				type: "get",
-				dataType: "json",
-				// dataType:'JSONP',
-				// error: function() {
-				// 	alert("ppp");
-				// },
-				error: function() {
-					console.log("error");
-				},
-				success: function(data) {
-					// alert("sucess3");
-					var str = "";
-					$.each(data, function(index, dataItem) {
-						str +=
-							// 这里写导入部分的代码
-							`<div class="haokecard">
+			});
+			//类选择器
+			$("#lunboleftfix").append(str);
+		}
+	})
+})
+// page2zhuru
+$(function() {
+	$.ajax({
+		url: "../Json/haoke.json",
+		type: "get",
+		dataType: "json",
+		// dataType:'JSONP',
+		// error: function() {
+		// 	alert("ppp");
+		// },
+		error: function() {
+			console.log("error");
+		},
+		success: function(data) {
+			// alert("sucess3");
+			var str = "";
+			$.each(data, function(index, dataItem) {
+				str +=
+					// 这里写导入部分的代码
+					`<div class="haokecard">
 				   	<div class="haoketit">
 				   	</div>
 				   	<div class="haokeimg" style="background-image: url(${dataItem.img});">
@@ -150,33 +94,33 @@
 				   	</div>
 				   </div>
 				   </div>`;
-					});
-					//类选择器
-					$("#page2cardbox").append(str);
-				}
-			})
-		})
-		// page3注入
-		$(function() {
-			$.ajax({
-				url: "../Json/learnWay.json",
-				type: "get",
-				dataType: "json",
-				// dataType:'JSONP',
-				// error: function() {
-				// 	alert("success");
-				// },
-				error: function() {
-					console.log("error");
-				},
-				success: function(data) {
-					// alert("sucess3");
-					var str = "";
-					$.each(data, function(index, dataItem) {
-						// alert("sucess4");
-						str +=
-							// 这里写导入部分的代码
-							`<div class="p3xiao">
+			});
+			//类选择器
+			$("#page2cardbox").append(str);
+		}
+	})
+})
+// page3注入
+$(function() {
+	$.ajax({
+		url: "../Json/learnWay.json",
+		type: "get",
+		dataType: "json",
+		// dataType:'JSONP',
+		// error: function() {
+		// 	alert("success");
+		// },
+		error: function() {
+			console.log("error");
+		},
+		success: function(data) {
+			// alert("sucess3");
+			var str = "";
+			$.each(data, function(index, dataItem) {
+				// alert("sucess4");
+				str +=
+					// 这里写导入部分的代码
+					`<div class="p3xiao">
 							<a class="p3kongzhi">
 								<div class="p3banner" style="${dataItem.img}">
 								</div>
@@ -192,32 +136,32 @@
 								</div>
 							</a>
 						</div>`;
-					});
-					//类选择器
-					$("#page3fix").append(str);
-				}
-			})
-		})
-		// page4注入
-		$(function() {
-			$.ajax({
-				url: "../Json/popularCourse.json",
-				type: "get",
-				dataType: "json",
-				// dataType:'JSONP',
-				// error: function() {
-				// 	alert("ppp");
-				// },
-				error: function() {
-					console.log("error");
-				},
-				success: function(data) {
-					// alert("sucess3");
-					var str = "";
-					$.each(data, function(index, dataItem) {
-						str +=
-							// 这里写导入部分的代码
-							`<div class="haokecard">
+			});
+			//类选择器
+			$("#page3fix").append(str);
+		}
+	})
+})
+// page4注入
+$(function() {
+	$.ajax({
+		url: "../Json/popularCourse.json",
+		type: "get",
+		dataType: "json",
+		// dataType:'JSONP',
+		// error: function() {
+		// 	alert("ppp");
+		// },
+		error: function() {
+			console.log("error");
+		},
+		success: function(data) {
+			// alert("sucess3");
+			var str = "";
+			$.each(data, function(index, dataItem) {
+				str +=
+					// 这里写导入部分的代码
+					`<div class="haokecard">
 						<div class="haoketit">
 						</div>
 						<div class="haokeimg" style="background-image: url(${dataItem.img});">
@@ -230,32 +174,32 @@
 							<sapn class="pingjia">${dataItem.comments}</span>
 						</div>
 					</div>`;
-					});
-					//类选择器
-					$("#page4cardbox").append(str);
-				}
-			})
-		})
-		// page5注入
-		$(function() {
-			$.ajax({
-				url: "../Json/zhuanlan.json",
-				type: "get",
-				dataType: "json",
-				// dataType:'JSONP',
-				// error: function() {
-				// 	alert("ppp");
-				// },
-				error: function() {
-					console.log("error");
-				},
-				success: function(data) {
-					// alert("sucess3");
-					var str = "";
-					$.each(data, function(index, dataItem) {
-						str +=
-							// 这里写导入部分的代码
-							`<div class="p5xiaohezi">
+			});
+			//类选择器
+			$("#page4cardbox").append(str);
+		}
+	})
+})
+// page5注入
+$(function() {
+	$.ajax({
+		url: "../Json/zhuanlan.json",
+		type: "get",
+		dataType: "json",
+		// dataType:'JSONP',
+		// error: function() {
+		// 	alert("ppp");
+		// },
+		error: function() {
+			console.log("error");
+		},
+		success: function(data) {
+			// alert("sucess3");
+			var str = "";
+			$.each(data, function(index, dataItem) {
+				str +=
+					// 这里写导入部分的代码
+					`<div class="p5xiaohezi">
 								<div class="course_banner">
 									<a>
 										<img src="${dataItem.img}">
@@ -285,9 +229,9 @@
 								</div>
 							</div>
 						</div>`;
-					});
-					//类选择器
-					$("#page5cardbox").append(str);
-				}
-			})
-		});
+			});
+			//类选择器
+			$("#page5cardbox").append(str);
+		}
+	})
+});

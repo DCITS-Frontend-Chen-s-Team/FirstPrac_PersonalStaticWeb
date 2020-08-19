@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>慕课网仿制_冯振岳</title>
-		<!-- <link href="../Css/index.css" rel="stylesheet" /> -->
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 		<link rel="stylesheet/less" href="../Css/index.less">
 		<script src="../Js/less.min.js"></script>
@@ -14,10 +13,8 @@
 
 
 	<body id="index">
-
 		<div class="header" id="header">
 			<div id="nav" class="header_nav">
-				<!-- 这里是导航栏按钮 -->
 				<div class="logo">
 				</div>
 				<ul class="nav_item" id="nav_item">
@@ -92,7 +89,7 @@
 							<span>零基础就业</span>
 							<sapn class="intro">从入门到一年经验</span>
 
-								<div class="path_list">
+								<div class="path_list" id="fordesc">
 									<a class="fori1">
 										<i class="i1"></i>
 										<p class="tit">Java工程师2020</p>
@@ -201,7 +198,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="footer-link" id="footerlink_a">
+					<div class="footer-link" class="footerlink_a">
 						<a href="#" target="_blank" title="企业服务">企业服务</a>
 						<a href="#" target="_blank" title="人才招聘">人才招聘</a>
 						<a href="#" target="_blank" title="联系我们">联系我们</a>
@@ -221,7 +218,6 @@
 					</div>
 				</div>
 			</div>
-
 	</body>
 	<!--  -->
 	<script>
@@ -239,17 +235,11 @@
 				el: '.swiper-pagination',
 				clickable: true,
 			},
-
 			// 如果需要前进后退按钮
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
-
-			// 如果需要滚动条
-			// scrollbar: {
-			//   el: '.swiper-scrollbar',
-			// },
 		});
 	</script>
 	<script type="text/javascript">
@@ -261,7 +251,7 @@
 				nav_item_li_a: ['免费课程', '实战课程', '金职位', 'wiki', '专栏', '手记']
 			};
 			var data2 = {
-				p3ul_li:['热门','前端','后端','移动端','计算机基础','大数据','测试','人工智能']
+				p3ul_li: ['热门', '前端', '后端', '移动端', '计算机基础', '大数据', '测试', '人工智能']
 			};
 			//template根据参数生成的html片段保存在html里面
 			//这里也就是把data数据保存到id为resultTemplate的template模板中去
@@ -270,7 +260,7 @@
 			var header = document.querySelector("#nav_item");
 			nav_item.innerHTML = html1;
 			//这里导入的是footer中的内容
-			var html2 = template("p3ulTemplate",data2);
+			var html2 = template("p3ulTemplate", data2);
 			var footer_li = document.querySelector("#p3ul");
 			p3ul.innerHTML = html2;
 		}
@@ -282,8 +272,43 @@
 	</script>
 	<script type="text/html" id="p3ulTemplate">
 		{{each p3ul_li as value2 i}}
-		<li class="p3ulli">{{value2}}</li>
+		<li class="p3ulli" id="p3ulli">{{value2}}</li>
 		{{/each}}
+	</script>
+
+	<script>
+		var fontColors = document.getElementById("fordesc");
+		var list = fontColors.querySelectorAll(".desc");
+
+		for (var j = 0; j < list.length; j++) {
+			list[j].index = j;
+		}
+		fontColors.addEventListener('mouseover', function(event) {
+			changefontcolor(event.target.index);
+		})
+
+		fontColors.addEventListener('mouseout', function(event) {
+			getbackcolor(event.target.index);
+		})
+
+
+		function changefontcolor(j) {
+			// document.getElementsByClassName("desc")[j].style.color = "lightskyblue";
+			var x = document.getElementsByClassName("desc")[j];
+			x.style.color = "lightskyblue";
+			// document.getElementsByClassName("desc")[j].style.fontWeight = 550;
+			var x = document.getElementsByClassName("desc")[j];
+			x.style.fontWeight = "550";
+		}
+
+		function getbackcolor(j) {
+			// document.getElementsByClassName("desc")[j].style.color = "lightskyblue";
+			var x = document.getElementsByClassName("desc")[j];
+			x.style.color = "black";
+			// document.getElementsByClassName("desc")[j].style.fontWeight = 550;
+			var x = document.getElementsByClassName("desc")[j];
+			x.style.fontWeight = "400";
+		}
 	</script>
 	<script src="../Js/Index.js"></script>
 </html>
