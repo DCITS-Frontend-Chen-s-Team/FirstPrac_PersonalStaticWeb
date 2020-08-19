@@ -1,0 +1,90 @@
+[
+  {
+    "imgUrl": "img/hotcourse1.jpg",
+    "title": "编程必备基础 计算机组成原理+操作系统+计算机网络",
+    "message": {
+      "level": "中级",
+      "purchase": "4851人购买",
+      "commit": "2304人评价"
+    },
+    "price": "￥236.00",
+    "isDiscount": false
+  },
+  {
+    "imgUrl": "img/hotcourse2.png",
+    "title": "快速搞定前端技术一面 匹配大厂面试要求",
+    "message": {
+      "level": "初级",
+      "purchase": "1588人购买",
+      "commit": "941人评价"
+    },
+    "price": "￥299.00",
+    "isDiscount": false
+  },
+  {
+    "imgUrl": "img/hotcourse3.jpg",
+    "title": "微信小程序入门与实战 常用组件API开发技巧项目实战",
+    "message": {
+      "level": "中级",
+      "purchase": "8403人购买",
+      "commit": "5027人评价"
+    },
+    "price": "￥266.00",
+    "isDiscount": false
+  },
+  {
+    "imgUrl": "img/hotcourse4.jpg",
+    "title": "React开发简书项目从零基础入门到实战",
+    "message": {
+      "level": "中级",
+      "purchase": "3913人购买",
+      "commit": "2392人评价"
+    },
+    "price": "￥299.00",
+    "isDiscount": false
+  },
+  {
+    "imgUrl": "img/hotcourse5.jpg",
+    "title": "JavaScript版数据结构与算法 轻松解决前端算法面试",
+    "message": {
+      "level": "中级",
+      "purchase": "1389人购买",
+      "commit": "724人评价"
+    },
+    "price": "￥399.00",
+    "isDiscount": false
+  },
+  {
+    "imgUrl": "img/hotcourse6.jpg",
+    "title": "玩转算法面试-- Leetcode真题分门别类讲解",
+    "message": {
+      "level": "中级",
+      "purchase": "1324人购买",
+      "commit": "435人评价"
+    },
+    "price": "￥448.00",
+    "isDiscount": false
+  },
+  {
+    "imgUrl": "img/hotcourse7.jpg",
+    "title": ".Net Core 开发电商后端API 从0到精通吃透RESTful",
+    "message": {
+      "level": "初级",
+      "purchase": "161人购买",
+      "commit": "14人评价"
+    },
+    "price": "￥388.00",
+    "isDiscount": false
+  },
+  {
+    "imgUrl": "img/hotcourse8.jpg",
+    "title": "理论+实战 构建完整JVM知识体系",
+    "message": {
+      "level": "初级",
+      "purchase": "11815人购买",
+      "commit": "5479人评价"
+    },
+    "price": "￥366.00",
+    "isDiscount": false
+  }
+]

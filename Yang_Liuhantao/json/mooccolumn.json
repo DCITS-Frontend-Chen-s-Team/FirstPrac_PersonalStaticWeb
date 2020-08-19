@@ -1,0 +1,92 @@
+[
+  {
+    "imgUrl": "img/mooc1.jpg",
+    "type": "试读",
+    "title": "前端高手必学课—剖析 React 内部运行机制",
+    "purchase": "共30节 · 32人已购买",
+    "author": {
+      "name": "上古鹏",
+      "job": "资深前端研发工程师"
+    },
+    "price": {
+      "new": "￥42.00",
+      "old": "原价￥58.00"
+    },
+    "isDiscount": true
+  },
+  {
+    "imgUrl": "img/mooc2.jpg",
+    "type": "试读",
+    "title": "10+年DBA老司机带你轻松玩转 SQL",
+    "purchase": "共32节 · 83人已购买",
+    "author": {
+      "name": "简逸",
+      "job": "资深数据库工程师"
+    },
+    "price": {
+      "new": "￥36.00",
+      "old": "原价￥48.00"
+    },
+    "isDiscount": true
+  },
+  {
+    "imgUrl": "img/mooc3.jpg",
+    "type": "试读",
+    "title": "跟 BAT 技术专家学 Docker + K8S",
+    "purchase": "共30节 · 32人已购买",
+    "author": {
+      "name": "legendtkl",
+      "job": "BAT 资深技术专家"
+    },
+    "price": {
+      "new": "￥49.00",
+      "old": "原价￥68.00"
+    },
+    "isDiscount": true
+  },
+  {
+    "imgUrl": "img/mooc4.jpg",
+    "type": "试读",
+    "title": "专业技术团队出品：React深度剖析+实战",
+    "purchase": "共31节 · 80人已购买",
+    "author": {
+      "name": "BetterFE",
+      "job": "业务中台前端组"
+    },
+    "price": {
+      "new": "￥42.00",
+      "old": "原价￥58.00"
+    },
+    "isDiscount": true
+  },
+  {
+    "imgUrl": "img/mooc5.jpg",
+    "type": "试读",
+    "title": "Python 源码深度剖析",
+    "purchase": "共45节 · 901人已购买",
+    "author": {
+      "name": "fasionchan",
+      "job": "资深 Python 研发工程师"
+    },
+    "price": {
+      "new": "￥42.00",
+      "old": null
+    },
+    "isDiscount": false
+  },
+  {
+    "imgUrl": "img/mooc6.jpg",
+    "type": "试读",
+    "title": "零基础学透网络编程",
+    "purchase": "共32节 · 127人已购买",
+    "author": {
+      "name": "陈子兴",
+      "job": "资深软件架构师"
+    },
+    "price": {
+      "new": "￥58.00",
+      "old": null
+    },
+    "isDiscount": false
+  }
+]
