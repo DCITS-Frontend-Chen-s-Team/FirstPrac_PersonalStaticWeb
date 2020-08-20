@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <title>慕课网</title>
 <!--    <link rel="stylesheet" type="text/css" href="css/style.css">-->
@@ -24,7 +25,7 @@
                 <img src="img/logo.png">
             </div>
 
-            <ul class="nav-item">
+            <ul class="nav-item" id="nav_item">
                 <li>
                     <a href="#">免费课程</a>
                 </li>
@@ -522,5 +523,7 @@
         };
         document.getElementById('foot_link').innerHTML = template('test', data);
     </script>
+
+    <script src="js/dom_event.js"></script>
 
 </html>
