@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+</head>
+
+<body>
+
+<div id="A">A sssss <br/>
+    <div id="B">B jijij
+    </div>
+</div>
+
+<script>
+    var a = document.getElementById('A'),
+        b = document.getElementById('B');
+
+    function handler(e) {
+        console.log(e.target);
+        console.log(e.currentTarget);
+    }
+
+    a.addEventListener('click', handler, false);
+
+    function factorial(num) {
+        if (num <= 1) {
+            return 1;
+        } else {
+            // arguments 的 callee 属性是一个指针，指向拥有此 arguments 对象的函数
+            // 这样，无论引用函数是使用的是什么名字，都可以保证正常完成递归调用
+            return num * arguments.callee(num - 1);
+        }
+    }
+
+    // alert(factorial(4));
+
+    function callerTest() {
+        function outer() {
+            inner();
+        }
+
+        function inner() {
+            alert(arguments.callee.caller);
+        }
+
+        outer();
+    }
+
+    // callerTest();
+
+    /**
+     * bind 函数使用练习
+     */
+    function callAndBindTest() {
+        window.color = "red";
+        var o = {color: "blue"};
+
+        function sayColor() {
+            alert(this.color);
+        }
+
+        sayColor(o); //red
+        sayColor.call(o); //blue
+
+        var objectSayColor = sayColor.bind(o);
+        objectSayColor(); //blue
+    }
+
+    // callAndBindTest();
+
+    // var str1 = "123456789";
+    // console.log(str1.substring(2, 3));
+    // var num1 = 10.005;
+    // console.log(num1.toFixed(2));
+    //
+    // var num2 = Math.floor(Math.random() * 10 + 1);
+    // alert(num2);
+
+
+    // 间歇调用（后者）与超时调用
+    // var timeout = setTimeout(function () {
+    //     confirm("Hello world!");
+    // }, 10000);
+    //
+    // var interval = setInterval(function () {
+    //     alert("Hello world!");
+    // }, 4000);
+    //
+    // setTimeout(function () {
+    //     clearTimeout(timeout);
+    //     clearInterval(interval);
+    // }, 60000);
+
+    var element = document.getElementById("A");
+    var id = element.attributes.getNamedItem("id").nodeValue;
+    alert(id);
+
+    var ele2 = document.getElementById("B");
+    element.append(`<div>ele</div>`);
+
+
+</script>
+
+</body>
+</html>
