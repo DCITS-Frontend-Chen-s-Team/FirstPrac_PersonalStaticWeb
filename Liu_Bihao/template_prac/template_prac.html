@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>IE</title>
 
-    <script src="static/js/lib/template-web.js"></script>
-    <script src="static/js/lib/require.js"></script>
+    <script src="../static/js/lib/template-web.js"></script>
+    <script src="../static/js/lib/require.js"></script>
 </head>
 
 <body>
@@ -54,7 +54,7 @@
     // require 调用 template 模块 必须放在非 require 引用的前面
     require.config({
         paths: {
-            'art-template': './static/js/lib/template-web'
+            'art-template': '../static/js/lib/template-web'
         }
     });
     require(['art-template'], function(template) {
