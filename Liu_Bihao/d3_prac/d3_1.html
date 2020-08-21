@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>testD3-26-CollapsibleTree.html</title>
+    <script src="../static/js/lib/d3.js"></script>
+
+    <style>
+        #chart div {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 3px;
+        }
+
+        circle {
+            fill: #4A988A;
+        }
+
+        text {
+            font-family: "Open Sans";
+            text-anchor: middle;
+            color: rgb(34, 34, 34);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="chart"></div>
+
+<svg id="chart-1" width="250" height="100"></svg>
+
+<script type="text/javascript">
+    const colorMap = d3.interpolateRgb(
+        d3.rgb('#fff'),
+        d3.rgb('#1e6823'),
+    )
+
+    d3.select('#chart')
+        .selectAll("div")
+        .data([0, 0.2, 0.4, 0.8, 0.9, 1])
+        .enter()
+        .append("div")
+        .style("background-color", (d) => {
+            return d === 0 ? '#fff' : colorMap(d)
+        })
+
+    var data = [{
+        label: "7am",
+        sales: 20
+    }, {
+        label: "8am",
+        sales: 12
+    }, {
+        label: "9am",
+        sales: 8
+    }, {
+        label: "10am",
+        sales: 27
+    }]
+
+    var g = d3.select('#chart-1')
+        .selectAll("g")
+        .data(data)
+        .enter()
+        .append('g');
+    g.append("circle")
+        .attr('cy', 40)
+        .attr('cx', (d, i) => (i + 1) * 50)
+        .attr('r', (d) => d.sales);
+    g.append("text")
+        .attr('y', 90)
+        .attr('x', (d, i) => (i + 1) * 50)
+        .text((d) => d.label);
+
+</script>
+
+</body>
+</html>
