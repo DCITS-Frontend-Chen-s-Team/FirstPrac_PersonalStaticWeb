@@ -214,9 +214,9 @@ $(function() {
 								</div>
 								<div class="course_read_teacher">
 									<a href="#" style="text-decoration: none;">
-										<span>${dataItem.couser_read_teacher}</span>
+										<span>${dataItem.course_read_teacher}</span>
 										/
-										<span>${dataItem.couser_read_teacher_decripition}</span>
+										<span>${dataItem.course_read_teacher_decripition}</span>
 										</a>
 								</div>
 								<div class="course_read_price">

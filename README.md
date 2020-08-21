@@ -1,11 +1,16 @@
 # FirstPrac_PersonalStaticWeb
 神州信息 智能银行解决方案部门 前端开发实习生团队（陈飞）
 
-第一次练习——静态网页界面
-
-本项目为提交地址
+基础练习——静态网页界面
 
 ## 要求记录：
+
+#### 08-21
+
+- 把 DOM 所有的看完，事件看完，把页面上的鼠标事件 点击事件 等改一下
+
+- <img src="C:\Users\www12\Desktop\文档收录\常用文档\Typora Files\md_pic\image-20200821085729871.png" alt="image-20200821085729871" style="zoom:67%;" />![image-20200821085740173](C:\Users\www12\Desktop\文档收录\常用文档\Typora Files\md_pic\image-20200821085740173.png)
+- ![image-20200821085740173](C:\Users\www12\Desktop\文档收录\常用文档\Typora Files\md_pic\image-20200821085740173.png)
 
 #### 08-19
 
@@ -13,6 +18,9 @@
 - require.js 没必要深究
 - 分享 less 的使用
 - 阅读《[JavaScript高级程序设计(第3版)].Nicholas.C.Zakas》部分章节，学习 JS 基础语法
+- <img src="C:\Users\www12\Desktop\文档收录\常用文档\Typora Files\md_pic\image-20200821085556260.png" alt="image-20200821085556260" style="zoom: 67%;" />
+- <img src="C:\Users\www12\Desktop\文档收录\常用文档\Typora Files\md_pic\image-20200821085611264.png" alt="image-20200821085611264" style="zoom:67%;" />
+- https://www.w3school.com.cn/js/js_htmldom_elements.asp （W3CSchool 学习教程）
 
 #### 08-17
 
