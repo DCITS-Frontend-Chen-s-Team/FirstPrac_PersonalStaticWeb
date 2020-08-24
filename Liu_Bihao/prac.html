@@ -7,8 +7,7 @@
 <body>
 
 <div id="A">A sssss <br/>
-    <div id="B">B jijij
-    </div>
+    <div id="B">B jijij</div>
 </div>
 
 <script>
@@ -97,6 +96,18 @@
 
     var ele2 = document.getElementById("B");
     element.append(`<div>ele</div>`);
+
+    // stopPropagation() 方法用于立即停止事件在 DOM 层次中的传播，即取消进一步的事件捕获或冒泡。
+    function func1() {
+        var btn = document.getElementById("myBtn");
+        btn.onclick = function(event){
+            alert("Clicked");
+            event.stopPropagation();
+        };
+        document.body.onclick = function(event){
+            alert("Body clicked");
+        };
+    }
 </script>
 
 <script src="static/js/lib/d3.min.js"></script>
