@@ -10,7 +10,7 @@
 - 事件委托 事件代理 事件冒泡 事件捕获
 - <img src="https://raw.githubusercontent.com/LiuPiPiPi/picBed/master/img/20200824090731.png" alt="image-20200824090730960" style="zoom: 67%;" />
 - <img src="https://raw.githubusercontent.com/LiuPiPiPi/picBed/master/img/20200824090752.png" alt="image-20200824090752075" style="zoom:80%;" />
-- <img src="C:\Users\www12\AppData\Roaming\Typora\typora-user-images\image-20200824090815000.png" alt="image-20200824090815000" style="zoom:80%;" />
+- <img src="https://raw.githubusercontent.com/LiuPiPiPi/picBed/master/img/20200824091105.png" alt="image-20200824090815000" style="zoom:80%;" />
 - 下一周开始学 H5 的语法   在后边学 ES6 TypeScript 的语法
 
 #### 08-21
