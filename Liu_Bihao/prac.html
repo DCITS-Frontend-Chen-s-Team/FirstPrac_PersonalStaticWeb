@@ -19,6 +19,10 @@
     <li><a href="http://www.yahoo.com">Yahoo!</a></li>
 </ul>
 
+<form>
+    <textarea rows="5" cols="45">initial value</textarea>
+</form>
+
 <script>
     var a = document.getElementById('A'),
         b = document.getElementById('B');
@@ -99,24 +103,24 @@
     //     clearInterval(interval);
     // }, 60000);
 
-    var element = document.getElementById("A");
-    var id = element.attributes.getNamedItem("id").nodeValue;
-    alert(id);
-
-    var ele2 = document.getElementById("B");
-    element.append(`<div>ele</div>`);
-
-    // stopPropagation() 方法用于立即停止事件在 DOM 层次中的传播，即取消进一步的事件捕获或冒泡。
-    function func1() {
-        var btn = document.getElementById("myBtn");
-        btn.onclick = function (event) {
-            alert("Clicked");
-            event.stopPropagation();
-        };
-        document.body.onclick = function (event) {
-            alert("Body clicked");
-        };
-    }
+    // var element = document.getElementById("A");
+    // var id = element.attributes.getNamedItem("id").nodeValue;
+    // alert(id);
+    //
+    // var ele2 = document.getElementById("B");
+    // element.append(`<div>ele</div>`);
+    //
+    // // stopPropagation() 方法用于立即停止事件在 DOM 层次中的传播，即取消进一步的事件捕获或冒泡。
+    // function func1() {
+    //     var btn = document.getElementById("myBtn");
+    //     btn.onclick = function (event) {
+    //         alert("Clicked");
+    //         event.stopPropagation();
+    //     };
+    //     document.body.onclick = function (event) {
+    //         alert("Body clicked");
+    //     };
+    // }
 
     var EventUtil = {
         addHandler: function (element, type, handler) { //添加事件
@@ -210,7 +214,20 @@
             } else {
                 return event.keyCode;
             }
-        }
+        },
+
+        getClipboardText: function (event) {
+            var clipboardData = (event.clipboardData || window.clipboardData);
+            return clipboardData.getData("text");
+        },
+
+        setClipboardText: function (event, value) {
+            if (event.clipboardData) {
+                return event.clipboardData.setData("text/plain", value);
+            } else if (window.clipboardData) {
+                return window.clipboardData.setData("text", value);
+            }
+        },
     };
 
     // contextmenu 上下文菜单事件
@@ -235,6 +252,13 @@
         var message = "I'm really going to miss you if you go.";
         event.returnValue = message;
         return message;
+    });
+
+    var textbox = document.forms[0].elements[0];
+    EventUtil.addHandler(textbox, "focus", function (event) {
+        event = EventUtil.getEvent(event);
+        var target = EventUtil.getTarget(event);
+        target.select();
     });
 </script>
 
