@@ -2,12 +2,14 @@
 <html>
 <head>
     <title>Example</title>
+
+    <script src="static/js/lib/moment.min.js"></script>
 </head>
 
 <body>
 
-<div id="A">A sssss <br/>
-    <div id="B">B jijij</div>
+<div id="A">A saaas <br/>
+    <div id="B">B jiiiij</div>
 </div>
 
 <div id="myDiv">Right click or Ctrl+click me to get a custom context menu.
@@ -22,6 +24,10 @@
 <form>
     <textarea rows="5" cols="45">initial value</textarea>
 </form>
+
+<div id="div1"></div>
+
+<canvas id="drawing" width=" 200" height="200">A drawing of something.</canvas>
 
 <script>
     var a = document.getElementById('A'),
@@ -260,6 +266,55 @@
         var target = EventUtil.getTarget(event);
         target.select();
     });
+
+    var arg_momentJs = moment().format('MMMM Do YYYY, h:mm:ss a');
+    document.getElementById("div1").innerHTML = arg_momentJs;
+
+    var drawing = document.getElementById("drawing");
+    // 确定浏览器支持<canvas>元素
+    // if (drawing.getContext) {
+    //     // 取得图像的数据 URI
+    //     var imgURI = drawing.toDataURL("image/png");
+    //     // 显示图像
+    //     var image = document.createElement("img");
+    //     image.src = imgURI;
+    //     document.body.appendChild(image);
+    // }
+
+    //确定浏览器支持<canvas>元素
+    if (drawing.getContext) {
+        var context = drawing.getContext("2d");
+        /*
+        * 根据 Mozilla 的文档
+        * http://developer.mozilla.org/en/docs/Canvas_tutorial:Basic_usage
+        */
+
+        // 绘制红色矩形
+        context.fillStyle = "#ff0000";
+        context.fillRect(10, 10, 50, 50);
+
+        // 绘制半透明的蓝色矩形
+        context.fillStyle = "rgba(0,0,255,0.5)";
+        context.fillRect(30, 30, 50, 50);
+
+        // 在两个矩形重叠的地方清除一个小矩形
+        context.clearRect(40, 40, 10, 10);
+
+
+        var context = drawing.getContext("2d");
+        /*
+        * 根据 Mozilla 的文档
+        * http://developer.mozilla.org/en/docs/Canvas_tutorial:Basic_usage
+        */
+
+        // 绘制红色描边矩形
+        context.strokeStyle = "#ff0000";
+        context.strokeRect(110, 10, 50, 50);
+
+        // 绘制半透明的蓝色描边矩形
+        context.strokeStyle = "rgba(0, 0, 255, 0.5)";
+        context.strokeRect(130, 30, 50, 50);
+    }
 </script>
 
 <script src="static/js/lib/d3.min.js"></script>

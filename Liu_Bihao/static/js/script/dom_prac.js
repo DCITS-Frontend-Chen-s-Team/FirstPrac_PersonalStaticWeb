@@ -24,3 +24,4 @@ function changeColorOfRightNav() {
     }, false);
 }
 
+changeColorOfRightNav();
