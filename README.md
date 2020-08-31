@@ -5,6 +5,13 @@
 
 ## 要求记录：
 
+#### 08-31
+
+- ![image-20200831144707879](https://raw.githubusercontent.com/LiuPiPiPi/picBed/master/img/20200831144715.png)
+- ![image-20200831144736997](https://raw.githubusercontent.com/LiuPiPiPi/picBed/master/img/20200831144737.png)
+- ![image-20200831144750544](https://raw.githubusercontent.com/LiuPiPiPi/picBed/master/img/20200831144750.png)
+- lodash.js    moment.js    Echarts    orgCharts    three.js      [百度地图map](https://dafrok.github.io/vue-baidu-map/#/zh/overlay/marker)
+
 #### 08-24
 
 - 事件委托 事件代理 事件冒泡 事件捕获
