@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="myBtn" type="button" value="lllll">
+
+
+<script>
+
+    // var myBtn = document.getElementById("myBtn");
+    // myBtn.addEventListener("click", function () {
+    //     alert(this.id);
+    // }, false);
+    //
+    // myBtn.removeEventListener("click", function () {
+    //     alert(this.id);
+    // }, false);
+
+
+    var btn = document.getElementById("myBtn");
+    var handler = function(){
+        alert(this.id);
+    };
+    btn.addEventListener("click", handler, false);
+    // 这里省略了其他代码
+    btn.removeEventListener("click", handler, false); // 有效！
+</script>
+</body>
+</html>

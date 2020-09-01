@@ -1,10 +1,9 @@
 html, body {
   height: 100%;
   width: 100%;
+  font-size: 62.5%;
   min-width: 1200px;
   margin: 0;
-  background-image: linear-gradient(rgb(105, 165, 105), white);
-  background-repeat: no-repeat;
 }
 
 .head {
@@ -25,10 +24,6 @@ html, body {
   margin-right: 50px;
 }
 
-/* .head .head-menu {
-  list-style-type: none;
-} */
-
 .head .head-menu {
   padding-left: 200px;
   width: 100%;
@@ -36,14 +31,14 @@ html, body {
   padding: 0;
   list-style-type: none;
 }
+
 .head .head-menu .menu {
   float: left;
-  width: 5%;
-  /* display: inline-block; */
+  width: 6%;
   text-align: center;
   line-height: 80px;
-  color: black;
-  
+  color: rgb(107, 101, 101);
+  font-size: 2.5em;
   text-decoration: none;
 }
 
@@ -54,10 +49,7 @@ html, body {
   margin-left: 100px;
 }
 
-/* .head .head-menu1 {
-  list-style-type: none;
-} */
-.head .head-menu1{
+.head .head-menu1 {
   margin: 0 30px 0 0;
   float: right;
   padding: 0;
@@ -67,27 +59,12 @@ html, body {
 .head .head-menu1 .menu {
   float: left;
   margin-left: 30px;
-  /* display: inline-block; */
   text-align: center;
   line-height: 80px;
-  color: black;
   text-decoration: none;
-
+  color: rgb(107, 101, 101);
+  font-size: 2.5em;
 }
-
-.head .head-menu1 .menu:hover {
-  color: red;
-}
-
-/* .head .head-search #imgss {
-  width: 2%;
-  line-height: 82px;
-  position: absolute;
-  right: 572px;
-  top: 46px;
-  display: inline-block;
-  
-} */
 
 .ibody {
   position: relative;
@@ -95,6 +72,7 @@ html, body {
   margin: 0 120px 0 120px;
   border-radius: 8px;
   padding-top: 120px;
+  min-width: 1200px;
 }
 
 .ibody .div1 {
@@ -122,7 +100,7 @@ html, body {
 .ibody .div1 .aa .item {
   height: 50px;
   line-height: 30px;
-  font-size: 15px;
+  font-size: 1.5em;
   cursor: pointer;
   margin-left: 12px;
   margin-top: 10px;
@@ -140,7 +118,7 @@ html, body {
 .ibody .div1 .aa #a1 {
   color: rgb(180, 173, 173);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 1.5em;
   line-height: 50px;
 }
 
@@ -177,9 +155,11 @@ html, body {
   text-decoration: none;
   display: block;
 }
-.ibody .div1 .aa .item .dropdown-content .xs1{
+
+.ibody .div1 .aa .item .dropdown-content .xs1 {
   padding-bottom: 90px;
 }
+
 .ibody .div1 .aa .item .dropdown-content .xs1 #xs11 {
   color: black;
   text-decoration: none;
@@ -223,7 +203,7 @@ html, body {
 
 .ibody .div1 .aa .item .dropdown-content .xs2 .xs21 .xs222 .xsmess21 {
   color: black;
-  font-size: 10px;
+  font-size: 1em;
   margin: 0 0 0 80px;
 }
 
@@ -235,7 +215,7 @@ html, body {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
-  font-size: 14px;
+  font-size: 1.4em;
 }
 
 .ibody .div1 .aa .item .dropdown-content .xs2 .xs21 .xs222 .xsmess21 #xsmss21:after {
@@ -244,13 +224,13 @@ html, body {
 
 .ibody .div1 .aa .item .dropdown-content .xs2 .xs21 .xs222 .xsmess22 {
   color: rgb(177, 165, 165);
-  font-size: 11px;
+  font-size: 1.1em;
   margin: 0 0 0 80px;
 }
 
 .ibody .div1 .aa .item .dropdown-content .xs2 .xs21 .xs222 .xsmess22 #xsmss22 {
   color: rgb(99, 94, 94);
-  font-size: 13px;
+  font-size: 1.3em;
 }
 
 .ibody .div1.swiper-container {
@@ -260,7 +240,7 @@ html, body {
 
 .ibody .div1.swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8em;
   background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -300,28 +280,33 @@ html, body {
 
 .ibody .div2 .bb #bs1 {
   float: left;
-  font-size: 25px;
+  font-size: 4em;
 }
 
 .ibody .div2 .bb #bs2 {
   color: slategray;
   line-height: 32px;
   margin-left: 15px;
+  font-size: 2.5em;
 }
+
+ 
+
 
 .ibody .div2 .cc {
-  padding-top: 20px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+   width: 100%;
+
 }
 
-.ibody .div2 .cc .c1 {
-  float: left;
-  position: relative;
+.ibody .div2 .cc .c1{
   width: 25%;
 }
-
 .ibody .div2 .cc .c1 #img2 {
   float: left;
-  height: 55.8px;
+  height: 90px;
 }
 
 .ibody .div2 .cc .c1 #a1 {
@@ -330,12 +315,13 @@ html, body {
 
 .ibody .div2 .cc .c1 #s1 {
   color: black;
+  font-size: 3em;
+}
+.ibody .div2 .cc .c1 #p1 {
+  font-size: 1em;
+  color: rgb(58, 54, 54);
 }
 
-.ibody .div2 .cc .c1 #p1 {
-  font-size: 15px;
-  color: black;
-}
 
 .ibody .div3 {
   float: left;
@@ -354,18 +340,23 @@ html, body {
 
 .ibody .div3 .dd #bs3 {
   float: left;
-  font-size: 25px;
+  font-size: 4em;
 }
 
 .ibody .div3 .dd #bs4 {
   color: slategray;
   line-height: 32px;
   margin-left: 15px;
+  font-size: 2.5em;
+}
+
+.ibody .div3 .ee {
+  display: flex;
+  justify-content: space-around;
 }
 
 .ibody .div3 .ee #img3 {
   width: 22%;
-  margin: 10px;
 }
 
 .ibody .div4 {
@@ -384,21 +375,24 @@ html, body {
 }
 
 .ibody .div4 .ff #bs5 {
-  font-size: 25px;
+  font-size: 4em;
+}
+
+.ibody .div4 .gg1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
 }
 
 .ibody .div4 .gg {
-  float: left;
   width: 25%;
 }
 
-/* .ibody .div4 .gg .gg1{
-    width: 90%;
-  } */
-
-.ibody .div4 .gg .ga1 {
+/* .ibody .div4 .gg .ga1 {
   float: left;
-}
+  margin-top: 20px;
+} */
 
 .ibody .div4 .gg .ga1 #img4 {
   float: left;
@@ -414,25 +408,34 @@ html, body {
   color: black;
 }
 
+.ibody .div4 .gg .ga2 .mss3 {
+  font-size: 2.5em;
+  color: black;
+}
+
 .ibody .div4 .gg .ga2:hover {
   color: red;
 }
 
 .ibody .div4 .gg .ga2 .mss1 {
-  font-size: 12px;
-}
-
-.ibody .div4 .gg .ga2 .mss2 {
-  font-size: 12px;
-  color: rgb(192, 174, 174);
+  font-size: 2.5em;
 }
 
 .ibody .div4 .gg .ga2 .mss1 #mss {
   color: red;
 }
 
-.ibody .div4 .gg .ga2 #mss2 {
-  font-size: 12px;
+.ibody .div4 .gg .ga2 .mss2 {
+  font-size: 2em;
+  color: rgb(192, 174, 174);
+}
+
+.ibody .div4 .gg .ga2 .mss2 .mss21 {
+  float: right;
+}
+
+.ibody .div4 .gg .ga2 #mss22 {
+  font-size: 2.5em;
 }
 
 .ibody .div5 {
@@ -452,7 +455,7 @@ html, body {
 
 .ibody .div5 .hh #bs6 {
   float: left;
-  font-size: 25px;
+  font-size: 4em;
   margin-right: 5px;
 }
 
@@ -467,22 +470,24 @@ html, body {
 
 .ibody .div5 .hh .div5-menu .menu5 {
   width: 8%;
+  font-size: 2.5em;
+  color: rgb(107, 101, 101);
   text-align: center;
   display: inline-block;
   line-height: 26px;
-  color: black;
   text-decoration: none;
 }
 
 .ibody .div5 .ll {
-  float: left;
+ display: flex;
+ flex-flow: wrap;
+ justify-content: space-around;
   width: 100%;
 }
 
 .ibody .div5 .ll .l1 {
-  float: left;
   width: 50%;
-  flex-wrap: nowrap;
+  
 }
 
 .ibody .div5 .ll .l1 #la {
@@ -509,7 +514,7 @@ html, body {
 
 .ibody .div5 .ll .l1 .l12 .mess1 {
   color: black;
-  font-size: 20px;
+  font-size: 3em;
   margin: 0 20px 30px 160px;
 }
 
@@ -523,13 +528,13 @@ html, body {
 
 .ibody .div5 .l1 .l12 .mess1 #mss12 {
   color: rgb(99, 94, 94);
-  font-size: 14px;
+  font-size: 0.8em;
 }
 
 .ibody .div5 .ll .l1 .l12 .mess2 {
   margin: 35px 20px 35px 160px;
-  color: rgb(177, 165, 165);
-  font-size: 11px;
+  color: rgb(138, 133, 133);
+  font-size: 2em;
 }
 
 .ibody .div6 {
@@ -548,13 +553,13 @@ html, body {
 
 .ibody .div6 .mm #bs7 {
   float: left;
-  font-size: 25px;
-  margin-right: 5px;
+  font-size: 4em;
 }
 
 .ibody .div6 .mm .div6-menu {
   height: 36px;
   line-height: 36px;
+  margin: 15px 0 10px 0;
 }
 
 .ibody .div6 .mm .div6-menu ul {
@@ -570,17 +575,20 @@ html, body {
   text-decoration: none;
 }
 
-.ibody .div6 .nn {
-  float: left;
-  width: 25%;
+.ibody .div6 .nn6 {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+   width: 100%;
+
 }
 
-/* .ibody .div4 .gg .gg1{
-    width: 90%;
-  } */
-
+.ibody .div6 .nn{
+  width: 25%;
+}
 .ibody .div6 .nn .na1 {
   float: left;
+  margin: 10px;
 }
 
 .ibody .div6 .nn .na1 #img6 {
@@ -601,14 +609,28 @@ html, body {
   color: red;
 }
 
-.ibody .div6 .nn .na2 .mss3 {
-  font-size: 12px;
+.ibody .div6 .nn .na2 .mss4 {
+  font-size: 2.5em;
+  color: black;
 }
 
-.ibody .div6 .nn .na2 .mss4 {
-  font-size: 12px;
+.ibody .div6 .nn .na2 .mss5 {
+  font-size: 2em;
+  color: rgb(192, 174, 174);
+}
+
+.ibody .div6 .nn .na2 .mss5 .mss51 {
+  float: right;
+}
+
+.ibody .div6 .nn .na2 .mss6 {
+  font-size: 2.5em;
   color: rgb(102, 93, 93);
 }
+
+.ibody .div6 .nn .na2 .mss6 #mss6:hover {
+  color: red;
+} 
 
 .ibody .div7 {
   float: left;
@@ -620,23 +642,14 @@ html, body {
 }
 
 .ibody .div7 .oo {
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 .ibody .div7 .oo #bs8 {
   float: left;
-  font-size: 25px;
+  font-size: 4em;
   margin-right: 5px;
 }
-
-/* .ibody .div7 .oo.div7-menu {
-  height: 36px;
-  line-height: 36px;
-} */
-
-/* .ibody .div7 .oo .div7-menu ul {
-  list-style-type: none;
-} */
 
 .ibody .div7 .oo .menu7 {
   float: right;
@@ -644,16 +657,21 @@ html, body {
   line-height: 26px;
   color: black;
   text-decoration: none;
+  font-size: 2.5em;
 }
 
 .ibody .div7 .pp {
   clear: both;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+   width: 100%;
+  height: 400px;
 }
 
+
 .ibody .div7 .pa1 {
-  float: left;
   width: 30%;
-  margin: 15px;
 }
 
 .ibody .div7 .pa1 .pa12 {
@@ -665,7 +683,7 @@ html, body {
 .ibody .div7 .pa1 .pa12 a {
   color: blue;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 2em;
 }
 
 .ibody .div7 .pa1 .pa12 .pa13 {
@@ -683,7 +701,7 @@ html, body {
 
 .ibody .div7 .pa1 .pa22 #hh4 {
   margin: 0;
-  font-size: 16px;
+  font-size: 3em;
   height: 41.6px;
 }
 
@@ -693,11 +711,11 @@ html, body {
 
 .ibody .div7 .pa1 .pa22 .pa23 {
   color: rgb(99, 94, 94);
-  font-size: 14px;
+  font-size: 2em;
 }
 
 .ibody .div7 .pa1 .pa22 .mss5 {
-  font-size: 13px;
+  font-size: 2.5em;
   margin: 0 0 35px 0;
 }
 
@@ -706,17 +724,17 @@ html, body {
 }
 
 .ibody .div7 .pa1 .pa22 .mss6 #mss61 {
-  font-size: 20px;
+  font-size: 3em;
   color: blue;
 }
 
 .ibody .div7 .pa1 .pa22 .mss6 #mss62 {
-  font-size: 13px;
+  font-size: 2.5em;
   color: rgb(102, 93, 93);
 }
 
 .ibody .div7 .pa1 .pa22 .mss6 #mss63 {
-  font-size: 11px;
+  font-size: 2em;
   color: white;
   background-image: linear-gradient(rgb(33, 74, 211), rgb(31, 147, 214));
 }
@@ -736,7 +754,7 @@ html, body {
 
 .ibody .div8 .qq1 #menu8 {
   margin: 0 5px 0 5px;
-  font-size: 14px;
+  font-size: 2em;
   text-align: center;
   display: inline-block;
   line-height: 26px;
@@ -745,7 +763,7 @@ html, body {
 }
 
 .ibody .div8 .qq1 #menu9 {
-  font-size: 11px;
+  font-size: 2em;
   text-align: center;
   display: inline-block;
   line-height: 26px;
