@@ -3,7 +3,7 @@ $(function () {
      * 新上好课板块
      */
     $.ajax({
-        url: "json/course.json", // json 文件地址
+        url: 'json/course.json', // json 文件地址
         type: "get", // 数据传输方式
         dataType: "json", // 获取文件类型，非必要
         // 若 json 文件获取失败激活此函数
