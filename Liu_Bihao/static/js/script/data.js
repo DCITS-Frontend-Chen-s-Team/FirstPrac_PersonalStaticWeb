@@ -117,8 +117,6 @@ $(function () {
                     subStr += `<span>${dataItem.subMenu.label[i]}</span>`;
                 }
 
-                console.log(dataItem.subMenu.course_card.length);
-
                 for (let i = 0; i < dataItem.subMenu.course_card.length; i++) {
                     subStr_card += `<div class="item">
                                     <img src="${dataItem.subMenu.course_card[i].imgUrl}" alt="">
