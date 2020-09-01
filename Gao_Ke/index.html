@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="Jquery/jquery-1.8.3.js"></script>
-  <script src="./js/jquery.js"></script>
+  <script src="./js/ajax.js"></script>
+  <!-- 事件监听 -->
+  <!-- <script src="js/mouseover.js"></script> -->
 </head>
 
 
@@ -35,7 +37,7 @@
       <input type="text" placeholder="请输入关键字...">
     </div>
     <div>
-      <ul  class="head-menu1">
+      <ul class="head-menu1">
         <li>
           <!-- <a href="#" class="menu">下载App</a>
           <a href="#" class="menu">购物车</a>
@@ -56,8 +58,8 @@
       <div class="aa">
         <div class="item">
           <a href="#" id="a1">
-            <span>前沿/区块链/人工智能</span>
-            <div class="dropdown-content">
+            <!-- <span>前沿/区块链/人工智能</span> -->
+            <!-- <div class="dropdown-content">
               <div class="dc">
                 <div class="dc1">
                   <span><b>前沿技术</b></span>
@@ -138,7 +140,7 @@
                 </div>
               </div>
 
-            </div>
+            </div> -->
           </a>
         </div>
 
@@ -146,6 +148,7 @@
         <div class="item">
           <a href="#" id="a1">
             <span>前端/小程序/JS</span>
+           
           </a>
         </div>
         <div class="item">
@@ -281,6 +284,7 @@
       </div>
 
     </div>
+
     <!-- 第三模块  放置了四张图片 -->
     <div class="div3">
       <div class="dd">
@@ -302,187 +306,189 @@
         <span id="bs5"><b>新上好课</b></span>
       </div>
       <div style="clear: both;"></div>
-      <div class="gg">
-        <div class="ga1">
-          <a href="#">
-            <div>
-              <img src="./img/java.jpg" alt="" id="img4">
-            </div>
-            <div class="ga2">
+      <div class="gg1">
+        <div class="gg">
+          <div class="ga1">
+            <a href="#">
               <div>
-                <h4>Java可视化UML工作流系统(Activiti7+SpringBoot)</h4>
+                <img src="./img/java.jpg" alt="" id="img4">
               </div>
-              <div class="mss2">
-                <span>初级</span>
-                <span>94</span>
-                <span>6人评价</span>
+              <div class="ga2">
+                <div class="mss3">
+                  <span>Java可视化UML工作流系统(Activiti7+SpringBoot)</span>
+                </div>
+                <div class="mss2">
+                  <span>初级</span>
+                  <span>94</span>
+                  <span class="mss21">6人评价</span>
+                </div>
+                <div class="mss1">
+                  <span id="mss"><b>￥298.00</b></span>
+                  <span id="mss">限时优惠</span>
+                </div>
               </div>
-              <div class="mss1">
-                <span id="mss"><b>￥298.00</b></span>
-                <span id="mss">限时优惠</span>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="gg">
-        <div class="ga1">
-          <a href="#">
-            <div>
-              <img src="./img/linux.jpg" alt="" id="img4">
-            </div>
-            <div class="ga2">
-              <div>
-                <h4>变成必备基础 计算机组成原理+操作系统+计算机网络</h4>
-              </div>
-              <div class="mss2">
-                <span>中级</span>
-                <span>4810</span>
-                <span>2294人评价</span>
-              </div>
-              <div>
-                <span id="mss2">￥236.00</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="gg">
-        <div class="ga1">
-          <a href="#">
-            <div>
-              <img src="./img/nat.jpg" alt="" id="img4">
-            </div>
-            <div class="ga2">
-              <div>
-                <h4>.Net Core开发电商后端API从0到精通吃透RESTful</h4>
-              </div>
-              <div class="mss2">
-                <span>初级</span>
-                <span>149</span>
-                <span>12人评价</span>
-              </div>
-              <div>
-                <span id="mss2">￥388.00</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="gg">
-        <div class="ga1">
-          <a href="#">
-            <div>
-              <img src="./img/python.jpg" alt="" id="img4">
-            </div>
-            <div class="ga2">
-              <div>
-                <h4>全面系统Python3.8入门+进阶(程序员必备第二语言)</h4>
-              </div>
-              <div class="mss2">
-                <span>初级</span>
-                <span>11785</span>
-                <span>5479人评价</span>
-              </div>
-              <div>
-                <span id="mss2">￥366.00</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="gg">
-        <div class="ga1">
-          <a href="#">
-            <div>
-              <img src="./img/vue.png" alt="" id="img4">
-            </div>
-            <div class="ga2">
-              <div>
-                <h4>入门金融IT行业必学 从0到1 开发撮合交易系统</h4>
-              </div>
-              <div class="mss2">
-                <span>初级</span>
-                <span>44</span>
-                <span>1人评价</span>
-              </div>
-              <div class="mss1">
-                <span id="mss"><b>￥328.00</b></span>
-                <span id="mss">限时优惠</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="gg">
-        <div class="ga1">
-          <a href="#">
-            <div>
-              <img src="./img/vue2.jpg" alt="" id="img4">
-            </div>
-            <div class="ga2">
-              <div>
-                <h4>体系课-数据可视化入门到精通-打造前端差异化竞争力</h4>
-              </div>
-              <div class="mss2">
-                <span>中级</span>
-                <span>511</span>
-                <span>64人评价</span>
-              </div>
-              <div class="mss1">
-                <span id="mss2">￥999.00</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="gg">
-        <div class="ga1">
-          <a href="#">
-            <div>
-              <img src="./img/vue3.jpg" alt="" id="img4">
-            </div>
-            <div class="ga2">
-              <div>
-                <h4>Vue2.5-2.6-3.0 开发去哪儿网App从零基础入门到实战项目开发</h4>
-              </div>
-              <div class="mss2">
-                <span>中级</span>
-                <span>8353</span>
-                <span>4968人评价</span>
-              </div>
-              <div class="mss1">
-                <span id="mss2">￥266.00</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="gg">
-        <div class="ga1">
-          <a href="#">
-            <div>
-              <img src="./img/web.png" alt="" id="img4">
-            </div>
-            <div class="ga2">
-              <div>
-                <h4>前端性能优化--6大角度综合行优化方案</h4>
-              </div>
-              <div class="mss2">
-                <span>中级</span>
-                <span>109</span>
-                <span>3人评价</span>
-              </div>
-              <div class="mss1">
-                <span id="mss"><b>￥268.00</b></span>
-                <span id="mss">限时优惠</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
 
+        <div class="gg">
+          <div class="ga1">
+            <a href="#">
+              <div>
+                <img src="./img/linux.jpg" alt="" id="img4">
+              </div>
+              <div class="ga2">
+                <div class="mss3">
+                  <span>变成必备基础 计算机组成原理+操作系统+计算机网络</span>
+                </div>
+                <div class="mss2">
+                  <span>中级</span>
+                  <span>4810</span>
+                  <span class="mss21">2294人评价</span>
+                </div>
+                <div>
+                  <span id="mss22">￥236.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="gg">
+          <div class="ga1">
+            <a href="#">
+              <div>
+                <img src="./img/nat.jpg" alt="" id="img4">
+              </div>
+              <div class="ga2">
+                <div class="mss3">
+                  <span>.Net Core开发电商后端API从0到精通吃透RESTful</span>
+                </div>
+                <div class="mss2">
+                  <span>初级</span>
+                  <span>149</span>
+                  <span class="mss21">12人评价</span>
+                </div>
+                <div>
+                  <span id="mss22">￥388.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="gg">
+          <div class="ga1">
+            <a href="#">
+              <div>
+                <img src="./img/python.jpg" alt="" id="img4">
+              </div>
+              <div class="ga2">
+                <div class="mss3">
+                  <span>全面系统Python3.8入门+进阶(程序员必备第二语言)</span>
+                </div>
+                <div class="mss2">
+                  <span>初级</span>
+                  <span>11785</span>
+                  <span class="mss21">5479人评价</span>
+                </div>
+                <div>
+                  <span id="mss22">￥366.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="gg">
+          <div class="ga1">
+            <a href="#">
+              <div>
+                <img src="./img/vue.png" alt="" id="img4">
+              </div>
+              <div class="ga2">
+                <div class="mss3">
+                  <span>入门金融IT行业必学 从0到1 开发撮合交易系统</span>
+                </div>
+                <div class="mss2">
+                  <span>初级</span>
+                  <span>44</span>
+                  <span class="mss21">1人评价</span>
+                </div>
+                <div class="mss1">
+                  <span id="mss"><b>￥328.00</b></span>
+                  <span id="mss">限时优惠</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="gg">
+          <div class="ga1">
+            <a href="#">
+              <div>
+                <img src="./img/vue2.jpg" alt="" id="img4">
+              </div>
+              <div class="ga2">
+                <div class="mss3">
+                  <span>体系课-数据可视化入门到精通-打造前端差异化竞争力</span>
+                </div>
+                <div class="mss2">
+                  <span>中级</span>
+                  <span>511</span>
+                  <span class="mss21">64人评价</span>
+                </div>
+                <div>
+                  <span id="mss22">￥999.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="gg">
+          <div class="ga1">
+            <a href="#">
+              <div>
+                <img src="./img/vue3.jpg" alt="" id="img4">
+              </div>
+              <div class="ga2">
+                <div class="mss3">
+                  <span>Vue2.5-2.6-3.0 开发去哪儿网App从零基础入门到实战项目开发</span>
+                </div>
+                <div class="mss2">
+                  <span>中级</span>
+                  <span>8353</span>
+                  <span class="mss21">4968人评价</span>
+                </div>
+                <div>
+                  <span id="mss22">￥266.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="gg">
+          <div class="ga1">
+            <a href="#">
+              <div>
+                <img src="./img/web.png" alt="" id="img4">
+              </div>
+              <div class="ga2">
+                <div class="mss3">
+                  <span>前端性能优化--6大角度综合行优化方案</span>
+                </div>
+                <div class="mss2">
+                  <span>中级</span>
+                  <span>109</span>
+                  <span class="mss21">3人评价</span>
+                </div>
+                <div class="mss1">
+                  <span id="mss"><b>￥268.00</b></span>
+                  <span id="mss">限时优惠</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
 
+      </div>
 
     </div>
 
@@ -621,7 +627,7 @@
       </div> -->
       </div>
 
-
+      <!--- 第六部分：热门课程-->
       <div class="div6">
         <div class="mm">
           <div>
@@ -637,186 +643,187 @@
           </div>
         </div>
         <div style="clear: both;"></div>
-        <div class="nn">
-          <div class="na1">
-            <a href="#">
-              <div>
-                <img src="./img/6java.png" alt="" id="img6">
-              </div>
-              <div class="na2">
+        <div class="nn6">
+          <div class="nn">
+            <div class="na1">
+              <a href="#">
                 <div>
-                  <h4>快速搞定前端技术一面 匹配大厂面试要求</h4>
+                  <img src="./img/6java.png" alt="" id="img6">
                 </div>
-                <div class="mss3">
-                  <span>初级</span>
-                  <span>1542</span>
-                  <span>849人评价</span>
+                <div class="na2">
+                  <div class="mss4">
+                    <span>快速搞定前端技术一面 匹配大厂面试要求</span>
+                  </div>
+                  <div class="mss5">
+                    <span>初级</span>
+                    <span>1542</span>
+                    <span class="mss51">849人评价</span>
+                  </div>
+                  <div class="mss6">
+                    <span id="mss6"><b>￥299.00</b></span>
+                  </div>
                 </div>
-                <div class="mss4">
-                  <span id="mss4"><b>￥299.00</b></span>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="nn">
-          <div class="na1">
-            <a href="#">
-              <div>
-                <img src="./img/6web.jpg" alt="" id="img6">
-              </div>
-              <div class="na2">
+          <div class="nn">
+            <div class="na1">
+              <a href="#">
                 <div>
-                  <h4>前端框架及项目面试 聚焦Vue/React/Webpack</h4>
+                  <img src="./img/6web.jpg" alt="" id="img6">
                 </div>
-                <div class="mss3">
-                  <span>中级</span>
-                  <span>1359</span>
-                  <span>640人评价</span>
+                <div class="na2">
+                  <div class="mss4">
+                    <span>前端框架及项目面试 聚焦Vue/React/Webpack</span>
+                  </div>
+                  <div class="mss5">
+                    <span>中级</span>
+                    <span>1359</span>
+                    <span class="mss51">640人评价</span>
+                  </div>
+                  <div class="mss6">
+                    <span id="mss6"><b>￥399.00</b></span>
+                  </div>
                 </div>
-                <div class="mss4">
-                  <span id="mss4"><b>￥399.00</b></span>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="nn">
-          <div class="na1">
-            <a href="#">
-              <div>
-                <img src="./img/6wechat.jpg" alt="" id="img6">
-              </div>
-              <div class="na2">
+          <div class="nn">
+            <div class="na1">
+              <a href="#">
                 <div>
-                  <h4>微信小程序入门与实战 常用组件API开发技巧项目实战</h4>
+                  <img src="./img/6wechat.jpg" alt="" id="img6">
                 </div>
-                <div class="mss3">
-                  <span>初级</span>
-                  <span>20402</span>
-                  <span>6290人评价</span>
+                <div class="na2">
+                  <div class="mss4">
+                    <span>微信小程序入门与实战 常用组件API开发技巧项目实战</span>
+                  </div>
+                  <div class="mss5">
+                    <span>初级</span>
+                    <span>20402</span>
+                    <span class="mss51">6290人评价</span>
+                  </div>
+                  <div class="mss6">
+                    <span id="mss6"><b>￥149.00</b></span>
+                  </div>
                 </div>
-                <div class="mss4">
-                  <span id="mss4"><b>￥149.00</b></span>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="nn">
-          <div class="na1">
-            <a href="#">
-              <div>
-                <img src="./img/6react.jpg" alt="" id="img6">
-              </div>
-              <div class="na2">
+          <div class="nn">
+            <div class="na1">
+              <a href="#">
                 <div>
-                  <h4>React开发简述项目 从零基础入门到实战</h4>
+                  <img src="./img/6react.jpg" alt="" id="img6">
                 </div>
-                <div class="mss3">
-                  <span>中级</span>
-                  <span>3887</span>
-                  <span>2364人评价</span>
+                <div class="na2">
+                  <div class="mss4">
+                    <span>React开发简述项目 从零基础入门到实战</span>
+                  </div>
+                  <div class="mss5">
+                    <span>中级</span>
+                    <span>3887</span>
+                    <span class="mss51">2364人评价</span>
+                  </div>
+                  <div class="mss6">
+                    <span id="mss6"><b>￥299.00</b></span>
+                  </div>
                 </div>
-                <div class="mss4">
-                  <span id="mss4"><b>￥299.00</b></span>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="nn">
-          <div class="na1">
-            <a href="#">
-              <div>
-                <img src="./img/6JavaScript.jpg" alt="" id="img6">
-              </div>
-              <div class="na2">
+          <div class="nn">
+            <div class="na1">
+              <a href="#">
                 <div>
-                  <h4>JavaScript版数据结构与算法 轻松解决前端算法面试</h4>
+                  <img src="./img/6JavaScript.jpg" alt="" id="img6">
                 </div>
-                <div class="mss3">
-                  <span>中级</span>
-                  <span>422</span>
-                  <span>16人评价</span>
+                <div class="na2">
+                  <div class="mss4">
+                    <span>JavaScript版数据结构与算法 轻松解决前端算法面试</span>
+                  </div>
+                  <div class="mss5">
+                    <span>中级</span>
+                    <span>422</span>
+                    <span class="mss51">16人评价</span>
+                  </div>
+                  <div class="mss6">
+                    <span id="mss6"><b>￥299.00</b></span>
+                  </div>
                 </div>
-                <div class="mss4">
-                  <span id="mss4"><b>￥299.00</b></span>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="nn">
-          <div class="na1">
-            <a href="#">
-              <div>
-                <img src="./img/6leetcode.jpg" alt="" id="img6">
-              </div>
-              <div class="na2">
+          <div class="nn">
+            <div class="na1">
+              <a href="#">
                 <div>
-                  <h4>玩转算法面试--Leetcode真题分门别类讲解</h4>
+                  <img src="./img/6leetcode.jpg" alt="" id="img6">
                 </div>
-                <div class="mss3">
-                  <span>中级</span>
-                  <span>5629</span>
-                  <span>1635人评价</span>
+                <div class="na2">
+                  <div class="mss4">
+                    <span>玩转算法面试--Leetcode真题分门别类讲解</span>
+                  </div>
+                  <div class="mss5">
+                    <span>中级</span>
+                    <span>5629</span>
+                    <span class="mss51">1635人评价</span>
+                  </div>
+                  <div class="mss6">
+                    <span id="mss6"><b>￥266.00</b></span>
+                  </div>
                 </div>
-                <div class="mss4">
-                  <span id="mss4"><b>￥266.00</b></span>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="nn">
-          <div class="na1">
-            <a href="#">
-              <div>
-                <img src="./img/6c.png" alt="" id="img6">
-              </div>
-              <div class="na2">
+          <div class="nn">
+            <div class="na1">
+              <a href="#">
                 <div>
-                  <h4>2020 重学C++ 重构你的C++知识体系</h4>
+                  <img src="./img/6c.png" alt="" id="img6">
                 </div>
-                <div class="mss3">
-                  <span>中级</span>
-                  <span>1299</span>
-                  <span>435人评价</span>
+                <div class="na2">
+                  <div class="mss4">
+                    <span>2020 重学C++ 重构你的C++知识体系</span>
+                  </div>
+                  <div class="mss5">
+                    <span>中级</span>
+                    <span>1299</span>
+                    <span class="mss51">435人评价</span>
+                  </div>
+                  <div class="mss6">
+                    <span id="mss6"><b>￥448.00</b></span>
+                  </div>
                 </div>
-                <div class="mss4">
-                  <span id="mss4"><b>￥448.00</b></span>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="nn">
-          <div class="na1">
-            <a href="#">
-              <div>
-                <img src="./img/6jvm.jpg" alt="" id="img6">
-              </div>
-              <div class="na2">
+          <div class="nn">
+            <div class="na1">
+              <a href="#">
                 <div>
-                  <h4>理论+实战 构建完整JVM知识体系</h4>
+                  <img src="./img/6jvm.jpg" alt="" id="img6">
                 </div>
-                <div class="mss3">
-                  <span>中级</span>
-                  <span>198</span>
-                  <span>6人评价</span>
+                <div class="na2">
+                  <div class="mss4">
+                    <span>理论+实战 构建完整JVM知识体系</span>
+                  </div>
+                  <div class="mss5">
+                    <span>中级</span>
+                    <span>198</span>
+                    <span class="mss51">6人评价</span>
+                  </div>
+                  <div class="mss6">
+                    <span id="mss6"><b>￥348.00</b></span>
+                  </div>
                 </div>
-                <div class="mss4">
-                  <span id="mss4"><b>￥348.00</b></span>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-
 
       <div class="div7">
         <div class="oo">
@@ -1002,61 +1009,22 @@
 
     </div>
 
+    <script>
+      var ul1 = document.getElementsByClassName("head-menu1")[0];
 
+      for (var i = 0; i <  ul1.length; i++) {
+        ul1.querySelectorAll(".menu")[i].index = i;
+      
+      }
+
+      ul1.addEventListener('mouseover', function (event) {
+        let num = event.target.index;
+        ul1.querySelectorAll(".menu")[num].style.color = "red";
+        ul1.querySelectorAll(".menu")[num].style.fontWeight = "bolder";
+      }, false)
+
+
+    </script>
 </body>
 
-<script>
-  //  $(function () {
-  //   $.ajax({
-  //     type: "get",//请求方式
-  //     url: "json/head.json",//地址，就是json文件的请求路径
-  //     dataType: "json",//数据类型可以为 json 
-  //     success: function (data) {//返回的参数就是 action里面所有的有get和set方法的参数
-  //       var str = "";
-  //       //data是一个集合,所以需要先遍历
-  //       $.each(data, function (index, dataItem) {
-  //         str += `<li>
-  //         <a href="#" class="menu">${dataItem.li1}</a>
-  //         <a href="#" class="menu">${dataItem.li2}</a>
-  //         <a href="#" class="menu">${dataItem.li3}</a>
-  //         <a href="#" class="menu">${dataItem.li4}</a>
-  //         <a href="#" class="menu">${dataItem.li5}</a>
-  //         <a href="#" class="menu">${dataItem.li6}</a>
-  //       </li>`
-  //       });
-  //       $(".head .head-menu").append(str);
-  //     }
-  //   })
-  // })
-  // //页面加载   获取全部信息
-  // $(function () {
-  //   $.ajax({
-  //     type: "get",//请求方式
-  //     url: "json/item.json",//地址，就是json文件的请求路径
-  //     dataType: "json",//数据类型可以为 json 
-  //     success: function (data) {//返回的参数就是 action里面所有的有get和set方法的参数
-  //       var str = "";
-  //       //data是一个集合,所以需要先遍历
-  //       $.each(data, function (index, dataItem) {
-  //         str += `<div class="l1"> <a href="#" id="la">
-  //         <div class="l11">
-  //           <img src="${dataItem.imgurl}" alt="" id="img5">
-  //         </div>
-  //         <div class="l12">
-  //           <div class="mess1">
-  //             <h4 id="mss11">${dataItem.title}</h4>
-  //             <p id="mss12">${dataItem.show}</p>
-  //           </div>
-  //           <div class="mess2">
-  //             <span>${dataItem.level}</span>
-  //             <span>${dataItem.comments}</span>
-  //           </div>
-  //         </div>
-  //       </a></div>`
-  //       });
-  //       $(".div5 .ll").append(str);
-  //     }
-  //   })
-  // })
-</script>
 </html>
