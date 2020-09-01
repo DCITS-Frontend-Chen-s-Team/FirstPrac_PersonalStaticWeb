@@ -3,7 +3,7 @@ $(function () {
   $.ajax({
     type: "get",//请求方式
     url: "json/head.json",//地址，就是json文件的请求路径
-    dataType: "json",//数据类型可以为 json 
+    dataType: "json",//数据类型可以为 json
     success: function (data) {//返回的参数就是 action里面所有的有get和set方法的参数
       var str = "";
       // data是一个集合,所以需要先遍历
@@ -22,7 +22,7 @@ $(function () {
   $.ajax({
     type: "get",//请求方式
     url: "json/head.json",//地址，就是json文件的请求路径
-    dataType: "json",//数据类型可以为 json 
+    dataType: "json",//数据类型可以为 json
     success: function (data) {//返回的参数就是 action里面所有的有get和set方法的参数
       var str = "";
       //data是一个集合,所以需要先遍历
@@ -82,7 +82,7 @@ $(function () {
       $(".div1 .aa .item #a1").append(f_str);
       $(".div1 .aa .item #a1").append(c_str);
     }
-  }) 
+  })
 })
 
 
@@ -92,7 +92,7 @@ $(function () {
   $.ajax({
     type: "get",//请求方式
     url: "json/div5.json",//地址，就是json文件的请求路径
-    dataType: "json",//数据类型可以为 json 
+    dataType: "json",//数据类型可以为 json
     success: function (data) {//返回的参数就是 action里面所有的有get和set方法的参数
       var str = "";
       //data是一个集合,所以需要先遍历
@@ -110,7 +110,7 @@ $(function () {
   $.ajax({
     type: "get",//请求方式
     url: "json/div5.json",//地址，就是json文件的请求路径
-    dataType: "json",//数据类型可以为 json 
+    dataType: "json",//数据类型可以为 json
     success: function (data) {//返回的参数就是 action里面所有的有get和set方法的参数
       var str = "";
       //data是一个集合,所以需要先遍历
