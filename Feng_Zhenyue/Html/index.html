@@ -2,47 +2,42 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>冯振岳 慕课网仿制</title>
-		<link href="../Css/index.css" rel="stylesheet" />
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+		<title>慕课网仿制_冯振岳</title>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="stylesheet/less" href="../Css/index.less">
+		<script src="../Js/less.min.js"></script>
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
 		<script src="../Jquery/jquery-3.4.1.min.js"></script>
+		<script src="../Js/template.js"></script>
 	</head>
 
 
 	<body id="index">
-
-		<div id="header" class="">
+		<div class="header" id="header">
 			<div id="nav" class="header_nav">
-				<!-- 这里是导航栏按钮 -->
 				<div class="logo">
 				</div>
-				<ul class="nav_item">
-					<li><a href="/" target="_self">免费课程<i class="icn-new"></i></a></li>
-					<li><a href="/" target="_self">实战课程</a></li>
-					<li><a href="/" target="_self">金职位<i class="icn-new"></i></a></li>
-					<li><a href="/" target="_self">wiki</a></li>
-					<li><a href="/" target="_self">专栏</a></li>
-					<li><a href="/" target="_self">手记</a></li>
+				<ul class="nav_item" id="nav_item">
+					<!-- 这里是nav_item_li_a数据的插入区域 -->
 				</ul>
 				<div id="login_area">
-					<ul class="header_unlogin">
-						<li id="appdown" class="app_download">
-							<a href="/" target="_blank" style="width:60px;">下载APP</a>
-						</li>
-						<li id="gouwuche" class="gouwuche">
-							<div class="gwctb"></div>
-							<span>购物车</span>
-							<!-- <div class="gouwuchexiala">
-						
-					</div> -->
-						</li>
-						<li class="header_denglu">
-							<a>登陆</a>
-							/
-							<a>注册</a>
-						</li>
-					</ul>
+					<div class="login_area_left">
+						<div class="downApp">
+							<a>APP下载</a>
+						</div>
+						<div class="shoppingcart">
+							<div class="shoppingcart_icon">
+							</div>
+							<div class="shoppingcart_a">
+								购物车
+							</div>
+						</div>
+					</div>
+					<div class="login_area_right" id="loginlinked">
+						<a>登陆</a>
+						<a>/</a>
+						<a>注册</a>
+					</div>
 				</div>
 				<div class="search-wrap" style="min-width:32px; height:72px;">
 					<div class="search-area">
@@ -53,7 +48,6 @@
 							<i class="icon-search"></i>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -61,387 +55,8 @@
 			<div id="page1">
 				<div id="page1_neiqian">
 					<div class="lunbotu">
-						<div class="lunbotu_left">
-							<div class="item">
-								<a href="#">
-									<sapn class="spanop">前沿 / 区块链 / 人工智能 > </span>
-										<div class="tanchu" style="top: -17px;">
-											<div class="tanchu1">
-												<div class="tanchu11">
-													<h4>前沿技术<h4>
-												</div>
-												<div class="tanchu12">
-													微服务 区块链 以太坊 机器学习 深度学习 计算机视觉 自然语言处理 数据分析&挖掘
-												</div>
-											</div>
-											<div class="tanchu2">
-												<div class="tanchu21">
-													<div class="tanchu21img">
+						<div class="lunbotu_left" id="lunboleftfix">
 
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-								</a>
-
-							</div>
-							<div class="item">
-								<a href="#">
-									<sapn class="spanop">前端 / 小程序 / JS > </span>
-										<div class="tanchu" style="	top: -67px;">
-											<div class="tanchu1">
-												<div class="tanchu11">
-													<h4>前端开发<h4>
-												</div>
-												<div class="tanchu12">
-													typescript TML/CSS JavaScript Vue.js React.JS Angular Node.js jQuery Bootstrap Sass/Less WebApp 小程序 前端工具
-													CSS Html5 CSS3
-
-												</div>
-											</div>
-											<div class="tanchu2">
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-
-														</div>
-														<div class="tanchu21miaoshupri">
-
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-								</a>
-							</div>
-							<div class="item">
-								<a href="#">
-									<sapn class="spanop">后端 / JAVA / Python > </span>
-										<div class="tanchu" style="top: -117px;">
-											<div class="tanchu1">
-												<div class="tanchu11">
-													<h4>前沿技术<h4>
-												</div>
-												<div class="tanchu12">
-													示例文字 3
-												</div>
-											</div>
-											<div class="tanchu2">
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-
-														</div>
-														<div class="tanchu21miaoshupri">
-
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21" style="top: -117px;">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-								</a>
-							</div>
-							<div class="item">
-								<a href="#">
-									<sapn class="spanop">移动 / Android / ios > </span>
-										<div class="tanchu" style="top: -167px;">
-											<div class="tanchu1">
-												<div class="tanchu11">
-													<h4>前沿技术<h4>
-												</div>
-												<div class="tanchu12">
-													示例文字4
-												</div>
-											</div>
-											<div class="tanchu2">
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-
-														</div>
-														<div class="tanchu21miaoshupri">
-
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-								</a>
-							</div>
-							<div class="item">
-								<a href="#">
-									<sapn class="spanop">云计算 / 大数据 / 容器> </span>
-										<div class="tanchu" style="top: -217px;">
-											<div class="tanchu1">
-												<div class="tanchu11">
-													<h4>前沿技术<h4>
-												</div>
-												<div class="tanchu12">
-													微服务 区块链 以太坊 机器学习 深度学习 计算机视觉 自然语言处理 数据分析&挖掘
-												</div>
-											</div>
-											<div class="tanchu2">
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-
-														</div>
-														<div class="tanchu21miaoshupri">
-
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21">
-													<div class="tanchu21img">
-
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-								</a>
-							</div>
-							<div class="item">
-								<a href="#">
-									<sapn class="spanop">运维 / 测试 / 数据库 > </span>
-										<div class="tanchu" style="top: -267px;">
-											<div class="tanchu1">
-												<div class="tanchu11">
-													<h4>前沿技术<h4>
-												</div>
-												<div class="tanchu12">
-													微服务 区块链 以太坊 机器学习 深度学习 计算机视觉 自然语言处理 数据分析&挖掘
-												</div>
-											</div>
-											<div class="tanchu2">
-												<div class="tanchu21">
-													<div class="tanchu21img">
-													</div>
-													<div class="tanchu21miaoshu">
-														<div class="tanchu21miaoshuName">
-															描述文字行1
-														</div>
-														<div class="tanchu21miaoshupri">
-															描述文字行2
-														</div>
-													</div>
-												</div>
-												<div class="tanchu21"></div>
-												<div class="tanchu21"></div>
-												<div class="tanchu21"></div>
-											</div>
-										</div>
-								</a>
-							</div>
 						</div>
 						<div class="lunbotu_right">
 
@@ -474,7 +89,7 @@
 							<span>零基础就业</span>
 							<sapn class="intro">从入门到一年经验</span>
 
-								<div class="path_list">
+								<div class="path_list" id="fordesc">
 									<a class="fori1">
 										<i class="i1"></i>
 										<p class="tit">Java工程师2020</p>
@@ -525,118 +140,25 @@
 					<h3 class="type_title">
 						<span>新上好课</span>
 					</h3>
+					<div class="page2cardbox" id="page2cardbox">
+						<!-- 这里是page2card填充的地方 -->
+					</div>
 				</div>
 			</div>
 			<!-- 这里是page3============================================================ -->
 			<div id="page3">
 				<div class="p3neiqian">
-					<h3 class="type_title">
-						<span class="xuexi">学习路线</span>
-						<ul class="p3ul">
-							<li>热门</li>
-							<li>前端</li>
-							<li>后端</li>
-							<li>移动端</li>
-							<li>计算机基础</li>
-							<li>大数据</li>
-							<li>测试</li>
-							<li>人工智能</li>
+					<div class="p3title">
+						<h3 class="type_title">
+							<span class="xuexi">学习路线</span>
+						</h3>
+						<ul class="p3ul" id="p3ul">
+							<!-- 这里利用template.js注入 -->
 						</ul>
 						<a class="more">查看更多 > </a>
-					</h3>
-					<div class="p3rongqi">
-						<div class="p3xiao">
-							<a class="p3kongzhi">
-								<div class="p3banner" style="background-image: url(../Images/Index/p31.png);">
-								</div>
-								<h4>
-									微信小程序从0基础到精通
-								</h4>
-								<p>
-									一站式掌握小程序生态，打造站内零基础精通小程序的最佳路径
-								</p>
-								<div class="p3ifo">
-									<span>4步骤 5门课</span>
-									<span>23312人收藏</span>
-								</div>
-							</a>
-						</div>
-						<div class="p3xiao">
-							<a class="p3kongzhi">
-								<div class="p3banner" style="background-image: url(../Images/Index/p32.jpg);">
-								</div>
-								<h4>
-									Vue.js 从入门到精通
-								</h4>
-								<p>
-									路线转为想学Vue却无从下手的人群设计，以实际项目为例，逐层深入，学透Vue
-								</p>
-								<div class="p3ifo">
-									<span>3步骤 5门课</span>
-									<span>18873人收藏</span>
-								</div>
-							</a>
-						</div>
-						<div class="p3xiao">
-							<a class="p3kongzhi">
-								<div class="p3banner" style="background-image: url(../Images/Index/p33.jpg);">
-								</div>
-								<h4>
-									Go语言从入门到达人之路
-								</h4>
-								<p>
-									零基础入门Go语言，在掌握基础语法后向并发提升，并用Go去构建微服务，上手区块链项目
-								</p>
-								<div class="p3ifo">
-									<span>5步骤 8门课</span>
-									<span>5107人收藏</span>
-								</div>
-							</a>
-						</div>
-						<div class="p3xiao"><a class="p3kongzhi">
-								<div class="p3banner" style="background-image: url(../Images/Index/p34.jpg);">
-								</div>
-								<h4>
-									前端面试求职跳槽通关路线
-								</h4>
-								<p>
-									路线伴随Web前端工程师一路成长，彻底搞懂不同阶段的面试重点，高效拿下offer
-								</p>
-								<div class="p3ifo">
-									<span>3步骤 4门课</span>
-									<span>9470人收藏</span>
-								</div>
-							</a></div>
-						<div class="p3xiao"><a class="p3kongzhi">
-								<div class="p3banner" style="background-image: url(../Images/Index/p35.jpg);">
-								</div>
-								<h4>
-									Python功能测试到自动化测试路线
-								</h4>
-								<p>
-									自动化测试效率更高，路线旨在帮Python功能测试从业者成功转型
-								</p>
-								<div class="p3ifo">
-									<span>4步骤 5门课</span>
-									<span>11237人收藏</span>
-								</div>
-							</a></div>
-						<div class="p3xiao">
-							<a class="p3kongzhi">
-								<div class="p3banner" style="background-image: url(../Images/Index/p36.jpg);">
-								</div>
-								<h4>
-									MySQL数据库直通车：从入门到面试
-								</h4>
-								<p>
-									一举吃透最耗时的数据库，学会数据库的基本使用，业务库的设计与架构，面试收尾升华所学
-								</p>
-								<div class="p3ifo">
-									<span>4步骤 4门课</span>
-									<span>5371人收藏</span>
-								</div>
-							</a>
-						</div>
+					</div>
+					<div class="p3rongqi" id="page3fix">
+						<!-- 这里是p3注入区域 -->
 					</div>
 				</div>
 			</div>
@@ -646,74 +168,60 @@
 					<h3 class="type_title4">
 						<span>热门课程</span>
 					</h3>
-					<!-- 这里是json插入的区域 -->
-				</div>
-			</div>
-				<!-- 从这里开始是page5============================================================ -->
-				<div id="page5">
-					<div class="p5neiqian" id="page5fix">
-						<h3 class="type_title4">
-							<span class="p5span">慕课专栏</span>
-						</h3>
-						<!-- 这里是page5嵌入区域 -->
-		</div>
-		</div>
-		</div>
-		<div class="footer idx-minwidth">
-			<div class="container">
-				<div class="footer-wrap idx-width">
-					<div class="footer-sns clearfix">
-						<div class="a1">
-							<a class="footer-sns-weixin" target="_blank" title="微信"><i class="footer-sns-weixin-expand"></i></a>
-							<p>官方公众号</p>
-						</div>
-						<div class="a1">
-							<a class="footer-sns-weibo hide-text" target="_blank" title=""></a>
-							<p>官方微博</p>
-						</div>
+					<div class="page4cardbox" id="page4cardbox">
+						<!-- 这里是json插入的区域 -->
 					</div>
 				</div>
-				<div class="footer-link">
-					<a href="#" target="_blank" title="企业服务">企业服务</a>
-					<a href="#" target="_blank" title="人才招聘">人才招聘</a>
-					<a href="#" target="_blank" title="联系我们">联系我们</a>
-					<a href="#" target="_blank" title="讲师招募">讲师招募</a>
-					<a href="#" target="_blank" title="帮助中心">帮助中心</a>
-					<a href="#" target="_blank" title="意见反馈">意见反馈</a>
-					<a href="#" target="_blank">慕课大学</a>
-					<a href="#" target="_blank">代码托管</a>
-					<a href="#" target="_blank" title="友情链接">友情链接</a>
-				</div>
-				<div class="footer-copyright">
-					<p><img draggable="false" class="moco-emoji" alt="©" src="#.png">&nbsp;2020&nbsp;imooc.com&nbsp;&nbsp;京ICP备
-						12003892号-11
-						<a href="#" target="_blank" style="color:#93999F;font-size:12px;margin:0 5px !important;"><i class="beian"></i>京公网安备11010802030151号</a>
-						<a href="#" target="_blank" style="color:#93999F;font-size:12px;">营业执照</a>
-					</p>
+			</div>
+			<!-- 从这里开始是page5============================================================ -->
+			<div id="page5">
+				<div class="p5neiqian" id="page5fix">
+					<h3 class="type_title4">
+						<span class="p5span">慕课专栏</span>
+					</h3>
+					<div id="page5cardbox" class="page5cardbox">
+						<!-- 这里是page5嵌入区域 -->
+					</div>
 				</div>
 			</div>
-		</div>
-
+			<div class="footer idx-minwidth">
+				<div class="container">
+					<div class="footer-wrap idx-width">
+						<div class="footer-sns clearfix">
+							<div class="a1">
+								<a class="footer-sns-weixin" target="_blank" title="微信"><i class="footer-sns-weixin-expand"></i></a>
+								<p>官方公众号</p>
+							</div>
+							<div class="a1">
+								<a class="footer-sns-weibo hide-text" target="_blank" title=""></a>
+								<p>官方微博</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-link" class="footerlink_a">
+						<a href="#" target="_blank" title="企业服务">企业服务</a>
+						<a href="#" target="_blank" title="人才招聘">人才招聘</a>
+						<a href="#" target="_blank" title="联系我们">联系我们</a>
+						<a href="#" target="_blank" title="讲师招募">讲师招募</a>
+						<a href="#" target="_blank" title="帮助中心">帮助中心</a>
+						<a href="#" target="_blank" title="意见反馈">意见反馈</a>
+						<a href="#" target="_blank">慕课大学</a>
+						<a href="#" target="_blank">代码托管</a>
+						<a href="#" target="_blank" title="友情链接">友情链接</a>
+					</div>
+					<div class="footer-copyright">
+						<p><img draggable="false" class="moco-emoji" alt="©" src="#.png">&nbsp;2020&nbsp;imooc.com&nbsp;&nbsp;京ICP备
+							12003892号-11
+							<a href="#" target="_blank" style="color:#93999F;font-size:12px;margin:0 5px !important;"><i class="beian"></i>京公网安备11010802030151号</a>
+							<a href="#" target="_blank" style="color:#93999F;font-size:12px;">营业执照</a>
+						</p>
+					</div>
+				</div>
+			</div>
 	</body>
-	<!-- <script>
-		 //动态加载 js /css 
-		        function loadjscssfile(filename, filetype) {
-		            // if (filetype == "js") { //判定文件类型
-		            //     var fileref = document.createElement('script')//创建标签
-		            //     fileref.setAttribute("type", "text/javascript")//定义属性type的值为text/javascript
-		            //     fileref.setAttribute("src", filename)//文件的地址
-		            // }
-		            else if (filetype == "css") { //判定文件类型
-		                var fileref = document.createElement("link")
-		                fileref.setAttribute("rel", "stylesheet")
-		                fileref.setAttribute("type", "text/css")
-		                fileref.setAttribute("href", "../Css/index.css")
-		            }
-		            if (typeof fileref != "undefined")
-		                document.getElementsByTagName("head")[0].appendChild(fileref)
-		        }
-	</script> -->
+	<!--  -->
 	<script>
+		//这里是轮播图插件
 		var mySwiper = new Swiper('.swiper-container', {
 			direction: 'horizontal', // 垂直切换选项
 			loop: true, // 循环模式选项
@@ -727,150 +235,84 @@
 				el: '.swiper-pagination',
 				clickable: true,
 			},
-
 			// 如果需要前进后退按钮
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
-
-			// 如果需要滚动条
-			// scrollbar: {
-			//   el: '.swiper-scrollbar',
-			// },
 		});
 	</script>
-	<script>
-		// alert("llll");
-		$(function() {
-			$.ajax({
-				url: "../Json/haoke.json",
-				type: "get",
-				dataType: "json",
-				// dataType:'JSONP',
-				// error: function() {
-				// 	alert("ppp");
-				// },
-				error: function() {
-					console.log("error");
-				},
-				success: function(data) {
-					// alert("sucess3");
-					var str = "";
-					$.each(data, function(index, dataItem) {
-						str +=
-							// 这里写导入部分的代码
-							`<div class="haokecard">
-				   	<div class="haoketit">
-				   	</div>
-				   	<div class="haokeimg" style="background-image: url(${dataItem.img});">
-				   	</div>
-				   	<div class="haokemiaoshu">
-				   		<a class="onred">${dataItem.miaoshu}</a>
-				   	</div>
-				   	<div class="haokemo">
-				   		<span>${dataItem.level}</span>
-				   		<span class="pingjia">${dataItem.comments}</span>
-				   		<span class="haokemo_price">${dataItem.price}</span>
-				   	</div>
-				   </div>
-				   </div>`;
-					});
-					//类选择器
-					$("#page2fix").append(str);
-				}
-			})
-		})
-		// page4注入
-		$(function() {
-			$.ajax({
-				url: "../Json/popularCourse.json",
-				type: "get",
-				dataType: "json",
-				// dataType:'JSONP',
-				// error: function() {
-				// 	alert("ppp");
-				// },
-				error: function() {
-					console.log("error");
-				},
-				success: function(data) {
-					// alert("sucess3");
-					var str = "";
-					$.each(data, function(index, dataItem) {
-						str +=
-							// 这里写导入部分的代码
-							`<div class="haokecard">
-						<div class="haoketit">
-						</div>
-						<div class="haokeimg" style="background-image: url(${dataItem.img});">
-						</div>
-						<div class="haokemiaoshu">
-							<a class="onred">${dataItem.miaoshu}</a>
-						</div>
-						<div class="haokemo">
-							<span></span>
-							<sapn class="pingjia">${dataItem.comments}</span>
-						</div>
-					</div>`;
-					});
-					//类选择器
-					$("#page4fix").append(str);
-				}
-			})
-		})
-		// page5注入
-		$(function() {
-			$.ajax({
-				url: "../Json/zhuanlan.json",
-				type: "get",
-				dataType: "json",
-				// dataType:'JSONP',
-				// error: function() {
-				// 	alert("ppp");
-				// },
-				error: function() {
-					console.log("error");
-				},
-				success: function(data) {
-					alert("sucess3");
-					var str = "";
-					$.each(data, function(index, dataItem) {
-						console.log(dataItem.course_read_info);
-						str +=
-							// 这里写导入部分的代码
-							`<div class="p5xiaohezi">
-								<div class="course_banner">
-									<a>
-										<img src="${dataItem.img}">
-										<div class="try_read_me">${dataItem.shidu}</div>
-									</a>
-								</div>
-								<h4>
-									<a href="#" style="outline: none;text-decoration: none;">${dataItem.decoration}</a>
-								</h4>
-								<div class="course_read_info">
-								<span>${dataItem.course_read_info}</span>
-								</div>
-								<div class="course_read_teacher">
-									<a href="#" style="text-decoration: none;">
-										${dataItem.couser_read_teacher}
-								</div>
-								<div class="course_read_price">
-									<a class="course_card_price">
-										<span class="sale">${dataItem.course_card_price_sale}</span>
-										<span class="ori">${dataItem.course_card_price_ori}</span>
-										<div class="cutdown" style="clear: both;">
-										<span class="name">${dataItem.name}</span>
-									</a>
-								</div>
-							</div>
-						</div>`;
-					});
-					//类选择器
-					$("#page5fix").append(str);
-				}
-			})
-		})
+	<script type="text/javascript">
+		//这里是template.js
+		window.onload = function() {
+			//模拟这个data数据是从服务器获取的数据
+			//这个数据中有N个字段：
+			var data1 = {
+				nav_item_li_a: ['免费课程', '实战课程', '金职位', 'wiki', '专栏', '手记']
+			};
+			var data2 = {
+				p3ul_li: ['热门', '前端', '后端', '移动端', '计算机基础', '大数据', '测试', '人工智能']
+			};
+			//template根据参数生成的html片段保存在html里面
+			//这里也就是把data数据保存到id为resultTemplate的template模板中去
+			// 我这里导入的是导航栏中的ul中的li
+			var html1 = template("resultTemplate", data1);
+			var header = document.querySelector("#nav_item");
+			nav_item.innerHTML = html1;
+			//这里导入的是footer中的内容
+			var html2 = template("p3ulTemplate", data2);
+			var footer_li = document.querySelector("#p3ul");
+			p3ul.innerHTML = html2;
+		}
 	</script>
+	<script type="text/html" id="resultTemplate">
+		{{each nav_item_li_a as value i}}
+		<li><a href="/" target="_self"> {{value}}</a></li>
+		{{/each}}
+	</script>
+	<script type="text/html" id="p3ulTemplate">
+		{{each p3ul_li as value2 i}}
+		<li class="p3ulli" id="p3ulli">{{value2}}</li>
+		{{/each}}
+	</script>
+
+	<script>
+		var fontColors = document.getElementById("fordesc");
+		var list = fontColors.querySelectorAll(".desc");
+		var linked = document.getElementById("loginlinked")
+
+		for (var j = 0; j < list.length; j++) {
+			list[j].index = j;
+		}
+		fontColors.addEventListener('mouseover', function(event) {
+			changefontcolor(event.target.index);
+		})
+
+		fontColors.addEventListener('mouseout', function(event) {
+			getbackcolor(event.target.index);
+		})
+		linked.addEventListener('click',forlink)
+
+		function changefontcolor(j) {
+			// document.getElementsByClassName("desc")[j].style.color = "lightskyblue";
+			var x = document.getElementsByClassName("desc")[j];
+			x.style.color = "lightskyblue";
+			// document.getElementsByClassName("desc")[j].style.fontWeight = 550;
+			var x = document.getElementsByClassName("desc")[j];
+			x.style.fontWeight = "550";
+		}
+
+		function getbackcolor(j) {
+			// document.getElementsByClassName("desc")[j].style.color = "lightskyblue";
+			var x = document.getElementsByClassName("desc")[j];
+			x.style.color = "black";
+			// document.getElementsByClassName("desc")[j].style.fontWeight = 550;
+			var x = document.getElementsByClassName("desc")[j];
+			x.style.fontWeight = "400";
+		}
+		function forlink(){
+			window.history.forward();
+		}
+	</script>
+	<script src="../Js/Index.js"></script>
 </html>

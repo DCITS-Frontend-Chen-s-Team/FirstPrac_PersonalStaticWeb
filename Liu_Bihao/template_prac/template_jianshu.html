@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="../static/js/lib/template-web.js"></script>
+    <style type="text/css"></style>
+</head>
+<body>
+<div id="c1"></div>
+<script id="t1" type="text/html">
+    {{if isAdmin}}
+    <h1>{{title}}</h1>
+    <ul>
+        {{each list value i}}
+        <li>索引 {{i + 1}} : {{value}}</li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</script>
+
+<h1>在javascript中存放模板</h1>
+<div id="c2"></div>
+
+<!--<h1>错误捕获（请打开控制台）</h1>
+<script id="t3" type="text/html">
+    {{2 a ba d}}
+</script>-->
+
+<h1>自定义过滤器</h1>
+<div id="c4"></div>
+<script id="t4" type="text/html">
+    {{time | dateFormat:'yyyy年 MM月 dd日 hh:mm:ss'}}
+</script>
+
+<div id="c5"></div>
+<script id="t5" type="text/html">
+    <h1>{{title}}</h1>
+    {{include 't5-list'}}
+</script>
+<script id="t5-list" type="text/html">
+    <ul>
+        {{each list value i}}
+        <li>索引 {{i + 1}} ：{{value}}</li>
+        {{/each}}
+    </ul>
+</script>
+
+<h1>不转义HTML</h1>
+<div id="c6"></div>
+<script id="t6" type="text/html">
+    <p>不转义：{{#value}}</p>
+    <p>默认转义： {{value}}</p>
+</script>
+
+<h1>print</h1>
+<script id="t7" type="text/html">
+    {{print a b c}}
+</script>
+
+<!--<h1>错误捕获（请打开控制台）</h1>
+<script id="t8" type="text/html">
+    <ul>
+        {{each list}}
+        {{/each}}
+        {{window.alert=null}}
+    </ul>
+</script>-->
+
+<h1>多重if判断</h1>
+<div id="c9"></div>
+<script id="t9" type="text/html">
+    {{if flag == '1'}}
+    <span>123</span>
+    {{else if flag == "2"}}
+    <span>456</span>
+    {{else}}
+    <span>789</span>
+    {{/if}}
+</script>
+
+<h1>遍历</h1>
+<div id="c10"></div>
+<script id="t10" type="text/html">
+    <ul>
+        {{each list}}
+        <li>索引 {{$index + 1}} : {{$value}}</li>
+        {{/each}}
+    </ul>
+</script>
+
+<script>
+    var d1 = {
+        title: '基本例子',
+        isAdmin: true,
+        list: ['文艺', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
+    };
+
+    document.getElementById('c1').innerHTML = template('t1', d1);
+
+    var s2 = '<ul>' +
+        '{{each list value i}}' +
+        '<li>索引 {{i + 1}} : {{value}}</li>' +
+        '{{/each}}' +
+        '</ul>';
+
+    document.getElementById('c2').innerHTML = template.compile(s2)({
+        list: ['摄影', '电影', '民谣', '旅行', '吉他']
+    });
+
+    /*var h3 = '';
+    h3 = template('t3', {});
+    document.write(h3);*/
+
+    /**
+     * 对日期进行格式化，
+     * @param date 要格式化的日期
+     * @param format 进行格式化的模式字符串
+     *     支持的模式字母有：
+     *     y:年,
+     *     M:年中的月份(1-12),
+     *     d:月份中的天(1-31),
+     *     h:小时(0-23),
+     *     m:分(0-59),
+     *     s:秒(0-59),
+     *     S:毫秒(0-999),
+     *     q:季度(1-4)
+     * @return String
+     * @author yanis.wang
+     * @see    http://yaniswang.com/frontend/2013/02/16/dateformat-performance/
+     */
+    template.defaults.imports.dateFormat = function (date, format) {
+        if (typeof date === "string") {
+            var mts = date.match(/(\/Date\((\d+)\)\/)/);
+            if (mts && mts.length >= 3) {
+                date = parseInt(mts[2]);
+            }
+        }
+        date = new Date(date);
+        if (!date || date.toUTCString() == "Invalid Date") {
+            return "";
+        }
+        var map = {
+            "M": date.getMonth() + 1, //月份
+            "d": date.getDate(), //日
+            "h": date.getHours(), //小时
+            "m": date.getMinutes(), //分
+            "s": date.getSeconds(), //秒
+            "q": Math.floor((date.getMonth() + 3) / 3), //季度
+            "S": date.getMilliseconds() //毫秒
+        };
+        format = format.replace(/([yMdhmsqS])+/g, function (all, t) {
+            var v = map[t];
+            if (v !== undefined) {
+                if (all.length > 1) {
+                    v = '0' + v;
+                    v = v.substr(v.length - 2);
+                }
+                return v;
+            } else if (t === 'y') {
+                return (date.getFullYear() + '').substr(4 - all.length);
+            }
+            return all;
+        });
+        return format;
+    };
+    var d4 = {
+        time: new Date().getTime()
+    };
+    document.getElementById('c4').innerHTML = template('t4', d4);
+
+    var d5 = {
+        title: '嵌入子模板',
+        list: ['文艺', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
+    };
+    document.getElementById('c5').innerHTML = template('t5', d5);
+
+    var d6 = {
+        value: '<span style="color: #6382ff">hello world!</span>'
+    };
+    document.getElementById('c6').innerHTML = template('t6', d6);
+
+    var h7 = '';
+    var d7 = {
+        a: 'hello',
+        b: '--world',
+        c: '--!!!'
+    };
+    h7 = template('t7', d7);
+    document.write(h7);
+
+    /*var h8 = '';
+    h8 = template('t8', {});
+    document.write(h8);*/
+
+    var d9 = {
+        flag: '1'
+    };
+    document.getElementById('c9').innerHTML = template('t9', d9);
+
+    var d10 = {
+        list: ['文艺', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
+    };
+
+    document.getElementById('c10').innerHTML = template('t10', d10);
+</script>
+
+<script>
+    var ii = document.getElementById('c10');
+    document.addEventListener("click", function() {
+        alert("1");
+    });
+</script>
+
+</body>
+</html>

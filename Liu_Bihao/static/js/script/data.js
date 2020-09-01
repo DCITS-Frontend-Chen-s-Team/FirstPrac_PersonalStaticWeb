@@ -37,6 +37,9 @@ $(function () {
         }
     });
 
+    /**
+     * 热门课程板块
+     */
     $.ajax({
         url: "json/hot-course.json",
         type: "get",
@@ -63,6 +66,9 @@ $(function () {
         }
     });
 
+    /**
+     * 慕课专栏板块
+     */
     $.ajax({
         url: "json/mooc.json",
         type: "get",
@@ -91,6 +97,9 @@ $(function () {
         }
     });
 
+    /**
+     * 轮播图板块
+     */
     $.ajax({
         url: "json/menu.json",
         type: "get",
@@ -124,13 +133,12 @@ $(function () {
                                 </div>`;
                 }
 
-                str += `<li class="subMenu-2">
+                str += `<li class="sub-Menu">
                         <a href="#">${dataItem.content}</a>
                         <div class="subMenu">
                             <h3 class="title-area">
                                 <span class="title">${dataItem.subMenu.title}</span>
-                                <span class="des">` + subStr +
-                    `</span>
+                                <span class="des swipe-des">` + subStr + `</span>
                             </h3>
                             <div class="course-card">` + subStr_card + `</div>
                         </div>
@@ -140,6 +148,9 @@ $(function () {
         }
     });
 
+    /**
+     * 学习路线板块
+     */
     $.ajax({
         url: "json/learn-road.json",
         type: "get",
@@ -160,4 +171,18 @@ $(function () {
             $(".main-learn-road .card-list").append(str);
         }
     });
+})
+
+/**
+ * 学习路线板块顶部标签展示
+ * "curr"为被选中状态
+ */
+$(function () {
+    var str_learnRoad_tag_html = "";
+    var str_learnRoad_tags = ["热门", "前端", "后端", "移动端", "计算机基础", "大数据", "测试", "人工智能"]
+    str_learnRoad_tag_html += `<li class="curr">${str_learnRoad_tags[0]}</li>`
+    for (var i = 1; i < str_learnRoad_tags.length; i++) {
+        str_learnRoad_tag_html += `<li>${str_learnRoad_tags[i]}</li>`;
+    }
+    $(".main-learn-road ul").append(str_learnRoad_tag_html);
 })

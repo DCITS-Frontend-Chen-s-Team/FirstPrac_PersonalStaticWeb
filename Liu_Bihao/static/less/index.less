@@ -1,0 +1,857 @@
+/* 全局样式定义 */
+body {
+  margin: 0;
+  font-size: 62.5%; /* 使用 em 定义字体大小，浏览器默认 1em = 16px */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  margin: 20px;
+}
+
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.bottom-border {
+  border-bottom: rgba(0, 0, 0, 0.2) solid;
+}
+
+/* 轮播图插件 swiper */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 0;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.swiper-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 顶部栏 */
+.top-nav-bar {
+  width: 100%;
+  min-width: 1400px;
+  height: 72px;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  padding: 0 25px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
+  position: fixed;
+
+  .logo {
+    width: 126px;
+    height: 72px;
+    float: left;
+    background-image: url("../../static/img/logo.png");
+    background-size: cover;
+  }
+
+  .top-menu {
+    min-width: 650px;
+    float: left;
+    display: flex;
+
+    ul {
+      margin: 0 3%;
+      padding: 0;
+      flex-wrap: nowrap;
+      background-color: white;
+    }
+
+    li {
+      float: left;
+
+      a {
+        display: block;
+        text-align: center;
+        padding: 0 20px;
+        text-decoration: none;
+        color: #4d555d;
+        position: relative;
+        font-size: 1.6em;
+        line-height: 72px; /* 使文字垂直居中 */
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        transition: background-color 0.3s;
+
+        &:hover {
+          color: #07111b;
+        }
+      }
+    }
+  }
+
+  /* 顶部栏搜索框 */
+
+  .top-search {
+    width: 20%;
+    float: left;
+    position: relative;
+    height: 40px;
+    padding-right: 40px;
+    zoom: 1;
+    background: #E9E9E9;
+    border-radius: 8px;
+    margin: 16px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .search-input {
+      padding: 8px 12px;
+      font-size: 1.4em;
+      color: #A6A6A6;
+      line-height: 40px;
+      height: 40px;
+      width: 100%;
+      float: left;
+      border: 0;
+      background-color: transparent;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+
+      &:focus {
+        border: 0;
+        box-sizing: border-box;
+      }
+    }
+
+    .btn_search {
+      float: left;
+      cursor: pointer;
+      width: 30px;
+      height: 38px;
+      text-align: center;
+      -webkit-transition: background-color 0.3s;
+      -moz-transition: background-color 0.3s;
+      transition: background-color 0.3s;
+    }
+
+    .search-btn {
+      width: 24px;
+      height: 24px;
+      text-align: right;
+      position: absolute;
+      display: inline-block;
+      right: 0;
+      bottom: 8px;
+      padding: 0 8px;
+    }
+  }
+
+  .top-right-nav {
+    margin-left: 5%;
+    width: 18%;
+    height: 72px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-size: 1.5em;
+      float: left;
+      line-height: 72px;
+      color: #71777d;
+    }
+
+    span:hover, .register-login:hover, .top-right-nav .shop-cart:hover {
+      color: red;
+    }
+  }
+}
+
+/* container */
+.container {
+  width: 75%;
+  min-width: 1127px;
+  text-align: center;
+  margin: auto;
+  padding: 30px 0 50px;
+}
+
+/* common title area */
+.title-area {
+  width: 95%;
+  font-size: 2.4em;
+  color: #1C1F21;
+  text-align: left;
+  line-height: 42px;
+
+  .title {
+    font-weight: bold;
+  }
+
+  .des {
+    font-size: 0.6em;
+    color: #545C63;
+    line-height: 42px;
+  }
+
+  .swipe-des {
+    height: 100px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    span {
+      margin-right: 10px;
+    }
+  }
+
+  .more-des {
+    float: right;
+    margin-left: 12px;
+    font-size: 0.6em;
+    color: #545C63;
+    line-height: 42px;
+  }
+}
+
+.main-banner {
+  width: 100%;
+  display: block;
+  margin-top: 72px;
+
+  .container {
+    /* 轮播图 */
+
+    .banner {
+      height: 382px;
+      width: 100%;
+      margin: 20px 0;
+      border-radius: 10px;
+      background-color: rgba(7, 17, 27, 0.5);
+
+      .classify {
+        width: 22%;
+        height: 382px;
+        left: 0;
+        top: 0;
+        float: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 1;
+        background-color: #2b333b;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        a:hover {
+          background-color: rgba(255, 255, 255, 0.4);
+          color: #ffffff;
+
+          .subMenu {
+            display: block;
+          }
+        }
+
+        li a {
+          display: block;
+          text-align: center;
+          padding: 0 16px;
+          text-decoration: none;
+          color: #aaadb1;
+          position: relative;
+          font-size: 1.6em;
+          line-height: 50px; /* 使文字垂直居中 */
+          -webkit-transition: background-color 0.3s;
+          -moz-transition: background-color 0.3s;
+          transition: background-color 0.3s;
+        }
+      }
+
+      .banner-img {
+        width: 78%;
+        height: 382px;
+        top: 0;
+        right: 0;
+        position: relative;
+        float: left;
+
+        #img1 {
+          width: 100%;
+          height: 100%;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          -webkit-transition: background-color 0.3s;
+          -moz-transition: background-color 0.3s;
+          transition: background-color 0.3s;
+        }
+      }
+    }
+
+    /* 学习小卡片 */
+
+    .recommend {
+      .card-list-area {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          width: 270px;
+          padding: 15px 0;
+          transition: all 0.3s;
+          background: #F3F5F6;
+          border-radius: 8px;
+
+          img {
+            float: left;
+            width: 50px;
+            height: 50px;
+            background: no-repeat;
+            background-size: 100%;
+            margin: 0 12px;
+          }
+
+          h3 {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #1C1F21;
+            letter-spacing: 1px;
+            margin: 0 0 10px 0;
+            word-break: break-all;
+          }
+
+          p {
+            font-size: 1.4em;
+            color: #1C1F21;
+            line-height: 16px;
+            margin: 5px 0;
+            font-weight: 400;
+            word-break: break-all;
+          }
+        }
+
+        img {
+          width: 270px;
+          height: 90px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
+/* 隐藏菜单 */
+div.subMenu {
+  background: #fff;
+  position: absolute;
+  left: 248px;
+  top: 0;
+  width: 680px;
+  height: 382px;
+  padding: 0 20px;
+  z-index: 581;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all .4s ease-in-out;
+}
+
+.sub-Menu:hover div.subMenu {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.subMenu .course-card {
+  text-align: left;
+
+  .item {
+    float: left;
+    position: relative;
+    width: 46%;
+    padding: 20px 0;
+    margin-left: 20px;
+
+    img {
+      width: 70px;
+      height: 52px;
+      float: left;
+    }
+
+    .title {
+      float: left;
+      position: relative;
+      margin-left: 20px;
+      margin-bottom: 18px;
+      font-size: 1.5em;
+      color: black;
+      word-break: break-all;
+      clear: right;
+    }
+
+    span {
+      float: left;
+      position: relative;
+      margin-left: 20px;
+      font-size: 1em;
+      color: #A6A6A6;
+    }
+  }
+}
+
+/* 学习课程 */
+.main-course {
+  background-color: #f8fafc;
+}
+
+/* common course card */
+.course-card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  a {
+    width: 270px;
+    padding: 10px 2px;
+    border-radius: 4px;
+    transition: 0.3s all linear;
+
+    .img-nav {
+      width: 270px;
+      height: 148px;
+      position: relative;
+      border-radius: 8px;
+      transition: all .3s;
+
+      img {
+        width: 100%;
+        height: 100%;
+        background-color: #f3f5f7;
+        border-radius: 8px;
+      }
+    }
+
+    .course-name {
+      font-size: 1.6em;
+      color: #07111B;
+      line-height: 24px;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-align: left;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      /*-webkit-line-clamp: 2;*/
+      -webkit-box-orient: vertical;
+      transition: all .3s;
+      font-weight: bold;
+      height: 46px;
+    }
+
+    .card-info {
+      font-size: 1.2em;
+      color: #9199A1;
+      line-height: 18px;
+      margin-top: 4px;
+      font-weight: 400;
+
+      span {
+        display: inline-block;
+        margin-right: 12px;
+        position: relative;
+      }
+    }
+
+    .price {
+      float: left;
+      color: #F01414 !important;
+      font-weight: bold;
+      clear: both;
+
+      .price-tip {
+        box-sizing: border-box;
+        background: rgba(242, 13, 13, 0.08);
+        border-radius: 2px;
+        font-weight: 200;
+        color: #F20D0D;
+        padding: 0 4px;
+        display: inline-block;
+      }
+    }
+
+    .course-state {
+      background-color: #FFAA00;
+      background-image: linear-gradient(90deg, #ffaa00 17%, #f76b1c 100%);
+      position: absolute;
+      border: 2px solid #FFFFFF;
+      border-radius: 12px;
+      top: 8px;
+      left: -8px;
+      z-index: 4;
+      font-size: 1.2em;
+      color: #FFFFFF;
+      line-height: 20px;
+      padding: 0 8px;
+    }
+  }
+}
+
+/* 学习路线 */
+.main-learn-road, .main-hot-course {
+  ul {
+    margin-left: 36px;
+    display: inline-flex;
+  }
+
+  li {
+    margin: 0 14px;
+    font-size: 0.6em;
+    line-height: 30px;
+    cursor: pointer;
+    color: #545C63;
+  }
+
+  .curr {
+    color: #F20D0D;
+    border-bottom: 2px solid #F20D0D;
+  }
+}
+
+.main-learn-road {
+  display: block;
+  position: relative;
+
+  .title-area img {
+    width: 20px;
+    height: 20px;
+    float: right;
+    padding: 10px 0;
+  }
+
+  .card-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+      width: 540px;
+      height: 148px;
+      text-align: left;
+      padding: 10px;
+
+      img {
+        float: left;
+        position: relative;
+        transition: all .3s;
+        width: 140px;
+        height: 140px;
+        background-color: #f3f5f7;
+        border-radius: 8px;
+      }
+
+      .title-name {
+        margin: 8px 0 8px 164px;
+        font-size: 1.6em;
+        color: #1C1F21;
+        line-height: 20px;
+        min-height: 20px;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        /*-webkit-line-clamp: 2;*/
+        -webkit-box-orient: vertical;
+      }
+
+      .des {
+        margin-left: 164px;
+        font-size: 1.4em;
+        color: #545C63;
+        letter-spacing: 0;
+        line-height: 20px;
+        height: 60px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        /*-webkit-line-clamp: 3;*/
+        -webkit-box-orient: vertical;
+      }
+
+      .info {
+        margin-left: 164px;
+        font-size: 1.2em;
+        color: #9199A1;
+        height: 18px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+/* 热门课程 */
+.main-hot-course {
+  background-color: #f8fafc;
+
+  .title-area img {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-left: 10px;
+    padding: 10px 0;
+  }
+}
+
+/* 慕课专栏 */
+.main-mooc {
+  .card-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+      padding: 10px;
+      width: 332px;
+      height: 174px;
+      text-align: left;
+      transition: all .3s;
+    }
+
+    .left {
+      float: left;
+
+      img {
+        height: 118px;
+        width: 104px;
+      }
+
+      .try-read {
+        width: 35px;
+        height: 20px;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #3377FF;
+        margin: 5px;
+        overflow: hidden;
+      }
+    }
+
+    h4 {
+      margin: 0 0 0 112px;
+      font-size: 1.4em;
+      color: black;
+      line-height: 22px;
+      height: 44px;
+      font-weight: bold;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      /*-webkit-line-clamp: 2;*/
+      -webkit-box-orient: vertical;
+    }
+
+    .info {
+      margin-left: 112px;
+      padding: 10px 0;
+      font-size: 1.2em;
+      color: #9199A1;
+      text-align: left;
+      line-height: 14px;
+      border-bottom: 1px solid rgba(28, 31, 33, 0.1);
+    }
+
+    .teacher {
+      margin: 10px 0 10px 112px;
+      font-size: 1.2em;
+      color: #1C1F21;
+      text-align: left;
+      line-height: 16px;
+      overflow: hidden;
+      height: 16px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .price {
+      margin-left: 112px;
+      margin-top: 17px;
+      position: relative;
+
+      .sale {
+        font-size: 1.6em;
+        color: #3377FF;
+        text-align: left;
+        line-height: 32px;
+        font-weight: bold;
+      }
+
+      .ori {
+        margin-left: 8px;
+        font-size: 1.2em;
+        color: #9199A1;
+        text-align: left;
+        line-height: 30px;
+        text-decoration: line-through;
+      }
+
+      .countdown {
+        position: absolute;
+        top: 7px;
+        right: 0;
+        text-align: right;
+
+        .name {
+          color: #fff;
+          line-height: 16px;
+          height: 16px;
+          background-image: linear-gradient(90deg, #3377ff 0, #74ccff 99%);
+          padding: 2px 6px;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+
+  .title-area img {
+    width: 20px;
+    height: 20px;
+    float: right;
+    padding: 10px 0;
+  }
+}
+
+/* footer */
+.footer {
+  padding: 36px 0;
+  background-color: #f8fafc;
+
+  .footer-container {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-link {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: #99a1a6;
+      font-size: 1.5em;
+
+      &:hover {
+        color: #07111B;
+      }
+    }
+  }
+
+  .footer-copyright {
+    font-size: 1.3em;
+    text-align: left;
+    color: #93999F;
+  }
+
+  .relevant-link {
+    float: right;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+
+    p {
+      font-size: 1.2em;
+      color: #4D555D;
+      line-height: 24px;
+      margin-top: 4px;
+    }
+  }
+}
+
+.footer-img {
+  &:hover img.code {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  img {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    margin: 0 9px;
+  }
+}
+
+img.code {
+  position: absolute;
+  z-index: 99;
+  top: -110px;
+  right: -35px;
+  width: 100px;
+  height: 100px;
+  transform: scale(0);
+  transform-origin: bottom;
+  opacity: 0;
+  border: 4px solid #0085ba;
+  border-radius: .25rem;
+  /*-webkit-webkit-transition: all .4 s ease-in-out;*/
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.right-nav {
+  position: fixed;
+  padding: 0 16px;
+  top: 55%;
+  margin-top: -140px;
+  right: 0;
+  z-index: 899;
+  background-color: #fff;
+  box-shadow: 0 4px 12px 0 rgba(7, 17, 27, 0.1);
+
+  a {
+    display: block;
+    width: 26px;
+    padding: 16px 0;
+    font-size: 2.2em;
+    line-height: 20px;
+    color: #b5b9bc;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid #edf1f2;
+
+    span {
+      /*display: none;*/
+      font-size: .55em;
+      color: #07111b;
+      line-height: 14px;
+    }
+  }
+}
+
+.nav-font {
+  color: black;
+  font-weight: unset;
+}

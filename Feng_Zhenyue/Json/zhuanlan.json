@@ -4,7 +4,8 @@
 		"shidu":"试读",
 		"decoration":"10+年DBA老司机带你轻松玩转 SQL",
 		"course_read_info":"32节 64人已购买",
-		"course_read_teacher":"<span>简逸</span>/ 资深数据库工程师",
+		"course_read_teacher":"简逸",
+		"course_read_teacher_decripition":"资深数据库工程师",
 		"course_card_price_sale":"36￥",
 		"course_card_price_ori":"原价 45￥",
 		"name":"限时优惠"
@@ -14,7 +15,8 @@
 		"shidu":"试读",
 		"decoration":"跟 BAT 技术专家学 Docker + K8S",
 		"course_read_info":" 47节 82人已购买",
-		"course_read_teacher":"<span>legendtkl</span>/ BAT 资深技术专家",
+		"course_read_teacher":"legendtkl",
+		"course_read_teacher_decripition":"BAT 资深技术专家",
 		"course_card_price_sale":"￥49.00",
 		"course_card_price_ori":"原价 ￥68.00",
 		"name":"限时优惠"
@@ -24,7 +26,8 @@
 		"shidu":"试读",
 		"decoration":"专业技术团队出品：React深度剖析+实战",
 		"course_read_info":" 31节 70人已购买",
-		"course_read_teacher":"<span>BetterFE</span>/ 业务中台前端组",
+		"course_read_teacher":"BetterFE",
+		"course_read_teacher_decripition":"业务中台前端组",
 		"course_card_price_sale":"￥42.00",
 		"course_card_price_ori":"原价 ￥58.00",
 		"name":"限时优惠"
@@ -34,8 +37,10 @@
 		"shidu":"试读",
 		"decoration":"跟架构师学Jetpack",
 		"course_read_info":"15节 808人已购买",
-		"course_read_teacher":"<span>loveyChubby</span>/ 移动端架构师",
+		"course_read_teacher":"loveyChubby",
+		"course_read_teacher_decripition":"移动端架构师",
 		"course_card_price_sale":"￥ 29.00",
+		"course_card_price_ori":"原价 ￥68.00",
 		"name":"限时优惠"
 	},
 	{
@@ -43,8 +48,10 @@
 		"shidu":"试读",
 		"decoration":"Python 源码深度剖析",
 		"course_read_info":" 45节 889人已购买",
-		"course_read_teacher":"<span>fasionchan</span>/ 资深 Python 研发工程师",
+		"course_read_teacher":"fasionchan",
+		"course_read_teacher_decripition":"资深 Python 研发工程师",
 		"course_card_price_sale":"￥ 68.00",
+		"course_card_price_ori":"原价 ￥68.00",
 		"name":"限时优惠"
 	},
 	{
@@ -52,8 +59,10 @@
 		"shidu":"试读",
 		"decoration":"零基础学透网络编程",
 		"course_read_info":"32节 64人已购买",
-		"course_read_teacher":"<span>简逸</span>/ 资深数据库工程师",
+		"course_read_teacher":"简逸",
+		"course_read_teacher_decripition":"资深数据库工程师",
 		"course_card_price_sale":"￥ 58.00",
+		"course_card_price_ori":"原价 ￥68.00",
 		"name":"限时优惠"
 	}
 ]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>wewe</title>
+</head>
+
+<body>
+<div id="fordesc">
+    <div class="desc" style="height: 100px; width: 100px;">12321313</div>
+    <div class="desc" style="height: 100px; width: 100px;">44343433</div>
+    <div class="desc" style="height: 100px; width: 100px;">55555</div>
+    <div class="desc" style="height: 100px; width: 100px;">77777</div>
+</div>
+
+<script>
+    var fontColors = document.getElementById("fordesc");
+    var list = fontColors.querySelectorAll(".desc");
+
+    for (var j = 0; j < list.length; j++) {
+        list[j].index = j;
+    }
+    fontColors.addEventListener('mouseover', function (event) {
+        changefontcolor(event.target.index);
+    })
+
+    fontColors.addEventListener('mouseout', function (event) {
+        getbackcolor(event.target.index);
+    })
+
+
+    function changefontcolor(index) {
+        document.getElementsByClassName("desc")[index].style.color ="lightskyblue";
+        document.getElementsByClassName("desc")[index].style.fontWeight = 550;
+    }
+
+    function getbackcolor(index) {
+        document.getElementsByClassName("desc")[index].style.color = "black";
+        document.getElementsByClassName("desc")[index].style.fontWeight = 400;
+    }
+</script>
+</body>
+</html>
