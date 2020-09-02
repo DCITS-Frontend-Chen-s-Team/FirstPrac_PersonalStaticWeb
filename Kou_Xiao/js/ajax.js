@@ -6,11 +6,11 @@ $(function () {
     success: function (data) {
       var str = "";
       $.each(data, function(index, dataItem) {
-        str += `<li>
+        str += `
         <a href="#">${dataItem}</a>
-    </li>`;
+    `;
       });
-      $(".head_menu").append(str);
+      $("#header_menu_center").append(str);
     }
   })
 })

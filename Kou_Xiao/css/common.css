@@ -15,9 +15,9 @@ body{font-family: Arial;}
 #head .head_logo{width: 138px;height: 72px;margin-left: 5px;}
 #head .head_logo a{width: 126px;}
 #head .head_menu{font-size: 16px;line-height: 72px;}
-#head .head_menu li{float: left;padding: 0 10px;}
-#head .head_menu li a:hover{color: black;}
-#head .head_nav a:hover{color: red;}
+#head .head_menu li a{float: left;padding: 0 10px;}
+/* #head .head_menu li a:hover{color: black;} */
+/* #head .head_nav a:hover{color: red;} */
 
 #head .head_search {width: 20%;float: left;position: relative;height: 40px;padding-right: 40px;zoom: 1;background: #E9E9E9;
     border-radius: 8px;margin: 16px 0;margin-left: 10px;-webkit-box-sizing: border-box;box-sizing: border-box;}
