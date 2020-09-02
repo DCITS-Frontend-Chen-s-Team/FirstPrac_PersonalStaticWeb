@@ -13,6 +13,7 @@
     <!-- 引入swiper js文件 -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/jquery-1.8.3.js"></script>
     <script src="js/ajax.js"></script>
     <script>
@@ -32,8 +33,8 @@
     // var nav = document.querySelector('.nav');
     // var lis = nav.children;
     // for(var i=0;i<lis.length;i++){
-    //     lis[i].oouseover = function(){
-    //         this.chilnmdren[1].style.display = 'block';
+    //     lis[i].onmouseover = function(){
+    //         this.children[1].style.display = 'block';
     //     }
     //     lis[i].onmouseout = function(){
     //         this.children[1].style.display = 'none';
@@ -41,7 +42,7 @@
     // }
    </script>
 </head>
-<body onload="lunbotu()">
+<body>
 <!-- 导航栏部分 -->
 <div id="head" class="container">
     <div class="head_logo l">
@@ -49,7 +50,10 @@
             <img src="./images/logo.png" alt="" title="慕课网-程序员的梦工厂" width="126px" height="72px">
         </a>
     </div>
-    <ul class="head_menu ">
+    <ul class="head_menu " >
+        <li id="header_menu_center">
+            <!-- <a href="#">免费课程</a> -->
+        </li>
         <!-- <li>
             <a href="#">免费课程</a>
         </li>
@@ -74,17 +78,14 @@
         <input type="hidden" class="search_btn1">
         <img class="search_btn2" src="./images/search.svg" alt="">
     </div>
-    <div class="head_nav">
-                <a href="#">下载APP</a>
-                <a href="#" class="shopcart">购物车</a>
-            
+    <div class="head_nav" id="head_right_show">
+        <a href="#">下载APP</a>
+        <a href="#" class="shopcart">购物车</a>   
         <a href="#" class="head_login">
             注册 
         </a>
         /
         <a href="#">登录</a>
-
-    
     </div>
 </div>
 
