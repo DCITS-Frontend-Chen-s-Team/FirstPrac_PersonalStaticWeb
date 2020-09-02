@@ -150,7 +150,7 @@ $(function () {
             var str = ""; // 提前声明字符串变量
             /* 循环遍历data，得到参数dataItem（遍历单元、参数名称自定义）*/
             $.each(data, function (index, dataItem) {
-                str += `<div class="mooc-column-component">
+                str += `<div class="mooc-column-component" id="mooc_component">
                     <div class="component-img">
                         <img src="${dataItem.imgUrl}">
                         <span>${dataItem.type}</span>
