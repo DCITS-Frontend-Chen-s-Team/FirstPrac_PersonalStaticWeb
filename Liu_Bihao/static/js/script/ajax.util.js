@@ -9,7 +9,6 @@ function ajax(
         complete: function () {
             console.log("complete!");
         },
-        // DOMStr: "",
     }
 ) {
     var url = `json/${options.url}.json`; // json 文件地址
