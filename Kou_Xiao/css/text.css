@@ -1,0 +1,15 @@
+#head {
+  height: 0.72rem;
+  width: 100%;
+  background-color: white !important;
+  position: fixed;
+  z-index: 999;
+  display: block;
+  display: flex;
+}
+#head .head_logo {
+  width: 1.38rem;
+  height: 0.72rem;
+  margin-left: 5px;
+  justify-content: space-between;
+}
