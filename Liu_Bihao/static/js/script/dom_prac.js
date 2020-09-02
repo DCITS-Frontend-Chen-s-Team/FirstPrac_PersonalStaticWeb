@@ -1,4 +1,4 @@
-function changeColorOfRightNav() {
+window.onload = function() {
     let rightNavs = document.getElementById("right_nav");
     let rightNavs_spanLists = rightNavs.querySelectorAll("span");
 
@@ -23,5 +23,3 @@ function changeColorOfRightNav() {
         rightNavs_spanLists[no_].style.fontWeight = "unset";
     }, false);
 }
-
-changeColorOfRightNav();
