@@ -20,8 +20,6 @@ function ajax(
 
     options.success = function (data) {
         console.log("json data - success!");
-        console.log(url);
-        console.log(data);
         var str = ""; // 提前声明字符串变量
         str = options.successFunc(data, str);
         console.log(str);
