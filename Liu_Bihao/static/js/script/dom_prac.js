@@ -2,7 +2,7 @@ window.onload = function() {
     let rightNavs = document.getElementById("right_nav");
     let rightNavs_spanLists = rightNavs.querySelectorAll("span");
 
-    console.log(rightNavs_spanLists === rightNavs.querySelectorAll("span"));
+    // console.log(rightNavs_spanLists === rightNavs.querySelectorAll("span"));
 
     for (let i = 0; i < rightNavs_spanLists.length; i++) {
         rightNavs_spanLists[i].index = i;

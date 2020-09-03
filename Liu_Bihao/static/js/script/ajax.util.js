@@ -1,12 +1,15 @@
 function ajax(
     options = {
-        type: "get", // 数据传输方式
+        type: "post", // 数据传输方式
+        data: {},
         dataType: "json", // 获取文件类型，非必要
         async: true, // 异步执行
-        error: function () { // 若 json 文件获取失败激活此函数
+        beforeSend: function () {}, // 调用前的回调函数
+        success: function () {}, // 成功的回调函数
+        error: function () { // 失败的回调函数
             console.log("error!");
         },
-        complete: function () {
+        complete: function () { // 完成后的回调函数
             console.log("complete!");
         },
     }
@@ -32,18 +35,14 @@ function ajax(
 
     $.ajax({
         'url': url,
-        // 'data': data,
+        'data': options.data,
         'type': options.type,
         'dataType': options.dataType,
         'async': options.async,
+        'beforeSend': options.beforeSend,
         'success': options.success,
         'error': options.error,
+        'complete': options.complete,
         'jsonpCallback': 'jsonp' + (new Date()).valueOf().toString().substr(-4),
-        // 'beforeSend': function () {
-        //     layer.msg('加载中', { // 通过layer插件来进行提示正在加载
-        //         icon: 16,
-        //         shade: 0.01
-        //     });
-        // },
     });
 }
