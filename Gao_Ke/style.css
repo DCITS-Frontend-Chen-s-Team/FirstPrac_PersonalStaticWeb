@@ -24,7 +24,7 @@ html, body {
   margin-right: 50px;
 }
 
-.head .head-menu {
+.head #head-menu {
   padding-left: 200px;
   width: 100%;
   margin: 0;
@@ -32,7 +32,7 @@ html, body {
   list-style-type: none;
 }
 
-.head .head-menu .menu {
+.head #head-menu #menu {
   float: left;
   width: 6%;
   text-align: center;
@@ -46,17 +46,17 @@ html, body {
   width: 20%;
   float: left;
   line-height: 80px;
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
-.head .head-menu1 {
-  margin: 0 30px 0 0;
-  float: right;
-  padding: 0;
+.head #head-menu1 {
+  /*margin: 0 30px 0 0;*/
+  /*float: right;*/
+  /*padding: 0;*/
   list-style-type: none;
 }
 
-.head .head-menu1 .menu {
+.head #head-menu1 #menu {
   float: left;
   margin-left: 30px;
   text-align: center;
@@ -107,11 +107,11 @@ html, body {
   position: relative;
 }
 
-.ibody .div1 .aa .item:hover {
+.ibody .div1 .aa .item #a1:hover {
   background-color: rgb(214, 202, 202);
 }
 
-.ibody .div1 .aa .item:hover .dropdown-content {
+.ibody .div1 .aa .item #a1:hover .dropdown-content {
   display: unset;
 }
 
