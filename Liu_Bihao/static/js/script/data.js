@@ -2,44 +2,9 @@ $(function () {
     /**
      * 新上好课板块
      */
-    // $.ajax({
-    //     url: 'json/course.json', // json 文件地址
-    //     type: "get", // 数据传输方式
-    //     dataType: "json", // 获取文件类型，非必要
-    //     // 若 json 文件获取失败激活此函数
-    //     error: function () {
-    //         console.log("error!"); // 检验函数激活，排除 bug
-    //     },
-    //     // 若 json 文件获取成功激活此函数
-    //     success: function (data) {
-    //         var str = ""; // 提前声明字符串变量
-    //         /* 循环遍历 data，得到参数 dataItem（遍历单元，参数名称可自定义） */
-    //         $.each(data, function (index, dataItem) {
-    //             str += `<a href='#'>
-    //             <div class="course-state">${dataItem.label}</div>
-    //             <div class='img-nav'>
-    //                 <img src="${dataItem.imgUrl}" alt=''>
-    //             </div>
-    //             <div class="course-name">${dataItem.title}</div>
-    //             <div class="card-info">
-    //                 <span class="l">${dataItem.info.level}</span>
-    //                 <span class="l">${dataItem.info.people}</span>
-    //                 <span class="l">${dataItem.info.comments}</span>
-    //             </div>
-    //             <div class="price">
-    //                 <span>${dataItem.price}</span>
-    //                 ${dataItem.countdown ? '<span class="price-tip">限时优惠</span>' : ''}
-    //             </div>
-    //         </a>`; // 完成 str 的添加，使用 ES6 模板字符串引用参数，可以实现判断语句
-    //         });
-    //         // jQuery 选择器定位添加位置，append() 函数在末尾添加，html() 覆盖添加
-    //         $(".main-course .course-card-list").append(str);
-    //     }
-    // });
-
     ajax({
         url: "course",
-        successFunc: function (data, str) {
+        getFinalStr: function (data, str) {
             $.each(data, function (index, dataItem) {
                 str += `<a href='#'>
                 <div class="course-state">${dataItem.label}</div>
