@@ -9,6 +9,7 @@
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
 		<script src="../Jquery/jquery-3.4.1.min.js"></script>
 		<script src="../Js/template.js"></script>
+		<script src="../Js/commen.js"></script>
 	</head>
 
 
@@ -87,7 +88,7 @@
 					<div class="underlunbotu1">
 						<h3 class="type_title">
 							<span>零基础就业</span>
-							<sapn class="intro">从入门到一年经验</span>
+							<span class="intro">从入门到一年经验</span>
 
 								<div class="path_list" id="fordesc">
 									<a class="fori1">
@@ -115,8 +116,8 @@
 					<div class="underlunbotu2">
 						<h3 class="type_title">
 							<span>职场提升</span>
-							<sapn class="intro">一年以上开发经验系统成长</span>
-
+							<span class="intro">一年以上开发经验系统成长</span>
+						</h3>
 								<div class="recommend-box">
 									<a>
 										<div class="ult2" style="background-image: url(../Images/Index/under21.png);"></div>
@@ -276,43 +277,43 @@
 		{{/each}}
 	</script>
 
-	<script>
-		var fontColors = document.getElementById("fordesc");
-		var list = fontColors.querySelectorAll(".desc");
-		var linked = document.getElementById("loginlinked")
+<!--	<script>-->
+<!--		var fontColors = document.getElementById("fordesc");-->
+<!--		var list = fontColors.querySelectorAll(".desc");-->
+<!--		var linked = document.getElementById("loginlinked")-->
 
-		for (var j = 0; j < list.length; j++) {
-			list[j].index = j;
-		}
-		fontColors.addEventListener('mouseover', function(event) {
-			changefontcolor(event.target.index);
-		})
+<!--		for (var j = 0; j < list.length; j++) {-->
+<!--			list[j].index = j;-->
+<!--		}-->
+<!--		fontColors.addEventListener('mouseover', function(event) {-->
+<!--			changefontcolor(event.target.index);-->
+<!--		})-->
 
-		fontColors.addEventListener('mouseout', function(event) {
-			getbackcolor(event.target.index);
-		})
-		linked.addEventListener('click',forlink)
+<!--		fontColors.addEventListener('mouseout', function(event) {-->
+<!--			getbackcolor(event.target.index);-->
+<!--		})-->
+<!--		linked.addEventListener('click',forlink)-->
 
-		function changefontcolor(j) {
-			// document.getElementsByClassName("desc")[j].style.color = "lightskyblue";
-			var x = document.getElementsByClassName("desc")[j];
-			x.style.color = "lightskyblue";
-			// document.getElementsByClassName("desc")[j].style.fontWeight = 550;
-			var x = document.getElementsByClassName("desc")[j];
-			x.style.fontWeight = "550";
-		}
+<!--		function changefontcolor(j) {-->
+<!--			// document.getElementsByClassName("desc")[j].style.color = "lightskyblue";-->
+<!--			var x = document.getElementsByClassName("desc")[j];-->
+<!--			x.style.color = "lightskyblue";-->
+<!--			// document.getElementsByClassName("desc")[j].style.fontWeight = 550;-->
+<!--			var x = document.getElementsByClassName("desc")[j];-->
+<!--			x.style.fontWeight = "550";-->
+<!--		}-->
 
-		function getbackcolor(j) {
-			// document.getElementsByClassName("desc")[j].style.color = "lightskyblue";
-			var x = document.getElementsByClassName("desc")[j];
-			x.style.color = "black";
-			// document.getElementsByClassName("desc")[j].style.fontWeight = 550;
-			var x = document.getElementsByClassName("desc")[j];
-			x.style.fontWeight = "400";
-		}
-		function forlink(){
-			window.history.forward();
-		}
-	</script>
+<!--		function getbackcolor(j) {-->
+<!--			// document.getElementsByClassName("desc")[j].style.color = "lightskyblue";-->
+<!--			var x = document.getElementsByClassName("desc")[j];-->
+<!--			x.style.color = "black";-->
+<!--			// document.getElementsByClassName("desc")[j].style.fontWeight = 550;-->
+<!--			var x = document.getElementsByClassName("desc")[j];-->
+<!--			x.style.fontWeight = "400";-->
+<!--		}-->
+<!--		function forlink(){-->
+<!--			window.history.forward();-->
+<!--		}-->
+<!--	</script>-->
 	<script src="../Js/Index.js"></script>
 </html>
