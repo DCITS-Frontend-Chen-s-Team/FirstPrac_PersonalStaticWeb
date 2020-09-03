@@ -1,21 +1,33 @@
 $(function () {
-  $.ajax({
-    type: "get",
-    url: "json/head.json",
-    dataType: "json",
-    success: function (data) {
-      var str = "";
+  ajax({
+    url: "head",
+    getStr: function (data, str) {
       $.each(data, function(index, dataItem) {
         str += `
         <a href="#">${dataItem}</a>
-    `;
+      `;
       });
-      $("#header_menu_center").append(str);
-    }
-  })
-})
+      return str;
+    },
+    selector: "#header_menu_center",
+  }),
 
-$(function () {
+
+  // $.ajax({
+  //   type: "get",
+  //   url: "json/head.json",
+  //   dataType: "json",
+  //   success: function (data) {
+  //     var str = "";
+  //     $.each(data, function(index, dataItem) {
+  //       str += `
+  //       <a href="#">${dataItem}</a>
+  //   `;
+  //     });
+  //     $("#header_menu_center").append(str);
+  //   }
+  // })
+
   $.ajax({
     type: "get",
     url: "json/case.json",
@@ -49,6 +61,7 @@ $(function () {
     }
   })
 })
+
 
 
 
