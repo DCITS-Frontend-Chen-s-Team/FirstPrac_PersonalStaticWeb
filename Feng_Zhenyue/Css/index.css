@@ -81,7 +81,6 @@ div{
 	height:72px;
 	line-height: 36px;
 	transition: relative;
-	14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
 	color: #1c1f21;
 	text-decoration:none;
 }
@@ -199,7 +198,6 @@ div{
 	width: 100%;
 	height: 25%;
 	background-color: skyblue;
-	border: 5px soid black;
 	padding-top: 32px;
 	background-color:#fff !important;
 	box-shadow: 0 12px 24px 0 rgba(7, 17, 27, 0.2);
