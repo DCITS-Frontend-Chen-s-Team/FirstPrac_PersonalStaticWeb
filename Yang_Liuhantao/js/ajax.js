@@ -1,7 +1,7 @@
 $(function () {
     $.ajax({
         url: "json/base.json", // json 文件地址
-        type: "get", // 数据传输方式
+        type: "post", // 数据传输方式
         dataType: "json", // 获取文件类型，非必要
         // 若 json 文件获取失败激活此函数
         error: function () {
@@ -26,7 +26,7 @@ $(function () {
 
     $.ajax({
         url: "json/improve.json", // json 文件地址
-        type: "get", // 数据传输方式
+        type: "post", // 数据传输方式
         dataType: "json", // 获取文件类型，非必要
         // 若 json 文件获取失败激活此函数
         error: function () {
@@ -46,7 +46,7 @@ $(function () {
 
     $.ajax({
         url: "json/newcourse.json", // json 文件地址
-        type: "get", // 数据传输方式
+        type: "post", // 数据传输方式
         dataType: "json", // 获取文件类型，非必要
         // 若 json 文件获取失败激活此函数
         error: function () {
@@ -76,7 +76,7 @@ $(function () {
 
     $.ajax({
         url: "json/studyroute.json", // json 文件地址
-        type: "get", // 数据传输方式
+        type: "post", // 数据传输方式
         dataType: "json", // 获取文件类型，非必要
         // 若 json 文件获取失败激活此函数
         error: function () {
@@ -110,7 +110,7 @@ $(function () {
 
     $.ajax({
         url: "json/hotcourse.json", // json 文件地址
-        type: "get", // 数据传输方式
+        type: "post", // 数据传输方式
         dataType: "json", // 获取文件类型，非必要
         // 若 json 文件获取失败激活此函数
         error: function () {
@@ -138,16 +138,48 @@ $(function () {
         }
     });
 
-    $.ajax({
-        url: "json/mooccolumn.json", // json 文件地址
-        type: "get", // 数据传输方式
-        dataType: "json", // 获取文件类型，非必要
-        // 若 json 文件获取失败激活此函数
-        error: function () {
-            console.log("error!"); // 检验函数激活，排除 bug
-        },
-        success: function (data) {
-            var str = ""; // 提前声明字符串变量
+    // $.ajax({
+    //     url: "json/mooccolumn.json", // json 文件地址
+    //     type: "post", // 数据传输方式
+    //     dataType: "json", // 获取文件类型，非必要
+    //     // 若 json 文件获取失败激活此函数
+    //     error: function () {
+    //         console.log("error!"); // 检验函数激活，排除 bug
+    //     },
+    //     success: function (data) {
+    //         var str = ""; // 提前声明字符串变量
+    //         /* 循环遍历data，得到参数dataItem（遍历单元、参数名称自定义）*/
+    //         $.each(data, function (index, dataItem) {
+    //             str += `<div class="mooc-column-component" id="mooc_component">
+    //                 <div class="component-img">
+    //                     <img src="${dataItem.imgUrl}">
+    //                     <span>${dataItem.type}</span>
+    //                 </div>
+    //
+    //                 <div class="component-introduce">
+    //                     <h4>${dataItem.title}</h4>
+    //                     <div class="component-introduce-purchase">
+    //                         <p>${dataItem.purchase}</p>
+    //                     </div>
+    //                     <div class="component-introduce-author">
+    //                         <span><b>${dataItem.author.name}</b> / ${dataItem.author.job}</span>
+    //                     </div>
+    //                     <div class="component-introduce-price">
+    //                         <span class="price-new"><b>${dataItem.price.new}</b></span>
+    //                         ${dataItem.isDiscount ? '<span class="price-old"><s>' + `${dataItem.price.old}` + '</s></span>' : ''}
+    //                         ${dataItem.isDiscount ? '<span class="price-tip">限时优惠</span>' : ''}
+    //                     </div>
+    //                 </div>
+    //             </div>` ;
+    //         });
+    //         $(".column-container .mooc-column").append(str);
+    //     }
+    // });
+
+    /*封装后调用ajax*/
+    ajax({
+        url: "mooccolumn", // json 文件地址
+        getCurrentStr: function (data, str) {
             /* 循环遍历data，得到参数dataItem（遍历单元、参数名称自定义）*/
             $.each(data, function (index, dataItem) {
                 str += `<div class="mooc-column-component" id="mooc_component">
@@ -172,7 +204,8 @@ $(function () {
                     </div>
                 </div>` ;
             });
-            $(".column-container .mooc-column").append(str);
-        }
+            return str;
+        },
+        selector: ".column-container .mooc-column"
     });
 })
