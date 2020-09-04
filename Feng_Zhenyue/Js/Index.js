@@ -106,10 +106,6 @@ $(function() {
 		url: "../Json/learnWay.json",
 		type: "get",
 		dataType: "json",
-		// dataType:'JSONP',
-		// error: function() {
-		// 	alert("success");
-		// },
 		error: function() {
 			console.log("error");
 		},
@@ -142,26 +138,15 @@ $(function() {
 		}
 	})
 })
-// page4注入
-$(function() {
-	$.ajax({
-		url: "../Json/popularCourse.json",
-		type: "get",
-		dataType: "json",
-		// dataType:'JSONP',
-		// error: function() {
-		// 	alert("ppp");
-		// },
-		error: function() {
-			console.log("error");
-		},
-		success: function(data) {
-			// alert("sucess3");
-			var str = "";
-			$.each(data, function(index, dataItem) {
-				str +=
-					// 这里写导入部分的代码
-					`<div class="haokecard">
+
+//进行page4注入(ajax封装)
+ajax({
+	url: "popularCourse",
+	successFunc: function (data, str) {
+		$.each(data, function (index, dataItem) {
+			str +=
+				// 这里写导入部分的代码
+				`<div class="haokecard">
 						<div class="haoketit">
 						</div>
 						<div class="haokeimg" style="background-image: url(${dataItem.img});">
@@ -174,32 +159,19 @@ $(function() {
 							<sapn class="pingjia">${dataItem.comments}</span>
 						</div>
 					</div>`;
-			});
-			//类选择器
-			$("#page4cardbox").append(str);
-		}
-	})
-})
-// page5注入
-$(function() {
-	$.ajax({
-		url: "../Json/zhuanlan.json",
-		type: "get",
-		dataType: "json",
-		// dataType:'JSONP',
-		// error: function() {
-		// 	alert("ppp");
-		// },
-		error: function() {
-			console.log("error");
-		},
-		success: function(data) {
-			// alert("sucess3");
-			var str = "";
-			$.each(data, function(index, dataItem) {
-				str +=
-					// 这里写导入部分的代码
-					`<div class="p5xiaohezi">
+		});
+		return str;
+	},
+	selector: ".page2_neiqian .page4cardbox",
+});
+// page5重新注入 ajax
+ajax({
+	url: "zhuanlan",
+	successFunc: function (data, str) {
+		$.each(data, function(index, dataItem) {
+			str +=
+				// 这里写导入部分的代码
+				`<div class="p5xiaohezi">
 								<div class="course_banner">
 									<a>
 										<img src="${dataItem.img}">
@@ -229,9 +201,9 @@ $(function() {
 								</div>
 							</div>
 						</div>`;
-			});
-			//类选择器
-			$("#page5cardbox").append(str);
-		}
-	})
+		});
+		return str;
+	},
+	// selector: "#page5carabox",
+	selector: ".p5neiqian .page5cardbox"
 });
