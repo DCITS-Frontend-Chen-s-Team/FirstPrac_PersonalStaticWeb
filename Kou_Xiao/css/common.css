@@ -2,7 +2,7 @@
 ul,ol,li{list-style: none;}
 h1,h2,h3{font-size: 16px;}
 img{display: block;}
-a{text-decoration: none;color:#6A6A6A;}
+a{text-decoration: none;color:#6A6A6A;margin-left: 5px;}
 body{font-family: Arial;}
 
 .l{float: left;}
