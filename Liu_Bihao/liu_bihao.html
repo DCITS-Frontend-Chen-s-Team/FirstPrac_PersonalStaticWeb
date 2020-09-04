@@ -10,6 +10,7 @@
     <!--    <link rel="stylesheet" type="text/css" href="static/css/index.css"/>-->
     <!-- 自定义样式 less 文件 -->
     <link rel="stylesheet/less" href="static/less/index.less"/>
+    <!--    <link rel="stylesheet/css" href="static/css/moco.min.css"/>-->
 
     <!-- require.js -->
     <!--    <script src="static/js/lib/require.js" data-main="static/js/script/main"></script>-->
@@ -50,7 +51,9 @@
     <div class="top-right-nav">
         <span>下载APP</span>
         <span>购物车</span>
-        <span>注册 / 登录</span>
+        <span id="register">注册</span>
+        <span>/</span>
+        <span id="login">登录</span>
     </div>
 </div>
 
@@ -251,6 +254,16 @@
     </a>
 </div>
 
+<!-- 登录/注册页面 -->
+<div id="signIn" class="sign-body in" aria-hidden="false">
+    <div class="sign-header">
+        <h1><span id="loginLabel">登录</span>
+            <span id="registerLabel">注册</span></h1>
+        <button type="button" class="rl-close"></button>
+    </div>
+    <div id="loginCard_container"></div>
+</div>
+
 <!-- ajax 引用 json 数据 -->
 <script src="static/js/script/data.js" type="text/javascript"></script>
 <!-- swiper 配置 -->
@@ -259,6 +272,7 @@
 <!--<script src="https://cdn.bootcdn.net/ajax/libs/template_js/0.8.0/template.js"></script>-->
 
 <script src="static/js/script/dom_prac.js"></script>
+<script src="static/js/script/main.js"></script>
 
 </body>
 </html>

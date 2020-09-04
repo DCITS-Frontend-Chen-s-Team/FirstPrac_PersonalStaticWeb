@@ -1,0 +1,350 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea,
+p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+  color: #1c1f21;
+}
+body {
+  min-width: 1200px;
+  background-color: #f8fafc;
+  overflow-y: scroll;
+  padding-top: 0;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+}
+:link, :visited, ins {
+  text-decoration: none;
+}
+.head{
+  text-align: center;
+  height:120px;
+  a {
+    display: inline-block;
+    width: 384px;
+    height: 46px;
+    background: url(../Images/Login/loadtitle.png) no-repeat center center;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+}
+.l{
+  float: left;
+}
+.r{
+  float: right;
+}
+#main{
+  min-height: auto;
+  padding: 20px 0;
+}
+.login-wrap{
+  #signin{
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    .header_nav{
+      position: relative;
+      padding: 0 20px 25px;
+      h1{
+        font-size: 16px;
+        line-height: 49px;
+        font-weight: 700;
+        height: 49px;
+        color: #787d82;
+        span {
+          color: #F01414;
+          float: left;
+          width: 80px;
+          text-align: center;
+          height: 49px;
+          line-height: 49px;
+          cursor: pointer;
+        }
+        span::after{
+          content: " ";
+          width: 16px;
+          height: 4px;
+          line-height: 4px;
+          background: #f20d0d;
+          border-radius: 2px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    //  这里是warp_body的区域
+    .warp_body1{
+    padding: 0 32px;
+        .account{
+        }
+      #signin_form{
+        .for_button{
+          margin-top: 20px;
+        }
+      }
+        .extra{
+          position: relative;
+          line-height: 1rem;
+          .auto_in{
+            color: #9199a1;
+            float: left;
+            .auto_cbx{
+              margin-right: 10px;
+              vertical-align: -1px;
+            }
+          }
+          .forget{
+            color: #9199a1;
+          }
+          .between_forget{
+            margin: 0 16px;
+            background: rgba(28,31,33,.1);
+            width: 1px;
+            height: 14px;
+          }
+          .r{
+            float: right;
+          }
+        }
+      #blank{
+        font-size: 14px;
+        height: 20px;
+        line-height: 20px;
+      }
+    }
+    .wrap1_footer{
+      .other_login{
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 6px;
+        .footer_other{
+          margin-left: 30px;
+          margin-right: 24px;
+          padding-right: 24px;
+          display: inline-block;
+          font-size: 14px;
+          color: #f20d0d;
+          text-align: left;
+          line-height: 24px;
+          border-right: 1px solid #1a1C1F21;
+          cursor: pointer;
+        }
+        .sns_img{
+          background:url(../Images/Login/sns.png) no-repeat center center;
+          white-space: nowrap;
+          overflow: hidden;
+          height: 100%;
+          display: flow-root list-item;
+          background-size: contain;
+        }
+      }
+      .privacy_tip{
+        font-size: 12px;
+        color: #717a84;
+        text-align: center;
+        a{
+          font-size: 12px;
+          color: #37f;
+        }
+      }
+      .erweima{
+        background: url(../Images/Login/bottomErweima.png) no-repeat 0 0;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        border-radius: 0 0 12px 0;
+      }
+    }
+  }
+  //这里注册页
+  #signup{
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    .header_nav{
+      position: relative;
+      padding: 0 20px 25px;
+      h1{
+        font-size: 16px;
+        line-height: 49px;
+        font-weight: 700;
+        height: 49px;
+        color: #787d82;
+        span {
+          color: #F01414;
+          float: left;
+          width: 80px;
+          text-align: center;
+          height: 49px;
+          line-height: 49px;
+          cursor: pointer;
+        }
+        span::after{
+          content: " ";
+          width: 16px;
+          height: 4px;
+          line-height: 4px;
+          background: #f20d0d;
+          border-radius: 2px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    .wrap_body2{
+      padding: 0 32px;
+      .extra{
+        .blue {
+          color: #37f;
+        }
+      }
+    }
+    .wrap2_footer{
+      .other_login {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 6px;
+        .footer_other {
+          margin-left: 30px;
+          margin-right: 24px;
+          padding-right: 24px;
+          display: inline-block;
+          font-size: 14px;
+          color: #9199a1;
+          text-align: left;
+          line-height: 24px;
+          cursor: pointer;
+        }
+
+        .sns_img {
+          background: url(../Images/Login/sns.png) no-repeat center center;
+          white-space: nowrap;
+          overflow: hidden;
+          height: 100%;
+          display: flow-root list-item;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  //这个是公用的模板 会自动覆盖父元素的属性
+  //button
+  .moco-btn {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-image: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    white-space: nowrap;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    -weibkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    color: #545c63;
+    background-color: transparent;
+    border-color: #9199a1;
+    opacity: 1;
+    padding: 7px 16px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 18px;
+  }
+  .moco-btn-red {
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    -weibkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    color: #fff;
+    background-color: #f20d0d;
+    border-color: #f20d0d;
+    opacity: 1;
+  }
+  .btn-full {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .moco-btn-lg {
+    padding: 11px 32px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 24px;
+  }
+  .err{
+    clear: both;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    color: #EF1300 !important;
+  }
+  .model{
+    position: fixed;
+    background: #fff;
+    z-index: 100000;
+    width: 384px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    left: 50%;
+    top: 50%;
+    margin: -192px 0 0 -192px;
+    box-shadow: 0 12px 24px 0 rgba(28,31,33,.1);
+    border-radius: 12px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    .ipt{
+      width: 100%;
+      height: 48px;
+      line-height: 20px;
+      box-sizing: border-box;
+      padding: 14px;
+      box-shadow: 2px 0 5px 0 #fff;
+      background: rgba(28,31,33,.06);
+      border-radius: 8px;
+      border: 0;
+      color: #1c1f21;
+      font-size:14px;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+  }
+
+}
+.footer{
+    text-align: center;
+    color: #b5b9bc;
+    font-size: 12px;
+    line-height: 50px;
+  .footer-icon{
+    width: 18px;
+    height: 18px;
+    display: inline !important;
+    margin: 0 !important;
+  }
+}

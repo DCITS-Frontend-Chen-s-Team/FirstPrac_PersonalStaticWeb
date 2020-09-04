@@ -33,7 +33,7 @@ $(function () {
      */
     $.ajax({
         url: "json/hot-course.json",
-        type: "get",
+        type: "post",
         dataType: "json",
         success: function (data) {
             var str = "";
@@ -62,7 +62,8 @@ $(function () {
      */
     $.ajax({
         url: "json/mooc.json",
-        type: "get",
+        type: "post",
+        // data: data,
         dataType: "json",
         success: function (data) {
             var str = "";
@@ -93,7 +94,7 @@ $(function () {
      */
     $.ajax({
         url: "json/menu.json",
-        type: "get",
+        type: "post",
         dataType: "json",
         success: function (data) {
             var subStr = "";
@@ -142,7 +143,7 @@ $(function () {
      */
     $.ajax({
         url: "json/learn-road.json",
-        type: "get",
+        type: "post",
         dataType: "json",
         success: function (data) {
             var str = "";
