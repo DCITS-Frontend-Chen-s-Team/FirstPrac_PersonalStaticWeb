@@ -1,0 +1,111 @@
+html * {
+  margin: 0;
+  padding: 0;
+}
+html h1 {
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+body {
+  font-size: 62.5%;
+  color: #1c1f21;
+}
+#title {
+  width: 100%;
+  height: 12em;
+  display: flex;
+  justify-content: center;
+}
+#title .conter {
+  background: url(../img/signlogo.png) no-repeat center center;
+  width: 384px;
+  height: 4.6em;
+  margin-top: 5em;
+  text-indent: 100%;
+}
+#main {
+  width: 100%;
+  height: 43.2em;
+}
+#main .login {
+  width: 38.4em;
+  height: 39.2em;
+  box-shadow: 0 12px 24px 0 rgba(28, 31, 33, 0.1);
+  margin: 0 auto;
+  margin-top: 2em;
+  border-radius: 1.2em;
+}
+#main .login .login_head {
+  width: 38.4em;
+  height: 7.4em;
+  margin-top: 1.2em;
+  top: 1em;
+  position: relative;
+}
+#main .login .login_head h1 {
+  width: 344px;
+  height: 49px;
+  font-size: 1.6em;
+  line-height: 4.9em;
+  color: #787d82;
+  margin: auto;
+}
+#main .login .login_head h1 span {
+  float: left;
+  width: 80px;
+  text-align: center;
+  height: 49px;
+  line-height: 49px;
+  cursor: pointer;
+}
+#main .login .login_body {
+  width: 38.4em;
+  height: 21.8em;
+  position: relative;
+  top: 1em;
+}
+#main .login .login_body .login_sign {
+  width: 32em;
+  height: 21.8em;
+  margin: auto;
+}
+#main .login .login_body .login_sign .sign_email {
+  width: 32em;
+  height: 6.8em;
+}
+#main .login .login_body .login_sign .sign_email input {
+  width: 100%;
+  height: 48px;
+  line-height: 20px;
+  box-sizing: border-box;
+  padding: 14px;
+  box-shadow: 2px 0 5px 0 #fff;
+  background: rgba(28, 31, 33, 0.06);
+  border-radius: 8px;
+  border: 0;
+}
+#main .login .login_body .login_sign .sign_pas {
+  width: 32em;
+  height: 6.8em;
+}
+#main .login .login_body .login_sign .sign_pas .search1 {
+  width: 100%;
+  height: 48px;
+  line-height: 20px;
+  box-sizing: border-box;
+  padding: 14px;
+  box-shadow: 2px 0 5px 0 #fff;
+  background: rgba(28, 31, 33, 0.06);
+  border-radius: 8px;
+  border: 0;
+}
+#main .login .login_body .login_sign .sign_pas .search2 {
+  width: 18px;
+  height: 26px;
+  background: url(../img/closeeye.png) left center no-repeat;
+  float: right;
+  margin-right: 10px;
+}

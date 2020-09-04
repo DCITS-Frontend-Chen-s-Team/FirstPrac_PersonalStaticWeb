@@ -1,5 +1,6 @@
 function ajax(
   options = {
+    //调用时，没有传参，使用默认设置
     type: 'get',
     dataType: 'json',
     async: true,
@@ -10,27 +11,33 @@ function ajax(
       console.log("complete!");
     },
   }
-) {
-  var url = `../json/${options.url}.json`;
+){
+  //数据路径定义
+  var url = `json/${options.url}.json`;
 
   if (options.dataType === 'jsonp') {
     options.dataType = 'jsonp';
   }
 
-  options.scuccess = function (data) {
+  var success = function (data) {
     console.log("json data - success!");
+    console.log(url);
+    console.log(data);
     var str = ""; 
     str = options.getStr(data, str);
+    console.log(str);
     $(options.selector).append(str);
   }
 
-  $ajax({
+  $.ajax({
     'url':url,
     'type': options.type,
     'dataType': options.dataType,
     'async': options.async,
-    'success': options.success,
+    'success': success,
     'error': options.error,
     'jsonpCallback': 'jsonp' + (new Date()).valueOf().toString().substr(-4),
   })
+
+  
 }

@@ -1,33 +1,31 @@
-$(function () {
-  ajax({
-    url: "head",
-    getStr: function (data, str) {
-      $.each(data, function(index, dataItem) {
-        str += `
+ajax({
+  url: "head",
+  getStr: function (data, str) {
+    $.each(data, function (index, dataItem) {
+      str += `
         <a href="#">${dataItem}</a>
       `;
-      });
-      return str;
-    },
-    selector: "#header_menu_center",
-  }),
+    });
+    return str;
+  },
+  selector: "#header_menu_center",
+});
 
-
-  // $.ajax({
-  //   type: "get",
-  //   url: "json/head.json",
-  //   dataType: "json",
-  //   success: function (data) {
-  //     var str = "";
-  //     $.each(data, function(index, dataItem) {
-  //       str += `
-  //       <a href="#">${dataItem}</a>
-  //   `;
-  //     });
-  //     $("#header_menu_center").append(str);
-  //   }
-  // })
-
+// $.ajax({
+//   type: "get",
+//   url: "json/head.json",
+//   dataType: "json",
+//   success: function (data) {
+//     var str = "";
+//     $.each(data, function(index, dataItem) {
+//       str += `
+//       <a href="#">${dataItem}</a>
+//   `;
+//     });
+//     $("#header_menu_center").append(str);
+//   }
+// })
+$(function () {
   $.ajax({
     type: "get",
     url: "json/case.json",
@@ -35,7 +33,7 @@ $(function () {
     // error: function (data) {alert("wew")},
     success: function (data) {
       var str = "";
-      $.each(data, function(index, dataItem) {
+      $.each(data, function (index, dataItem) {
         str += `<div class="case_index${dataItem.have_special_class ? ' case_commen' : ''}">
         <div class="index_card_top">
             <img src="./images/${dataItem.img}" alt="" width="270px" height="148px">
