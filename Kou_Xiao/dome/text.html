@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script language="javascript">
+function checkemail()
+{
+if(document.myform.email.value.charAt(0)=="." ||
+  document.myform.email.value.charAt(0)=="@"||
+  document.myform.email.value.indexOf('@', 0) == -1 ||
+  document.myform.email.value.indexOf('.', 0) == -1 ||
+  document.myform.email.value.lastIndexOf("@")==document.myform.email.value.length-1||
+  document.myform.email.value.lastIndexOf(".")==document.myform.email.value.length-1)
+{
+alert("Email的格式不正确！");
+document.myform.email.focus();
+returnfalse;
+}
+return true;
+}
+</script>
+
+<formname="myform" action="" onSubmit="returncheckemail();" method="post">
+Email:
+<input name="email" id="emailid" type="text"size="25" />
+<input name="submit"type="submit" value="登陆"/></form>
+
+
+</body>
+</html>

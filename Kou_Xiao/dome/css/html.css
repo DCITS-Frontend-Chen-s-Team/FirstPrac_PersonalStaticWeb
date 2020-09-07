@@ -29,7 +29,7 @@ body {
   display: flex;
   justify-content: center;
 }
-#title .conter {
+#title .counter {
   background: url(../img/signlogo.png) no-repeat center center;
   width: 384px;
   height: 4.6em;
@@ -44,18 +44,17 @@ body {
   width: 38.4em;
   height: 39.2em;
   box-shadow: 0 12px 24px 0 rgba(28, 31, 33, 0.1);
-  margin: 0 auto;
-  margin-top: 2em;
+  margin: 2em auto 0;
   border-radius: 1.2em;
 }
-#main .login .login_head {
+#main .login_head {
   width: 38.4em;
   height: 7.4em;
   margin-top: 1.2em;
   top: 1em;
   position: relative;
 }
-#main .login .login_head h1 {
+#main .login_head h1 {
   width: 344px;
   height: 49px;
   font-size: 1.6em;
@@ -63,7 +62,7 @@ body {
   color: #787d82;
   margin: auto;
 }
-#main .login .login_head h1 span {
+#main .login_head h1 span {
   float: left;
   width: 80px;
   text-align: center;
@@ -71,22 +70,22 @@ body {
   line-height: 49px;
   cursor: pointer;
 }
-#main .login .login_body {
+#main .login_body {
   width: 38.4em;
   height: 21.8em;
   position: relative;
   top: 1em;
 }
-#main .login .login_body .login_sign {
+#main .login_body .login_sign {
   width: 32em;
   height: 21.8em;
   margin: auto;
 }
-#main .login .login_body .login_sign .sign_email {
+#main .login_body .login_sign .sign_email {
   width: 32em;
   height: 6.8em;
 }
-#main .login .login_body .login_sign .sign_email input {
+#main .login_body .login_sign .sign_email input {
   width: 100%;
   height: 48px;
   line-height: 20px;
@@ -98,20 +97,23 @@ body {
   border: 0;
   outline: none;
 }
-#main .login .login_body .login_sign .sign_email input:focus {
+#main .login_body .login_sign .sign_email input:focus {
   border: 1px solid rgba(28, 31, 33, 0.06);
 }
-#main .login .login_body .login_sign .sign_email p {
+#main .login_body .login_sign .sign_email .email_pshow {
   font-size: 12px;
   color: red;
   line-height: 20px;
   display: none;
 }
-#main .login .login_body .login_sign .sign_pas {
+#main .login_body .login_sign .sign_email .wrong {
+  display: block;
+}
+#main .login_body .login_sign .sign_pas {
   width: 32em;
   height: 6.8em;
 }
-#main .login .login_body .login_sign .sign_pas input {
+#main .login_body .login_sign .sign_pas input {
   width: 100%;
   height: 48px;
   line-height: 20px;
@@ -123,45 +125,40 @@ body {
   border: 0;
   outline: none;
 }
-#main .login .login_body .login_sign .sign_pas input:focus {
+#main .login_body .login_sign .sign_pas input:focus {
   border: 1px solid rgba(28, 31, 33, 0.06);
 }
-#main .login .login_body .login_sign .sign_pas .search1 {
+#main .login_body .login_sign .sign_pas .search1 {
   width: 100%;
   height: 48px;
   line-height: 20px;
   box-sizing: border-box;
   padding: 14px;
   box-shadow: 2px 0 5px 0 #fff;
-  background: rgba(28, 31, 33, 0.06);
+  background-color: rgba(28, 31, 33, 0.06) !important;
   border-radius: 8px;
   border: 0;
+  background: url(../img/closeeye.png) no-repeat right center;
+  background-size: 10%;
 }
-#main .login .login_body .login_sign .sign_pas .search2 {
-  width: 18px;
-  height: 26px;
-  background: url(../img/closeeye.png) left center no-repeat;
-  float: right;
-  margin-right: 10px;
-}
-#main .login .login_body .login_sign .sign_pas p {
+#main .login_body .login_sign .sign_pas p {
   font-size: 12px;
   color: red;
   line-height: 20px;
   display: none;
 }
-#main .login .login_body .login_sign .sign_check {
+#main .login_body .login_sign .sign_check {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
 }
-#main .login .login_body .login_sign .sign_check .checkbox_right:nth-child(1) {
+#main .login_body .login_sign .sign_check .checkbox_right:nth-child(1) {
   background: rgba(28, 31, 33, 0.1);
 }
-#main .login .login_body .login_sign .stylebox {
+#main .login_body .login_sign .style_box {
   height: 20px;
 }
-#main .login .login_body .login_sign .sign_btu input {
+#main .login_body .login_sign .sign_btu input {
   background: red;
   width: 320px;
   height: 48px;
@@ -171,4 +168,16 @@ body {
   color: white;
   font-size: 16px;
   outline: none;
+}
+#main .logo_foot {
+  clear: both;
+  background-color: grey;
+  width: 384px;
+  height: 72px;
+}
+#main .logo_foot .foot_box {
+  width: 324px;
+  height: 24px;
+  margin: 0;
+  display: block;
 }
