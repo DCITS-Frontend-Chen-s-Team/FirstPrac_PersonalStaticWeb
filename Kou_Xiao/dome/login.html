@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>慕课网-登录</title>
   <link rel="stylesheet" href="./css/html.css">
 </head>
 <body>
@@ -24,17 +24,38 @@
         <div class="login_sign">
           <div class="sign_email">
             <input type="text" name="email" placeholder="请输入登录手机号/邮箱">
-            <p data-error-hint="请输入正确的邮箱或手机号"></p>
+            <p>请输入正确的邮箱或手机号</p>
           </div>
           <div class="sign_pas">
             <input class="search1" type="password" name="password"  placeholder="请输入密码">
-            <input class="search2" type="button">
+            <!-- <input class="search2" type="button"> -->
+            <p>请输入6-20位密码，区分大小写，不能使用空格！</p>
           </div>
-          <div></div>
-          <div></div>
+          <div class="sign_check">
+            <label>
+              <input type="checkbox">
+              <a href="#">7天内自动登录</a>
+            </label>
+            <div class="checkbox_right">
+              <a href="#">找回密码</a>
+              <a href="#">|</a>
+              <a href="#">无法登录</a>
+            </div>
+          </div>
+          <p class="stylebox"></p>
+          <div class="sign_btu">
+            <input type="button" value="登录" class="btu_submit">
+          </div>
         </div>
       </div>
-      <div></div>
+      <div class="login_foot">
+        <div>
+          <span></span>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+      </div>
     </div>
   </div>
   <div></div>
