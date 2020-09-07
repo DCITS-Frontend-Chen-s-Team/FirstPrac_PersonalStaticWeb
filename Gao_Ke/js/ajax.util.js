@@ -10,9 +10,8 @@ function getRequest(url, eachFunc, add, dataType = "json", async = true) {
             console.log("success");
             var str = "";
             str = eachFunc(data);
-            console.log(str);
+            // console.log(str);
             $(add).append(str);
-            console.log("1");
         },
         error: function () {
             console.log("error!");

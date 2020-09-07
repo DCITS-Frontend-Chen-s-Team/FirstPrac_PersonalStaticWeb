@@ -290,14 +290,14 @@ html, body {
   font-size: 2.5em;
 }
 
- 
+
 
 
 .ibody .div2 .cc {
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
-   width: 100%;
+  width: 100%;
 
 }
 
@@ -479,15 +479,15 @@ html, body {
 }
 
 .ibody .div5 .ll {
- display: flex;
- flex-flow: wrap;
- justify-content: space-around;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
   width: 100%;
 }
 
 .ibody .div5 .ll .l1 {
   width: 50%;
-  
+
 }
 
 .ibody .div5 .ll .l1 #la {
@@ -579,7 +579,7 @@ html, body {
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
-   width: 100%;
+  width: 100%;
 
 }
 
@@ -630,7 +630,7 @@ html, body {
 
 .ibody .div6 .nn .na2 .mss6 #mss6:hover {
   color: red;
-} 
+}
 
 .ibody .div7 {
   float: left;
@@ -665,7 +665,7 @@ html, body {
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
-   width: 100%;
+  width: 100%;
   height: 400px;
 }
 
