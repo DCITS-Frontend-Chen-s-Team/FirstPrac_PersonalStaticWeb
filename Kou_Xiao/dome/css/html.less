@@ -75,12 +75,16 @@ body{
       }
     }
   }
-  .login_body{
+  .login_body_login{
+    display: none;
     width: 38.4em;
-    height: 21.8em;
-    // background-color: indianred;
+    height: 22.2em;
+    background-color: indianred;
     position: relative;
     top: 1em;
+    .wrong{
+      display: block;
+    }
     .login_sign{
       width: 32em;
       height: 21.8em;
@@ -103,7 +107,7 @@ body{
         input:focus{
           border:1px solid rgba(28,31,33,.06);;
         }
-        .email_pshow{
+        .email_show{
           font-size: 12px;
           color: red;
           line-height: 20px;
@@ -144,17 +148,21 @@ body{
           background: url(../img/closeeye.png) no-repeat right center;
           background-size: percentage(.1);
         }
-        p{
+        .pas_show{
           font-size: 12px;
           color: red;
           line-height: 20px;
           display: none;
+        }
+        .wrong{
+          display: block;
         }
       }
       .sign_check{
         font-size: 14px;
         display: flex;
         justify-content: space-between;
+        
         .checkbox_right:nth-child(1){
           background: rgba(28,31,33,.1);
         }
@@ -176,6 +184,14 @@ body{
         }
       }
     }
+  }
+  .login_body_form{
+    width: 38.4em;
+    height: 22.2em;
+    background-color: royalblue;
+    display: block;
+    top: 1em;
+    position: relative;
   }
   .logo_foot{
     clear: both;
