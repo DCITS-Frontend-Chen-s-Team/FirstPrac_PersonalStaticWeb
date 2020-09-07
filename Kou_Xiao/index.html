@@ -8,90 +8,57 @@
     <!-- 引入css文件 -->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/text.css"> -->
     <!-- 引入swiper css文件 -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <!-- 引入swiper js文件 -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-1.8.3.js"></script>
+
+    <script src="js/ajax_util.js"></script>
+    <script src="js/ajax.js"></script>
+
     <script src="js/index.js"></script>
     <script src="js/header.js"></script>
-    <script src="js/jquery-1.8.3.js"></script>
-    <script src="js/ajax.js"></script>
-    <script>
-        
-    //     var index=0;
-    //       function changeImg() {
-    //         // 获得要切换图片的那个元素
-    //         var img=document.getElementById("img1");
-    //         var carIndex=index%6+1;
-    //         img.src="./images/nav"+carIndex+".jpg";
-    //         index=index+1;   
-    //       }
-              
-    //       function lunbotu() {
-    //         setInterval("changeImg()",1000);
-    //       }
-    // var nav = document.querySelector('.nav');
-    // var lis = nav.children;
-    // for(var i=0;i<lis.length;i++){
-    //     lis[i].onmouseover = function(){
-    //         this.children[1].style.display = 'block';
-    //     }
-    //     lis[i].onmouseout = function(){
-    //         this.children[1].style.display = 'none';
-    //     }
-    // }
-   </script>
 </head>
 <body>
 <!-- 导航栏部分 -->
 <div id="head" class="container">
+    
     <div class="head_logo l">
-        <a href="#">
+        <!-- <a href="#"> -->
             <img src="./images/logo.png" alt="" title="慕课网-程序员的梦工厂" width="126px" height="72px">
-        </a>
+        <!-- </a> -->
     </div>
     <ul class="head_menu " >
         <li id="header_menu_center">
-            <!-- <a href="#">免费课程</a> -->
-        </li>
-        <!-- <li>
-            <a href="#">免费课程</a>
-        </li>
-        <li>
+            <!-- <a href="#">免费课程</a>
             <a href="#">实战课程</a>
-        </li>
-        <li>
             <a href="#">金职位</a>
-        </li>
-        <li>
             <a href="#">wiki</a>
-        </li>
-        <li>
             <a href="#">专栏</a>
+            <a href="#">手记</a> -->
         </li>
-        <li>
-            <a href="#">手记</a>
-        </li> -->
     </ul>
     <div class="head_search">
         <input type="text" class="search_input" placeholder="请输入关键字..." autocomplete="off">
         <input type="hidden" class="search_btn1">
         <img class="search_btn2" src="./images/search.svg" alt="">
     </div>
-    <div class="head_nav" id="head_right_show">
+    <div class="head_nav r" id="head_right_show">
         <a href="#">下载APP</a>
         <a href="#" class="shopcart">购物车</a>   
         <a href="#" class="head_login">
-            注册 
+             登录
         </a>
         /
-        <a href="#">登录</a>
+        <a href="#">注册</a>
     </div>
 </div>
 
 <!-- 带有轮播图部分 -->
 <div id="wrap" class="container">
-    <div class="wrap_all">
+    <div class="wrap_all container">
         <div class="wrap_left">
             <div class="banner_nav">
                 <ul class="nav">
@@ -582,158 +549,6 @@
         <div class="area_title">
             <span>新上好课</span> 
         </div>
-        <!-- <div class="case_index">
-            <div class="index_card_top">
-                <img src="./images/class1.jpg" alt="" width="270px" height="148px">
-                <div class="card_label">
-                    
-                </div>
-            </div>
-            <div class="index_card_content">
-                <h3 class="card_name">Java可视化UNL工作流系统(Activiti7+SpringBoot)</h3>
-                <div class="card_buttom">
-                    <div class="card_info">
-                        <span>初级</span>
-                        <span class="r">6人评价</span>
-                    </div>
-                    <div class="card_price" >
-                        ￥298.00
-                        <span class="down">限时优惠</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="case_index case_commen">
-            <div class="index_card_top">
-                <img src="./images/class2.jpg" alt="" width="270px" height="148px">
-                <div class="card_label">
-                    
-                </div>
-            </div>
-            <div class="index_card_content">
-                <h3 class="card_name">编程必备基础 计算机组成原理+操作系统+计算机网络</h3>
-                <div class="card_buttom">
-                    <div class="card_info">
-                        <span>中级</span>
-                        <span class="r">2294人评价</span>
-                    </div>
-                    <div class="card_price">￥236.00</div>
-                </div>
-            </div>
-        </div>
-       
-        <div class="case_index case_commen">
-            <div class="index_card_top">
-                <img src="./images/class3.jpg" alt="" width="270px" height="148px">
-                <div class="card_label">
-                    
-                </div>
-            </div>
-            <div class="index_card_content">
-                <h3 class="card_name">.Net Core 开发电商后端API 从0到精通吃透RESTful(Activiti7+SpringBoot)</h3>
-                <div class="card_buttom">
-                    <div class="card_info">
-                        <span>初级</span>
-                        <span class="r">12人评价</span>
-                    </div>
-                    <div class="card_price">￥388.00</div>
-                </div>
-            </div>
-        </div>
-        <div class="case_index case_commen">
-            <div class="index_card_top">
-                <img src="./images/class4.jpg" alt="" width="270px" height="148px"> 
-                <div class="card_label">
-                    
-                </div>
-            </div>
-            <div class="index_card_content">
-                <h3 class="card_name">全面系统Python3.8入门+进阶(程序员必备第二语言)</h3>
-                <div class="card_buttom">
-                    <div class="card_info">
-                        <span>初级</span>
-                        <span class="r">5479人评价</span>
-                    </div>
-                    <div class="card_price">￥366.00</div>
-                </div>
-            </div>
-        </div>
-        <div class="case_index">
-            <div class="index_card_top">
-                <img src="./images/class5.png" alt="" width="270px" height="148px">
-                <div class="card_label">
-                    
-                </div>
-            </div>
-            <div class="index_card_content">
-                <h3 class="card_name">入门金融IT行业必学 从0到1 开发撮合交易系统</h3>
-                <div class="card_buttom">
-                    <div class="card_info">
-                        <span>初级</span>
-                        <span class="r">1人评价</span>
-                    </div>
-                    <div class="card_price" style="color: red;">￥328.00
-                        <span class="down">限时优惠</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="case_index case_commen">
-            <div class="index_card_top">
-                <img src="./images/class6.jpg" alt="" width="270px" height="148px" >
-                <div class="card_label">
-                    
-                </div>
-            </div>
-            <div class="index_card_content">
-                <h3 class="card_name">体系课-数据可视化入门到精通--打造前端差异化竞争力</h3>
-                <div class="card_buttom">
-                    <div class="card_info">
-                        <span>中级</span>
-                        <span class="r">64人评价</span>
-                    </div>
-                    <div class="card_price">￥999.00</div>
-                </div>
-            </div>
-        </div>
-        <div class="case_index case_commen">
-            <div class="index_card_top">
-                <img src="./images/class7.jpg" alt="" width="270px" height="148px">
-                <div class="card_label">
-                    
-                </div>
-            </div>
-            <div class="index_card_content">
-                <h3 class="card_name">Vue2.5-2.6-3.0 开发去哪网App从零基础入门到实战项目开发</h3>
-                <div class="card_buttom">
-                    <div class="card_info">
-                        <span>中级</span>
-                        <span class="r">4968人评价</span>
-                    </div>
-                    <div class="card_price">￥266.00</div>
-                </div>
-            </div>
-        </div>
-        <div class="case_index case_commen">
-            <div class="index_card_top">
-                <img src="./images/class8.png" alt="" width="270px" height="148px">
-                <div class="card_label">
-                    
-                </div>
-            </div>
-            <div class="index_card_content">
-                <h3 class="card_name">前端性能优化--6大角度综合型优化方案</h3>
-                <div class="card_buttom">
-                    <div class="card_info">
-                        <span>中级</span>
-                        <span class="r">3人评价</span>
-                    </div>
-                    <div class="card_price" style="color: red;">￥268.00
-                        <span class="down">限时优惠</span>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>  
 </div>
 
@@ -1120,5 +935,7 @@
         </div>
     </div>
 </div>
+
+
 </body>
 </html>

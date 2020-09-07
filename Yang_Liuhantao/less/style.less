@@ -10,6 +10,194 @@ html {
   height: 100%;
   min-width: 1600px;
 
+  .rl-modal {
+    position: fixed;
+    background: #fff;
+    z-index: 100000;
+    width: 384px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    left: 50%;
+    top: 50%;
+    margin: -192px 0 0 -192px;
+    box-shadow: 0 12px 24px 0 rgba(28,31,33,.1);
+    border-radius: 12px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+
+    .rl-modal-header{
+
+      .active-title{
+        color: #f20d0d;
+      }
+
+      .active-title:after, span:hover:after {
+        content: " ";
+        width: 16px;
+        height: 4px;
+        line-height: 4px;
+        background: #f20d0d;
+        border-radius: 2px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      span:hover {
+        color: #f20d0d;
+      }
+
+      h1 {
+        font-size: 16px;
+        line-height: 49px;
+        font-weight: 700;
+        height: 49px;
+        color: #787d82;
+
+      }
+
+      h1 span {
+        float: left;
+        width: 80px;
+        text-align: center;
+        height: 49px;
+        line-height: 49px;
+        cursor: pointer;
+      }
+
+      .rl-close {
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        width: 17px;
+        height: 17px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        background: url(../img/nlogin.png) no-repeat 0 0;
+        text-align: center;
+        outline: none;
+        border: none;
+        transition: transform .2s;
+      }
+    }
+
+    .rl-modal-body {
+      padding: 0 32px;
+      background-size: cover;
+      margin: 0;
+
+      .clearfix{
+        .clearfix:after {
+          content: '\0020';
+          display: block;
+          height: 0;
+          clear: both;
+          visibility: hidden;
+        }
+
+        form {
+          display: block;
+
+          .pr {
+            position: relative;
+          }
+
+          a, input, button {
+            outline: none;
+          }
+
+          .ipt {
+            width: 100%;
+            height: 48px;
+            line-height: 20px;
+            box-sizing: border-box;
+            padding: 14px;
+            box-shadow: 2px 0 5px 0 #fff;
+            background: rgba(28,31,33,.06);
+            border-radius: 8px;
+            border: 0;
+            color: #1c1f21;
+            font-size: 14px;
+          }
+
+          input {
+            -webkit-writing-mode: horizontal-tb !important;
+            text-rendering: auto;
+            color: -internal-light-dark(black, white);
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            appearance: textfield;
+            background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+            -webkit-rtl-ordering: logical;
+            cursor: text;
+            margin: 0em;
+            font: 400 13.3333px Arial;
+            padding: 1px 2px;
+            border-width: 2px;
+            border-style: inset;
+            border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+            border-image: initial;
+          }
+
+          p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+          }
+
+          .color-red {
+            color: #EF1300!important;
+          }
+
+          .errorHint {
+            line-height: 20px;
+            font-size: 12px;
+            color: #f01414;
+          }
+
+          .rlf-tip-wrap {
+            font-size: 12px;
+            height: 20px;
+          }
+
+          .rlf-appendix .rlf-autoin, .rlf-appendix .rlf-forget {
+            color: #9199a1;
+          }
+
+          .l {
+            float: left;
+          }
+
+          .rlf-appendix {
+            line-height: 1em;
+          }
+
+        }
+      }
+    }
+
+  }
+
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+    opacity: .75;
+  }
+
   #header {
     background-color: #ffffff;
     width: 100%;

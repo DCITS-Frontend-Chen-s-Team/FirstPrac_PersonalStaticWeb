@@ -1,6 +1,6 @@
 
     #wrap{background-image: linear-gradient(to bottom,rgb(248, 198, 105),#0ff);width: 100%;}
-    #wrap .wrap_all{height: 435px; padding-top: 110px ;overflow: hidden;position: relative;margin-left: 54px;}
+    #wrap .wrap_all{height: 435px; padding-top: 110px ;position: relative;}
     #wrap .wrap_left{width: 216px;height: 385px;float: left;background-color: #2b333b; border-radius: 8px 0 0 8px;}
     #wrap .wrap_left .nav_show{width: 180px;height: 50px;padding: 0 16px;line-height: 50px;margin-left: 10px;}
     #wrap .wrap_left .nav_show a{color: rgba(255, 255, 255, 0.6);font-size: 14px;}

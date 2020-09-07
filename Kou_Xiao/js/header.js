@@ -27,4 +27,4 @@ window.addEventListener('load', function () {
   //     event.target.querySelector("a").style.color = '#6A6A6A';
   //   }
   // }
-})
+},true)

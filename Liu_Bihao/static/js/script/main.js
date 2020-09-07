@@ -1,6 +1,7 @@
-let loginPattern; // 0 为注册，1 为登录
-let loginFormPattern = 0; // 0 为账号密码登录，1 为手机验证码登录
+let loginPattern; // 0为注册，1为登录
+let loginFormPattern = 0; // 0为账号密码登录，1为手机验证码登录
 var signBody = document.getElementById("signIn");
+var loginStatus = 0; // 登录验证状态，0为未通过，1为通过
 
 /**
  * 登录和注册按钮的事件监听
@@ -82,8 +83,8 @@ function signInFormChange() {
                        data-error-hint="请同意慕课网注册协议"></p>
                 </div>
                 <div class="rlf-group clearfix">
-                    <a href="javascript:void(0)" id="signup-btn" hidefocus="true"
-                       class="moco-btn moco-btn-red moco-btn-lg btn-full btn r"> 注册 </a>
+                    <input type="submit" href="javascript:void(0)" id="signup-btn" hidefocus="true"
+                       class="moco-btn moco-btn-red moco-btn-lg btn-full btn r"> 注册 </input>
                 </div>
             </form>
         </div>`;
@@ -117,24 +118,17 @@ function loginFormChange() {
     <div class="clearfix">
         <form id="signup-form" autocomplete="off">
             <div class="rlf-group pr">
-                <input type="text" value="" maxlength="37" name="email" data-validate="require-mobile-phone"
-                       autocomplete="off" class="xa-emailOrPhone ipt ipt-email js-own-name" placeholder="请输入登录手机号/邮箱">
-                <p class="rlf-tip-wrap errorHint color-red" data-error-hint="请输入正确的邮箱或手机号"></p>
+                <input type="text" onblur="loginFormatAuth()" name="email" data-validate="require-mobile-phone"
+                       autocomplete="off" class="ipt ipt-email js-own-name" placeholder="请输入登录手机号/邮箱">
+                <p class="data-error-hint"></p>
             </div>
-            <div class="rlf-group  pr">
+            <div class="rlf-group pr">
                 <a href="javascript:void(0)" hidefocus="true" class="proclaim-btn js-proclaim imv2-visibility_off is-pwd"
                    tabindex="-1">
                 </a>
-                <input type="password" name="password" data-validate="require-password"
+                <input type="password" onblur="loginFormatAuth()" name="password" data-validate="require-password"
                        class="ipt ipt-pwd js-loginPassword js-pass-pwd" placeholder="请输入密码" maxlength="20" autocomplete="off">
                 <p class="rlf-tip-wrap errorHint color-red "></p>
-            </div>
-            <div class="rlf-group clearfix form-control js-verify-row" style="display: none;">
-                <input type="text" name="verify" class="ipt ipt-verify l" data-validate="require-string"
-                       data-callback="checkverity" maxlength="4" data-minlength="4" placeholder="请输入验证码">
-                <a href="javascript:void(0)" hidefocus="true" class="verify-img-wrap js-verify-refresh"></a>
-                <a href="javascript:void(0)" hidefocus="true" class="icon-refresh js-verify-refresh"></a>
-                <p class="rlf-tip-wrap errorHint color-red" data-error-hint="请输入正确验证码"></p>
             </div>
             <div class="rlf-group rlf-appendix form-control  clearfix">
                 <label for="auto-signin" class="rlf-autoin l" hidefocus="true">
@@ -143,7 +137,7 @@ function loginFormChange() {
             </div>
             <p class="rlf-tip-globle color-red" id="signin-globle-error"></p>
             <div class="rlf-group clearfix">
-                <input type="button" value="登录" hidefocus="true" class="moco-btn moco-btn-red moco-btn-lg btn-full xa-login">
+                <input type="button" onclick="loginAuth()" value="登录" hidefocus="true" class="moco-btn moco-btn-red moco-btn-lg btn-full xa-login">
             </div>
         </form>
     </div>
@@ -167,14 +161,13 @@ function loginFormChange() {
         <form id="signup-form" autocomplete="off">
             <div class="rlf-group pr">
                 <div class="rlf-areacode">+86</div>
-                <input type="text" value="" maxlength="37" name="phone"
-                       data-validate="require-mobile-phone" autocomplete="off"
-                       class="ipt ipt-phone js-phone-name" placeholder="短信登录仅限中国大陆用户">
+                <input type="text" value="" maxlength="37" name="phone" data-validate="require-mobile-phone" autocomplete="off"
+                       class="ipt ipt-phone" placeholder="短信登录仅限中国大陆用户">
                 <p class="rlf-tip-wrap errorHint color-red" data-error-hint="请输入正确的手机号"></p>
             </div>
             <div class="rlf-group pr phoneVerityBox">
                 <input type="text" id="js-phoneVerity" data-validate="require-string" data-minlength="4"
-                       class="ipt ipt-pwd" placeholder="请输入短信验证码" maxlength="4" autocomplete="off">
+                       class="ipt" placeholder="请输入短信验证码" maxlength="4" autocomplete="off">
                 <p class="reSend pa active js-phonecode-box"><span class="js-signin-send">获取验证码</span></p>
                 <p class="rlf-tip-wrap errorHint color-red" data-error-hint="请输入正确验证码"></p>
             </div>
@@ -184,7 +177,7 @@ function loginFormChange() {
             </div>
             <p class="rlf-tip-globle color-red" id="signin-globle-error"></p>
             <div class="rlf-group clearfix">
-                <input type="button" value="登录" hidefocus="true"
+                <input type="button" onclick="loginAuth()" value="登录" hidefocus="true"
                        class="moco-btn moco-btn-red moco-btn-lg btn-full xa-phone-login">
             </div>
         </form>
@@ -218,22 +211,70 @@ function login_event() {
     }
 }
 
+var userInfos = [
+    {
+        account: "admin@163.com",
+        username: "刘碧豪",
+        pwd: "1234"
+    },
+    {
+        account: "user@163.com",
+        username: "奥特曼",
+        pwd: "1234"
+    },
+    {
+        account: "root@163.com",
+        username: "蜘蛛侠",
+        pwd: "1234"
+    }
+];
+
 /**
  * 登录页正则表达验证
- * @param username
- * @param password
  */
-function loginFormatAuth(username, password) {
-    // todo
+function loginFormatAuth() {
+    var accountInput = document.getElementsByName("email")[0];
+    var pwdInput = document.getElementsByName("password")[0];
+
+    // 账号正则验证
+    var accountPattern = new RegExp(/^(1[0-9]{10})|(\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)$/);
+    var res = accountPattern.exec(accountInput.value);
+    if (res == null) {
+        document.getElementsByClassName("data-error-hint")[0].innerHTML = "请输入正确的邮箱或手机号";
+        accountInput.focus();
+    } else {
+        document.getElementsByClassName("data-error-hint")[0].innerHTML = "";
+    }
+
+    // 密码（以字母开头，长度在6~18之间，只能包含字母、数字和下划线）
+    // var pwdPattern = new RegExp(/^[a-zA-Z]\w{5,17}$/);
 }
 
 /**
  * 登录页账号密码验证
- * @param username
- * @param password
  */
-function loginAuth(username, password) {
-    // todo
+function loginAuth() {
+    var accountInput = document.getElementsByName("email")[0].value;
+    var pwdInput = document.getElementsByName("password")[0].value;
+    var accountExist = 0, loginUser = "";
+    for (var userInfo of userInfos) {
+        if (accountInput === userInfo.account) {
+            accountExist = 1;
+            if (pwdInput === userInfo.pwd) {
+                loginStatus = 1;
+                loginUser = userInfo.username;
+            } else {
+                alert("Wrong Password!");
+            }
+            break;
+        }
+    }
+    if (accountExist === 0) {
+        alert("Account Not Exist!");
+    } else if (loginStatus === 1) { // 登录验证通过
+        signBody.style.visibility = "hidden"; // 隐藏登录卡片
+        updateUserInfo(loginUser); // 更新顶部栏信息
+    }
 }
 
 /**
@@ -248,7 +289,9 @@ function loginCardHide() {
 
 /**
  * 修改顶部栏信息
+ * @param username
  */
-function updateUserInfo() {
-    // todo
+function updateUserInfo(username) {
+    var loginWel = document.getElementById("loginWelcome");
+    loginWel.innerHTML = `<span>欢迎你，${username}！</span>`;
 }

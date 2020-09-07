@@ -1,0 +1,208 @@
+html{
+  // *{margin: 0;padding: 0;}
+  // h1{
+  //   display: block;
+  //   margin-block-start: 0.67em;
+  //   margin-block-end: 0.67em;
+  //   margin-inline-start: 0px;
+  //   margin-inline-end: 0px;
+  // }
+  *{margin: 0;padding: 0;}
+  ul,ol,li{list-style: none;}
+  h1,h2,h3{font-size: 16px;}
+  img{display: block;}
+  a{text-decoration: none;color:#9199A1;}
+}
+body{
+  font-size: 62.5%;
+  // font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+  color: #1c1f21;
+}
+
+#title{
+  width: 100%;
+  height: 12em;
+  // background-color: gray;
+  display: flex;
+  justify-content: center;
+  .counter{
+    background: url(../img/signlogo.png) no-repeat center center;
+    // background-color: greenyellow;
+   
+      width: 384px;
+      height: 4.6em;
+      margin-top: 5em;
+      text-indent: 100%;
+    
+  }
+}
+#main{
+  width: 100%;
+  height: 43.2em;
+  // background-color: greenyellow;
+  // position: absolute;
+  .login{
+    width: 38.4em;
+    height: 39.2em;
+    // background-color: rgb(228, 155, 192);
+    box-shadow: 0 12px 24px 0 rgba(28,31,33,.1);
+    margin: 2em auto 0;
+    border-radius: 1.2em;
+  }
+  .login_head{
+    width: 38.4em;
+    height: 7.4em;
+    // background-color: hotpink;
+    margin-top: 1.2em;
+    top: 1em;
+    position: relative;
+    h1{
+      width: 344px;
+      height: 49px;
+      font-size: 1.6em;
+      line-height: 4.9em;
+      // width: 34.4em;
+      // height: 4.9em;
+      color: #787d82;
+      margin: auto;
+      span{
+        float: left;
+        width: 80px;
+        text-align: center;
+        height: 49px;
+        line-height: 49px;
+        cursor: pointer;
+      }
+    }
+  }
+  .login_body_login{
+    display: none;
+    width: 38.4em;
+    height: 22.2em;
+    background-color: indianred;
+    position: relative;
+    top: 1em;
+    .wrong{
+      display: block;
+    }
+    .login_sign{
+      width: 32em;
+      height: 21.8em;
+      margin: auto;
+      .sign_email{
+        width: 32em;
+        height: 6.8em;
+        input{
+          width: 100%;
+          height: 48px;
+          line-height: 20px;
+          box-sizing: border-box;
+          padding: 14px;
+          box-shadow: 2px 0 5px 0 #fff;
+          background: rgba(28,31,33,.06);
+          border-radius: 8px;
+          border: 0;
+          outline:none;
+        }
+        input:focus{
+          border:1px solid rgba(28,31,33,.06);;
+        }
+        .email_show{
+          font-size: 12px;
+          color: red;
+          line-height: 20px;
+          display: none;
+        }
+        .wrong{
+          display: block;
+        }
+      }
+      .sign_pas{
+        width: 32em;
+        height: 6.8em;
+        input{
+          width: 100%;
+          height: 48px;
+          line-height: 20px;
+          box-sizing: border-box;
+          padding: 14px;
+          box-shadow: 2px 0 5px 0 #fff;
+          background: rgba(28,31,33,.06);
+          border-radius: 8px;
+          border: 0;
+          outline:none;
+        }
+        input:focus{
+          border:1px solid rgba(28,31,33,.06);;
+        }
+        .search1{
+          width: 100%;
+          height: 48px;
+          line-height: 20px;
+          box-sizing: border-box;
+          padding: 14px;
+          box-shadow: 2px 0 5px 0 #fff;
+          background-color: rgba(28,31,33,.06) !important;
+          border-radius: 8px;
+          border: 0;
+          background: url(../img/closeeye.png) no-repeat right center;
+          background-size: percentage(.1);
+        }
+        .pas_show{
+          font-size: 12px;
+          color: red;
+          line-height: 20px;
+          display: none;
+        }
+        .wrong{
+          display: block;
+        }
+      }
+      .sign_check{
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        
+        .checkbox_right:nth-child(1){
+          background: rgba(28,31,33,.1);
+        }
+      }
+      .style_box{
+        height: 20px;
+      }
+      .sign_btu{
+        input{
+          background: red;
+          width: 320px;
+          height: 48px;
+          border: 0;
+          border-radius: 24px;
+          display: block;
+          color: white;
+          font-size: 16px;
+          outline:none; 
+        }
+      }
+    }
+  }
+  .login_body_form{
+    width: 38.4em;
+    height: 22.2em;
+    background-color: royalblue;
+    display: block;
+    top: 1em;
+    position: relative;
+  }
+  .logo_foot{
+    clear: both;
+    background-color: grey;
+    width: 384px;
+    height: 72px;
+    .foot_box{
+      width: 324px;
+      height: 24px;
+      margin: 0;
+      display: block;
+    }
+  }
+}

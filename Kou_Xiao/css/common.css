@@ -2,7 +2,7 @@
 ul,ol,li{list-style: none;}
 h1,h2,h3{font-size: 16px;}
 img{display: block;}
-a{text-decoration: none;color:#6A6A6A;}
+a{text-decoration: none;color:#6A6A6A;margin-left: 5px;}
 body{font-family: Arial;}
 
 .l{float: left;}
@@ -13,7 +13,7 @@ body{font-family: Arial;}
 
 #head{height: 72px;width: 100%;background-color: white !important;position: fixed;z-index: 999;display: block;}
 #head .head_logo{width: 138px;height: 72px;margin-left: 5px;}
-#head .head_logo a{width: 126px;}
+#head .head_logo a{width: 126px;margin-top: 0;}
 #head .head_menu{font-size: 16px;line-height: 72px;}
 #head .head_menu li a{float: left;padding: 0 10px;}
 /* #head .head_menu li a:hover{color: black;} */
@@ -27,7 +27,7 @@ body{font-family: Arial;}
 #head .head_search .search_btn1 {float: left;cursor: pointer;width: 30px;height: 38px;text-align: center;}
 #head .head_search .search_btn2 {width: 24px;height: 24px;text-align: right;position: absolute;display: inline-block;right: 0;
     bottom: 8px;padding: 0 8px;}
-#head .head_nav {width: 25%;height: 72px;float: right;position: relative;}
+#head .head_nav {height: 72px;float: right;position: relative;margin-right: 20px;}
 #head .head_nav span {float: left;position: relative;line-height: 72px;color: #71777d;}
 #head .head_nav .shopcart {margin-left: 30px;display: inline-block;width: auto;box-sizing: border-box;border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 18px; height: 36px;line-height: 72px;color: #787d82;text-align: center;}

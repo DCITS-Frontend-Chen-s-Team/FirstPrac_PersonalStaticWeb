@@ -5,6 +5,21 @@
 
 ## 要求记录：
 
+#### 09-07
+- http://www.html5plus.org/doc/zh_cn/webview.html   
+这个是做webapp的，移动端或者pad上的，公司有这方面的项目，有空了可以先看看这个语法，再配合MUI框架学习一下
+- https://dev.dcloud.net.cn/mui/
+学的快的可以看看
+
+#### 09-03
+- 慕课网登录界面（练习 JS 正则表达）
+
+#### 09-02
+- lodash.js moment.js Echarts orgCharts three.js 百度地图 map
+
+#### 09-01
+- 参考导师所给的 ajax 封装方法，把之前写的 ajax 封装成公用方法重用
+
 #### 08-31
 
 - ![image-20200831144707879](https://raw.githubusercontent.com/LiuPiPiPi/picBed/master/img/20200831144715.png)

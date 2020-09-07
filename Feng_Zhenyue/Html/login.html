@@ -2,9 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>login</title>
+    <link rel="stylesheet/less" href="../Css/Login.less">
+    <script src="../Js/less.min.js"></script>
 </head>
 <body>
+    <div id="head" class="head">
+        <a class="head-img"></a>
+    </div>
+    <div id="main">
+        <div class="login-wrap">
+<!--            登录页-->
+            <div id="signin" class="model" style="display: none">
+                <div class="header_nav">
+                    <h1>
+                        <span>登录</span>
+                        <span style="color: #787d82;">注册</span>
+                    </h1>
+                </div>
+                    <div class="warp_body1">
+<!--                        登录页表单-->
+                    <form id="signin_form" autocomplete="off">
+                        <div class="account">
+                            <input type="text" value="" maxlength="37" name="email" autocomplete="off" placeholder="请输入登陆手机号/邮箱" class="ipt">
+                            <p class="err">请输入正确的邮箱或手机号</p>
+                        </div>
+                        <div class="password">
+                            <input type="password" value="" maxlength="37" name="password" autocomplete="off" placeholder="请输入密码" class="ipt">
+                            <p class="err">请输入6-20位密码，区分大小写，不能使用空格！</p>
+                        </div>
+                        <div class="extra">
+                            <label class="auto_in" hidefocus="true">
+                                <input id="auto_siginin" class="auto_cbx" type="checkbox" checked="checked">
+                                7天内自动登录
+                            </label>
+                            <a class="forget r">无法登录</a>
+                            <div class="between_forget r"></div>
+                            <a class="forget r">忘记密码</a>
+                        </div>
+<!--                        这个blank是验证码的error框，暂时没有写验证码校验 所以暂时先空在这里-->
+                        <p id="blank"></p>
+                        <div class="for_button">
+                            <input class="moco-btn moco-btn-red moco-btn-lg btn-full xa-login" type="button" value="登陆" hidefocus="true">
+                        </div>
+                    </form>
+<!--                        登录页表单结束-->
+                        <div class="wrap1_footer">
+                            <div class="other_login">
+                                <span class="l footer_other">手机短信登录</span>
+                                <a class="sns_img"></a>
+                            </div>
+                            <div class="privacy_tip">
+                                登录即同意慕课网
+                                <a href="https://moco.imooc.com/privacy.html" target="_blank">《隐私政策》</a>
+                            </div>
+                            <div class="erweima"></div>
+                        </div>
+                    </div>
+            </div>
+<!--            注册页表单-->
+            <div id="signup" class="model" style="display:block">
+                <div class="header_nav">
+                    <h1>
+                        <span style="color: #787d82;">登录</span>
+                        <span>注册</span>
+                    </h1>
+                </div>
 
+            <div class="wrap_body2">
+                <form id="signon_form" autocomplete="off">
+                    <div class="account">
+                        <input type="text" value="" maxlength="37" name="email" autocomplete="off" placeholder="请输入注册手机号" class="ipt">
+                        <p class="err">请输入正确的手机号</p>
+                    </div>
+                    <div class="password">
+                        <input type="password" value="" maxlength="37" name="password" autocomplete="off" placeholder="请输入验证码" class="ipt">
+                        <p class="err">验证码错误</p>
+                    </div>
+                    <div class="extra">
+                        <label class="auto_in" hidefocus="true">
+                            <input id="auto_siginin" class="auto_cbx" type="checkbox" checked="checked">
+                            同意
+                            <a class="blue" target="_blank" href="https://www.imooc.com/help/detail/89">《慕课网注册协议》</a>
+                            &
+                            <a class="blue" target="_blank" href="https://moco.imooc.com/privacy.html">《隐私政策》</a>
+                        </label>
+                    </div>
+                    <!--                        这个blank是验证码的error框，暂时没有写验证码校验 所以暂时先空在这里-->
+                    <p id="blank"></p>
+                    <div class="for_button">
+                        <input class="moco-btn moco-btn-red moco-btn-lg btn-full xa-login" type="button" value="登陆" hidefocus="true">
+                    </div>
+                </form>
+            </div>
+<!--            wrap footer-->
+            <div class="wrap2_footer">
+                <div class="other_login">
+                    <span class="l footer_other">其他方式登录</span>
+                    <a class="sns_img"></a>
+                </div>
+                <div class="erweima"></div>
+            </div>
+            </div>
+<!--            二维码登录页-->
+            <div id="erweima" class="model" style="display:none">
+                3
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="../Images/Login/a9.png" class="footer-icon">
+        2020 imooc.com All Rights Reserved  京ICP备 13046642号
+    </div>
 </body>
 </html>
