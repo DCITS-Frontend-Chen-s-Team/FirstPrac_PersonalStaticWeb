@@ -33,21 +33,23 @@
             <div class="clearfix">
                 <form id="signup-form" autocomplete="off">
                     <div class="rlf-group pr">
-                        <input type="text" value="" maxlength="37" name="email" data-validate="require-mobile-phone" autocomplete="off" class="xa-emailOrPhone ipt ipt-email js-own-name" placeholder="请输入登录手机号/邮箱">
-                        <p class="rlf-tip-wrap errorHint color-red" data-error-hint="请输入正确的邮箱或手机号">请输入正确的邮箱或手机号</p>
+                        <input type="text" value="" maxlength="37" name="email" onchange="checkid()" data-validate="require-mobile-phone" autocomplete="off" class="xa-emailOrPhone ipt ipt-email js-own-name" placeholder="请输入登录手机号/邮箱">
+                        <p class="rlf-tip-wrap errorHint color-red" data-error-hint="请输入正确的邮箱或手机号"></p>
                     </div>
 
                     <div>
-                        <input type="password" name="password" data-validate="require-password" class="ipt ipt-pwd js-loginPassword js-pass-pwd" placeholder="请输入密码" maxlength="20" autocomplete="off">
-                        <p class="rlf-tip-wrap errorHint color-red ">请输入6-20位密码，区分大小写，不能使用空格！</p>
+                        <input type="password" name="password" onchange="checkpwd()" data-validate="require-password" class="ipt ipt-pwd js-loginPassword js-pass-pwd" placeholder="请输入密码" maxlength="20" autocomplete="off">
+                        <p class="rlf-tip-wrap errorHint color-red" data-error-hint="请输入6-20位密码，区分大小写，不能使用空格！"></p>
                     </div>
 
                     <div class="rlf-group rlf-appendix form-control  clearfix">
                         <label for="auto-signin" class="rlf-autoin l" hidefocus="true"><input type="checkbox" checked="checked" class="auto-cbx" id="auto-signin">7天内自动登录</label>
-                        <a href="//www.imooc.com/help/detail/127" class="rlf-forget r" target="_blank" hidefocus="true">无法登录</a>
+                        <a href="#" class="rlf-forget r" target="_blank" hidefocus="true">无法登录</a>
                         <div class="rlf-line r"></div>
-                        <a href="/user/newforgot" class="rlf-forget r" target="_blank" hidefocus="true">找回密码</a>
+                        <a href="#" class="rlf-forget r" target="_blank" hidefocus="true">找回密码</a>
                     </div>
+
+                    <p class="rlf-tip-globle color-red" id="signin-globle-error"></p>
 
                     <div class="rlf-group clearfix">
                         <input type="button" value="登录" hidefocus="true" class="moco-btn moco-btn-red moco-btn-lg btn-full xa-login">
