@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet/less" href="./less/style.less">
+
+    <script src="./js/less.min.js"></script>
+    <script src="./js/login.js"></script>
+</head>
+
+
+<body>
+<div id="box">
+    <div class="head">
+        <a href="#" target="_self" class="sig-img">慕课网</a>
+    </div>
+    <div id="main">
+        <div class="login-wrap">
+            <div class="main-title">
+                <div class="rl-modal-header">
+                    <h1>
+                        <p id="loginPhoneNum">登录</p>
+                        <p id="registered" >注册</p>
+
+                    </h1>
+                </div>
+                <div class="main-body">
+                    <div class="body1">
+                        <div class="input1" >
+                            <input type="text"  id="PhoneNum" placeholder="请输入登陆手机号/邮箱"
+                                   onfocus="showTips('phone1')"
+                                   onblur="checkPhoneNum()"  onkeyup="checkPhoneNum()">
+                            <span id="phone1"></span>
+                        </div>
+                        <div class="input2">
+                            <input type="text" id="password" placeholder="请输入密码"
+                                   onfocus="showTips('psw')"
+                                   onblur="checkPassword()"  onkeyup="checkPassword()">
+                            <span id="psw"></span>
+                        </div>
+                    </div>
+                    <div class="body2">
+                        <label>
+                            <input type="checkbox">7天内自动登录
+                        </label>
+                        <div class="body-a">
+                            <a href="#">找回密码</a>
+                            |
+                            <a href="#">无法登录</a>
+                        </div>
+                    </div>
+                    <div class="body3">
+                        <input type="button" onclick="checkFrom()" value="登录" >
+                    </div>
+                    <div class="footer">
+                        <div class="fa">
+                            <a href="phoneLogin.html" >手机短信登录</a>
+                        </div>
+                        <div class="fss">
+                           登录即同意慕课网<a href="Privacy policy.html" target="_blank">《隐私政策》</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="footer">
+        <div class="footer1">
+            <img src="./img/a9.png" alt="">
+            <span>2020 imooc.com All Rights Reserved 京ICP备 13046642号</span>
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+    let loginPhoneNum = document.getElementById("loginPhoneNum");
+    let loginBody = document.getElementsByClassName("main-body")[0];
+   loginPhoneNum.onclick = function () {
+        loginBody.innerHTML = `
+                    <div class="body1">
+                        <div class="input1" >
+                            <input type="text"  id="PhoneNum" placeholder="请输入登陆手机号/邮箱"
+                                   onfocus="showTips('phone1')"
+                                   onblur="checkPhoneNum()"  onkeyup="checkPhoneNum()">
+                            <span id="phone1"></span>
+                        </div>
+                        <div class="input2">
+                            <input type="text" id="password" placeholder="请输入密码"
+                                   onfocus="showTips('psw')"
+                                   onblur="checkPassword()"  onkeyup="checkPassword()">
+                            <span id="psw"></span>
+                        </div>
+                    </div>
+                    <div class="body2">
+                        <label>
+                            <input type="checkbox">7天内自动登录
+                        </label>
+                        <div class="body-a">
+                            <a href="#">找回密码</a>
+                            |
+                            <a href="#">无法登录</a>
+                        </div>
+                    </div>
+                    <div class="body3">
+                        <input type="button" onclick="checkFrom()" value="登录" >
+                    </div>
+                    <div class="footer">
+                        <div class="fa">
+                            <a href="#" id="phoneNumLogin">手机短信登录</a>
+                        </div>
+                        <div class="fss">
+                           登录即同意慕课网<a href="Privacy policy.html" target="_blank">《隐私政策》</a>
+                        </div>
+
+                    </div>
+                `;
+    }
+
+
+
+
+    let zhuCe = document.getElementById("registered");
+    let registerBody = document.getElementsByClassName("main-body")[0];
+    zhuCe.onclick = function () {
+        registerBody.innerHTML = `
+                    <div class="body1">
+                        <div class="input1" >
+                            <input type="text"  id="PhoneNum" placeholder="请输入注册手机号"
+                                   onfocus="showTips('phone1')"
+                                   onblur="checkPhoneNum()"  onkeyup="checkPhoneNum()">
+                            <span id="phone1"></span>
+                        </div>
+                        <div class="input2">
+                            <input type="text" id="password" placeholder="请输入验证码"
+                                   onfocus="showTips('psw')"
+                                   onblur="checkPassword()"  onkeyup="checkPassword()">
+                            <span id="psw"></span>
+                        </div>
+                    </div>
+                    <div class="body21">
+                        <label>
+                            <input type="checkbox">同意
+                        </label>
+                        <div class="body-a" style="clear:both">
+                            <a href="#">《慕课网注册协议》</a>
+                           &
+                            <a href="#">《隐私政策》</a>
+                        </div>
+                    </div>
+                    <div class="body31">
+                        <input type="button" onclick="checkFrom()" value="注册" >
+                    </div>
+                    <div class="footer">
+                        <div class="fa">
+                            <a href="#">其他方式登录:</a>
+                        </div>
+
+                    </div>
+                `;
+    }
+
+
+
+
+    //登陆注册用dom方法实现变色
+
+
+    //获取到id是loginPhoneNum的元素
+    let  bodyPhoneNum= document.getElementById("loginPhoneNum");
+    // alert(bodyPhoneNum);
+    bodyPhoneNum.addEventListener('mouseover',function (event){
+        bodyPhoneNum.style.color="red";
+        bodyPhoneNum.style.fontWeight="bolder";
+    },false);
+    bodyPhoneNum.addEventListener('mouseout',function (event){
+        bodyPhoneNum.style.color="black";
+        bodyPhoneNum.style.fontWeight="unset";
+    },false);
+
+
+    let bodyRegistered = document.getElementById("registered");
+    bodyRegistered.addEventListener('mouseover',function (event){
+        bodyRegistered.style.color="red";
+        bodyRegistered.style.fontWeight="bolder";
+    },false);
+    bodyRegistered.addEventListener('mouseout',function (event){
+        bodyRegistered.style.color="black";
+        bodyRegistered.style.fontWeight="bolder";
+    },false);
+
+</script>
+</body>
+
+</html>

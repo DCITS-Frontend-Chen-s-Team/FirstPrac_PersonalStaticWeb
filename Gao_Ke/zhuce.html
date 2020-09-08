@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet/less" href="./less/style.less">
+
+    <script src="./js/less.min.js"></script>
+    <script src="./js/login.js"></script>
+</head>
+
+<body>
+<div id="box">
+    <div class="head">
+        <a href="#" target="_self" class="sig-img">慕课网</a>
+    </div>
+    <div id="main">
+        <div class="login-wrap">
+            <div class="main-title">
+                <div class="rl-modal-header">
+                    <h1>
+                        <p>登录</p>
+                        <p>注册</p>
+
+                    </h1>
+                </div>
+                <div class="main-body">
+                    <div class="body1">
+                        <div class="input1" >
+                            <input type="text"  id="PhoneNum" placeholder="请输入注册手机号"
+                                   onfocus="showTips('phone1')"
+                                   onblur="checkPhoneNum()"  onkeyup="checkPhoneNum()">
+                            <span id="phone1"></span>
+                        </div>
+                        <div class="input2">
+                            <input type="text" id="password" placeholder="请输入验证码"
+                                   onfocus="showTips('psw')"
+                                   onblur="checkPassword()"  onkeyup="checkPassword()">
+                            <span id="psw"></span>
+                        </div>
+                    </div>
+                    <div class="body21">
+                        <label>
+                            <input type="checkbox">同意
+                        </label>
+                        <div class="body-a" style="clear:both">
+                            <a href="#">《慕课网注册协议》</a>
+                           &
+                            <a href="#">《隐私政策》</a>
+                        </div>
+                    </div>
+                    <div class="body31">
+                        <input type="button" onclick="checkFrom()" value="注册" >
+                    </div>
+                    <div class="footer">
+                        <div class="fa">
+                            <a href="#">其他方式登录:</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="footer">
+        <div class="footer1">
+            <img src="./img/a9.png" alt="">
+            <span>2020 imooc.com All Rights Reserved 京ICP备 13046642号</span>
+        </div>
+    </div>
+
+
+</div>
+</body>
+
+</html>

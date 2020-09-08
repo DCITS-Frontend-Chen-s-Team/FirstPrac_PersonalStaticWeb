@@ -1,10 +1,11 @@
 let loginPattern; // 0为注册，1为登录
 let loginFormPattern = 0; // 0为账号密码登录，1为手机验证码登录
-var signBody = document.getElementById("signIn");
+var signBody = document.getElementById("signIn"); // 登录卡片整体
 var loginStatus = 0; // 登录验证状态，0为未通过，1为通过
 
 /**
  * 登录和注册按钮的事件监听
+ * 当用户点击右上角 登录/注册 按钮时，弹出相应的表单卡片
  */
 window.onload = function () {
     var register_btn = document.getElementById("register");
@@ -23,26 +24,25 @@ window.onload = function () {
     loginCardHide();
 }
 
-// 登录卡片头部标题的选择和事件监听
+// 登录卡片头部标签的选择和事件监听，点击标签时跳转到相应的表单
 var register_label = document.getElementById("registerLabel");
 var login_label = document.getElementById("loginLabel");
 register_label.onclick = function () {
     loginPattern = 0;
     lgnCardHeadChange();
-    login_event();
 }
 login_label.onclick = function () {
     loginPattern = 1;
     lgnCardHeadChange();
-    login_event();
 }
 
 /**
  * 登录卡片头部标题的样式的改变
+ * （处于登录状态，即登录标签下有红色标记）
  */
 function lgnCardHeadChange() {
     if (loginPattern === 0) {
-        register_label.className = "active-title";
+        register_label.className = "active-title"; // active-title 使文字变为红色
         login_label.className = "";
     } else if (loginPattern === 1) {
         login_label.className = "active-title";
@@ -52,6 +52,7 @@ function lgnCardHeadChange() {
 
 /**
  * 注册页表单的切换
+ * 覆盖表单 DOM 结构
  */
 function signInFormChange() {
     var signInForm = document.getElementById("loginCard_container");
@@ -91,7 +92,7 @@ function signInFormChange() {
 }
 
 /**
- * 切换登录方式的按钮
+ * 切换登录方式的按钮（“手机验证码登录”，“账号密码登录”）
  */
 function loginFormChanger() {
     var loginFormChanger = document.getElementsByClassName("rlf-other")[0];
@@ -108,6 +109,7 @@ function loginFormChanger() {
 
 /**
  * 登录页表单的切换
+ * （2种登录方式）覆盖表单 DOM 结构
  */
 function loginFormChange() {
     var loginForm = document.getElementById("loginCard_container");
@@ -199,6 +201,7 @@ function loginFormChange() {
 
 /**
  * 打开登录界面
+ * 改变登录卡片样式为可见
  */
 function login_event() {
     lgnCardHeadChange();
@@ -211,6 +214,7 @@ function login_event() {
     }
 }
 
+// 静态数据集，类比从数据库引用出的数据
 var userInfos = [
     {
         account: "admin@163.com",
@@ -237,9 +241,9 @@ function loginFormatAuth() {
     var pwdInput = document.getElementsByName("password")[0];
 
     // 账号正则验证
-    var accountPattern = new RegExp(/^(1[0-9]{10})|(\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)$/);
-    var res = accountPattern.exec(accountInput.value);
-    if (res == null) {
+    var accountPattern = new RegExp(/^(1[0-9]{10}$)|(^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)$/);
+    var res = accountPattern.test(accountInput.value);
+    if (res === false) {
         document.getElementsByClassName("data-error-hint")[0].innerHTML = "请输入正确的邮箱或手机号";
         accountInput.focus();
     } else {
@@ -289,6 +293,7 @@ function loginCardHide() {
 
 /**
  * 修改顶部栏信息
+ * 登录成功后顶部栏显示“欢迎你，{用户名}”
  * @param username
  */
 function updateUserInfo(username) {
