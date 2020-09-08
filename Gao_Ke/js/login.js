@@ -56,42 +56,39 @@ function checkFrom() {
 
 }
 
-let zhuCe = document.getElementById("zhuce");
-let registerBody = document.getElementsByClassName("main-body")[0];
-zhuCe.onclick = function () {
-    registerBody.innerHTML = `
-                    <div class="body1">
-                        <div class="input1" >
-                            <input type="text"  id="PhoneNum" placeholder="请输入注册手机号"
-                                   onfocus="showTips('phone1')"
-                                   onblur="checkPhoneNum()"  onkeyup="checkPhoneNum()">
-                            <span id="phone1"></span>
-                        </div>
-                        <div class="input2">
-                            <input type="text" id="password" placeholder="请输入验证码"
-                                   onfocus="showTips('psw')"
-                                   onblur="checkPassword()"  onkeyup="checkPassword()">
-                            <span id="psw"></span>
-                        </div>
-                    </div>
-                    <div class="body2">
-                        <label>
-                            <input type="checkbox">同意
-                        </label>
-                        <div class="body-a" style="clear:both">
-                            <a href="#">《慕课网注册协议》</a>
-                           &
-                            <a href="#">《隐私政策》</a>
-                        </div>
-                    </div>
-                    <div class="body3">
-                        <input type="button" onclick="checkFrom()" value="注册" >
-                    </div>
-                    <div class="footer">
-                        <div class="fa">
-                            <a href="#">其他方式登录:</a>
-                        </div>
 
-                    </div>
-                `;
-}
+//登陆注册用dom方法实现变色
+
+
+//获取到id是loginPhoneNum的元素
+// let  qqq= document.getElementById("loginPhoneNum");
+// alert(qqq);
+// qqq.addEventListener('mouseover',function (event){
+//     qqq.style.color="red";
+//     qqq.style.fontWeight="bolder";
+// })
+//
+//
+// let bodyRegistered = document.getElementById("registered");
+// bodyRegistered.addEventListener('mouseover',function (event){
+//     bodyRegistered.style.color="red";
+//     bodyRegistered.style.fontWeight="bolder";
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
