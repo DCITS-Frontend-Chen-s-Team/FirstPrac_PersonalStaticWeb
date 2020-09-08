@@ -13,7 +13,7 @@ body{font-family: Arial;}
 
 #head{height: 72px;width: 100%;background-color: white !important;position: fixed;z-index: 999;display: block;}
 #head .head_logo{width: 138px;height: 72px;margin-left: 5px;}
-#head .head_logo a{width: 126px;}
+#head .head_logo a{width: 126px;margin-top: 0;}
 #head .head_menu{font-size: 16px;line-height: 72px;}
 #head .head_menu li a{float: left;padding: 0 10px;}
 /* #head .head_menu li a:hover{color: black;} */

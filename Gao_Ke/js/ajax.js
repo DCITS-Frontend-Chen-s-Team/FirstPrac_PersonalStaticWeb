@@ -22,14 +22,15 @@ $(function () {
             for (let i = 0; i < ul1List.length; i++) {
                 ul1List[i].index = i;
             }
+
             // Dom0级事件处理程序
             ul1.onmouseover = function (event) {
-                //taget可获得触发事件后返回的元素
+                //target可获得触发事件后返回的元素
                 let num = event.target.index;
                 ul1List[num].style.color = "red";
                 ul1List[num].style.fontWeight = "bolder";
             }
-            ul1.onmouseout = function () {
+            ul1.onmouseout = function (event) {
                 let num = event.target.index;
                 ul1List[num].style.color = "black";
                 ul1List[num].style.fontWeight = "unset";
@@ -62,6 +63,17 @@ $(function () {
 
             for (let i = 0; i < ul1List.length; i++) {
                 ul1List[i].index = i;
+                window.ul1List = ul1.querySelectorAll("a");
+
+                for (let i = 0; i < ul1List.length; i++) {
+                    ul1List[i].index = i;
+                    if(i === 2){
+                        ul1List[i].href = "Login.html";
+                    }
+                    else if(i === 3){
+                        ul1List[i].href = "Login.html";
+                    }
+                }
             }
             //Dom2级事件处理程序 添加事件addEventListener(),移出事件removeEventListener()
             ul1.addEventListener('mouseover', function (event) {
