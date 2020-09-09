@@ -62,7 +62,7 @@ body {
   color: #787d82;
   margin: auto;
 }
-#main .login_head h1 span {
+#main .login_head h1 .login_in {
   display: block;
   float: left;
   width: 80px;
@@ -70,17 +70,39 @@ body {
   height: 49px;
   line-height: 49px;
   cursor: pointer;
-  color: red;
 }
-#main .login_head h1 span p {
+#main .login_head h1 .login_in p {
   content: " ";
   width: 16px;
   height: 4px;
   line-height: 4px;
-  background: #f20d0d;
   border-radius: 2px;
   display: block;
   margin: 0 auto;
+}
+#main .login_head h1 .login_form {
+  display: block;
+  float: left;
+  width: 80px;
+  text-align: center;
+  height: 49px;
+  line-height: 49px;
+  cursor: pointer;
+}
+#main .login_head h1 .login_form p {
+  content: " ";
+  width: 16px;
+  height: 4px;
+  line-height: 4px;
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+}
+#main .login_head h1 .span1 {
+  color: #f20d0d;
+}
+#main .login_head h1 .span1 p {
+  background: #f20d0d;
 }
 #main .login_body_login {
   display: none;
