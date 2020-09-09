@@ -82,8 +82,14 @@
 </div>
 
 <script>
+
+    // 登陆和注册页面进行切换
+    // 获取到登陆界面的登录标签的id
     let loginPhoneNum = document.getElementById("loginPhoneNum");
+    // 获得登录的主界面盒子的classname
     let loginBody = document.getElementsByClassName("main-body")[0];
+   // 点击事件
+   // 触发函数：将主界面盒子展示出来
    loginPhoneNum.onclick = function () {
         loginBody.innerHTML = `
                     <div class="body1">
@@ -115,7 +121,7 @@
                     </div>
                     <div class="footer">
                         <div class="fa">
-                            <a href="#" id="phoneNumLogin">手机短信登录</a>
+                            <a href="phoneLogin.html">手机短信登录</a>
                         </div>
                         <div class="fss">
                            登录即同意慕课网<a href="Privacy policy.html" target="_blank">《隐私政策》</a>
@@ -127,9 +133,13 @@
 
 
 
-
+    <!--    登陆和注册页面进行切换-->
+    // 获取到登陆界面的注册标签的id
     let zhuCe = document.getElementById("registered");
+    // 获得注册的主界面盒子的classname
     let registerBody = document.getElementsByClassName("main-body")[0];
+    // 点击事件
+    // 触发函数：将主界面盒子展示出来
     zhuCe.onclick = function () {
         registerBody.innerHTML = `
                     <div class="body1">
@@ -153,7 +163,7 @@
                         <div class="body-a" style="clear:both">
                             <a href="#">《慕课网注册协议》</a>
                            &
-                            <a href="#">《隐私政策》</a>
+                            <a href="Privacy policy.html" target="_blank">《隐私政策》</a>
                         </div>
                     </div>
                     <div class="body31">
@@ -177,6 +187,8 @@
     //获取到id是loginPhoneNum的元素
     let  bodyPhoneNum= document.getElementById("loginPhoneNum");
     // alert(bodyPhoneNum);
+    //Dom2级执行鼠标移入移出事件监听
+    //改变颜色和字体大小
     bodyPhoneNum.addEventListener('mouseover',function (event){
         bodyPhoneNum.style.color="red";
         bodyPhoneNum.style.fontWeight="bolder";
