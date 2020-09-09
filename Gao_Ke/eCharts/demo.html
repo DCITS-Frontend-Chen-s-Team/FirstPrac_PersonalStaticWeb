@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Echarts</title>
+    <script src="../js/echarts.min.js"></script>
+    <script src="wonderland.js"></script>
+</head>
+<body>
+<div id="main" style="width: 600px;height: 400px;"></div>
+<script>
+
+    // 通过 echarts.init 方法初始化一个 echarts 实例
+   var myChart = echarts.init(document.getElementById("main"),'wonderland');
+
+   //通过 Option 方法生成一个简单的柱状图
+   var option = {
+       title:{
+           text:'第一个例子'
+       },
+       //配置
+       tooltip:{},
+       legend:{
+           data:['数量']
+       },
+       xAxis: {
+           data:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋"]
+       },
+       yAxis: {},
+       series:[
+           {
+               name:'数量',
+               type:'line',
+               data:[5,34,23,33,10]
+           }
+       ]
+
+   };
+   myChart.setOption(option);
+
+</script>
+
+
+
+</body>
+</html>
