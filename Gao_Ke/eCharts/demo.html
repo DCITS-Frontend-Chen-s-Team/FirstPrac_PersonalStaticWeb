@@ -1,46 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Echarts</title>
     <script src="../js/echarts.min.js"></script>
     <script src="wonderland.js"></script>
 </head>
+
 <body>
-<div id="main" style="width: 600px;height: 400px;"></div>
-<script>
+    <div id="main" style="width: 600px;height: 400px;"></div>
+    <script>
 
-    // 通过 echarts.init 方法初始化一个 echarts 实例
-   var myChart = echarts.init(document.getElementById("main"),'wonderland');
+        // 通过 echarts.init 方法初始化一个 echarts 实例
+        var myChart = echarts.init(document.getElementById("main"), 'wonderland');
 
-   //通过 Option 方法生成一个简单的柱状图
-   var option = {
-       title:{
-           text:'第一个例子'
-       },
-       //配置
-       tooltip:{},
-       legend:{
-           data:['数量']
-       },
-       xAxis: {
-           data:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋"]
-       },
-       yAxis: {},
-       series:[
-           {
-               name:'数量',
-               type:'line',
-               data:[5,34,23,33,10]
-           }
-       ]
+        // 用 option 描述 `数据`、`数据如何映射成图形`、`交互行为` 等。
+        // option 是个大的 JavaScript 对象。
+        //通过 Option 方法生成一个简单的柱状图
+        var option = {
+            //option每个属性是一类组件
+            title: {
+                text: '第一个例子'
+            },
+            //配置
+            tooltip: {},
+            legend: {
+                data: ['数量', '买卖','月季']
+            },
+            xAxis: {
+                data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋"]
+            },
+            yAxis: [{}, {},{}],
+            series: [
+                {
+                    name: '数量',
+                    //scatter:散点图
+                    type: 'scatter',
+                    data: [5, 34, 23, 33, 10],
+                    // 使用 yAxisIndex 来指定它自己使用的是哪个 yAxis
+                    yAxisIndex: 0
+                }, {
+                    name: "买卖",
+                    type: 'line',
+                    data: [48, 32, 1, 12],
+                    yAxisIndex: 1
+                },{
+                    name:"月季",
+                    type:"bar",
+                    data:[7,65,43,2,22],
+                    yAxisIndex:2
+                }
+            ]
 
-   };
-   myChart.setOption(option);
+        };
 
-</script>
+        // 调用 setOption 将 option 输入 echarts，然后 echarts 渲染图表。
+        myChart.setOption(option);
+
+    </script>
 
 
 
 </body>
+
 </html>
+
