@@ -24,7 +24,7 @@ window.onload = function () {
     loginCardHide();
 }
 
-// 登录卡片头部标签的选择和事件监听，点击标签时跳转到相应的表单
+/** 登录卡片头部标签的选择和事件监听，点击标签时跳转到相应的表单 */ 
 var register_label = document.getElementById("registerLabel");
 var login_label = document.getElementById("loginLabel");
 register_label.onclick = function () {
@@ -214,7 +214,7 @@ function login_event() {
     }
 }
 
-// 静态数据集，类比从数据库引用出的数据
+/** 静态数据集，类比从数据库引用出的数据 */ 
 var userInfos = [
     {
         account: "admin@163.com",
