@@ -29,13 +29,13 @@
                 <div class="main-body">
                     <div class="body1">
                         <div class="input1" >
-                            <input type="text"  id="PhoneNum" placeholder="请输入登陆手机号/邮箱"
+                            <input type="text" maxlength="40" id="PhoneNum" placeholder="请输入登陆手机号/邮箱"
                                    onfocus="showTips('phone1')"
                                    onblur="checkPhoneNum()"  onkeyup="checkPhoneNum()">
                             <span id="phone1"></span>
                         </div>
                         <div class="input2">
-                            <input type="text" id="password" placeholder="请输入密码"
+                            <input type="password" id="password" maxlength="20" placeholder="请输入密码"
                                    onfocus="showTips('psw')"
                                    onblur="checkPassword()"  onkeyup="checkPassword()">
                             <span id="psw"></span>
