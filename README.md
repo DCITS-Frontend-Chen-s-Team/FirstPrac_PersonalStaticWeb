@@ -10,7 +10,8 @@
 - vant base64 encode decode 编码解码 查看系统校验
 - element-ui 正则校验
 - 小程序 h5存储
-- 小程序学习地址(https://developers.weixin.qq.com/miniprogram/dev/framework/)，周末看看，再就是刚才说的项目里的贷款模块
+- [小程序学习地址https://developers.weixin.qq.com/miniprogram/dev/framework/](https://developers.weixin.qq.com/miniprogram/dev/framework/)，
+周末看看，再就是刚才说的项目里的贷款模块
  开户模块 管理端 客户端文档上的业务流程 一定要都熟悉
 - 建议你们每次周五汇报工作时要说的详细一点，比如看了一个文档，说说自己看后的理解和想法  学了一个知识点：说明知识点的应用场景等，不要简单概括。
 
