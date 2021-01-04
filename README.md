@@ -1,4 +1,4 @@
-# FirstPrac_PersonalStaticWeb
+# StaticWeb
 神州信息 智能银行解决方案部门 前端开发实习生团队（陈飞）
 
 基础练习——静态网页界面
